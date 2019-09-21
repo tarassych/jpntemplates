@@ -210,7 +210,7 @@ body {
 }
 
 .form-mid__check .invalid-feedback {
-  font-size: 2rem;
+  font-size: 1.5rem;
   position: absolute;
   bottom: -3rem;
   left: 0;
