@@ -57,27 +57,27 @@
 				<form class="needs-validation" novalidate>
 					<div class="form-top">
 						<div class="form__group">
-							<input type="email" class="form-control" placeholder="Your Email*" required>
+							<input type="email" class="form-control" placeholder="Your Email*" name="email" required>
 							<div class="invalid-feedback">
-								Error message
+								This field is required
 							</div>
 						</div>
 						
 						<div class="row no-gutters">
 							<div class="col">
 								<div class="form__group">
-									<input type="text" class="form-control" placeholder="LAST name*" required>
+									<input type="text" class="form-control" placeholder="LAST name*" name="lastName" required>
 									<div class="invalid-feedback">
-										Error message
+										This field is required
 									</div>
 								</div>
 							</div>
 
 							<div class="col">
 								<div class="form__group">
-									<input type="text" class="form-control" placeholder="first name*" required>
+									<input type="text" class="form-control" placeholder="first name*" name="firstName" required>
 									<div class="invalid-feedback">
-										Error message
+										This field is required
 									</div>
 								</div>
 							</div>
@@ -93,17 +93,17 @@
 							Are you working with a travel agent?
 						</h4>
 
-						<div class="form-mid__check">
+						<div class="form-mid__check custom-control">
 							<div class="form-mid__check-group">
-								<input class="custom-control-input" type="radio" name="radio" id="radio1" value="Yes" required>
-								<label class="custom-control-label" for="radio1">Yes</label>
+								<input class="form-mid__input" type="radio" name="radio" id="radio1" value="Yes" required>
+								<label class="form-mid__label" for="radio1">Yes</label>
 							</div>
 
 							<div class="form-mid__check-group">
-								<input class="custom-control-input" type="radio" name="radio" id="radio2" value="No" required>
-								<label class="custom-control-label" for="radio2">No</label>
+								<input class="form-mid__input" type="radio" name="radio" id="radio2" value="No" required>
+								<label class="form-mid__label" for="radio2">No</label>
 								<div class="invalid-feedback">
-									You must check before submitting.
+									Select Yes or No, please.
 								</div>
 							</div>
 						</div>
@@ -113,20 +113,20 @@
 						<div class="row no-gutters">
 							<div class="col form__group">
 								<div class="form-bot__check">
-									<label for="inlineCheckbox3">I am a Travel Advisor</label>
-									<input type="checkbox" id="inlineCheckbox3" value="yes" data-toggle="collapse" data-target="#travel">
+									<input class="form-bot__input" type="checkbox" id="inlineCheckbox3" value="yes" data-toggle="collapse" data-target="#travel">
+									<label class="form-bot__label" for="inlineCheckbox3">I am a Travel Advisor</label>									
 								</div>
 
-								<input type="text" class="form-control collapse collapsed" aria-describedby="emailHelp" placeholder="company name" id="travel" required>
+								<input type="text" class="form-control collapse collapsed" placeholder="company name" id="travel" name="travel">
 							</div>
 
 							<div class="col form__group">
 								<div class="form-bot__check">
-									<label for="inlineCheckbox4">I am News Media / Influencer</label>
-									<input type="checkbox" id="inlineCheckbox4" value="yes" data-toggle="collapse" data-target="#media">
+									<input class="form-bot__input" type="checkbox" id="inlineCheckbox4" value="yes" data-toggle="collapse" data-target="#media">
+									<label class="form-bot__label" for="inlineCheckbox4">I am News Media / Influencer</label>									
 								</div>								
 
-								<input type="text" class="form-control collapse collapsed" placeholder="company name" id="media" required>
+								<input type="text" class="form-control collapse collapsed" placeholder="company name" id="media" name="media">
 							</div>
 						</div>
 					</div>

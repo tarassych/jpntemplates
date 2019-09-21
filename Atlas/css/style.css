@@ -171,7 +171,8 @@ body {
 }
 
 .form-top .invalid-feedback {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  text-align: left;
 }
 
 .form-mid {
@@ -235,24 +236,44 @@ body {
           align-items: center;
 }
 
-.custom-control-label::before {
+.form-mid__input {
+  display: none;
+}
+
+.form-mid__label {
+  position: relative;
+}
+
+.form-mid__label::before {
+  content: "";
+  background-color: #fff;
+  position: absolute;
   top: -4.9rem;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   height: 3.1rem;
   width: 3.1rem;
 }
 
-.custom-control-label::after {
-  top: -4.9rem;
+.form-mid__input:not(:checked) + label:after,
+.form-mid__input:checked + label:after {
+  content: '\2713\0020';
+  color: #333;
+  font-size: 3rem;
+  font-weight: bold;
+  position: absolute;
+  top: -5.5rem;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   height: 3.1rem;
   width: 3.1rem;
+}
+
+.form-mid__input:not(:checked) + label:after {
+  opacity: 0;
+}
+.form-mid__input:checked + label:after {
+  opacity: 1;
 }
 
 .form-bot {
@@ -273,6 +294,14 @@ body {
           align-items: center;
 }
 
+.form-bot .row.no-gutters .col:first-child {
+  margin-right: 1rem;
+}
+
+.form-bot .row.no-gutters .col:last-child {
+  margin-left: 1rem;
+}
+
 .form-bot__check {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -287,18 +316,55 @@ body {
   margin-bottom: 2.8rem;
 }
 
-.form-bot__check label {
+.form-bot__input {
+  display: none;
+}
+
+.form-bot__label {
   color: #fff;
   font-size: 1.9rem;
   font-weight: 400;
   margin: 0 1.4rem 0 0;
+  position: relative;
 }
 
-.form-bot__check input {
-  border: 0.1rem solid #000000;
+.form-bot__label::before {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  right: -5rem;
+  transform: translateY(-50%);
   height: 3.1rem;
   width: 3.1rem;
 }
+
+.form-bot__input:not(:checked) + label:after,
+.form-bot__input:checked + label:after {
+  content: '\2713\0020';
+  color: #333;
+  font-size: 3rem;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  right: -5rem;
+  transform: translateY(-70%);
+  height: 3.1rem;
+  width: 3.1rem;
+}
+
+.form-bot__input:not(:checked) + label:after {
+  opacity: 0;
+}
+.form-bot__input:checked + label:after {
+  opacity: 1;
+}
+
+/*.form-bot__check input {
+  border: 0.1rem solid #000000;
+  height: 3.1rem;
+  width: 3.1rem;
+}*/
 
 .form form input[type="submit"] {
   background-color: #13222f;
