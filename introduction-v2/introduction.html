@@ -3594,6 +3594,10 @@
       charset="utf-8"
     ></script>
 
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <style>
       .introduction {
         width: 100%;
@@ -3723,14 +3727,21 @@
         max-width: 100%;
       }
       .introduction__left {
-        background: url(img/introduction-left-bg.jpg) top center / 100% 100%
-          no-repeat;
+        background: url(img/introduction-left-bg.jpg) top center /
+            calc(100% - 30px) 100% no-repeat,
+          -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, #ececec));
+        background: url(img/introduction-left-bg.jpg) top center /
+            calc(100% - 30px) 100% no-repeat,
+          -o-linear-gradient(left, transparent 50%, #ececec 50%);
+        background: url(img/introduction-left-bg.jpg) top center /
+            calc(100% - 30px) 100% no-repeat,
+          linear-gradient(90deg, transparent 50%, #ececec 50%);
         -ms-flex-negative: 0;
         flex-shrink: 0;
         padding: 40px 0 55px;
         text-align: center;
         height: 100%;
-        width: 400px;
+        width: 430px;
         max-width: 100%;
       }
       .introduction__left-title {
@@ -3741,6 +3752,32 @@
         padding: 0 30px;
         text-shadow: 0 0 9px #ffffff, 0 0 9px #ffffff, 0 0 9px #ffffff,
           0 0 9px #ffffff;
+      }
+      .swiper-slide {
+        padding: 0 15px;
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        background-color: #808080;
+        border-radius: 50%;
+        color: #ffffff;
+        margin: 0;
+        top: 360px;
+        height: 55px;
+        width: 55px;
+      }
+      .swiper-button-next:after,
+      .swiper-button-prev:after {
+        font-size: 30px;
+        font-weight: 700;
+      }
+      .swiper-button-prev,
+      .swiper-container-rtl .swiper-button-next {
+        left: 0;
+      }
+      .swiper-button-next,
+      .swiper-container-rtl .swiper-button-prev {
+        right: 0;
       }
       .introduction__left-circle {
         margin: 0 auto 40px;
@@ -3764,10 +3801,10 @@
       }
       .introduction__left-name h2 {
         color: #00559f;
-        font-size: 38px;
+        font-size: 36px;
         font-weight: 500;
-        line-height: 38px;
-        margin: 0 10px 0 0;
+        line-height: 36px;
+        margin: 0;
       }
       .introduction__left-flag {
         width: 32px;
@@ -3790,21 +3827,50 @@
         flex-direction: row;
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
         justify-content: space-between;
         margin: 25px 0 20px;
+        width: 100%;
       }
-      .introduction__left-photos:first-child {
-        width: 170px;
+      .introduction__left-photos img:first-child {
+        margin-right: 10px;
+        width: 60%;
         max-width: 100%;
       }
-      .introduction__left-photos:last-child {
-        width: 120px;
+      .introduction__left-photos img:last-child {
+        width: 40%;
         max-width: 100%;
       }
       .introduction__left-medal {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
         margin-bottom: 15px;
-        width: 100px;
+        width: 100%;
         max-width: 100%;
+      }
+      .introduction__left-medal-50 {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+      }
+      .introduction__left-medal img {
+        width: 100px;
+      }
+      .introduction__left-medal-50 img {
+        width: 45%;
       }
       .introduction__left-dr h4 {
         color: #00559f;
@@ -4342,55 +4408,162 @@
             専門家のご紹介
           </h3>
 
-          <img
-            src="img/introduction-left-circle.png"
-            alt="introduction left circle"
-            class="introduction__left-circle"
-          />
+          <div class="swiper-container swiper-container-introduction">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="img/introduction-left-circle-1.png"
+                  alt="introduction left circle"
+                  class="introduction__left-circle"
+                />
 
-          <div class="introduction__left-dr">
-            <div class="introduction__left-name">
-              <h2>Dr Nikki March</h2>
-              <img
-                src="img/introduction-left-flag.png"
-                alt="introduction left flag"
-                class="introduction__left-flag"
-              />
+                <div class="introduction__left-dr">
+                  <div class="introduction__left-name">
+                    <h2>Dr Nikki March</h2>
+                  </div>
+
+                  <p>
+                    2006 PhD Cancer Biochemistry,<br />
+                    University of Cambridge
+                  </p>
+
+                  <div class="introduction__left-photos">
+                    <img
+                      src="img/introduction-left-photo-1,1.jpg"
+                      alt="introduction left Dr. photo"
+                    />
+
+                    <img
+                      src="img/introduction-left-photo-1,2.jpg"
+                      alt="introduction left book"
+                    />
+                  </div>
+
+                  <div class="introduction__left-medal">
+                    <img
+                      src="img/introduction-left-medal-1.png"
+                      alt="introduction left medal"
+                    />
+                  </div>
+
+                  <h4>
+                    <span>専門領域</span><br />
+                    細胞シグナリング、腫瘍学、がん幹細胞学
+                  </h4>
+
+                  <p>
+                    シニアバイオサイエンティストとしての経験あり<br />
+                    (Paterson Institute for Cancer Research, <br />
+                    Manchester, UK)
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img
+                  src="img/introduction-left-circle-2.png"
+                  alt="introduction left circle"
+                  class="introduction__left-circle"
+                />
+
+                <div class="introduction__left-dr">
+                  <div class="introduction__left-name">
+                    <h2>Dr Thomas Laage</h2>
+                  </div>
+
+                  <p>
+                    2011 MPH, Harvard School of Public Health
+                  </p>
+
+                  <div class="introduction__left-photos">
+                    <img
+                      src="img/introduction-left-photo-2,1.jpg"
+                      alt="introduction left Dr. photo"
+                    />
+
+                    <img
+                      src="img/introduction-left-photo-2,2.jpg"
+                      alt="introduction left book"
+                    />
+                  </div>
+
+                  <div class="introduction__left-medal">
+                    <img
+                      src="img/introduction-left-medal-2.png"
+                      alt="introduction left medal"
+                    />
+                  </div>
+
+                  <h4>
+                    <span>専門領域</span><br />
+                    細胞シグナリング、腫瘍学、がん幹細胞学
+                  </h4>
+
+                  <p>
+                    シニアバイオサイエンティストとしての経験あり<br />
+                    (Paterson Institute for Cancer Research, <br />
+                    Manchester, UK)
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img
+                  src="img/introduction-left-circle-3.png"
+                  alt="introduction left circle"
+                  class="introduction__left-circle"
+                />
+
+                <div class="introduction__left-dr">
+                  <div class="introduction__left-name">
+                    <h2>Dr Ayhan Atmanli</h2>
+                  </div>
+
+                  <p>
+                    2018 PhD Biomedical Engineering,<br />
+                    Tufts University
+                  </p>
+
+                  <div class="introduction__left-photos">
+                    <img
+                      src="img/introduction-left-photo-3,1.jpg"
+                      alt="introduction left Dr. photo"
+                    />
+
+                    <img
+                      src="img/introduction-left-photo-3,2.jpg"
+                      alt="introduction left book"
+                    />
+                  </div>
+
+                  <div
+                    class="introduction__left-medal introduction__left-medal-50"
+                  >
+                    <img
+                      src="img/introduction-left-medal-3,1.png"
+                      alt="introduction left medal"
+                    />
+                    <img
+                      src="img/introduction-left-medal-3,2.jpg"
+                      alt="introduction left medal"
+                    />
+                  </div>
+
+                  <h4>
+                    <span>専門領域</span><br />
+                    細胞シグナリング、腫瘍学、がん幹細胞学
+                  </h4>
+
+                  <p>
+                    シニアバイオサイエンティストとしての経験あり (Paterson
+                    Institute for Cancer Research, Manchester, UK)
+                  </p>
+                </div>
+              </div>
             </div>
 
-            <p>
-              2006 PhD Cancer Biochemistry,<br />
-              University of Cambridge
-            </p>
-
-            <div class="introduction__left-photos">
-              <img
-                src="img/introduction-left-photo.jpg"
-                alt="introduction left Dr. photo"
-              />
-
-              <img
-                src="img/introduction-left-book.jpg"
-                alt="introduction left book"
-              />
-            </div>
-
-            <img
-              src="img/introduction-left-medal.png"
-              alt="introduction left medal"
-              class="introduction__left-medal"
-            />
-
-            <h4>
-              <span>専門領域</span><br />
-              細胞シグナリング、腫瘍学、がん幹細胞学
-            </h4>
-
-            <p>
-              シニアバイオサイエンティストとしての経験あり<br />
-              （Paterson Institute for Cancer Research, <br />
-              Manchester, UK）
-            </p>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
         </div>
 
@@ -4723,6 +4896,7 @@
     <!-- End /.introduction -->
 
     <!-- Introduction JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
       let collapse = document.querySelector(".introduction__collapse");
 
@@ -4733,6 +4907,14 @@
           e.target.parentNode.parentNode.classList.toggle("open");
         }
       };
+
+      var mySwiper = new Swiper(".swiper-container-introduction", {
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
     </script>
     <!-- Introduction JS -->
 
