@@ -3609,7 +3609,25 @@
         width: 100%;
       }
       .introduction__top-bg {
+        position: relative;
         width: 100%;
+      }
+      .introduction__top-bg h2 {
+        color: #fcfcfc;
+        font-size: 48px;
+        font-weight: 700;
+        letter-spacing: 0.83px;
+        line-height: 50px;
+        margin: 0;
+        position: absolute;
+        top: 35px;
+        left: 0;
+        text-align: center;
+        text-shadow: 0 7px 20px rgba(0, 0, 0, 0.59);
+        width: 100%;
+      }
+      .introduction__top-bg h2 span {
+        color: #e3192a;
       }
       .introduction__top-bg img {
         width: 100%;
@@ -3706,13 +3724,14 @@
       }
       .introduction__top-circle {
         position: absolute;
-        top: 50%;
+        top: calc(50% + 40px);
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         height: 430px;
         width: 430px;
+        max-width: 100%;
       }
       .introduction__container {
         display: -webkit-box;
@@ -3729,10 +3748,10 @@
       .introduction__left {
         background: url(img/introduction-left-bg.jpg) top center /
             calc(100% - 30px) 100% no-repeat,
-          -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, #ececec));
+          -o-linear-gradient(left, transparent 50%, #ececec 50%);
         background: url(img/introduction-left-bg.jpg) top center /
             calc(100% - 30px) 100% no-repeat,
-          -o-linear-gradient(left, transparent 50%, #ececec 50%);
+          -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, #ececec));
         background: url(img/introduction-left-bg.jpg) top center /
             calc(100% - 30px) 100% no-repeat,
           linear-gradient(90deg, transparent 50%, #ececec 50%);
@@ -4126,6 +4145,11 @@
       }
 
       @media (max-width: 1199px) {
+        .introduction__top-bg h2 {
+          font-size: 25px;
+          line-height: 30px;
+          top: 10px;
+        }
         .introduction__top-description {
           padding-top: 300px;
         }
@@ -4138,7 +4162,7 @@
           padding-left: 30px;
         }
         .introduction__top-circle {
-          top: 0;
+          top: 85px;
           -webkit-transform: translate(-50%, 0);
           -ms-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
@@ -4163,6 +4187,9 @@
         .introduction__footer-block {
           margin: 0 0 10px !important;
           width: 100%;
+        }
+        .introduction__footer-title {
+          padding: 15px 25px;
         }
       }
 
@@ -4195,6 +4222,18 @@
           -webkit-box-ordinal-group: 3;
           -ms-flex-order: 2;
           order: 2;
+        }
+        .introduction__top-circle {
+          top: 85px;
+          -webkit-transform: translate(-50%, 0);
+          -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+        }
+      }
+      @media (max-width: 480px) {
+        .introduction__top-circle {
+          height: 320px;
+          width: 320px;
         }
       }
     </style>
@@ -4349,6 +4388,9 @@
     <div class="introduction">
       <div class="introduction__top">
         <div class="introduction__top-bg">
+          <h2>
+            研究の新時代は、<span>「個」</span>ではなく<span>「チーム」</span>で勝負！
+          </h2>
           <img src="img/introduction-top-bg.jpg" alt="introduction top bg" />
         </div>
 
@@ -4404,8 +4446,8 @@
       <div class="introduction__container">
         <div class="introduction__left">
           <h3 class="introduction__left-title">
-            皆さまの研究を支援する、<br />
-            専門家のご紹介
+            皆さまの研究チームの<br />
+            新メンバーのご紹介
           </h3>
 
           <div class="swiper-container swiper-container-introduction">
