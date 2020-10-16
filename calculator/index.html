@@ -1,0 +1,420 @@
+<section style="background-color: #e1e1e1; padding: 50px 0 60px;">
+    <div
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          max-width: 1160px;
+          margin: 0 auto;
+      ">
+      <div
+        style="
+          width: 740px;
+          margin-right: 40px;
+          background: #fff;
+          box-shadow: 0 4px 4px rgba(0,0,0,0.2);
+          border-radius: 25px;
+          overflow: hidden;
+        ">
+        <div style="padding: 25px 40px 50px; background: url(assets/image/calc-top-bg.png) no-repeat bottom center / cover;">
+          <div style="position: relative; padding-left: 85px; margin-bottom: 25px;">
+            <img src="assets/image/calc-icon.png" alt="" style="position: absolute; top: 50%; left: 0; transform: translateY(-50%);">
+            <p
+                style="
+                  margin: 0 0 10px;
+                  font-family: 'YuMincho';
+                  font-size: 26px;
+                  font-weight: 500;
+                  line-height: 1;
+                  color: #fff;
+              ">自動お見積り</p>
+            <p
+                style="
+                  margin: 0;
+                  font-family: 'KozGoPr6N';
+                  font-size: 14px;
+                  font-weight: 500;
+                  line-height: 1;
+                  color: #fff;
+              ">原稿のワード数をもとに、エキスパート英文校正のお見積りシュミレーションが可能です。</p>
+          </div>
+  
+          <div style="width: 460px; margin: 0 auto;">
+            <div style="margin-bottom: 20px;">
+              <label
+                  style="
+                    position: relative;
+                    display: flex;
+                    height: 50px;
+                    border-radius: 30px;
+                    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+                    background-color: #fff;
+                    overflow: hidden;
+                ">
+                <span
+                    style="
+                      flex-shrink: 0;
+                      display: block;
+                      width: 120px;
+                      height: 100%;
+                      padding-left: 30px;
+                      padding-right: 20px;
+                      background-color: #ffe153;
+                      font-family: 'KozGoPr6N';
+                      font-size: 16px;
+                      font-weight: 500;
+                      color: #000;
+                      line-height: 50px;
+                  ">原稿のワード数</span>
+                <input type="text" name="count"
+                       style="
+                        width: 100%;
+                        border: 0;
+                        background: none;
+                        padding: 0 35px;
+                        font-family: 'YuMincho';
+                        font-size: 36px;
+                        line-height: 50px;
+                        color: #ba2432;
+                  ">
+              </label>
+            </div>
+            <div style="margin-bottom: 20px;">
+              <label
+                  style="
+                    position: relative;
+                    display: flex;
+                    height: 50px;
+                    border-radius: 30px;
+                    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+                    background-color: #fff;
+                    overflow: hidden;
+                ">
+                <span
+                    style="
+                      flex-shrink: 0;
+                      display: block;
+                      width: 120px;
+                      height: 100%;
+                      padding-left: 30px;
+                      padding-right: 20px;
+                      background-color: #ffe153;
+                      font-family: 'KozGoPr6N';
+                      font-size: 16px;
+                      font-weight: 500;
+                      color: #000;
+                      line-height: 50px;
+                  ">ご納品日数</span>
+                <select name="delivery_time"
+                        style="
+                          width: 100%;
+                          border: 0;
+                          background: none;
+                          padding: 0 35px;
+                          font-family: 'KozGoPr6N';
+                          font-size: 18px;
+                          font-weight: 500;
+                          color: #000;
+                          appearance: none;
+                  ">
+                  <option value="1">1営業日</option>
+                  <option value="2">２営業日</option>
+                </select>
+              </label>
+            </div>
+            <div style="text-align: center;">
+              <button type="button" class="calculator-btn"
+                      style="
+                        display: inline-block;
+                        width: 250px;
+                        height: 50px;
+                        padding: 0;
+                        border-radius: 30px;
+                        background-color: #ba2532;
+                        font-family: 'YuMincho';
+                        font-size: 18px;
+                        font-weight: 500;
+                        color: #fff;
+                        border: 0;
+                        cursor: pointer;
+                ">計算する</button>
+            </div>
+          </div>
+        </div>
+        <div style="padding: 20px 55px 30px;">
+          <div style="display: flex; margin-bottom: 15px;">
+            <div style="flex-shrink: 0; width: 300px; margin-right: 70px;">
+              <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    height: 40px;
+                    margin-bottom: 20px;
+                    padding: 0 15px;
+                    background: url(assets/image/calc-bottom-title-bg.png) no-repeat center / cover;
+                    border-radius: 5px;
+                    font-family: 'KozGoPr6N';
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: #ffff66;
+                  ">
+                <img src="assets/image/pb-logo-sm.png" alt="" style="margin-right: 15px;">
+                MY edanz プレミアム 会員価格
+              </div>
+              <div>
+                <div style="display: flex; align-items: baseline;">
+                  <div
+                      style="
+                        width: 264px;
+                        height: 50px;
+                        margin-right: 10px;
+                        padding: 3px;
+                        background: url(assets/image/input-bg.png) no-repeat center / contain;
+                        box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+                        border-radius: 6px;
+                    ">
+                    <input type="text" class="calculator-price-1" disabled value="0"
+                           style="
+                            width: calc(100% - 3px);
+                            line-height: 50px;
+                            text-align: center;
+                            padding: 0;
+                            border: 0;
+                            background: none;
+                            font-family: 'YuMincho';
+                            font-size: 32px;
+                            color: #000;
+                            appearance: none;
+                      ">
+                  </div>
+                  <span style="font-family: 'KozGoPr6N'; font-size: 18px; font-weight: 500; color: #000;">円</span>
+                </div>
+                <span
+                    style="
+                      display: block;
+                      max-width: 270px;
+                      margin-top: 10px;
+                      text-align: center;
+                      font-family: 'KozGoPr6N';
+                      font-size: 16px;
+                      font-weight: 500;
+                      color: #999999;
+                  ">+年会費¥3,000</span>
+              </div>
+            </div>
+            <div style="width: 220px;">
+              <div
+                  style="
+                    height: 40px;
+                    margin-bottom: 20px;
+                    background-color: #999999;
+                    border-radius: 5px;
+                    line-height: 40px;
+                    text-align: center;
+                    font-family: 'KozGoPr6N';
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: #fff;
+                ">通常価格</div>
+              <div>
+                <input type="text" class="calculator-price-2" disabled value="0"
+                       style="
+                        width: 190px;
+                        margin-right: 5px;
+                        line-height: 54px;
+                        text-align: center;
+                        padding: 0;
+                        border: 1px solid #a8a5b1;
+                        border-radius: 5px;
+                        background: none;
+                        font-family: 'YuMincho';
+                        font-size: 32px;
+                        color: #000;
+                  ">
+                <span style="font-family: 'KozGoPr6N'; font-size: 18px; font-weight: 500; color: #000;">円</span>
+              </div>
+            </div>
+          </div>
+  
+          <div style="text-align: center;">
+            <a href="https://jp-author-services.edanzgroup.com/postpaid/order" target="_blank"
+               style="
+                position: relative;
+                line-height: 50px;
+                text-decoration: none;
+                display: inline-block;
+                width: 250px;
+                height: 50px;
+                padding: 0;
+                background-color: #ba2532;
+                font-family: 'YuMincho';
+                font-size: 18px;
+                font-weight: 500;
+                color: #fff;
+                border: 0;
+                cursor: pointer;
+              ">お申し込みはこちら <span style="position: absolute; right: 20px; top: 50%; line-height: 1; transform: translateY(-50%);">></span></a>
+          </div>
+        </div>
+      </div>
+  
+      <div style="width: 380px; background-color: #fff;">
+        <div style="position: relative; padding: 20px 15px 25px; background: #666666 url(assets/image/sidebar-bg.jpg) no-repeat center / cover;">
+          <img src="assets/image/pb-logo.png" alt=""
+               style="
+                position: absolute;
+                top: 50%;
+                left: 8px;
+                transform: translateY(-50%);
+              ">
+          <img src="assets/image/ribbon.png" alt=""
+              style="
+                position: absolute;
+                top: -7px;
+                right: 0;
+              ">
+          <p style="
+              margin: 0;
+              font-family: 'YuMincho';
+              font-size: 18px;
+              font-weight: 500;
+              text-align: center;
+              color: #fff;
+              line-height: 1.3;
+          ">特典が満載の</p>
+          <p style="
+              margin: 0;
+              font-family: 'YuMincho';
+              font-size: 23px;
+              font-weight: 500;
+              text-align: center;
+              color: #fff;
+              line-height: 1.3;
+          ">メンバーシップサービス</p>
+  
+          <img src="assets/image/line.png" alt=""
+            style="
+              position: absolute;
+              bottom: -13px;
+              right: 0;
+              left: 0;
+            ">
+        </div>
+  
+        <div style="padding: 20px 15px;">
+          <div style="margin-bottom: 25px;">
+            <div
+                style="
+                  margin-bottom: 25px;
+                  color: #000;
+                  font-family: 'KozGoPr6N';
+                  font-size: 15px;
+                  font-weight: 500;
+                  text-align: center;
+                  line-height: 30px;
+                  background: url(assets/image/sidebar-title-bg.png) no-repeat center / contain;
+            ">「MY edanz プレミアム」の特典</div>
+  
+            <div style="position: relative; padding-left: 60px;">
+              <img src="assets/image/contact-icon.png" alt="" style="position: absolute; top: 0; left: 0">
+              <ul
+                  style="
+                    margin: 0;
+                    padding-left: 15px;
+                    list-style-image: url(assets/image/dot.png);
+                    font-family: 'KozGoPr6N';
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: #000;
+              ">
+                <li style="margin-bottom: 10px;">英文校正・再校正が毎回お得、しかも速い</li>
+                <li style="margin-bottom: 10px;">エダンズ専門家監修のe-learning・研究サポートツールへの無制限アクセスが可能</li>
+                <li>いつでもキャンセルが可能</li>
+              </ul>
+            </div>
+          </div>
+          <div style="margin-bottom: 25px;">
+            <div
+                style="
+                  margin-bottom: 25px;
+                  color: #000;
+                  font-family: 'KozGoPr6N';
+                  font-size: 14px;
+                  font-weight: 500;
+                  text-align: center;
+                  line-height: 30px;
+                  background: url(assets/image/sidebar-title-bg.png) no-repeat center / contain;
+            ">公費での支払い、所属先に申請可能？</div>
+  
+            <div style="position: relative; padding-left: 60px;">
+              <img src="assets/image/contact-icon.png" alt="" style="position: absolute; top: 0; left: 0">
+              <p style="margin: 0; font-family: 'KozGoPr6N'; font-size: 14px; font-weight: 500;">ご心配は無用です。公費でお支払いいただけるよう、請求書の発行も可能です。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+  <script>
+    jQuery(document).ready(function($) {
+      var calculator = function() {
+        var countInput = $('input[name="count"]');
+        var deliveryTimeInput = $('select[name="delivery_time"]');
+        var processBtn = $('.calculator-btn')
+        var totalOne = $('.calculator-price-1');
+        var totalTwo = $('.calculator-price-2');
+
+        // We only allow numbers to be entered in the field
+        countInput.keydown(function (e) {
+          // Allow: backspace, delete, tab, escape, enter and .
+          if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+            // Allow: Ctrl/cmd+A
+            (e.keyCode == 65 && (e.ctrlKey === true || e.metaKey === true)) ||
+            // Allow: Ctrl/cmd+C
+            (e.keyCode == 67 && (e.ctrlKey === true || e.metaKey === true)) ||
+            // Allow: Ctrl/cmd+X
+            (e.keyCode == 88 && (e.ctrlKey === true || e.metaKey === true)) ||
+            // Allow: home, end, left, right
+            (e.keyCode >= 35 && e.keyCode <= 39)) {
+            // let it happen, don't do anything
+            return;
+          }
+          // Ensure that it is a number and stop the keypress
+          if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+            e.preventDefault();
+          }
+        });
+
+        processBtn.click(function(e) {
+          e.preventDefault();
+
+          var taxOne = 0;
+          var taxTwo = 0;
+          var countInputValue = parseInt(countInput.val());
+          var deliveryTimeInputValue = parseInt(deliveryTimeInput.val());
+
+          if (isNaN(countInputValue)) {
+            return false;
+          }
+
+          if (deliveryTimeInputValue === 1) {
+            taxOne = 17;
+            taxTwo = 18;
+          } else if (deliveryTimeInputValue === 2) {
+            taxOne = 14;
+            taxTwo = 15;
+          }
+
+          var resultOne = parseInt(countInput.val()) * taxOne;
+          var resultTwo = parseInt(countInput.val()) * taxTwo;
+
+          totalOne.val(resultOne.toLocaleString());
+          totalTwo.val(resultTwo.toLocaleString());
+        });
+      };
+
+      calculator();
+    });
+  </script>
