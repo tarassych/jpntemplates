@@ -67,7 +67,7 @@
                   ">原稿のワード数</span>
                 <input type="text" name="count"
                        style="
-                        width: 100%;
+                        width: calc(100% - 170px);
                         border: 0;
                         background: none;
                         padding: 0 35px;
@@ -75,6 +75,7 @@
                         font-size: 36px;
                         line-height: 50px;
                         color: #ba2432;
+                        outline: none;
                   ">
               </label>
             </div>
@@ -106,15 +107,16 @@
                   ">ご納品日数</span>
                 <select name="delivery_time"
                         style="
-                          width: 100%;
+                          width: calc(100% - 170px);
                           border: 0;
-                          background: none;
+                          background: url(assets/image/arrow-down-icon.png) no-repeat 92% center;
                           padding: 0 35px;
                           font-family: 'KozGoPr6N';
                           font-size: 18px;
                           font-weight: 500;
                           color: #000;
                           appearance: none;
+                          outline: none;
                   ">
                   <option value="1">1営業日</option>
                   <option value="2">２営業日</option>
@@ -136,6 +138,7 @@
                         color: #fff;
                         border: 0;
                         cursor: pointer;
+                        outline: none;
                 ">計算する</button>
             </div>
           </div>
@@ -252,7 +255,8 @@
                 color: #fff;
                 border: 0;
                 cursor: pointer;
-              ">お申し込みはこちら <span style="position: absolute; right: 20px; top: 50%; line-height: 1; transform: translateY(-50%);">></span></a>
+                outline: none;
+              ">お申し込みはこちら <img src="assets/image/arrow-right-icon.png" style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%);"></a>
           </div>
         </div>
       </div>
@@ -367,24 +371,8 @@
         var totalTwo = $('.calculator-price-2');
 
         // We only allow numbers to be entered in the field
-        countInput.keydown(function (e) {
-          // Allow: backspace, delete, tab, escape, enter and .
-          if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
-            // Allow: Ctrl/cmd+A
-            (e.keyCode == 65 && (e.ctrlKey === true || e.metaKey === true)) ||
-            // Allow: Ctrl/cmd+C
-            (e.keyCode == 67 && (e.ctrlKey === true || e.metaKey === true)) ||
-            // Allow: Ctrl/cmd+X
-            (e.keyCode == 88 && (e.ctrlKey === true || e.metaKey === true)) ||
-            // Allow: home, end, left, right
-            (e.keyCode >= 35 && e.keyCode <= 39)) {
-            // let it happen, don't do anything
-            return;
-          }
-          // Ensure that it is a number and stop the keypress
-          if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
-            e.preventDefault();
-          }
+        countInput.on('input', function() {
+          $(this).val($(this).val().replace(/[^\d]/g, ''))
         });
 
         processBtn.click(function(e) {
