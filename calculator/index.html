@@ -75,9 +75,9 @@
                         font-size: 36px;
                         line-height: 50px;
                         color: #ba2432;
-                        outline: none;
-                      "
-                      placeholder="3500"
+                        outline: none;"
+                       placeholder="0"
+                       value="3500"
                 >
               </label>
             </div>
@@ -377,9 +377,15 @@
           $(this).val($(this).val().replace(/[^\d]/g, ''))
         });
 
+        calc();
+
         processBtn.click(function(e) {
           e.preventDefault();
 
+          calc();
+        });
+
+        function calc() {
           var taxOne = 0;
           var taxTwo = 0;
           var countInputValue = parseInt(countInput.val());
@@ -402,7 +408,7 @@
 
           totalOne.val(resultOne.toLocaleString());
           totalTwo.val(resultTwo.toLocaleString());
-        });
+        }
       };
 
       calculator();
