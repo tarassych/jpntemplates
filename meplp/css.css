@@ -1,0 +1,92 @@
+<style>
+  .header-out{
+    padding: 0;
+  }
+  .premium-obj .premium__cta {
+    margin-bottom: 30px;
+    max-width: 730px;
+  }
+  .premium-obj .premium__cta a {
+    background-color: transparent;
+    box-shadow: none;
+    font-size: 46px;
+    line-height: 62px;
+    padding: 0;
+    height: auto;
+  }
+  .premium-obj .premium__cta div.note {
+    color: #ba2532;
+    padding: 8px 0 0;
+    font-weight: bold;
+    font-size: 14px
+  }
+  .p2 > h2 {
+    font-size: 34px !important;
+    font-weight: 700 !important;
+    line-height: 40px;
+  }
+  .premium-obj .icon01 {
+     top: 40px
+  }
+  .premium-obj .price,
+  .premium__first > h2 {
+    font-weight: 700;
+  }
+  .premium-obj .box02,
+  .premium-obj .box03 {
+    top: 85px;
+  }
+  .premium-obj .arrow01 {
+    top: 135px;
+  }
+  .premium__row-second {
+    padding-top: 30px;
+  }
+  .premium__row-second > img {
+    margin-right: 20px;
+  }
+  .premium__row-second h2 span {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .premium__row-bgGrey {
+    background-color: #555;
+  }
+  .premium__myEbanzPremium h5.bg-red,
+  .premium__myEbanz h5.bg-grey,
+  .premium__row-second .bg-red,
+  .premium__row-second .bg-grey {
+    margin: 0;
+    padding: 8px;
+  }
+  .premium__row-bgGrey .bg-red,
+  .premium__row-bgGrey .price3,
+  .premium__row-second .bg-grey {
+    color: #fff;
+  }
+  .premium__row-second .bg-red {
+    background-color: #ba2532;
+  }
+  .premium__row-second .bg-grey {
+    background-color: #666;
+  }
+  .premium__row-second .price3 span {
+    font-size: 50px;
+  }
+  @media (max-width: 1024px) {
+    .premium__row-second .price3 span {
+      font-size: 30px;
+    }
+  }
+  @media (max-width: 767px) {
+    .premium-obj .premium__cta a {
+      font-size: 25px;
+      line-height: 28px;
+    }
+  }
+  @media (max-width: 680px) {
+    .premium__row-second .price3 span {
+      font-size: 24px;
+    }
+  }
+</style>
