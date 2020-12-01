@@ -4,7 +4,7 @@
   }
   .premium-obj .premium__cta {
     margin-bottom: 30px;
-    max-width: 730px;
+    max-width: 800px;
   }
   .premium-obj .premium__cta a {
     background-color: transparent;
@@ -24,6 +24,12 @@
     font-size: 34px !important;
     font-weight: 700 !important;
     line-height: 40px;
+  }
+  .premium__row > .p5 {
+  	color: #000;
+  }
+  .premium__row > .p5:hover {
+  	text-decoration: none;
   }
   .premium-obj .icon01 {
      top: 40px
@@ -82,6 +88,9 @@
     .premium-obj .premium__cta a {
       font-size: 25px;
       line-height: 28px;
+    }
+    .premium-obj .premium__cta div.note {
+      font-size: 12px;
     }
   }
   @media (max-width: 680px) {
