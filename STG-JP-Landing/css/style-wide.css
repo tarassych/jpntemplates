@@ -1,0 +1,395 @@
+#oncology * {
+	box-sizing: border-box;
+}
+#oncology h2,
+#oncology h3,
+#oncology h4,
+#oncology h5,
+#oncology h6,
+#oncology p {
+	margin: 0;
+	line-height: normal;
+	letter-spacing: normal;
+}
+#oncology .oncology {
+	color: #000;
+}
+#oncology .oncology-container {
+	margin: 0 auto;
+	max-width: 1170px;
+	width: 100%;
+}
+#oncology .oncology-top {
+	width: 100%;
+}
+#oncology .oncology-header {
+	padding: 30px 0;
+	text-align: center;
+}
+#oncology .oncology-header__top {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	text-align-last: left;
+}
+#oncology .oncology-header__img-left {
+	width: 370px;
+}
+#oncology .oncology-header__img-right {
+	width: 117px;
+}
+#oncology .oncology-header__img-tel {
+	width: 131px;
+}
+#oncology .oncology-header__top > p {
+	color: #333333;
+	font-size: 18px;
+}
+#oncology .oncology-three-blocks {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+#oncology .oncology-three-blocks > img {
+	min-width: 350px;
+	width: calc(100% / 3);
+}
+#oncology .oncology-best {
+	background-color: #e6ebed;
+	padding: 40px 0;
+	text-align: center;
+}
+#oncology .oncology-best h2 {
+	font-size: 40px;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+#oncology .oncology-best h3 {
+	font-size: 26px;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+#oncology .oncology-best__middle {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-around;
+}
+#oncology .oncology-best__middle img:nth-child(1),
+#oncology .oncology-best__middle img:nth-child(3) {
+	margin-top: 40px;
+	width: 270px;
+}
+#oncology .oncology-best__middle img:nth-child(2) {
+	width: 540px;
+}
+#oncology .oncology-best p {
+	font-size: 17px;
+	position: relative;
+	top: -20px;
+}
+#oncology .oncology-best__price {
+	margin-bottom: 20px;
+	width: 330px;
+}
+#oncology .oncology-best__btn {
+	display: block;
+	cursor: pointer;
+	margin: 0 auto;
+	text-decoration: none;
+	width: 540px;
+}
+#oncology .oncology-best__btn img {
+	width: 100%;
+}
+#oncology .oncology-papers {
+	text-align: center;
+	padding: 30px 35px 50px;
+}
+#oncology .oncology-papers > img {
+	width: 345px;
+}
+#oncology .oncology-papers > h2 {
+	font-size: 40px;
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+#oncology .oncology-papers__elements {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+#oncology .oncology-papers__el {
+	margin-bottom: 10px;
+	padding: 330px 20px 0;
+	position: relative;
+	height: 530px;
+	width: 266px;
+}
+#oncology .oncology-papers__points img {
+	margin: 0 1px;
+	height: 21px;
+}
+#oncology .oncology-papers__el:nth-child(5),
+#oncology .oncology-papers__el:nth-child(6),
+#oncology .oncology-papers__el:nth-child(7),
+#oncology .oncology-papers__el:nth-child(8) {
+	padding-top: 345px;
+}
+#oncology .oncology-papers__el-1 {
+	background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/paper1.png) center / 100% 100% no-repeat;
+}
+#oncology .oncology-papers__el-2 {
+	background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/paper2.png) center / 100% 100% no-repeat;
+}
+#oncology .oncology-papers__el-3 {
+	background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/paper3.png) center / 100% 100% no-repeat;
+}
+#oncology .oncology-papers__el-4 {
+	background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/paper4.png) center / 100% 100% no-repeat;
+}
+#oncology .oncology-papers__el-5 {
+	background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/paper5.png) center / 100% 100% no-repeat;
+}
+#oncology .oncology-papers__el-6 {
+	background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/paper6.png) center / 100% 100% no-repeat;
+}
+#oncology .oncology-papers__el-7 {
+	background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/paper7.png) center / 100% 100% no-repeat;
+}
+#oncology .oncology-papers__el-8 {
+	background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/paper8.png) center / 100% 100% no-repeat;
+}
+#oncology .oncology-papers__el h2 {
+	font-size: 18px;
+	line-height: 18px;
+	margin-bottom: 10px;
+}
+#oncology .oncology-papers__el h2 span {
+	background-color: #fad3d6;
+}
+#oncology .oncology-papers__el p {
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+#oncology .oncology-papers__country {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 20px;
+}
+#oncology .oncology-person {
+	background-color: #35383d;
+	padding: 20px 35px 35px;
+}
+#oncology .oncology-person > h2 {
+	color: #fff;
+	font-size: 18px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+#oncology .oncology-person__elements {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+#oncology .oncology-person__el {
+	background-color: #fff;
+	margin-bottom: 10px;
+	padding: 30px 5px 0;
+	width: 266px;
+}
+#oncology .oncology-person__el:nth-child(1) {
+	border-top: 5px solid #27AAE1;
+	border-bottom: 5px solid #27AAE1;
+}
+#oncology .oncology-person__el:nth-child(2) {
+	border-top: 5px solid #C4A13D;
+	border-bottom: 5px solid #C4A13D;
+}
+#oncology .oncology-person__el:nth-child(3) {
+	border-top: 5px solid #4FC193;
+	border-bottom: 5px solid #4FC193;
+}
+#oncology .oncology-person__el:nth-child(4) {
+	border-top: 5px solid #CCCCCC;
+	border-bottom: 5px solid #CCCCCC;
+}
+#oncology .oncology-person__top {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 10px;
+	text-align: center;
+	height: 200px;
+}
+#oncology .oncology-person__top img {
+	margin-bottom: 10px;
+	width: 120px;
+}
+#oncology .oncology-person__top h2 {
+	font-size: 13px;
+	margin-bottom: 5px;
+}
+#oncology .oncology-person__top h3 {
+	font-size: 14px;
+}
+#oncology .oncology-person__el p {
+	font-size: 15px;
+	padding: 5px 5px 15px;
+}
+#oncology .oncology-person__el p span {
+	background-color: #fad3d6;
+}
+#oncology .oncology-process {
+	text-align: center;
+	padding: 20px 0;
+}
+#oncology .oncology-process h2 {
+	font-size: 25px;
+	font-weight: 400;
+	margin-bottom: 25px;
+}
+#oncology .oncology-process img {
+	width: 780px;
+	max-width: 100%;
+}
+
+
+@media (max-width: 1199px) {
+	#oncology .oncology-header__top {
+		flex-direction: column;
+		margin-bottom: 20px;
+	}
+	#oncology .oncology-header__top > p {
+		margin: 20px 0;
+	}
+	#oncology .oncology-best__middle img:nth-child(1),
+	#oncology .oncology-best__middle img:nth-child(3) {
+		width: 200px;
+	}
+	#oncology .oncology-best__middle img:nth-child(2) {
+		width: 420px;
+	}
+	#oncology .oncology-papers__el {
+		padding-top: 370px;
+		height: 600px;
+		width: 300px;
+	}
+	#oncology .oncology-papers__el:nth-child(5),
+	#oncology .oncology-papers__el:nth-child(6),
+	#oncology .oncology-papers__el:nth-child(7),
+	#oncology .oncology-papers__el:nth-child(8) {
+		padding-top: 390px;
+	}
+	#oncology .oncology-person__el {
+		width: calc(100% / 2 - 50px);
+	}
+	#oncology .oncology-person__el p {
+		text-align: center;
+	}
+}
+@media (max-width: 991px) {
+	#oncology .oncology-best__middle img:nth-child(1),
+	#oncology .oncology-best__middle img:nth-child(3) {
+		width: 180px;
+	}
+	#oncology .oncology-best__middle img:nth-child(2) {
+		width: 360px;
+	}
+	#oncology .oncology-papers__elements {
+		justify-content: space-around;
+	}
+	#oncology .oncology-papers__el {
+		padding-top: 420px;
+		height: 680px;
+		width: 335px;
+	}
+	#oncology .oncology-papers__el:nth-child(5),
+	#oncology .oncology-papers__el:nth-child(6),
+	#oncology .oncology-papers__el:nth-child(7),
+	#oncology .oncology-papers__el:nth-child(8) {
+		padding-top: 440px;
+	}
+	#oncology .oncology-person__elements {
+		justify-content: space-around;
+	}
+}
+@media (max-width: 767px) {
+	#oncology .oncology-best__middle img:nth-child(1),
+	#oncology .oncology-best__middle img:nth-child(3) {
+		width: 100px;
+	}
+	#oncology .oncology-best__middle img:nth-child(2) {
+		width: 240px;
+	}
+	#oncology .oncology-best p {
+		top: 0;
+	}
+	#oncology .oncology-best__btn {
+		width: 100%;
+	}
+	#oncology .oncology-papers {
+		padding: 15px 20px 25px;
+	}
+	#oncology .oncology-papers__el {
+		padding-top: 270px;
+		height: 450px;
+		width: 210px;
+	}
+	#oncology .oncology-papers__el:nth-child(5),
+	#oncology .oncology-papers__el:nth-child(6),
+	#oncology .oncology-papers__el:nth-child(7),
+	#oncology .oncology-papers__el:nth-child(8) {
+		padding-top: 290px;
+	}
+	#oncology .oncology-papers__el h2 {
+		font-size: 15px;
+		line-height: 15px;
+	}
+	#oncology .oncology-person__el {
+		width: 100%;
+	}
+}
+@media (max-width: 479px) {
+	#oncology .oncology-header__img-left {
+		max-width: 100%;
+	}
+	#oncology .oncology-three-blocks > img {
+		min-width: 100%;
+	}
+	#oncology .oncology-best__middle img:nth-child(1),
+	#oncology .oncology-best__middle img:nth-child(3) {
+		margin-top: 20px;
+		width: 70px;
+	}
+	#oncology .oncology-best__middle img:nth-child(2) {
+		width: 160px;
+	}
+	#oncology .oncology-best__price {
+		max-width: 100%;
+	}
+	#oncology .oncology-papers {
+		padding: 10px 10px 20px;
+	}
+	#oncology .oncology-papers > img {
+		max-width: 100%;
+	}
+	#oncology .oncology-papers__el {
+		padding-top: 360px;
+		height: 570px;
+		width: 290px;
+	}
+	#oncology .oncology-papers__el:nth-child(5),
+	#oncology .oncology-papers__el:nth-child(6),
+	#oncology .oncology-papers__el:nth-child(7),
+	#oncology .oncology-papers__el:nth-child(8) {
+		padding-top: 380px;
+	}
+	#oncology .oncology-person__elements {
+		justify-content: center;
+	}
+}
