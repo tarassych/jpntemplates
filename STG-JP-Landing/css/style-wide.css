@@ -1,3 +1,6 @@
+html {
+	scroll-behavior: smooth;
+}
 #oncology * {
 	box-sizing: border-box;
 }
@@ -16,15 +19,36 @@
 }
 #oncology .oncology-container {
 	margin: 0 auto;
+	position: relative;
 	max-width: 1170px;
+	width: 100%;
+}
+#oncology .oncology-home {
+	padding: 10px;
+}
+#oncology .oncology-home a {
+	display: block;
+	text-decoration: none;
+	width: 60px;
+}
+#oncology .oncology-home a img {
 	width: 100%;
 }
 #oncology .oncology-top {
 	width: 100%;
 }
 #oncology .oncology-header {
+	background-color: #fff;
 	padding: 30px 0;
 	text-align: center;
+	width: 100%;
+	z-index: 9;
+}
+#oncology .oncology-header.header-fixed {
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, .1);
+	padding: 10px 0;
+	position: sticky;
+	top: 0;
 }
 #oncology .oncology-header__top {
 	display: flex;
@@ -168,9 +192,6 @@
 	line-height: 18px;
 	margin-bottom: 10px;
 }
-#oncology .oncology-papers__el h2 span {
-	background-color: #fad3d6;
-}
 #oncology .oncology-papers__el p {
 	font-size: 15px;
 	margin-bottom: 10px;
@@ -240,9 +261,6 @@
 #oncology .oncology-person__el p {
 	font-size: 15px;
 	padding: 5px 5px 15px;
-}
-#oncology .oncology-person__el p span {
-	background-color: #fad3d6;
 }
 #oncology .oncology-process {
 	text-align: center;

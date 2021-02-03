@@ -12,6 +12,12 @@
 <body>
 <div class="oncology" id="oncology">
 	<div class="oncology-container">
+		<div class="oncology-home">
+			<a href="https://stg-comm-jp-author-services.edanz.com/">
+				<img src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/home.png" alt="home">
+			</a>
+		</div>
+
 		<img src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/fv.jpg" alt="fv" class="oncology-top">
 
 		<div class="oncology-header">
@@ -50,7 +56,7 @@
 
 			<img src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/price.png" alt="price" class="oncology-best__price">
 
-			<a href="" class="oncology-best__btn">
+			<a href="#process" class="oncology-best__btn">
 				<img src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/button1_0.png" alt="button1">
 			</a>
 		</div>
@@ -213,10 +219,10 @@
 
 				<div class="oncology-person__el">
 					<div class="oncology-person__top">
-						<img src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/osman2.png" alt="mohammed">
+						<img src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/osman.png" alt="mohammed">
 
 						<h2>
-							Mohammed Abdelmoneam Osman
+							Mohammed Abdel Osman
 						</h2>
 
 						<h3>
@@ -271,7 +277,7 @@
 
 				<div class="oncology-person__el">
 					<div class="oncology-person__top">
-						<img src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/ken.jpg" alt="ken">
+						<img src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/ken.png" alt="ken">
 
 						<h2>
 							Ken Sakamoto
@@ -296,19 +302,30 @@
 			</div>
 		</div>
 
-		<div class="oncology-process">
+		<div class="oncology-process" id="process">
 			<h2>お問い合わせ・お申し込みはこちらから</h2>
 
-			<img src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/process.png" alt="process">
+			<img src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/process-2.png" alt="process">
 		</div>
 
 		<script src="https://sdk.form.run/js/v2/embed.js"></script>
-		<div
-		class="formrun-embed"
-		data-formrun-form="@edanz-oncology"
-		data-formrun-redirect="true">
+		<div class="formrun-embed" data-formrun-form="@edanz-oncology"data-formrun-redirect="true">
+		</div>
 	</div>
 </div>
-</div>
+
+<script>
+	document.addEventListener('scroll', function() {
+		let blockHome = document.querySelector('.oncology-home').offsetHeight;
+		let blockTop = document.querySelector('.oncology-top').height;
+		let header = document.querySelector('.oncology-header');
+		let y = window.scrollY;
+		if(y > blockTop+blockHome) {
+			header.classList.add('header-fixed')
+		} else {
+			header.classList.remove('header-fixed')
+		}
+	})
+</script>
 </body>
 </html>
