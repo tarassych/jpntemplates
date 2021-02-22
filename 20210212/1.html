@@ -167,7 +167,7 @@
     color:#444;
     text-shadow: 0px 1px 1px #bec8ce;
   }
-  .jp-packages-obj img.info{
+  .jp-packages-obj img.info-tooltip{
     width:16px;
   }
   .jp-packages-obj .editing-service{
@@ -192,11 +192,11 @@
   }
   .jp-packages-obj .box04{
     /*min-height:486px;*/
-    min-height:500px;
+    min-height:545px;
   }
   .jp-packages-obj .box05{
     /*min-height:228px;*/
-    min-height:230px;
+    min-height:275px;
   }
   .jp-packages-obj .package-price{
     font-size:17px;
@@ -226,35 +226,104 @@
     color:#bec8ce;
   }
 </style>
+<style>
+  #package .box04{
+    min-height:545px;
+  }
+  #package .box05{
+    min-height:275px;
+  }
+  .service-tooltip-container {
+    display: inline-block;
+    position: relative;
+  }
+  #package .service-tooltip-container .info-tooltip + .service-tooltip {
+    background-color: #fff;
+    border: 2px solid #22396A;
+    border-radius: 4px;
+    box-shadow: 0 3px 3px rgb(0 0 0 / 20%);
+    color: #555;
+    display: none;
+    font-family: 'Hiragino Kaku Gothic W3 JIS2004';
+    font-size: 13px;
+    line-height: 16px;
+    padding: 15px 10px;
+    position: absolute;
+    bottom: calc(100% + 7px);
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 280px;
+    min-width: 50px;
+    width: 280px;
+  }
+  #package .service-tooltip-container .service-tooltip:before {
+    content: "";
+    border-top: 10px solid #22396A;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #package .service-tooltip-container .info-tooltip.hover + .service-tooltip {
+    display: block;
+  }
+</style>
 
 <section class="jp-container" id="package">
   <div class="jp-packages-obj">
-    <h3 class="t1 typesquare_option">エダンズだからできる！3種のアカデミックパッケージ </h3>
-    <div class="t2 typesquare_option">もれなくMY edanz プレミアム1 年無料特典付き</div>
+    <h3 class="t1">エダンズだからできる！3種のアカデミックパッケージ </h3>
+    <div class="t2">もれなくMY edanz プレミアム1 年無料特典付き</div>
     <div class="cols1 clearfix">
       <div class="col1">
         <div class="box01">
           <div class="box04">
             <div class="box05">
               <div class="icon01"><img width="66" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/icon1.png" alt=""></div>
-              <div class="t3 typesquare_option">今日申し込んで明日納品！</div>
-              <div class="t4 typesquare_option">Submit Tomorrow Package</div>
-              <div class="t5 typesquare_option">出来るだけ早く投稿したい方に、必須サービスを揃えた特急便パッケージをご用意。</div>
-              <div class="date1 typesquare_option">2月15日 14:00 までのお申し込みで、</div>
-              <div class="date2 typesquare_option">2月16日までに納品いたします。</div>
+              <div class="t3">今日申し込んで明日納品！</div>
+              <div class="t4">Submit Tomorrow Package</div>
+              <div class="t5">出来るだけ早く投稿したい方に、必須サービスを揃えた特急便パッケージをご用意。</div>
+              <div class="date1">14:00までにお申し込みいただくと、翌日までの納品が可能です。</div>
+              <div class="date2">(土日にご依頼をいただいた場合は、月曜受領分として受付いたします)</div>
             </div>
-            <div class="t6 typesquare_option"><span class="english-editing typesquare_option">英文校正</span><span class="package-price typesquare_option">＋63,000円</span><span class="days typesquare_option"><span class="s3 typesquare_option">1</span><span class="s4 typesquare_option">営業日</span></span></div>
-            <div class="t7 typesquare_option">パッケージ内容</div>
-            <div class="editing-service typesquare_option">エキスパート英文校正 <span class="s1 typesquare_option">（料金別）</span>  <img width="16" class="info" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/i.png" alt="" data-hasqtip="0"><div class="service-tooltip typesquare_option">英文の読みやすさを高め、論点を明確にします。<br>※ご投稿前の確認ラウンド込み（1回）。変更量により追加料金が発生する場合あり。</div></div>
+            <div class="t6"><span class="english-editing">英文校正</span><span class="package-price">＋63,000円</span><span class="days"><span class="s3">1</span><span class="s4">営業日</span></span></div>
+            <div class="t7">パッケージ内容</div>
+            <div class="editing-service">エキスパート英文校正 <span class="s1">（料金別）</span>  
+              <div class="service-tooltip-container">
+                <img width="16" class="info-tooltip" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/i.png" alt="">
+                <div class="service-tooltip">英文の読みやすさを高め、論点を明確にします。<br>※ご投稿前の確認ラウンド込み（1回）。変更量により追加料金が発生する場合あり。</div>
+              </div>
+            </div>
             <div class="plus">+</div>
-            <ul class="services typesquare_option">
-              <li class=" typesquare_option">MY edanz プレミアム <img width="16" class="info" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/i.png" alt="" data-hasqtip="1"><div class="service-tooltip typesquare_option">毎回の英文校正が1円お得になる会員制度。加入済の方は、新たに1年の無料延長が適用されます。</div></li>
-              <li class=" typesquare_option">剽窃チェック <img class="ithenticate" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/ithenticate.jpg" alt=""> <img width="16" class="info" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/i.png" alt="" data-hasqtip="2"><div class="service-tooltip typesquare_option">論文のコピーペーストがないかチェックしレポーティング。故意ではない剽窃・盗用を事前に確認し、投稿後に指摘されるのを防ぎます。</div></li>
-              <li class=" typesquare_option">投稿規定フォーマッティング <img width="16" class="info" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/i.png" alt="" data-hasqtip="3"><div class="service-tooltip typesquare_option">ジャーナルの投稿規定に沿って、論文全体のフォーマットを調整。文字数・Reference数・図表の削減・追加は含まれておりません。</div></li>
-              <li class=" typesquare_option">投稿用カバーレター作成 <img width="16" class="info" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/i.png" alt="" data-hasqtip="4"><div class="service-tooltip typesquare_option">必要事項を網羅し、ジャーナル編集長が論文を読みたくなるカバーレターを作成。</div></li>
+            <ul class="services">
+              <li>MY edanz プレミアム 
+                <div class="service-tooltip-container">
+                  <img width="16" class="info-tooltip" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/i.png" alt="">
+                  <div class="service-tooltip">毎回の英文校正が1円お得になる会員制度。加入済の方は、新たに1年の無料延長が適用されます。</div>
+                </div>
+              </li>
+              <li>剽窃チェック <img class="ithenticate" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/ithenticate.jpg" alt=""> 
+                <div class="service-tooltip-container">
+                  <img width="16" class="info-tooltip" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/i.png" alt="">
+                  <div class="service-tooltip">論文のコピーペーストがないかチェックしレポーティング。故意ではない剽窃・盗用を事前に確認し、投稿後に指摘されるのを防ぎます。</div>
+                </div>
+              </li>
+              <li>投稿規定フォーマッティング 
+                <div class="service-tooltip-container">
+                  <img width="16" class="info-tooltip" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/i.png" alt="">
+                  <div class="service-tooltip">ジャーナルの投稿規定に沿って、論文全体のフォーマットを調整。文字数・Reference数・図表の削減・追加は含まれておりません。</div>
+                </div>
+              </li>
+              <li>投稿用カバーレター作成 
+                <div class="service-tooltip-container">
+                  <img width="16" class="info-tooltip" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/i.png" alt="">
+                  <div class="service-tooltip">必要事項を網羅し、ジャーナル編集長が論文を読みたくなるカバーレターを作成。</div>
+                </div>
+              </li>
             </ul>
           </div>
-          <div class="click-btn"><a href="/postpaid/order?package=stv" class=" typesquare_option typesquare_option typesquare_option typesquare_option typesquare_option typesquare_option typesquare_option">明日投稿パックを申し込む <span class="s2 typesquare_option">&gt;</span></a></div>
+          <div class="click-btn"><a href="/postpaid/order?package=stv">明日投稿パックを申し込む <span class="s2">&gt;</span></a></div>
         </div>
       </div>
       <div class="col2">
@@ -262,26 +331,56 @@
           <div class="box04">
             <div class="box05">
               <div class="icon02"><img width="66" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/icon2.png" alt=""></div>
-              <div class="t3 typesquare_option">要点をパッと見で伝える！</div>
-              <div class="t4 typesquare_option">Visual Enhancement Package</div>
-              <div class="t5 typesquare_option">論文の要点をグラフィック化して、視覚でジャーナル編集長へアピール。視覚資料を用意するだけで、論文へのアクセスやSNSでの引用が大幅に伸びるというデータも。</div>
+              <div class="t3">要点をパッと見で伝える！</div>
+              <div class="t4">Visual Enhancement Package</div>
+              <div class="t5">論文の要点をグラフィック化して、視覚でジャーナル編集長へアピール。視覚資料を用意するだけで、論文へのアクセスやSNSでの引用が大幅に伸びるというデータも。</div>
             </div>
-            <div class="t6 typesquare_option"><span class="english-editing typesquare_option">英文校正</span><span class="package-price typesquare_option">＋115,000円</span><span class="days typesquare_option"><span class="s3 typesquare_option">10</span><span class="s4 typesquare_option">営業日</span></span></div>
-            <div class="t7 typesquare_option">パッケージ内容</div>
-            <div class="editing-service typesquare_option">エキスパート英文校正 <span class="s1 typesquare_option">（料金別）</span>  <img width="16" class="info" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/i.png" alt="" data-hasqtip="5"><div class="service-tooltip typesquare_option">英文の読みやすさを高め、論点を明確にします。<br>※ご投稿前の確認ラウンド込み（1回）。変更量により追加料金が発生する場合あり。</div></div>
+            <div class="t6"><span class="english-editing">英文校正</span><span class="package-price">＋115,000円</span><span class="days"><span class="s3">10</span><span class="s4">営業日</span></span></div>
+            <div class="t7">パッケージ内容</div>
+            <div class="editing-service">エキスパート英文校正 <span class="s1">（料金別）</span>  
+              <div class="service-tooltip-container">
+                <img width="16" class="info-tooltip" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/i.png" alt="">
+                <div class="service-tooltip">英文の読みやすさを高め、論点を明確にします。<br>※ご投稿前の確認ラウンド込み（1回）。変更量により追加料金が発生する場合あり。</div>
+              </div>
+            </div>
             <div class="plus">+</div>
-            <ul class="services typesquare_option">
-              <li class=" typesquare_option">MY edanz プレミアム <img width="16" class="info" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/i.png" alt="" data-hasqtip="6"><div class="service-tooltip typesquare_option">毎回の英文校正が1円お得になる会員制度。加入済の方は、新たに1年の無料延長が適用されます。</div></li>
-              <li class=" typesquare_option">剽窃チェック <img class="ithenticate" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/ithenticate.jpg" alt=""> <img width="16" class="info" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/i.png" alt="" data-hasqtip="7"><div class="service-tooltip typesquare_option">論文のコピーペーストがないかチェックしレポーティング。故意ではない剽窃・盗用を事前に確認し、投稿後に指摘されるのを防ぎます。</div></li>
-              <li class=" typesquare_option">投稿規定フォーマッティング <img width="16" class="info" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/i.png" alt="" data-hasqtip="8"><div class="service-tooltip typesquare_option">ジャーナルの投稿規定に沿って、論文全体のフォーマットを調整。文字数・Reference数・図表の削減・追加は含まれておりません。</div></li>
-              <li class=" typesquare_option">投稿用カバーレター作成 <img width="16" class="info" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/i.png" alt="" data-hasqtip="9"><div class="service-tooltip typesquare_option">必要事項を網羅し、ジャーナル編集長が論文を読みたくなるカバーレターを作成。</div></li>
+            <ul class="services">
+              <li>MY edanz プレミアム 
+                <div class="service-tooltip-container">
+                  <img width="16" class="info-tooltip" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/i.png" alt="">
+                  <div class="service-tooltip">毎回の英文校正が1円お得になる会員制度。加入済の方は、新たに1年の無料延長が適用されます。</div>
+                </div>
+              </li>
+              <li>剽窃チェック <img class="ithenticate" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/ithenticate.jpg" alt=""> 
+                <div class="service-tooltip-container">
+                  <img width="16" class="info-tooltip" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/i.png" alt="">
+                  <div class="service-tooltip">論文のコピーペーストがないかチェックしレポーティング。故意ではない剽窃・盗用を事前に確認し、投稿後に指摘されるのを防ぎます。</div>
+                </div>
+              </li>
+              <li>投稿規定フォーマッティング 
+                <div class="service-tooltip-container">
+                  <img width="16" class="info-tooltip" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/i.png" alt="">
+                  <div class="service-tooltip">ジャーナルの投稿規定に沿って、論文全体のフォーマットを調整。文字数・Reference数・図表の削減・追加は含まれておりません。</div>
+                </div>
+              </li>
+              <li>投稿用カバーレター作成 
+                <div class="service-tooltip-container">
+                  <img width="16" class="info-tooltip" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/i.png" alt="">
+                  <div class="service-tooltip">必要事項を網羅し、ジャーナル編集長が論文を読みたくなるカバーレターを作成。</div>
+                </div>
+              </li>
             </ul>
             <div class="plus">+</div>
-            <ul class="services typesquare_option">
-              <li class=" typesquare_option">グラフィカルアブストラクト作成 <img width="16" class="info" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/i.png" alt="" data-hasqtip="10"><div class="service-tooltip typesquare_option">論文の要点を短く簡潔に図解で説明。PDF・PNGでのお渡しとなります。</div></li>
+            <ul class="services">
+              <li>グラフィカルアブストラクト作成 
+                <div class="service-tooltip-container">
+                  <img width="16" class="info-tooltip" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/i.png" alt="">
+                  <div class="service-tooltip">論文の要点を短く簡潔に図解で説明。PDF・PNGでのお渡しとなります。</div>
+                </div>
+              </li>
             </ul>
           </div>
-          <div class="click-btn"><a href="/postpaid/order?package=vep" class=" typesquare_option typesquare_option typesquare_option typesquare_option typesquare_option typesquare_option typesquare_option">ビジュアル強化パックを申し込む <span class="s2 typesquare_option">&gt;</span></a></div>
+          <div class="click-btn"><a href="/postpaid/order?package=vep">ビジュアル強化パックを申し込む <span class="s2">&gt;</span></a></div>
         </div>
       </div>
       <div class="col3">
@@ -289,29 +388,73 @@
           <div class="box04">
             <div class="box05">
               <div class="icon03"><img width="66" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/icon3.png" alt=""></div>
-              <div class="t3 typesquare_option">文献チェックの時間を大幅短縮！</div>
-              <div class="t4 typesquare_option">Literature Health Check Package</div>
-              <div class="t5 typesquare_option">引用文献が最新のものか、適切に引用されているかをすべてチェック！論文の正当性を補強します。余計な差し戻しを避ける効果も。</div>
+              <div class="t3">文献チェックの時間を大幅短縮！</div>
+              <div class="t4">Literature Health Check Package</div>
+              <div class="t5">引用文献が最新のものか、適切に引用されているかをすべてチェック！論文の正当性を補強します。余計な差し戻しを避ける効果も。</div>
             </div>
-            <div class="t6 typesquare_option"><span class="english-editing typesquare_option">英文校正</span><span class="package-price typesquare_option">＋164,000円</span><span class="days typesquare_option"><span class="s3 typesquare_option">3</span><span class="s4 typesquare_option">営業日</span></span></div>
-            <div class="t7 typesquare_option">パッケージ内容</div>
-            <div class="editing-service typesquare_option">エキスパート英文校正 <span class="s1 typesquare_option">（料金別）</span>  <img width="16" class="info" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/i.png" alt="" data-hasqtip="11"><div class="service-tooltip typesquare_option">英文の読みやすさを高め、論点を明確にします。<br>※ご投稿前の確認ラウンド込み（1回）。変更量により追加料金が発生する場合あり。</div></div>
+            <div class="t6"><span class="english-editing">英文校正</span><span class="package-price">＋164,000円</span><span class="days"><span class="s3">3</span><span class="s4">営業日</span></span></div>
+            <div class="t7">パッケージ内容</div>
+            <div class="editing-service">エキスパート英文校正 <span class="s1">（料金別）</span>  
+              <div class="service-tooltip-container">
+                <img width="16" class="info-tooltip" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/i.png" alt="">
+                <div class="service-tooltip">英文の読みやすさを高め、論点を明確にします。<br>※ご投稿前の確認ラウンド込み（1回）。変更量により追加料金が発生する場合あり。</div>
+              </div>
+            </div>
             <div class="plus">+</div>
-            <ul class="services typesquare_option">
-              <li class=" typesquare_option">MY edanz プレミアム <img width="16" class="info" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/i.png" alt="" data-hasqtip="12"><div class="service-tooltip typesquare_option">特典が満載のプレミアムな会員制度。加入済の方は、新たに1年の無料延長が適用されます。</div></li>
-              <li class=" typesquare_option">剽窃チェック <img class="ithenticate" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/ithenticate.jpg" alt=""> <img width="16" class="info" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/i.png" alt="" data-hasqtip="13"><div class="service-tooltip typesquare_option">論文のコピーペーストがないかチェックしレポーティング。故意ではない剽窃・盗用を事前に確認し、投稿後に指摘されるのを防ぎます。</div></li>
-              <li class=" typesquare_option">投稿規定フォーマッティング <img width="16" class="info" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/i.png" alt="" data-hasqtip="14"><div class="service-tooltip typesquare_option">ジャーナルの投稿規定に沿って、論文全体のフォーマットを調整。文字数・Reference数・図表の削減・追加は含まれておりません。</div></li>
-              <li class=" typesquare_option">投稿用カバーレター作成 <img width="16" class="info" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/i.png" alt="" data-hasqtip="15"><div class="service-tooltip typesquare_option">必要事項を網羅し、ジャーナル編集長が論文を読みたくなるカバーレターを作成。</div></li>
+            <ul class="services">
+              <li>MY edanz プレミアム 
+                <div class="service-tooltip-container">
+                  <img width="16" class="info-tooltip" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/i.png" alt="">
+                  <div class="service-tooltip">特典が満載のプレミアムな会員制度。加入済の方は、新たに1年の無料延長が適用されます。</div>
+                </div>
+              </li>
+              <li>剽窃チェック <img class="ithenticate" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/ithenticate.jpg" alt=""> 
+                <div class="service-tooltip-container">
+                  <img width="16" class="info-tooltip" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/i.png" alt="">
+                  <div class="service-tooltip">論文のコピーペーストがないかチェックしレポーティング。故意ではない剽窃・盗用を事前に確認し、投稿後に指摘されるのを防ぎます。</div>
+                </div>
+              </li>
+              <li>投稿規定フォーマッティング 
+                <div class="service-tooltip-container">
+                  <img width="16" class="info-tooltip" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/i.png" alt="">
+                  <div class="service-tooltip">ジャーナルの投稿規定に沿って、論文全体のフォーマットを調整。文字数・Reference数・図表の削減・追加は含まれておりません。</div>
+                </div>
+              </li>
+              <li>投稿用カバーレター作成 
+                <div class="service-tooltip-container">
+                  <img width="16" class="info-tooltip" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/i.png" alt="">
+                  <div class="service-tooltip">必要事項を網羅し、ジャーナル編集長が論文を読みたくなるカバーレターを作成。</div>
+                </div>
+              </li>
             </ul>
             <div class="plus">+</div>
-            <ul class="services typesquare_option">
-              <li class=" typesquare_option">引用文献チェック <img width="16" class="info" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/i.png" alt="" data-hasqtip="16"><div class="service-tooltip typesquare_option">論文内の引用文献・研究の適切性、新規性を事前にチェック。<br><span class="s5 typesquare_option">※レビュー論文はサービス提供外となります。</span> </div></li>
+            <ul class="services">
+              <li>引用文献チェック 
+                <div class="service-tooltip-container">
+                  <img width="16" class="info-tooltip" src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/i.png" alt="">
+                  <div class="service-tooltip">論文内の引用文献・研究の適切性、新規性を事前にチェック。<br><span class="s5">※レビュー論文はサービス提供外となります。</span> </div>
+                </div>
+              </li>
             </ul>
           </div>
-          <div class="click-btn"><a href="/postpaid/order?package=lhp" class=" typesquare_option typesquare_option typesquare_option typesquare_option typesquare_option typesquare_option typesquare_option">引用文献チェックパックを申し込む <span class="s2 typesquare_option">&gt;</span></a></div>
+          <div class="click-btn"><a href="/postpaid/order?package=lhp">引用文献チェックパックを申し込む <span class="s2">&gt;</span></a></div>
         </div>
       </div>
     </div>
-    <div class="p1 typesquare_option">※当パッケージは5000ワードまでの原稿を対象としております。5000ワード以上の原稿の場合は、金額・納期が変わる可能性がございます。 </div>
+    <div class="p1">※当パッケージは5000ワードまでの原稿を対象としております。5000ワード以上の原稿の場合は、金額・納期が変わる可能性がございます。 </div>
   </div>
 </section>
+
+<script>
+
+let infoTooltip = document.querySelectorAll('.info-tooltip');
+infoTooltip.forEach(function(e) {
+  e.addEventListener('mouseover', function(each){
+    e.classList.add('hover')
+  })
+  e.addEventListener('mouseout', function(each){
+    e.classList.remove('hover')
+  })
+})
+
+</script>
