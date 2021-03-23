@@ -82,7 +82,7 @@ html {
 }
 .swiper-container {
 	margin: 0 auto;
-	max-width: 1350px;
+	max-width: 1180px;
 }
 .swiper-wrapper {
 	padding-bottom: 80px;
@@ -105,10 +105,10 @@ html {
 }
 .gmep-slider__img {
 	flex-shrink: 0;
-	margin-right: 40px;
+	margin-right: 20px;
 	padding-top: 10px;
 	text-align: center;
-	width: 520px;
+	width: 350px;
 }
 .gmep-slider__img img {
 	max-width: 100%;
