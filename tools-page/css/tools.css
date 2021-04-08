@@ -13,8 +13,7 @@
 	margin: 0;
 }
 .tools-features-container,
-.tools-info-container,
-.tools-info-container,
+.tools-btn-container,
 .tools-team-container {
 	background-color: #FBFBFB;
 }
@@ -269,7 +268,10 @@
 	margin: 0 auto;
 	max-width: 1350px;
 }
-a.tools-info__btn {
+.tools-btn-container {
+	padding: 60px 0 110px;
+}
+a.tools-btn {
 	background-color: #c0202e;
 	border-radius: 5px;
 	box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.32);
@@ -277,7 +279,7 @@ a.tools-info__btn {
 	display: block;
 	font-size: 36px !important;
 	font-weight: 700;
-	margin: 0 auto 110px;
+	margin: 0 auto;
 	padding: 35px 0;
 	text-align: center;
 	text-decoration: none;
@@ -306,6 +308,7 @@ a.tools-info__btn {
 .tools-info__element img {
 	flex-shrink: 0;
 	margin-right: 15px;
+	height: 170px;
 	width: 170px;
 }
 .tools-info__element h2 {
@@ -330,7 +333,7 @@ a.tools-info__btn {
 	color: #737373;
 	font-size: 16px;
 	font-weight: 500;
-	margin-bottom: 64px;
+	padding: 60px 0;
 	text-align: center;
 }
 .tools-team img {
