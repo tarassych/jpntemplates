@@ -85,7 +85,7 @@
 
 
 .iss-intro {
-	background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/intro.jpg) center / cover no-repeat;
+	background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/intro-full.jpg) center / cover no-repeat;
 	padding: 120px 0;
 }
 .iss-intro h1 {
@@ -178,8 +178,17 @@
 	flex-grow: 1;
 	padding: 20px 10px;
 }
-.iss-services__mid p {
+.iss-services__mid p,
+.iss-services__mid a {
 	font-size: 14px !important;
+}
+.iss-services__mid a {
+	display: block;
+	color: #BA0B22;
+	text-decoration: none;
+}
+.iss-services__mid a:hover {
+	text-decoration: underline;
 }
 .iss-services__mid p span {
 	display: block;
@@ -352,6 +361,10 @@
 	padding-bottom: 15px;
 }
 
+
+.iss-form {
+	padding-bottom: 100px;
+}
 
 
 
