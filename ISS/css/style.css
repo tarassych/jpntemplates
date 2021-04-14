@@ -36,9 +36,6 @@
 .bg-green-1 {
 	background: #CCFFBF;
 }
-.bg-green-2 {
-	background: #E0F2CE;
-}
 .bg-grey-1 {
 	background: #CFECF5;
 }
@@ -77,10 +74,6 @@
 }
 .bg-violet {
 	background: #D943A4;
-}
-
-.iss {
-
 }
 
 
@@ -195,7 +188,7 @@
 	text-align: center;
 }
 .iss-services__mid h5 {
-	font-size: 9px !important;
+	font-size: 11px !important;
 	margin-top: 30px;
 }
 .iss-services__bot {
@@ -204,8 +197,7 @@
 }
 .iss-services__bot a {
 	color: #BA0B22;
-	font-size: 10px !important;
-	line-height: 12px !important;
+	font-size: 14px !important;
 }
 
 .iss-services__additional {
