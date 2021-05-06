@@ -1,3 +1,4 @@
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap');
 .gmep h1,
 .gmep h2,
@@ -20,6 +21,7 @@
 }
 .gmep-promo {
 	background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/promo-bg-2.jpg) center / cover no-repeat;
+	margin-bottom: 65px;
 	padding: 35px 0 50px;
 	text-align: center;
 	width: 100%;
@@ -29,15 +31,15 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 40px;
+	margin-bottom: 26px;
 }
 .gmep-promo__title img {
-	margin-right: 14px;
-	width: 35px;
+	margin-right: 23px;
+	width: 116px;
 }
 .gmep-promo__title h1 {
 	color: #21356A;
-	font-size: 44px;
+	font-size: 56px;
 	font-weight: 700;
 	margin: 0;
 }
@@ -51,108 +53,19 @@
 	text-align: center;
 }
 .gmep-promo__list--right p {
-	font-size: 32px;
+	font-size: 36px;
 	font-weight: 700;
 	margin: 0;
 }
-.gmep-promo__btn {
-	margin: 24px auto 0;
-	width: 280px;
+.gmep-promo__list--right p:not(:last-child) {
+	margin-bottom: 32px;
 }
-.gmep-promo__btn a {
-	background-color: #BA2734;
-	border-radius: 5px;
-	color: #fff;
-	display: block;
-	font-size: 26px;
-	font-weight: 700;
-	line-height: 26px;
-	padding: 18px 0;
-	text-align: center;
-	text-decoration: none;
+.gmep-promo__logo {
+	margin: 35px auto 0;
+	width: 266px;
+}
+.gmep-promo__logo img {
 	width: 100%;
-}
-
-
-
-.gmep-highlights {
-	background-color: #c0202e;
-}
-.gmep-highlights__container {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-	margin: 0 auto;
-	height: 155px;
-	max-width: 1350px;
-}
-.gmep-highlights--block {
-	text-align: center;
-}
-.gmep-highlights--block:nth-child(1) {
-	width: auto;
-}
-.gmep-highlights--block:nth-child(2) {
-	width: 30%;
-}
-.gmep-highlights--block:nth-child(3) {
-	width: 30%;
-}
-.gmep-highlights--block:nth-child(4) {
-	margin-left: 30px;
-	width: auto;
-}
-.gmep-highlights--block h2 {
-	color: #e4cc2e;
-	font-size: 56px !important;
-	font-weight: 700 !important;
-	margin-top: 0;
-	margin-bottom: 9px;
-}
-.gmep-highlights--block h4 {
-	color: #e4cc2e;
-	font-size: 24px;
-	font-weight: 700;
-	margin: 0;
-	white-space: nowrap;
-}
-.gmep-highlights--block:nth-child(1) h4 {
-	font-size: 46px;
-}
-
-
-.gmep-warranty {
-	background-color: #c6c6c6;
-	margin-bottom: 50px;
-}
-.gmep-warranty__container {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	margin: 0 auto;
-	height: 72px;
-	max-width: 1350px;
-}
-.gmep-warranty--block {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	margin: 0 75px;
-}
-.gmep-warranty--block:nth-child(1) img {
-	margin-right: 10px;
-	width: 50px;
-}
-.gmep-warranty--block:nth-child(2) img {
-	margin-right: 10px;
-	width: 30px;
-}
-.gmep-warranty--block h2 {
-	font-size: 24px !important;
-	font-weight: 700;
-	line-height: 24px;
 }
 
 
@@ -332,26 +245,70 @@
 .gmep-features__data p a span {
 	text-decoration: underline;
 }
+.gmep-features__subtitle {
+	font-size: 32px !important;
+	font-weight: 700 !important;
+	text-align: center;
+}
+
+
+.gmep-highlights {
+	background-color: #c0202e;
+}
+.gmep-highlights__container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+	height: 155px;
+	max-width: 1350px;
+}
+.gmep-highlights--block {
+	text-align: center;
+}
+.gmep-highlights--block:nth-child(1) {
+	width: auto;
+}
+.gmep-highlights--block:nth-child(2) {
+	width: 50%;
+}
+.gmep-highlights--block:nth-child(3) {
+	width: 50%;
+}
+.gmep-highlights--block:nth-child(4) {
+	margin-left: 30px;
+	width: auto;
+}
+.gmep-highlights--block h2 {
+	color: #e4cc2e;
+	font-size: 56px !important;
+	font-weight: 700 !important;
+	margin-top: 0;
+	margin-bottom: 9px;
+}
+.gmep-highlights--block h4 {
+	color: #e4cc2e;
+	font-size: 24px;
+	font-weight: 700;
+	margin: 0;
+	white-space: nowrap;
+}
+.gmep-highlights--block:nth-child(1) h4 {
+	font-size: 36px;
+}
 
 
 
 .gmep-info-container {
-	padding: 0px 0 40px;
+	padding: 85px 0 40px;
 }
 .gmep-info {
 	border-radius: 10px;
 	box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.16);
 	margin: 0 auto;
-	max-width: 1350px;
-}
-.gmep-info__top {
-	background-color: #C0202E;
-	padding: 30px 80px;
-}
-.gmep-info__top h2 {
-	color: #fff;
-	font-size: 32px !important;
-	font-weight: 700 !important;
+	padding: 35px 75px 40px;
+	max-width: 1050px;
 }
 .gmep-info h2 {
 	font-size: 24px !important;
@@ -364,7 +321,7 @@
 	margin: 0;
 }
 .gmep-info__title {
-	padding: 45px 80px 30px;
+	margin-bottom: 100px;
 	text-align: center;
 }
 .gmep-info__title img {
@@ -379,51 +336,55 @@
 }
 .gmep-info__list {
 	background-color: #fdfdfd;
-	border: 1px solid #277C21;
+	border: 1px solid #EAEAEA;
 	border-radius: 5px;
-	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
-	margin: 0 auto;
-	padding: 20px 80px 0px;
+	margin: 0 auto 50px;
+	padding: 60px 0 20px;
 	position: relative;
-	max-width: 1020px;
+	max-width: 670px;
 }
-.gmep-info__list-title {
+.gmep-info__list-img {
+	background-color: #fff;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	margin-bottom: 20px;
+	justify-content: center;
+	position: absolute;
+	top: -40px;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 80px;
+	width: 80px;
 }
-.gmep-info__list-title img {
-	margin-right: 16px;
-	width: 61px;
+.gmep-info__list-img img {
+	width: 62px;
 }
-.gmep-info__list-title h2 {
+.gmep-info__element:not(:last-child) {
+	margin-bottom: 32px;
+}
+.gmep-info__element h3 {
+	font-size: 32px !important;
+	font-weight: 700;
+	text-align: center;
+}
+.gmep-info__price {
+	border: 1px solid #277C21;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 50px 45px;
+	padding: 0 84px 0 116px;
+	height: 85px;
+	max-width: 900px;
+}
+.gmep-info__price h2 {
 	color: #277c21;
-	margin-right: 40px;
-}
-.gmep-info__list-title h3 {
-	background-color: #277c21;
-	color: #fff;
-	display: inline-block;
-	font-size: 24px !important;
-	font-weight: 700 !important;
-	padding: 18px 27px;
-}
-.gmep-info__list-element {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	margin-bottom: 30px;
-}
-.gmep-info__list-element img {
-	margin-right: 20px;
-	width: 47px;
 }
 .gmep-info__join {
-	padding-top: 90px;
-	padding-bottom: 45px;
 	text-align: center;
 }
 
@@ -488,3 +449,4 @@
 		width: 750px;
 	}
 }
+</style>
