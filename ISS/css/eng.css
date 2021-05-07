@@ -85,27 +85,13 @@
 	font-size: 45px !important;
 	line-height: 53px !important;
 	margin-bottom: 15px;
-	padding-left: 130px;
+	padding-left: 50px;
 }
-.iss-intro h2 {
-	font-size: 25px !important;
-	line-height: 29px !important;
-	margin-bottom: 15px;
-	padding-left: 150px;
-}
-.iss-intro h2 span:not(:last-child) {
-	margin-bottom: 5px;
-}
-.iss-intro h3 {
-	font-size: 20px !important;
-	line-height: 24px !important;
-	padding-left: 340px;
-}
-.iss-intro h1 span,
-.iss-intro h2 span,
-.iss-intro h3 span {
+.iss-intro h1 span {
 	background-color: #fff;
+	color: #4D4D4D;
 	display: inline-block;
+	padding: 0 20px;
 }
 
 
@@ -188,7 +174,7 @@
 	text-align: center;
 }
 .iss-services__mid h5 {
-	font-size: 11px !important;
+	font-size: 8px !important;
 	margin-top: 30px;
 }
 .iss-services__bot {
