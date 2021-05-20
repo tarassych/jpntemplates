@@ -111,6 +111,8 @@ html {
 	flex-wrap: wrap;
 }
 #oncology .oncology-three__block {
+	display: flex;
+	flex-direction: column;
 	margin-bottom: 10px;
 	width: calc(100% / 3);
 }
@@ -191,7 +193,10 @@ html {
 	background-color: #9b681e;
 }
 #oncology .oncology-three__block-data {
-	padding: 0 35px 30px;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	padding: 0 25px 30px;
 }
 #oncology .oncology-three__block-data h2 {
 	font-size: 18px;
@@ -201,12 +206,15 @@ html {
 }
 #oncology .oncology-three__block-data p {
 	display: block;
-	font-size: 13px;
+	font-size: 15px;
 	line-height: 30px;
+}
+#oncology .oncology-three__block-data > p {
+	min-height: 180px;
 }
 
 #oncology .oncology-three__block-same:nth-of-type(1) {
-	height: 420px;
+	height: 515px;
 }
 #oncology .oncology-three__block-line {
 	display: flex;
@@ -266,7 +274,7 @@ html {
 	margin-bottom: 15px;
 }
 #oncology .oncology-three__nolist.block-bg-fixed {
-	height: 120px;
+	height: 130px;
 }
 #oncology .oncology-three__block-bg p {
 	position: relative;
@@ -298,7 +306,14 @@ html {
 	bottom: 5px;
 	left: 10px;
 }
-#oncology a.oncology-three__btn {
+#oncology .oncology-three__btn {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	flex-grow: 1;
+	margin-top: 25px;
+}
+#oncology .oncology-three__btn a {
 	color: #fff;
 	display: inline-flex;
 	flex-direction: row;
@@ -306,18 +321,17 @@ html {
 	justify-content: center;
 	font-size: 16px;
 	font-weight: 700;
-	margin-top: 25px;
 	text-decoration: none;
 	height: 72px;
 	width: calc(100% + 10px);
 }
-#oncology .oncology-three__block:nth-child(1) .oncology-three__btn {
+#oncology .oncology-three__block:nth-child(1) .oncology-three__btn a {
 	background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/btn1.png) center / 100% 100% no-repeat;
 }
-#oncology .oncology-three__block:nth-child(2) .oncology-three__btn {
+#oncology .oncology-three__block:nth-child(2) .oncology-three__btn a {
 	background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/btn2.png) center / 100% 100% no-repeat;
 }
-#oncology .oncology-three__block:nth-child(3) .oncology-three__btn {
+#oncology .oncology-three__block:nth-child(3) .oncology-three__btn a {
 	background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/btn3.png) center / 100% 100% no-repeat;
 }
 
@@ -539,6 +553,15 @@ html {
 	#oncology .oncology-header__top > p {
 		margin: 20px 0 0;
 		font-size: 17px;
+	}
+	#oncology .oncology-three__block-same:nth-of-type(2) .oncology-three__block-bg {
+		min-height: 110px;
+	}
+	#oncology .oncology-three__nolist h5 {
+		font-size: 8px;
+	}
+	#oncology .oncology-three__block-same:nth-of-type(1) {
+		height: 575px;
 	}
 	#oncology .oncology-best__middle img:nth-child(1),
 	#oncology .oncology-best__middle img:nth-child(3) {
