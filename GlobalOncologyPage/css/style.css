@@ -35,39 +35,22 @@ html {
 	top: 15px;
 	left: 15px;
 }
-#oncology .oncology-header {
-	background-color: #fff;
-	padding: 30px 0;
+
+
+#oncology .oncology-top__uptitle {
 	text-align: center;
-	width: 100%;
-	z-index: 9;
+	padding: 60px 0 0;
 }
-#oncology .oncology-header.header-fixed {
-	box-shadow: 0 0 5px 0 rgba(0, 0, 0, .1);
-	padding: 10px 0;
-	position: sticky;
-	top: 0;
-	z-index: 99;
+#oncology .oncology-top__uptitle h2 {
+	background-color: #fff;
+	color: #333;
+	display: inline-block;
+	font-size: 28px;
+	font-weight: 600;
+	padding: 10px 30px;
 }
-#oncology .oncology-header__top {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	text-align-last: left;
-}
-#oncology .oncology-header__img-left {
-	margin-right: 45px;
-	margin-left: 70px;
-	width: 340px;
-}
-#oncology .oncology-header__top > p {
-	color: #333333;
-	font-size: 18px;
-}
-
-
 #oncology .oncology-top {
-	background: url(../img/fv-bg-1.png) center / 100% 100% no-repeat;
+	background: url(../img/fv-bg-2.png) center / 100% 100% no-repeat;
 	position: relative;
 }
 #oncology .oncology-top__list {
@@ -120,7 +103,7 @@ html {
 	align-items: center;
 	padding: 15px 0 20px 28px;
 	text-align: center;
-	height: 210px;
+	height: 175px;
 }
 #oncology .oncology-three__block-top > div {
 	text-align: left;
@@ -167,6 +150,7 @@ html {
 	font-weight: 600;
 	padding: 10px 0;
 	position: relative;
+	text-align: center;
 	height: 46px;
 	z-index: 9;
 }
@@ -200,8 +184,9 @@ html {
 #oncology .oncology-three__block-data h2 {
 	font-size: 18px;
 	font-weight: 600;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	text-align: center;
+	min-height: 50px;
 }
 #oncology .oncology-three__block-data p {
 	display: block;
