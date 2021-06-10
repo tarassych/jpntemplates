@@ -1,12 +1,13 @@
-/*<style>*/
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
-#esr.esr h1,
-#esr.esr h2,
-#esr.esr h3,
-#esr.esr h4,
-#esr.esr h5,
-#esr.esr h6,
-#esr.esr p {
+#ad.ad h1,
+#ad.ad h2,
+#ad.ad h3,
+#ad.ad h4,
+#ad.ad h5,
+#ad.ad h6,
+#ad.ad li,
+#ad.ad p {
   color: #000;
   font-family: 'Noto Sans', sans-serif;
   font-weight: 500;
@@ -14,36 +15,36 @@
 }
 
 
-#esr .esr-container {
+#ad .ad-container {
   background-color: #f4f4f4;
   margin: 0 auto;
   width: 1200px;
 }
 
 
-#esr .esr-header {
+#ad .ad-header {
   background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/header-bg.jpg) center / 100% 100% no-repeat;
   padding: 80px 110px 65px 90px;
 }
-#esr .esr-header h1 {
+#ad .ad-header h1 {
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
   margin-bottom: 11px;
 }
-#esr .esr-header h2 {
+#ad .ad-header h2 {
   font-size: 18px;
   font-weight: 700;
   line-height: 23px;
   margin-bottom: 11px;
 }
-#esr .esr-header h1 span,
-#esr .esr-header h2 span {
+#ad .ad-header h1 span,
+#ad .ad-header h2 span {
   background-color: #fff;
   display: inline-block;
   padding: 8px 10px;
 }
-#esr .esr-header a {
+#ad .ad-header a {
   background-color: #BA2532;
   border-radius: 4px;
   color: #fff;
@@ -55,7 +56,7 @@
 }
 
 
-#esr .esr-content {
+#ad .ad-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -63,78 +64,74 @@
 }
 
 
-#esr .esr-left {
+#ad .ad-left {
   background-color: #fff;
   border-top: 5px solid #023762;
-  padding: 30px 30px 90px;
+  padding: 30px 30px 100px;
   width: 700px;
 }
-#esr .esr-left hr {
+#ad .ad-left hr {
   background-color: #bbb;
   margin: 0;
   height: 1px;
 }
 
-#esr .esr-left__title {
+#ad .ad-left__title {
   text-align: center;
 }
-#esr .esr-left__title img {
+#ad .ad-left__title img {
   height: 60px;
   width: 60px;
 }
-#esr .esr-left__title h2 {
+#ad .ad-left__title h2 {
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
   margin-bottom: 35px;
 }
 
-#esr .esr-left__description {
-  padding-bottom: 110px;
+#ad .ad-left__description {
+  padding-bottom: 95px;
 }
-#esr .esr-left__description p {
+#ad .ad-left__description p {
   font-size: 16px;
   line-height: 26px;
-  margin-bottom: 60px;
 }
-#esr .esr-left__description ul {
+#ad .ad-left__description ul {
   list-style: none;
+  padding: 0;
 }
-#esr .esr-left__description ul li {
+#ad .ad-left__description ul li {
   font-size: 16px;
   line-height: 26px;
-}
-#esr .esr-left__description h4 {
-  font-size: 16px;
-  line-height: 26px;
-  padding: 0 40px;
 }
 
-#esr .esr-left__biglist {
-  padding: 40px 0 10px;
+#ad .ad-left__biglist {
+  padding: 60px 0 0;
 }
-#esr .esr-left__biglist h2 {
+#ad .ad-left__biglist h2 {
   font-size: 18px;
   font-weight: 700;
   line-height: 23px;
   text-align: center;
 }
-#esr .esr-left__biglist h3 {
+#ad .ad-left__biglist h3 {
   font-size: 16px;
   line-height: 26px;
   margin-bottom: 20px;
   text-align: center;
 }
-#esr .esr-left__list {
+#ad .ad-left__list {
   list-style: none;
   padding-left: 100px;
 }
-#esr .esr-left__list li {
+#ad .ad-left__list li {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 20px;
 }
-#esr .esr-left__list li h4 {
+#ad .ad-left__list li h4 {
   background-color: #023762;
   border-radius: 50%;
   color: #fff;
@@ -149,46 +146,40 @@
   height: 40px;
   width: 40px;
 }
-#esr .esr-left__list li p {
+#ad .ad-left__list li p {
   font-size: 12px;
   line-height: 26px;
 }
-#esr .esr-left__list li p span {
+#ad .ad-left__list li p span {
   color: #203762;
   display: block;
   font-size: 16px;
   line-height: 26px;
 }
-#esr .esr-left__biglist > p {
+#ad .ad-left__biglist > p {
   font-size: 12px;
   line-height: 26px;
-  margin-bottom: 20px;
+  margin-bottom: 70px;
   padding-left: 100px;
 }
-#esr .esr-left__biglist > p span {
-  color: #203762;
-  display: block;
-  font-size: 16px;
-  line-height: 26px;
-}
 
-#esr .esr-left__check {
-  padding: 40px 0 50px;
+#ad .ad-left__check {
+  padding: 80px 0 70px;
 }
-#esr .esr-left__check h2 {
+#ad .ad-left__check h2 {
   font-size: 18px;
   font-weight: 700;
   line-height: 23px;
   margin-bottom: 20px;
   text-align: center;
 }
-#esr .esr-left__check h3 {
+#ad .ad-left__check h3 {
   font-size: 16px;
   line-height: 26px;
   margin-bottom: 30px;
   text-align: center;
 }
-#esr .esr-left__check p {
+#ad .ad-left__check p {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -196,56 +187,56 @@
   line-height: 26px;
   padding-left: 100px;
 }
-#esr .esr-left__check p img {
+#ad .ad-left__check p img {
   margin-right: 10px;
   height: 15px;
   width: 15px;
 }
 
-#esr .esr-left__info {
-  padding: 40px 0;
+#ad .ad-left__info {
+  padding: 80px 0 90px;
   text-align: center;
 }
-#esr .esr-left__info h3 {
+#ad .ad-left__info h3 {
   font-size: 18px;
   font-weight: 700;
   line-height: 23px;
   margin-bottom: 13px;
 }
-#esr .esr-left__info p {
+#ad .ad-left__info p {
   font-size: 16px;
   line-height: 26px;
 }
-#esr .esr-left__info p a {
+#ad .ad-left__info p a {
   color: #BA2532;
   text-decoration: underline;
 }
 
-#esr .esr-left__btn {
+#ad .ad-left__btn {
   text-align: center;
 }
-#esr .esr-left__btn a {
+#ad .ad-left__btn a {
   background-color: #ba2532;
   border-radius: 4px;
   color: #fff;
   display: inline-block;
   font-size: 24px;
   font-weight: 700;
-  margin-top: 50px;
+  margin-top: 25px;
   padding: 10px 50px;
 }
 
 
-#esr .esr-right {
+#ad .ad-right {
   width: 240px;
 }
-#esr .esr-right__top,
-#esr .esr-right__bot {
+#ad .ad-right__top,
+#ad .ad-right__bot {
   background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/right-header-bg.png) top center / 100% auto no-repeat, #fff;
   border-bottom: 5px solid #023762;
   padding: 0 20px;
 }
-#esr .esr-right__header h2 {
+#ad .ad-right__header h2 {
   color: #fff;
   display: block;
   font-size: 18px;
@@ -254,47 +245,47 @@
   padding: 12px 0 18px;
   text-align: center;
 }
-#esr .esr-right__top {
+#ad .ad-right__top {
   margin-bottom: 25px;
 }
-#esr .esr-right__top p {
+#ad .ad-right__top p {
   display: block;
   font-size: 16px;
   line-height: 26px;
 }
-#esr .esr-right__top p:nth-of-type(1) {
+#ad .ad-right__top p:nth-of-type(1) {
   margin: 25px 0 15px;
 }
-#esr .esr-right__top p:nth-of-type(2) {
+#ad .ad-right__top p:nth-of-type(2) {
   margin: 25px 0 85px;
 }
-#esr .esr-right__top hr {
+#ad .ad-right__top hr {
   background-color: #bbb;
   height: 1px;
 }
 
-#esr .esr-right__bot {
+#ad .ad-right__bot {
 
 }
-#esr .esr-right__icons {
+#ad .ad-right__icons {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 25px 0 35px;
 }
-#esr .esr-right__icon {
+#ad .ad-right__icon {
   width: 60px;
 }
-#esr .esr-right__icon a {
+#ad .ad-right__icon a {
   display: block;
   margin-bottom: 10px;
   height: 60px;
   width: 100%;
 }
-#esr .esr-right__icon a img {
+#ad .ad-right__icon a img {
   width: 100%;
 }
-#esr .esr-right__icon h5 {
+#ad .ad-right__icon h5 {
   font-size: 12px;
   line-height: 26px;
   text-align: center;
