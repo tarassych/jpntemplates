@@ -1,0 +1,319 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+#cld.cld h1,
+#cld.cld h2,
+#cld.cld h3,
+#cld.cld h4,
+#cld.cld h5,
+#cld.cld h6,
+#cld.cld li,
+#cld.cld p {
+  color: #000;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
+  margin: 0;
+}
+
+
+#cld .cld-container {
+  background-color: #f4f4f4;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+
+#cld .cld-header {
+  background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/header-bg.jpg) center / 100% 100% no-repeat;
+  padding: 80px 110px 65px 90px;
+}
+#cld .cld-header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  margin-bottom: 11px;
+}
+#cld .cld-header h2 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  margin-bottom: 11px;
+}
+#cld .cld-header h1 span,
+#cld .cld-header h2 span {
+  background-color: #fff;
+  display: inline-block;
+  padding: 8px 10px;
+}
+#cld .cld-header a {
+  background-color: #BA2532;
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 19px;
+  padding: 10px 27px;
+}
+
+
+#cld .cld-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px 110px 120px 90px;
+}
+
+
+#cld .cld-left {
+  background-color: #fff;
+  border-top: 5px solid #023762;
+  padding: 30px 30px 100px;
+  width: 700px;
+}
+#cld .cld-left hr {
+  background-color: #bbb;
+  margin: 0;
+  height: 1px;
+}
+
+#cld .cld-left__title {
+  text-align: center;
+}
+#cld .cld-left__title img {
+  height: 60px;
+  width: 60px;
+}
+#cld .cld-left__title h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 35px;
+}
+
+#cld .cld-left__description {
+  padding-bottom: 85px;
+}
+#cld .cld-left__description p {
+  font-size: 16px;
+  line-height: 26px;
+}
+#cld .cld-left__description h3 {
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 75px;
+  padding-left: 30px;
+  position: relative;
+}
+#cld .cld-left__description h3 span {
+  background-color: #203762;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 15px;
+  width: 15px;
+}
+#cld .cld-left__description ul {
+  list-style: none;
+  padding: 0 0 0 30px;
+}
+#cld .cld-left__description ul li {
+  font-size: 16px;
+  line-height: 26px;
+}
+#cld .cld-left__description h4 {
+  font-size: 16px;
+  line-height: 26px;
+  padding: 0 30px;
+}
+
+#cld .cld-left__biglist {
+  padding: 60px 0 0;
+}
+#cld .cld-left__biglist h2 {
+  color: #203762;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  text-align: center;
+}
+#cld .cld-left__biglist h3 {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#cld .cld-left__list {
+  list-style: none;
+  padding-left: 100px;
+}
+#cld .cld-left__list li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#cld .cld-left__list li h4 {
+  background-color: #023762;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 15px;
+  font-weight: 700;
+  margin-right: 20px;
+  height: 40px;
+  width: 40px;
+}
+#cld .cld-left__list li p {
+  font-size: 12px;
+  line-height: 26px;
+}
+#cld .cld-left__list li p span {
+  color: #203762;
+  display: block;
+  font-size: 16px;
+  line-height: 26px;
+}
+#cld .cld-left__biglist > p {
+  font-size: 12px;
+  line-height: 26px;
+  margin-bottom: 70px;
+  padding-left: 100px;
+}
+
+#cld .cld-left__check {
+  padding: 80px 0 70px;
+}
+#cld .cld-left__check h2 {
+  color: #203762;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#cld .cld-left__check h3 {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+#cld .cld-left__check p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 15px;
+  line-height: 26px;
+  padding-left: 40px;
+}
+#cld .cld-left__check p img {
+  margin-right: 10px;
+  height: 15px;
+  width: 15px;
+}
+
+#cld .cld-left__info {
+  padding: 40px 0;
+  text-align: center;
+}
+#cld .cld-left__info h3 {
+  color: #203762;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  margin-bottom: 13px;
+}
+#cld .cld-left__info p {
+  font-size: 16px;
+  line-height: 26px;
+}
+#cld .cld-left__info p a {
+  color: #BA2532;
+  text-decoration: underline;
+}
+
+#cld .cld-left__btn {
+  text-align: center;
+}
+#cld .cld-left__btn a {
+  background-color: #ba2532;
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 25px;
+  padding: 10px 50px;
+}
+
+
+#cld .cld-right {
+  width: 240px;
+}
+#cld .cld-right__top,
+#cld .cld-right__bot {
+  background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/right-header-bg.png) top center / 100% auto no-repeat, #fff;
+  border-bottom: 5px solid #023762;
+  padding: 0 20px;
+}
+#cld .cld-right__header h2 {
+  color: #fff;
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 20px;
+  padding: 12px 0 18px;
+  text-align: center;
+}
+#cld .cld-right__top {
+  margin-bottom: 25px;
+}
+#cld .cld-right__top p {
+  display: block;
+  font-size: 16px;
+  line-height: 26px;
+}
+#cld .cld-right__top p:nth-of-type(1) {
+  font-size: 15px;
+  margin: 25px 0 15px;
+}
+#cld .cld-right__top p:nth-of-type(2) {
+  margin: 25px 0 90px;
+}
+#cld .cld-right__top hr {
+  background-color: #bbb;
+  height: 1px;
+}
+
+#cld .cld-right__bot {
+
+}
+#cld .cld-right__icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 25px 0 35px;
+}
+#cld .cld-right__icon {
+  width: 60px;
+}
+#cld .cld-right__icon a {
+  display: block;
+  margin-bottom: 10px;
+  height: 60px;
+  width: 100%;
+}
+#cld .cld-right__icon a img {
+  width: 100%;
+}
+#cld .cld-right__icon h5 {
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+}
+</style>
