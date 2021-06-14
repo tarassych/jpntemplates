@@ -1,0 +1,316 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+
+.rapp * {
+  box-sizing: border-box;
+}
+.rapp h2,
+.rapp h3,
+.rapp h4,
+.rapp h5,
+.rapp h6,
+.rapp p,
+.rapp a,
+.rapp li {
+  color: #333;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 600 !important;
+  margin: 0;
+}
+
+.rapp-container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+
+.rapp-header {
+  background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/r-app-hero-bg.jpg) top center / cover no-repeat;
+  margin-bottom: 20px;
+  padding: 180px 0 40px;
+}
+.rapp-header h2 {
+  color: #fff;
+  font-size: 42px !important;
+  font-weight: 700 !important;
+  line-height: 56px;
+}
+.rapp-header h2:nth-of-type(1) span {
+  color: #f94687;
+  font-style: italic;
+}
+.rapp-header h2:nth-of-type(2) span {
+  color: #fdea6a;
+  font-style: italic;
+  padding-left: 110px;
+}
+.rapp-header h3 {
+  color: #fff;
+  font-size: 28px !important;
+  line-height: 37px;
+  margin-top: 85px;
+}
+
+
+.rapp-promo {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 90px;
+  padding: 20px 80px 30px 30px;
+}
+.rapp-promo__avatar {
+  height: 150px;
+  width: 150px;
+}
+.rapp-promo__avatar img {
+  width: 100%;
+}
+
+.rapp-promo__description {
+  flex-shrink: 0;
+  margin-left: 15px;
+  max-width: 580px;
+}
+.rapp-promo__description p {
+  font-size: 16px !important;
+  line-height: 26px;
+}
+.rapp-promo__description h4 {
+  color: #3f4ac2;
+  font-size: 22px !important;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+.rapp-promo__description h5 {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  line-height: 18px;
+}
+
+.rapp-promo__logo {
+  margin-left: auto;
+  width: 220px;
+}
+.rapp-promo__logo img {
+  width: 100%;
+}
+
+.rapp-help {
+  margin-bottom: 45px;
+}
+.rapp-help h3 {
+  font-size: 28px !important;
+  font-weight: 700 !important;
+  line-height: 36px;
+  text-align: center;
+}
+.rapp-help h2 {
+  color: #061A2F;
+  font-size: 42px !important;
+  font-weight: 700 !important;
+  font-style: italic !important;
+  line-height: 56px;
+  text-align: center;
+}
+.rapp-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.rapp-list__left {
+  position: relative;
+  flex-grow: 1;
+}
+.rapp-list__left img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 820px;
+}
+
+.rapp-list__right {
+  padding: 65px 30px 0 5px;
+}
+.rapp-list__item {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  margin-bottom: 25px;
+  padding: 25px 30px;
+  width: 510px;
+}
+.rapp-list__item h4 {
+  color: rgb(0, 0, 0, .8);
+  font-size: 18px !important;
+  line-height: 22px;
+}
+
+
+.rapp-start {
+  margin-bottom: 85px;
+  padding: 0 30px;
+}
+.rapp-benefits {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 65px;
+}
+.rapp-benefits img {
+  flex-shrink: 0;
+  margin-right: 12px;
+  height: 56px;
+  width: 56px;
+}
+.rapp-benefits p {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  line-height: 30px;
+  padding-top: 8px;
+}
+.rapp-benefits p span {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 28px !important;
+}
+
+.rapp-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.rapp-start__list {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 20px 40px;
+  position: relative;
+  width: 590px;
+}
+.rapp-start__list-logo {
+  position: absolute;
+  top: 15px;
+  right: 50px;
+  width: 135px;
+}
+.rapp-start__list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.rapp-start__list ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 28px !important;
+  line-height: 45px;
+}
+.rapp-start__list ul li img {
+  flex-shrink: 0;
+  margin-right: 14px;
+  height: 25px;
+  width: 25px;
+}
+
+.rapp-start__create {
+  width: 480px;
+}
+.rapp-start__create > h2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.rapp-start__create > h2 img {
+  flex-shrink: 0;
+  font-size: 28px !important;
+  font-weight: 700 !important;
+  line-height: 36px;
+  margin-right: 10px;
+  height: 54px;
+  width: 54px;
+}
+.rapp-start__steps {
+  border: 1px solid #82D32D;
+  border-radius: 5px;
+  padding: 20px 20px 30px;
+}
+.rapp-start__steps h3 {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  line-height: 30px;
+}
+.rapp-start__steps-first {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.rapp-start__steps-first > h2 {
+  color: #82d32d;
+  font-size: 50px !important;
+  font-weight: 700 !important;
+  line-height: 50px;
+  margin-right: 17px;
+}
+.rapp-start__steps-first a {
+  background-color: #BA2532;
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  font-size: 28px !important;
+  font-weight: 700 !important;
+  line-height: 37px;
+  padding: 10px 30px;
+  text-decoration: none;
+}
+
+.rapp-courses {
+  margin-top: 30px;
+  margin-bottom: 85px;
+  text-align: center;
+}
+.rapp-courses__logo {
+  margin-bottom: 15px;
+  width: 370px;
+}
+.rapp-courses__skills {
+  margin-bottom: 40px;
+  max-width: 1000px;
+}
+.rapp-courses__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.rapp-courses__element {
+  margin-bottom: 45px;
+  width: 130px;
+}
+.rapp-courses__element img {
+  margin-bottom: 15px;
+  height: 60px;
+}
+.rapp-courses__element h5 {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 19px;
+  text-align: center;
+}
+.rapp-courses a {
+  background-color: #BA2532;
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  line-height: 30px;
+  padding: 10px 30px;
+  text-decoration: none;
+}
+</style>
