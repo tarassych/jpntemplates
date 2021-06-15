@@ -96,23 +96,25 @@
 
   <div class="rapp-container">
     <div class="rapp-start">
-      <div class="rapp-researcher">
-        <img src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/r-app-researcher-logo.png" alt="Researcher">
+      <div class="rapp-start__left">
+        <div class="rapp-researcher">
+          <img src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/r-app-researcher-logo.png" alt="Researcher" class="rapp-researcher__logo">
 
-        <h4>
-          Researcher App users get a 12 month free Premium Membership
-        </h4>
-      </div>
+          <img src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/r-app-my-ll-big.png" alt="My Learning Lab" class="rapp-researcher__myll">
 
-      <div class="rapp-benefits">
-        <img src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/r-app-premium-logo.png" alt="Premium">
+          <h4>
+            Researcher App users get a 12 month free Premium Membership
+          </h4>
+        </div>
 
-        <h3>
-          Premium Member Benefits
-        </h3>
-      </div>
+        <div class="rapp-benefits">
+          <img src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/r-app-premium-logo.png" alt="Premium">
 
-      <div class="rapp-row">
+          <h3>
+            Premium Member Benefits
+          </h3>
+        </div>
+
         <div class="rapp-start__list">
           <img src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/r-app-my-ll-small.png" alt="My Learning Lab" class="rapp-start__list-logo">
 
@@ -148,98 +150,58 @@
             </li>
           </ul>
         </div>
+      </div>
+
+      <div class="rapp-start__right">
+        <div class="rapp-start__skills">
+          <img src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/r-app-skills.png" alt="Skills">
+        </div>
 
         <div class="rapp-start__logos">
           <img src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/r-app-cope-logo.png" alt="Cope">
 
           <img src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/r-app-orcid-logo.png" alt="Orcid">
         </div>
+      </div>
 
-        <div class="rapp-start__create">
-          <div class="rapp-start__steps">
-            <h2>
-              <img src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/r-app-icon-compass.png" alt="compass icon">
-              Get started!
-            </h2>
+      <div class="rapp-start__create">
+        <div class="rapp-start__steps">
+          <h2>
+            <img src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/r-app-icon-compass.png" alt="compass icon">
+            Get started!
+          </h2>
 
-            <h3>
-              1. Create your free Edanz account
-            </h3>
-            <br>
-            <h3>
-              2. Return to this page and complete your free Premium Membership
-            </h3>
-          </div>
+          <h3>
+            1. Create your free Edanz account
+          </h3>
+          <br>
+          <h3>
+            2. Return to this page and complete your free Premium Membership
+          </h3>
+        </div>
 
-          <div class="rapp-start__steps-first">
-            <h2>1</h2>
+        <div class="rapp-start__steps-first">
+          <h2>1</h2>
 
-            <a id="regtrigger" href="">Create Account</a>
-          </div>
+          <a id="regtrigger" href="">Create Account</a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- <div class="rapp-container">
+  <div class="rapp-container">
     <div class="rapp-form">
       <h2>2</h2>
-    </div>
-  </div> -->
-
-  <div class="rapp-container">
-    <div class="rapp-courses">
-      <img src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/r-app-my-ll-big.png" alt="My Learning Lab" class="rapp-courses__logo">
-
-      <img src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/r-app-skills.png" alt="Skills" class="rapp-courses__skills">
-
-      <div class="rapp-courses__list">
-        <div class="rapp-courses__element">
-          <img src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/r-app-icon-file.png" alt="icon file">
-
-          <h5>Articles</h5>
-        </div>
-
-        <div class="rapp-courses__element">
-          <img src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/r-app-icon-podcast.png" alt="icon podcast">
-
-          <h5>Podcasts</h5>
-        </div>
-
-        <div class="rapp-courses__element">
-          <img src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/r-app-icon-video.png" alt="icon video">
-
-          <h5>Video</h5>
-        </div>
-
-        <div class="rapp-courses__element">
-          <img src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/r-app-icon-comments.png" alt="icon comments">
-
-          <h5>
-            Commentary & Opinion
-          </h5>
-        </div>
-
-        <div class="rapp-courses__element">
-          <img src="https://stg-comm-jp-author-services.edanz.com/sites/default/files/r-app-icon-headphones.png" alt="icon headphones">
-
-          <h5>Webinars</h5>
-        </div>
-      </div>
-
-      <a href="">
-        See all courses
-      </a>
     </div>
   </div>
 </div>
 
-<script>
-  jQuery('a#regtrigger').click(function(e){
+  <script>
+    jQuery('a#regtrigger').click(function(e){
       e.preventDefault();
       jQuery('#login-register-modal').modal('show');
       jQuery('.login-register-nav-tabs a[href="#tab-register"]').tab('show');
-  });
-</script>
+    });
+  </script>
 </body>
 </html>
