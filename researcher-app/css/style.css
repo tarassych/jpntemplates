@@ -28,7 +28,7 @@
 .rapp-header {
   background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/r-app-hero-bg.jpg) top center / cover no-repeat;
   margin-bottom: 20px;
-  padding: 180px 0 40px;
+  padding: 180px 0 35px;
 }
 .rapp-header h2 {
   color: #fff;
@@ -47,9 +47,10 @@
 }
 .rapp-header h3 {
   color: #fff;
-  font-size: 28px !important;
+  font-size: 27px !important;
   line-height: 37px;
-  margin-top: 85px;
+  margin-top: 125px;
+  padding-left: 150px;
 }
 
 
@@ -78,12 +79,7 @@
 .rapp-promo__description p {
   font-size: 16px !important;
   line-height: 26px;
-}
-.rapp-promo__description h4 {
-  color: #3f4ac2;
-  font-size: 22px !important;
-  line-height: 40px;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 .rapp-promo__description h5 {
   font-size: 14px !important;
@@ -153,10 +149,22 @@
   margin-bottom: 85px;
   padding: 0 30px;
 }
+.rapp-researcher {
+  margin-bottom: 55px;
+}
+.rapp-researcher img {
+  width: 200px;
+}
+.rapp-researcher h4 {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  line-height: 30px;
+  padding-left: 20px;
+}
 .rapp-benefits {
   display: flex;
   flex-direction: row;
-  margin-bottom: 65px;
+  margin-bottom: 25px;
 }
 .rapp-benefits img {
   flex-shrink: 0;
@@ -164,23 +172,19 @@
   height: 56px;
   width: 56px;
 }
-.rapp-benefits p {
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 24px !important;
+.rapp-benefits h3 {
+  font-size: 28px !important;
   font-weight: 700 !important;
   line-height: 30px;
   padding-top: 8px;
-}
-.rapp-benefits p span {
-  font-family: 'Libre Franklin', sans-serif;
-  font-size: 28px !important;
 }
 
 .rapp-row {
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .rapp-start__list {
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
@@ -214,17 +218,37 @@
   width: 25px;
 }
 
-.rapp-start__create {
+.rapp-start__logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
   width: 480px;
 }
-.rapp-start__create > h2 {
+.rapp-start__logos img:nth-child(1) {
+  margin-bottom: 40px;
+  width: 140px;
+}
+.rapp-start__logos img:nth-child(2) {
+  width: 225px;
+}
+
+.rapp-start__create {
+  border: 1px solid #82D32D;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 55px;
+  padding: 20px 120px 30px 40px;
+  width: 100%;
+}
+.rapp-start__steps > h2 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
   margin-bottom: 15px;
 }
-.rapp-start__create > h2 img {
+.rapp-start__steps > h2 img {
   flex-shrink: 0;
   font-size: 28px !important;
   font-weight: 700 !important;
@@ -233,22 +257,19 @@
   height: 54px;
   width: 54px;
 }
-.rapp-start__steps {
-  border: 1px solid #82D32D;
-  border-radius: 5px;
-  padding: 20px 20px 30px;
-}
 .rapp-start__steps h3 {
   font-family: 'Noto Sans', sans-serif;
   font-size: 24px !important;
   font-weight: 700 !important;
   line-height: 30px;
+  padding-left: 20px;
 }
 .rapp-start__steps-first {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   margin-top: 20px;
 }
 .rapp-start__steps-first > h2 {
