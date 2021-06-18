@@ -1,0 +1,297 @@
+/*<style>*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+#pr.pr h1,
+#pr.pr h2,
+#pr.pr h3,
+#pr.pr h4,
+#pr.pr h5,
+#pr.pr h6,
+#pr.pr li,
+#pr.pr p {
+  color: #000;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
+  margin: 0;
+}
+
+
+#pr .pr-container {
+  background-color: #f4f4f4;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+
+#pr .pr-header {
+  background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/header-bg-2.jpg) center / 100% 100% no-repeat;
+  padding: 75px 110px 55px 100px;
+}
+#pr .pr-header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  margin-bottom: 11px;
+}
+#pr .pr-header h2 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  margin-bottom: 11px;
+}
+#pr .pr-header h1 span,
+#pr .pr-header h2 span {
+  background-color: #fff;
+  display: inline-block;
+  padding: 8px 10px;
+}
+#pr .pr-header a {
+  background-color: #BA2532;
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 19px;
+  padding: 10px 27px;
+}
+
+
+#pr .pr-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px 110px 120px 90px;
+}
+
+
+#pr .pr-left {
+  background-color: #fff;
+  border-top: 5px solid #023762;
+  padding: 30px 30px 40px;
+  width: 700px;
+}
+#pr .pr-left hr {
+  background-color: #bbb;
+  margin: 0;
+  height: 1px;
+}
+
+#pr .pr-left__title {
+  text-align: center;
+}
+#pr .pr-left__title img {
+  height: 60px;
+  width: 60px;
+}
+#pr .pr-left__title h2 {
+  color: #203762;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-bottom: 35px;
+}
+
+#pr .pr-left__description {
+  padding-bottom: 85px;
+}
+#pr .pr-left__description > p {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 35px;
+}
+#pr .pr-left__description h3 {
+  font-size: 16px;
+  line-height: 26px;
+  padding-left: 30px;
+  position: relative;
+}
+#pr .pr-left__description h3 span {
+  background-color: #203762;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 15px;
+  width: 15px;
+}
+#pr .pr-left__description ul {
+  list-style: none;
+  margin-top: 10px;
+}
+#pr .pr-left__description ul li {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+#pr .pr-left__description ul li h4 {
+  font-size: 16px;
+  line-height: 26px;
+}
+#pr .pr-left__description ul li span {
+  border: 4px solid #0F1467;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-right: 5px;
+  height: 15px;
+  width: 15px;
+}
+#pr .pr-left__description ul li p {
+  font-size: 12px;
+  line-height: 26px;
+  width: 50%;
+}
+
+#pr .pr-left__biglist {
+  padding: 40px 0 20px;
+}
+#pr .pr-left__biglist h2 {
+  color: #203762;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+#pr .pr-left__list {
+  list-style: none;
+  padding-left: 100px;
+}
+#pr .pr-left__list li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#pr .pr-left__list li h4 {
+  background-color: #023762;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 15px;
+  font-weight: 700;
+  margin-right: 20px;
+  height: 40px;
+  width: 40px;
+}
+#pr .pr-left__list li p {
+  font-size: 12px;
+  line-height: 26px;
+}
+#pr .pr-left__list li p span {
+  color: #203762;
+  display: block;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+#pr .pr-left__check {
+  padding: 40px 0 45px;
+}
+#pr .pr-left__check h2 {
+  color: #203762;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#pr .pr-left__check p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 16px;
+  line-height: 26px;
+  padding-left: 100px;
+}
+#pr .pr-left__check p img {
+  margin-right: 10px;
+  height: 15px;
+  width: 15px;
+}
+
+
+#pr .pr-left__btn {
+  text-align: center;
+}
+#pr .pr-left__btn a {
+  background-color: #ba2532;
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 25px;
+  padding: 10px 50px;
+}
+
+
+#pr .pr-right {
+  width: 240px;
+}
+#pr .pr-right__top,
+#pr .pr-right__bot {
+  background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/right-header-bg.png) top center / 100% auto no-repeat, #fff;
+  border-bottom: 5px solid #023762;
+  padding: 0 20px;
+}
+#pr .pr-right__header h2 {
+  color: #fff;
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 20px;
+  padding: 12px 0 18px;
+  text-align: center;
+}
+#pr .pr-right__top {
+  margin-bottom: 25px;
+}
+#pr .pr-right__top p {
+  display: block;
+  font-size: 16px;
+  line-height: 26px;
+}
+#pr .pr-right__top p:nth-of-type(1) {
+  font-size: 15px;
+  margin: 25px 0 15px;
+}
+#pr .pr-right__top p:nth-of-type(2) {
+  margin: 25px 0 15px;
+}
+#pr .pr-right__top hr {
+  background-color: #bbb;
+  height: 1px;
+}
+
+#pr .pr-right__bot {
+
+}
+#pr .pr-right__icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 25px 0 35px;
+}
+#pr .pr-right__icon {
+  width: 60px;
+}
+#pr .pr-right__icon a {
+  display: block;
+  margin-bottom: 10px;
+  height: 60px;
+  width: 100%;
+}
+#pr .pr-right__icon a img {
+  width: 100%;
+}
+#pr .pr-right__icon h5 {
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+}
+</style>
