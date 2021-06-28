@@ -1,0 +1,77 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
+.prlp * {
+  box-sizing: border-box;
+}
+.prlp {
+  margin: 0 auto 185px;
+  max-width: 1200px;
+}
+.prlp h1,
+.prlp a,
+.prlp p {
+  color: #000;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
+  margin: 0;
+}
+.prlp-header {
+  background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/prlp-medicalclinicbackdrop.jpg) center / 100% 100% no-repeat;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 185px;
+}
+.prlp-header h1 {
+  color: #707070;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 55px;
+}
+.prlp-grid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 1200px;
+  width: 100%;
+}
+.prlp-grid--element {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 65px 80px 0;
+  height: 400px;
+  width: 600px;
+}
+.prlp-grid .prlp-grid--long {
+  height: 800px;
+}
+.prlp-grid--element img,
+.prlp-grid--img {
+  display: block;
+  margin: 0 auto 40px;
+  width: 400px;
+}
+.prlp-grid--img img {
+  width: 100%;
+}
+.prlp-grid--element:last-child .prlp-grid--img {
+  width: 300px;
+}
+.prlp-grid--title {
+  color: rgb(0, 0, 0, .8);
+  display: block;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26px;
+  text-decoration: underline;
+}
+.prlp-grid--element p {
+  color: rgb(0, 0, 0, .8);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+}
+</style>
