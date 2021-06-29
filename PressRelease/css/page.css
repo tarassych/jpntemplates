@@ -1,5 +1,5 @@
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap');
 .prp * {
   box-sizing: border-box;
 }
@@ -9,6 +9,7 @@
   margin: 0 auto;
   max-width: 1200px;
 }
+.prp h1,
 .prp h2,
 .prp a,
 .prp p {
@@ -18,9 +19,14 @@
   margin: 0;
 }
 
+.prp h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 32px;
+}
 .prp h2 {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 28px;
 }
 .prp h2 span {
@@ -39,7 +45,11 @@
   border: 1px solid #000;
   display: flex;
   flex-direction: column;
-  margin: 20px 0;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 20px auto;
+  width: 800px;
 }
 .prp-row {
   display: flex;
@@ -49,7 +59,7 @@
   border: 1px solid #000;
   padding: 5px 10px;
   text-align: center;
-  width: calc(50% - 2px);
+  width: 50%;
 }
 .prp > img {
   margin: 10px 0;
@@ -57,6 +67,12 @@
 }
 .prp > a {
   font-size: 16px;
+  line-height: 20px;
+}
+.prp h3 {
+  color: red;
+  font-size: 18px;
+  font-weight: 400;
   line-height: 20px;
 }
 </style>
