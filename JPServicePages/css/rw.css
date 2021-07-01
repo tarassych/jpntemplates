@@ -1,4 +1,4 @@
-/*<style>*/
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 #rw.rw h1,
 #rw.rw h2,
@@ -16,7 +16,7 @@
 
 
 #rw .rw-container {
-  background-color: #f4f4f4;
+  background-color: #FAFAFA;
   margin: 0 auto;
   width: 1200px;
 }
@@ -67,7 +67,7 @@
 #rw .rw-left {
   background-color: #fff;
   border-top: 5px solid #023762;
-  padding: 30px 30px 25px;
+  padding: 30px 30px 45px;
   width: 700px;
 }
 #rw .rw-left hr {
@@ -84,15 +84,15 @@
   width: 60px;
 }
 #rw .rw-left__title h2 {
-  color: #203762;
-  font-size: 18px;
+  color: #023762;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 30px;
   margin-bottom: 35px;
 }
 
 #rw .rw-left__description {
-  padding-bottom: 85px;
+  padding-bottom: 45px;
 }
 #rw .rw-left__description p {
   font-size: 16px;
@@ -122,7 +122,7 @@
 }
 
 #rw .rw-left__biglist {
-  padding: 40px 0 20px;
+  padding: 45px 0;
 }
 #rw .rw-left__biglist h2 {
   color: #203762;
@@ -170,7 +170,7 @@
 
 
 #rw .rw-left__check {
-  padding: 80px 0 70px;
+  padding: 45px 0;
 }
 #rw .rw-left__check h2 {
   color: #203762;
@@ -208,12 +208,14 @@
 #rw .rw-right__bot {
   background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/right-header-bg.png) top center / 100% auto no-repeat, #fff;
   border-bottom: 5px solid #023762;
+  border-radius: 4px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.16);
   padding: 0 20px;
 }
 #rw .rw-right__header h2 {
   color: #fff;
   display: block;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 20px;
   padding: 12px 0 18px;
@@ -224,11 +226,10 @@
 }
 #rw .rw-right__top p {
   display: block;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 26px;
 }
 #rw .rw-right__top p:nth-of-type(1) {
-  font-size: 15px;
   margin: 25px 0 15px;
 }
 #rw .rw-right__top p:nth-of-type(2) {
@@ -249,19 +250,19 @@
   padding: 25px 0 35px;
 }
 #rw .rw-right__icon {
-  width: 60px;
+  width: 50px;
 }
 #rw .rw-right__icon a {
   display: block;
   margin-bottom: 10px;
-  height: 60px;
+  height: 50px;
   width: 100%;
 }
 #rw .rw-right__icon a img {
   width: 100%;
 }
 #rw .rw-right__icon h5 {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 26px;
   text-align: center;
 }

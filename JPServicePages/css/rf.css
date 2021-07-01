@@ -1,4 +1,4 @@
-/*<style>*/
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 #rf.rf h1,
 #rf.rf h2,
@@ -16,7 +16,7 @@
 
 
 #rf .rf-container {
-  background-color: #f4f4f4;
+  background-color: #FAFAFA;
   margin: 0 auto;
   width: 1200px;
 }
@@ -67,7 +67,7 @@
 #rf .rf-left {
   background-color: #fff;
   border-top: 5px solid #023762;
-  padding: 30px 30px 25px;
+  padding: 30px 30px 45px;
   width: 700px;
 }
 #rf .rf-left hr {
@@ -84,15 +84,15 @@
   width: 60px;
 }
 #rf .rf-left__title h2 {
-  color: #203762;
-  font-size: 18px;
+  color: #023762;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 30px;
   margin-bottom: 35px;
 }
 
 #rf .rf-left__description {
-  padding-bottom: 10px;
+  padding-bottom: 45px;
 }
 #rf .rf-left__description p {
   font-size: 16px;
@@ -117,7 +117,7 @@
 }
 #rf .rf-left__description ul {
   list-style: none;
-  margin-top: 10px;
+  margin: 10px 0 0;
 }
 #rf .rf-left__description ul li {
   display: flex;
@@ -144,10 +144,10 @@
 }
 
 #rf .rf-left__biglist {
-  padding: 40px 0 20px;
+  padding: 45px 0;
 }
 #rf .rf-left__biglist h2 {
-  color: #203762;
+  color: #023762;
   font-size: 18px;
   font-weight: 700;
   line-height: 23px;
@@ -192,7 +192,7 @@
 
 
 #rf .rf-left__check {
-  padding: 40px 0;
+  padding: 45px 0;
 }
 #rf .rf-left__check h2 {
   color: #203762;
@@ -230,12 +230,14 @@
 #rf .rf-right__bot {
   background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/right-header-bg.png) top center / 100% auto no-repeat, #fff;
   border-bottom: 5px solid #023762;
+  border-radius: 4px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.16);
   padding: 0 20px;
 }
 #rf .rf-right__header h2 {
   color: #fff;
   display: block;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 20px;
   padding: 12px 0 18px;
   text-align: center;
@@ -245,11 +247,10 @@
 }
 #rf .rf-right__top p {
   display: block;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 21px;
 }
 #rf .rf-right__top p:nth-of-type(1) {
-  font-size: 15px;
   margin: 25px 0 15px;
 }
 #rf .rf-right__top p:nth-of-type(2) {
@@ -267,19 +268,19 @@
   padding: 25px 0 35px;
 }
 #rf .rf-right__icon {
-  width: 60px;
+  width: 50px;
 }
 #rf .rf-right__icon a {
   display: block;
   margin-bottom: 10px;
-  height: 60px;
+  height: 50px;
   width: 100%;
 }
 #rf .rf-right__icon a img {
   width: 100%;
 }
 #rf .rf-right__icon h5 {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 26px;
   text-align: center;
 }

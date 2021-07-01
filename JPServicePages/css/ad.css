@@ -16,7 +16,7 @@
 
 
 #ad .ad-container {
-  background-color: #f4f4f4;
+  background-color: #FAFAFA;
   margin: 0 auto;
   width: 1200px;
 }
@@ -67,7 +67,7 @@
 #ad .ad-left {
   background-color: #fff;
   border-top: 5px solid #023762;
-  padding: 30px 30px 100px;
+  padding: 30px 30px 45px;
   width: 700px;
 }
 #ad .ad-left hr {
@@ -84,6 +84,7 @@
   width: 60px;
 }
 #ad .ad-left__title h2 {
+  color: #023762;
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
@@ -91,7 +92,7 @@
 }
 
 #ad .ad-left__description {
-  padding-bottom: 95px;
+  padding-bottom: 45px;
 }
 #ad .ad-left__description p {
   font-size: 16px;
@@ -99,6 +100,7 @@
 }
 #ad .ad-left__description ul {
   list-style: none;
+  margin: 0;
   padding: 0;
 }
 #ad .ad-left__description ul li {
@@ -107,16 +109,17 @@
 }
 
 #ad .ad-left__biglist {
-  padding: 60px 0 0;
+  padding: 45px 0 0;
 }
 #ad .ad-left__biglist h2 {
+  color: #023762;
   font-size: 18px;
   font-weight: 700;
   line-height: 23px;
   text-align: center;
 }
 #ad .ad-left__biglist h3 {
-  font-size: 16px;
+  font-size: 12px;
   line-height: 26px;
   margin-bottom: 20px;
   text-align: center;
@@ -159,12 +162,12 @@
 #ad .ad-left__biglist > p {
   font-size: 12px;
   line-height: 26px;
-  margin-bottom: 70px;
+  margin-bottom: 45px;
   padding-left: 100px;
 }
 
 #ad .ad-left__check {
-  padding: 80px 0 70px;
+  padding: 45px 0;
 }
 #ad .ad-left__check h2 {
   font-size: 18px;
@@ -185,7 +188,8 @@
   align-items: center;
   font-size: 16px;
   line-height: 26px;
-  padding-left: 100px;
+  margin: 0 auto;
+  width: 310px;
 }
 #ad .ad-left__check p img {
   margin-right: 10px;
@@ -194,7 +198,7 @@
 }
 
 #ad .ad-left__info {
-  padding: 80px 0 90px;
+  padding: 45px 0;
   text-align: center;
 }
 #ad .ad-left__info h3 {
@@ -222,7 +226,7 @@
   display: inline-block;
   font-size: 24px;
   font-weight: 700;
-  margin-top: 25px;
+  margin-top: 45px;
   padding: 10px 50px;
 }
 
@@ -234,6 +238,8 @@
 #ad .ad-right__bot {
   background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/right-header-bg.png) top center / 100% auto no-repeat, #fff;
   border-bottom: 5px solid #023762;
+  border-radius: 4px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.16);
   padding: 0 20px;
 }
 #ad .ad-right__header h2 {
@@ -250,7 +256,7 @@
 }
 #ad .ad-right__top p {
   display: block;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 26px;
 }
 #ad .ad-right__top p:nth-of-type(1) {
@@ -264,9 +270,6 @@
   height: 1px;
 }
 
-#ad .ad-right__bot {
-
-}
 #ad .ad-right__icons {
   display: flex;
   flex-direction: row;
@@ -274,19 +277,19 @@
   padding: 25px 0 35px;
 }
 #ad .ad-right__icon {
-  width: 60px;
+  width: 50px;
 }
 #ad .ad-right__icon a {
   display: block;
   margin-bottom: 10px;
-  height: 60px;
+  height: 50px;
   width: 100%;
 }
 #ad .ad-right__icon a img {
   width: 100%;
 }
 #ad .ad-right__icon h5 {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 26px;
   text-align: center;
 }

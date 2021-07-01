@@ -1,4 +1,4 @@
-/*<style>*/
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 #js.js h1,
 #js.js h2,
@@ -16,7 +16,7 @@
 
 
 #js .js-container {
-  background-color: #f4f4f4;
+  background-color: #FAFAFA;
   margin: 0 auto;
   width: 1200px;
 }
@@ -67,7 +67,7 @@
 #js .js-left {
   background-color: #fff;
   border-top: 5px solid #023762;
-  padding: 30px 30px 100px;
+  padding: 30px 30px 45px;
   width: 700px;
 }
 #js .js-left hr {
@@ -84,6 +84,7 @@
   width: 60px;
 }
 #js .js-left__title h2 {
+  color: #023762;
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
@@ -91,7 +92,7 @@
 }
 
 #js .js-left__description {
-  padding-bottom: 30px;
+  padding-bottom: 45px;
 }
 #js .js-left__description p {
   font-size: 16px;
@@ -116,6 +117,7 @@
 }
 #js .js-left__description ul {
   list-style: none;
+  margin: 0;
   padding: 0 0 0 30px;
 }
 #js .js-left__description ul li {
@@ -129,17 +131,17 @@
 }
 
 #js .js-left__biglist {
-  padding: 60px 0 0;
+  padding: 45px 0 0;
 }
 #js .js-left__biglist h2 {
-  color: #203762;
+  color: #023762;
   font-size: 18px;
   font-weight: 700;
   line-height: 23px;
   text-align: center;
 }
 #js .js-left__biglist h3 {
-  font-size: 16px;
+  font-size: 12px;
   line-height: 26px;
   margin-bottom: 20px;
   text-align: center;
@@ -182,7 +184,7 @@
 #js .js-left__biglist > p {
   font-size: 12px;
   line-height: 26px;
-  margin-bottom: 70px;
+  margin-bottom: 45px;
   padding-left: 100px;
 }
 #js .js-left__biglist > p span {
@@ -191,7 +193,7 @@
 }
 
 #js .js-left__check {
-  padding: 40px 0 25px;
+  padding: 45px 0;
 }
 #js .js-left__check h2 {
   color: #203762;
@@ -213,7 +215,7 @@
   align-items: center;
   font-size: 15px;
   line-height: 26px;
-  padding: 0 80px;
+  padding: 0 30px;
 }
 #js .js-left__check p img {
   margin-right: 10px;
@@ -222,7 +224,7 @@
 }
 
 #js .js-left__info {
-  padding: 30px 0 50px;
+  padding: 45px 0;
   text-align: center;
 }
 #js .js-left__info h3 {
@@ -263,12 +265,14 @@
 #js .js-right__bot {
   background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/right-header-bg.png) top center / 100% auto no-repeat, #fff;
   border-bottom: 5px solid #023762;
+  border-radius: 4px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.16);
   padding: 0 20px;
 }
 #js .js-right__header h2 {
   color: #fff;
   display: block;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 20px;
   padding: 12px 0 18px;
@@ -276,7 +280,7 @@
 }
 #js .js-right__top p {
   display: block;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 26px;
 }
 #js .js-right__top p:nth-of-type(1) {
@@ -297,19 +301,19 @@
   padding: 25px 0 35px;
 }
 #js .js-right__icon {
-  width: 60px;
+  width: 50px;
 }
 #js .js-right__icon a {
   display: block;
   margin-bottom: 10px;
-  height: 60px;
+  height: 50px;
   width: 100%;
 }
 #js .js-right__icon a img {
   width: 100%;
 }
 #js .js-right__icon h5 {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 26px;
   text-align: center;
 }
