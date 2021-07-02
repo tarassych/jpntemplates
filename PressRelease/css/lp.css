@@ -1,4 +1,4 @@
-/*<style>*/
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
 .prlp * {
   box-sizing: border-box;
@@ -86,5 +86,34 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 26px;
+}
+
+@media (max-width: 991px) {
+  .prlp-header {
+    padding: 0 20px;
+  }
+  .prlp-header h1 {
+    font-size: 28px;
+    text-align: center;
+    width: 100%;
+  }
+  .prlp-grid {
+    height: auto;
+  }
+  .prlp-grid--element {
+    padding: 20px 30px 0;
+    width: 100%;
+  }
+  .prlp-grid--element:nth-child(1),
+  .prlp-grid--element:nth-child(2) {
+    margin-right: 0;
+  }
+  .prlp-grid--element:nth-child(4) .prlp-grid--img {
+    margin: 0;
+  }
+  .prlp-grid--element img,
+  .prlp-grid--img {
+    max-width: 100%;
+  }
 }
 </style>
