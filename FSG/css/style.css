@@ -1,0 +1,387 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap');
+.fsg h1,
+.fsg h2,
+.fsg h3,
+.fsg h4,
+.fsg h5,
+.fsg h6,
+.fsg ul,
+.fsg p,
+.fsg a {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400 !important;
+  color: #333;
+  line-height: 1.2;
+  margin: 0;
+}
+.fsg-header {
+  background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/fsg-header-bg.jpg) center / cover no-repeat;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 380px;
+  width: 100%;
+}
+.fsg-header h1 {
+  color: #4d4d4d;
+  font-size: 44px !important;
+  font-weight: 500 !important;
+  line-height: 52px;
+}
+.fsg-header h1 span {
+  background-color: #fff;
+  padding: 1px 50px;
+}
+
+.fsg-about__header {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  padding: 20px 35px 30px;
+  position: relative;
+  width: 970px;
+}
+.fsg-about__avatar {
+  flex-shrink: 0;
+  margin-right: 20px;
+  height: 150px;
+  width: 150px;
+}
+.fsg-about__description {
+  flex-grow: 1;
+}
+.fsg-about__description p {
+  font-size: 16px !important;
+  line-height: 26px;
+  margin-top: 0;
+  margin-bottom: 40px;
+  padding-top: 10px;
+}
+.fsg-about__description h3 {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  line-height: 18px;
+}
+.fsg-about__logos {
+  position: absolute;
+  bottom: 30px;
+  right: 35px;
+  width: 320px;
+}
+
+.fsg-info {
+  margin: 70px auto 50px;
+  width: 1000px;
+}
+.fsg-info h2 {
+  font-size: 28px !important;
+  font-weight: 500 !important;
+  line-height: 36px;
+  margin-bottom: 55px;
+  text-align: center;
+}
+.fsg-info__block {
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 55px 75px 30px;
+  position: relative;
+  width: 500px;
+}
+.fsg-info--logo {
+  margin-bottom: 30px;
+  width: 340px;
+}
+.fsg-info--ribbon {
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  transform: translateX(-50%);
+  height: 60px;
+  width: 60px;
+}
+.fsg-info__block ul {
+  list-style: none;
+  margin-bottom: 25px;
+  padding: 0;
+  width: 100%;
+}
+.fsg-info__block ul li {
+  font-size: 22px !important;
+  font-weight: 500 !important;
+  line-height: 22px;
+}
+.fsg-info__block a {
+  background-color: #ba2532;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  line-height: 19px;
+  padding: 10px 25px;
+  text-decoration: none;
+}
+
+.fsg-services {
+  margin: 0 auto;
+  width: 1000px;
+}
+.fsg-services .s-color-1 {color: #0F1467;}
+.fsg-services .s-color-2 {color: #1C4F89;}
+.fsg-services .s-color-3 {color: #337CAF;}
+.fsg-services .s-color-4 {color: #337874;}
+.fsg-services .s-color-5 {color: #33753C;}
+.fsg-services .s-color-6 {color: #759430;}
+.fsg-services .s-color-7 {color: #938531;}
+.fsg-services .s-color-8 {color: #27AAE1;}
+.fsg-services__elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.fsg-services__element {
+  background-color: #fff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  margin-bottom: 55px;
+  padding: 20px 20px 12px;
+  width: calc((100% - 60px) / 4);
+}
+.fsg-services__top {
+  border-bottom: 1px solid #BBBBBB;
+  text-align: center;
+  padding: 0 0 10px;
+  min-height: 135px;
+}
+.fsg-services__top img {
+  margin-bottom: 5px;
+  width: 60px;
+}
+.fsg-services__top-title {
+  font-size: 23px !important;
+  line-height: 27px;
+}
+.fsg-services__mid {
+  flex-grow: 1;
+  padding: 20px 0;
+}
+.fsg-services__mid p,
+.fsg-services__mid a {
+  font-size: 16px !important;
+}
+.fsg-services__mid a {
+  display: block;
+  color: #BA0B22;
+  text-decoration: none;
+}
+.fsg-services__mid a:hover {
+  text-decoration: underline;
+}
+.fsg-services__mid p span {
+  display: block;
+  text-align: center;
+}
+.fsg-services__mid h5 {
+  font-size: 11px !important;
+  margin-top: 30px;
+}
+.fsg-services__bot {
+  text-align: right;
+}
+.fsg-services__bot a {
+  color: #BA0B22;
+  font-size: 10px !important;
+  text-decoration: none;
+}
+
+.fsg-services__additional {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 10px 65px;
+  text-align: center;
+  height: 100%;
+}
+.fsg-services__additional h2 {
+  color: #4d4d4d;
+  font-size: 48px !important;
+  font-weight: 500 !important;
+  line-height: 58px;
+}
+.fsg-services__additional h3 {
+  color: #000;
+  font-size: 18px !important;
+  line-height: 22px;
+  margin-bottom: auto;
+}
+.fsg-services__additional a {
+  background-color: #ba2532;
+  color: #fff;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  line-height: 19px;
+  padding: 10px 25px;
+  text-decoration: none;
+}
+
+.fsg-person {
+  background-color: #35383d;
+  margin: 0 auto 75px;
+  padding: 20px 35px 35px;
+  width: 1070px;
+}
+.fsg-person > h2 {
+  color: #fff;
+  font-size: 18px !important;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.fsg-person__elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.fsg-person__el {
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 30px 5px 0;
+  width: 246px;
+}
+.fsg-person__el:nth-child(1) {
+  border-top: 5px solid #27AAE1;
+  border-bottom: 5px solid #27AAE1;
+}
+.fsg-person__el:nth-child(2) {
+  border-top: 5px solid #C4A13D;
+  border-bottom: 5px solid #C4A13D;
+}
+.fsg-person__el:nth-child(3) {
+  border-top: 5px solid #4FC193;
+  border-bottom: 5px solid #4FC193;
+}
+.fsg-person__el:nth-child(4) {
+  border-top: 5px solid #CCCCCC;
+  border-bottom: 5px solid #CCCCCC;
+}
+.fsg-person__top {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  position: relative;
+  text-align: center;
+  height: 200px;
+}
+.fsg-person__top-icon {
+  position: absolute;
+  top: -20px;
+  right: 5px;
+  width: 50px;
+}
+.fsg-person__top-avatar {
+  margin-bottom: 10px;
+  width: 120px;
+}
+.fsg-person__top h2 {
+  font-size: 13px !important;
+  margin-bottom: 5px;
+}
+.fsg-person__top h3 {
+  font-size: 14px !important;
+}
+.fsg-person__el p {
+  font-size: 15px !important;
+  padding: 5px 5px 15px;
+}
+
+.fsg-oc {
+  background-color: #f8f8f8;
+  padding: 55px 0 110px;
+}
+.fsg-oc--container {
+  margin: 0 auto;
+  width: 1200px;
+}
+.fsg-oc--top {
+  margin: 0 auto;
+  width: 1000px;
+}
+.fsg-oc--logo {
+  margin-bottom: 30px;
+  width: 240px;
+}
+.fsg-oc h3 {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+.fsg-oc__block {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  padding: 70px 35px 40px;
+  position: relative;
+  width: 1000px;
+}
+.fsg-oc__block-el {
+  width: calc(100% / 3);
+}
+.fsg-oc__block-el:not(:last-of-type) {
+  margin-right: 30px;
+}
+.fsg-oc__block-el h4 {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  line-height: 26px;
+  margin-bottom: 25px;
+}
+.fsg-oc__block-el ul {
+  padding: 0 0 0 15px;
+}
+.fsg-oc__block-el ul li {
+  margin-bottom: 25px;
+}
+.fsg-oc__block a {
+  background-color: #ba2532;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  line-height: 19px;
+  padding: 10px 25px;
+  position: absolute;
+  bottom: 30px;
+  right: 35px;
+  text-decoration: none;
+}
+.fsg-oc h2 {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  line-height: 30px;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.fsg-oc--journals {
+  width: 100%;
+}
+</style>
