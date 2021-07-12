@@ -16,7 +16,7 @@
   width: 1200px;
 }
 .cam-bold {
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 
 .cam-header {
@@ -25,14 +25,14 @@
   padding: 85px 100px 115px;
 }
 .cam-header h1 {
-  font-size: 34px;
-  font-weight: 700;
+  font-size: 34px !important;
+  font-weight: 700 !important;
   line-height: 34px;
   margin-bottom: 11px;
 }
 .cam-header h2 {
-  font-size: 17px;
-  font-weight: 700;
+  font-size: 17px !important;
+  font-weight: 700 !important;
   line-height: 22px;
 }
 .cam-header h1 span,
@@ -55,6 +55,7 @@
   padding: 30px 10px 30px 30px;
 }
 .cam-img {
+  flex-shrink: 0;
   padding: 40px 30px 50px;
 }
 .cam-img img {
@@ -73,16 +74,16 @@
   width: 60px;
 }
 .cam-title h2 {
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 24px !important;
+  font-weight: 700 !important;
   line-height: 26px;
 }
 .cam-title h2 span {
   display: block;
-  font-size: 18px;
+  font-size: 18px !important;
 }
 .cam-data p {
-  font-size: 16px;
+  font-size: 16px !important;
   line-height: 26px;
   margin-bottom: 30px;
 }
@@ -92,8 +93,8 @@
   padding: 0 0 0 25px;
 }
 .cam-data ul li {
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 16px !important;
+  font-weight: 500 !important;
   line-height: 26px;
   position: relative;
 }
@@ -111,8 +112,8 @@
   border-radius: 4px;
   color: #fff;
   display: inline-block;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 14px !important;
+  font-weight: 700 !important;
   line-height: 19px;
   margin-bottom: 15px;
   padding: 11px 30px;
@@ -125,8 +126,8 @@
 }
 .cam-pay h2 {
   flex-shrink: 0;
-  font-size: 12px;
-  font-weight: 700;
+  font-size: 12px !important;
+  font-weight: 700 !important;
   line-height: 26px;
   width: 100px;
 }
@@ -134,7 +135,7 @@
 .cam-pay--2 span {
   color: #29ca9b;
   display: block;
-  font-size: 24px;
+  font-size: 24px !important;
   line-height: 30px;
   margin-top: 8px;
 }
@@ -147,7 +148,7 @@ h2.cam-pay--3 {
 }
 h2.cam-pay--3 span {
   display: block;
-  font-weight: 500;
+  font-weight: 500 !important;
   line-height: 16px;
 }
 .cam-partner {
@@ -162,8 +163,8 @@ h2.cam-pay--3 span {
 }
 .cam-partner h4 {
   color: rgb(131, 131, 131, .8);
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 12px !important;
+  font-weight: 500 !important;
   line-height: 20px;
 }
 
@@ -193,13 +194,13 @@ h2.cam-pay--3 span {
   width: 60px;
 }
 .cam-row__title h2 {
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 24px !important;
+  font-weight: 700 !important;
   line-height: 26px;
   text-align: center;
 }
 .cam-row__element p {
-  font-size: 16px;
+  font-size: 16px !important;
   line-height: 26px;
   margin-bottom: 20px;
 }
@@ -210,8 +211,8 @@ h2.cam-pay--3 span {
   padding: 0 0 0 25px;
 }
 .cam-row__element ul li {
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 16px !important;
+  font-weight: 500 !important;
   line-height: 26px;
   position: relative;
 }
@@ -229,8 +230,8 @@ h2.cam-pay--3 span {
   border-radius: 4px;
   color: #fff;
   display: inline-block;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 14px !important;
+  font-weight: 700 !important;
   line-height: 19px;
   margin-bottom: 15px;
   padding: 11px 0px;
@@ -253,8 +254,8 @@ h2.cam-pay--3 span {
 }
 .cam-row__pay h2 {
   flex-shrink: 0;
-  font-size: 12px;
-  font-weight: 700;
+  font-size: 12px !important;
+  font-weight: 700 !important;
   line-height: 26px;
   margin-bottom: 20px;
 }
@@ -262,14 +263,14 @@ h2.cam-pay--3 span {
 .cam-row__pay--2 span {
   color: #29ca9b;
   display: block;
-  font-size: 24px;
+  font-size: 24px !important;
   line-height: 30px;
   margin-top: 8px;
 }
 .cam-row__pay--3 span {
   display: block;
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 12px !important;
+  font-weight: 500 !important;
   line-height: 16px;
 }
-<style/>
+</style>
