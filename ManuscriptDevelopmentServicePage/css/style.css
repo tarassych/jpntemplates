@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap');
+
+.mdsp * {
+  font-family: 'Libre Franklin', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.mdsp-container {
+  margin: 0 auto;
+  padding: 0 100px 5px;
+  width: 1200px;
+}
+#mdsp-form {
+  padding-bottom: 75px;
+}
+
+.mdsp-header {
+  background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/cam-header-bg.jpg) center / 100% 100% no-repeat;
+  margin-bottom: 40px;
+  padding: 85px 100px 115px;
+}
+.mdsp-header h1 {
+  font-size: 34px !important;
+  font-weight: 700 !important;
+  line-height: 34px;
+  margin-bottom: 11px;
+}
+.mdsp-header h2 {
+  font-size: 17px !important;
+  font-weight: 700 !important;
+  line-height: 22px;
+}
+.mdsp-header h1 span,
+.mdsp-header h2 span {
+  background-color: #fff;
+  display: inline-block;
+  padding: 9px 6px;
+}
+
+.mdsp-element {
+  border-top: 4px solid #023762;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  padding: 30px 60px 60px 30px;
+}
+.mdsp-element:not(:last-child) {
+  margin-bottom: 40px;
+}
+.mdsp-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.mdsp-title img {
+  margin-right: 10px;
+  height: 60px;
+  width: 60px;
+}
+.mdsp-title h2 {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  line-height: 26px;
+}
+.mdsp-element > p {
+  font-size: 16px !important;
+  line-height: 26px;
+  margin-bottom: 70px;
+  padding-left: 30px;
+}
+.mdsp-element ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-bottom: 20px;
+  padding: 0 0 0 50px;
+}
+.mdsp-element ul li {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  line-height: 26px;
+  margin-bottom: 25px;
+  position: relative;
+  width: 50%;
+}
+.mdsp-element ul li:before {
+  content: "";
+  background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/cam-icon-check.png) center / 100% 100% no-repeat;
+  position: absolute;
+  left: -24px;
+  top: 5px;
+  height: 15px;
+  width: 15px;
+}
+.mdsp-btn a {
+  background-color: #ba2532;
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  line-height: 19px;
+  padding: 11px 30px;
+  text-decoration: none;
+}
+.mdsp-pay {
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+}
+.mdsp-pay h2 {
+  flex-shrink: 0;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  line-height: 26px;
+  width: 100px;
+}
+.mdsp-pay--1 {
+  display: flex;
+  flex-direction: row;
+  padding-top: 50px;
+}
+.mdsp-pay--1 span {
+  color: #29ca9b;
+  display: block;
+  font-size: 24px !important;
+  line-height: 30px;
+  margin-top: 8px;
+}
+.mdsp-pay--1 h2:first-child {
+  margin-right: 20px;
+}
+.mdsp-pay--2 {
+  margin-left: auto;
+  flex-shrink: 0;
+  padding-left: 40px;
+  width: 50%;
+}
+.mdsp-pay--2 h2 {
+  margin-bottom: 35px;
+  width: 100%;
+}
+.mdsp-pay--2 p {
+  font-size: 12px !important;
+  line-height: 16px;
+}
+.mdsp-pay--2 h2 span {
+  display: block;
+  font-weight: 500 !important;
+  line-height: 16px;
+}
+</style>
