@@ -1,0 +1,282 @@
+* {
+  box-sizing: border-box;
+}
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap');
+
+.cam * {
+  font-family: 'Libre Franklin', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.cam-container {
+  margin: 0 auto;
+  padding: 0 100px 0;
+  width: 1200px;
+}
+#cam-form {
+  padding-bottom: 70px;
+}
+.cam-bold {
+  font-weight: 700 !important;
+}
+
+.cam-header {
+  background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/cam-header-bg.jpg) center / 100% 100% no-repeat;
+  margin-bottom: 40px;
+  padding: 85px 100px 115px;
+}
+.cam-header h1 {
+  font-size: 34px !important;
+  font-weight: 700 !important;
+  line-height: 34px;
+  margin-bottom: 11px;
+}
+.cam-header h2 {
+  font-size: 17px !important;
+  font-weight: 700 !important;
+  line-height: 22px;
+}
+.cam-header h1 span,
+.cam-header h2 span {
+  background-color: #fff;
+  display: inline-block;
+  padding: 9px 6px;
+}
+
+.cam-element {
+  border-top: 4px solid #023762;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+.cam-element:not(:last-child) {
+  margin-bottom: 40px;
+}
+.cam-data {
+  padding: 30px 10px 30px 30px;
+}
+.cam-img {
+  flex-shrink: 0;
+  padding: 40px 30px 50px;
+}
+.cam-img img {
+  height: 500px;
+  width: 435px;
+}
+.cam-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.cam-title img {
+  margin-right: 10px;
+  height: 60px;
+  width: 60px;
+}
+.cam-title h2 {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  line-height: 26px;
+}
+.cam-title h2 span {
+  display: block;
+  font-size: 18px !important;
+}
+.cam-data p {
+  font-size: 16px !important;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+.cam-data ul {
+  list-style: none;
+  margin-bottom: 30px;
+  padding: 0 0 0 25px;
+}
+.cam-data ul li {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  line-height: 26px;
+  position: relative;
+}
+.cam-data ul li:before {
+  content: "";
+  background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/cam-icon-check.png) center / 100% 100% no-repeat;
+  position: absolute;
+  left: -20px;
+  top: 5px;
+  height: 15px;
+  width: 15px;
+}
+.cam-data a {
+  background-color: #ba2532;
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  line-height: 19px;
+  margin-bottom: 15px;
+  padding: 11px 30px;
+  text-decoration: none;
+}
+.cam-pay {
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+}
+.cam-pay h2 {
+  flex-shrink: 0;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  line-height: 26px;
+  width: 100px;
+}
+.cam-pay--1,
+.cam-pay--2 {
+  margin-top: 20px;
+}
+.cam-pay--1 span,
+.cam-pay--2 span {
+  color: #29ca9b;
+  display: block;
+  font-size: 18px !important;
+  line-height: 30px;
+}
+h2.cam-pay--1 {
+  margin-right: 20px;
+}
+h2.cam-pay--3 {
+  margin-left: auto;
+  width: 170px;
+}
+h2.cam-pay--3 span {
+  display: block;
+  font-weight: 500 !important;
+  line-height: 16px;
+}
+.cam-partner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+.cam-partner img {
+  margin-right: 15px;
+  width: 50px;
+}
+.cam-partner h4 {
+  color: rgb(131, 131, 131, .8);
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  line-height: 20px;
+}
+
+.cam-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.cam-row__element {
+  border-top: 4px solid #023762;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  width: calc(50% - 4px);
+}
+.cam-row__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.cam-row__title img {
+  margin-bottom: 15px;
+  height: 60px;
+  width: 60px;
+}
+.cam-row__title h2 {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  line-height: 26px;
+  text-align: center;
+}
+.cam-row__element p {
+  font-size: 16px !important;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+.cam-row__element ul {
+  flex-grow: 1;
+  list-style: none;
+  margin-bottom: 30px;
+  padding: 0 0 0 25px;
+}
+.cam-row__element ul li {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  line-height: 26px;
+  position: relative;
+}
+.cam-row__element ul li:before {
+  content: "";
+  background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/cam-icon-check.png) center / 100% 100% no-repeat;
+  position: absolute;
+  left: -20px;
+  top: 5px;
+  height: 15px;
+  width: 15px;
+}
+.cam-row__element a {
+  background-color: #ba2532;
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  line-height: 19px;
+  margin-bottom: 15px;
+  padding: 11px 0px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+.cam-row__pay {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cam-row__left {
+  flex-grow: 1;
+  margin-right: 25px;
+}
+.cam-row__right {
+  flex-shrink: 0;
+  width: 260px;
+}
+.cam-row__pay h2 {
+  flex-shrink: 0;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+.cam-row__pay--1 span,
+.cam-row__pay--2 span {
+  color: #29ca9b;
+  display: block;
+  font-size: 24px !important;
+  line-height: 30px;
+  margin-top: 8px;
+}
+.cam-row__pay--3 span {
+  display: block;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  line-height: 16px;
+}
+</style>
