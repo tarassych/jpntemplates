@@ -1,0 +1,160 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
+.meps * {
+  box-sizing: border-box;
+}
+.meps {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.meps h2,
+.meps a,
+.meps p {
+  color: #000;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500 !important;
+  margin: 0;
+}
+.meps-content {
+  padding: 30px 20px;
+}
+.meps-content--container {
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.meps-top {
+  display: flex;
+  flex-direction: row;
+  padding: 0 20px 20px;
+}
+
+
+.meps-left {
+  padding: 5px 50px 30px 20px;
+}
+.meps-left h3 {
+  font-size: 25px !important;
+  font-weight: 700 !important;
+  line-height: 44px;
+  margin-bottom: 15px;
+}
+.meps-left p {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+.meps-left p span {
+  display: block;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+}
+.meps-left--row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.meps-left--row h2 {
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  line-height: 26px;
+}
+.meps-left--row h2 span {
+  color: #50a3e0;
+  display: block;
+  font-size: 27px !important;
+  font-weight: 700 !important;
+  line-height: 44px;
+}
+.meps-left--row a {
+  background-color: #203762;
+  border-radius: 11px;
+  color: #fff;
+  display: block;
+  flex-shrink: 0;
+  font-size: 23px !important;
+  font-weight: 700 !important;
+  line-height: 35px;
+  text-decoration: none;
+  padding: 15px 30px;
+}
+
+.meps-right {
+  background-color: #fff;
+  border-top: 5px solid #023762;
+  flex-shrink: 0;
+  padding: 25px 45px;
+  width: 300px;
+}
+.meps-right h4 {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.meps-right h5 {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.meps-right ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.meps-right ul li {
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  line-height: 25px;
+  position: relative;
+  height: 35px;
+  width: 100%;
+}
+.meps-right ul li span {
+  color: #50a3e0;
+}
+.meps-right ul li:not(:last-child):before {
+  content: "";
+  background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/meps-arrow-down.png) center / 100% 100% no-repeat;
+  position: absolute;
+  bottom: -14px;
+  height: 7px;
+  width: 12px;
+}
+.meps-right ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+.meps-right ul li:last-child {
+  border-color: #05A3E0;
+  border-width: 2px;
+}
+
+.meps-bottom {
+  background-color: #aebbc3;
+  padding: 10px 40px 35px;
+}
+.meps-bottom h4 {
+  color: #fff;
+  font-size: 21px !important;
+  font-weight: 600 !important;
+  line-height: 36px;
+  margin-bottom: 10px;
+}
+.meps-bottom ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.meps-bottom ul li {
+  font-size: 14px !important;
+  line-height: 25px;
+}
+</style>
