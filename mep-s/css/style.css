@@ -8,12 +8,23 @@
   max-width: 1200px;
 }
 .meps h2,
+.meps h3,
+.meps h4,
+.meps h5,
+.meps h6,
+.meps li,
 .meps a,
 .meps p {
   color: #000;
   font-family: 'Noto Sans', sans-serif;
   font-weight: 500 !important;
   margin: 0;
+}
+.meps-header {
+  width: 100%;
+}
+.meps-header img {
+  width: 100%;
 }
 .meps-content {
   padding: 30px 20px;
@@ -156,5 +167,51 @@
 .meps-bottom ul li {
   font-size: 14px !important;
   line-height: 25px;
+}
+
+@media (max-width: 1200px) {
+  .meps-left--row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .meps-content,
+  .meps-top {
+    padding: 0;
+  }
+  .meps-top {
+    display: flex;
+    align-items: flex-start;
+  }
+  .meps-left {
+    padding: 5px 10px 20px;
+  }
+  .meps-right {
+    padding: 5px 20px 20px;
+  }
+}
+@media (max-width: 767px) {
+  .meps-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .meps-content--container {
+    padding: 10px;
+  }
+  .meps-left {
+    padding: 5px 0 20px;
+  }
+  .meps-right {
+    margin-bottom: 20px;
+    padding: 5px 15px 15px;
+  }
+  .meps-bottom {
+    padding: 10px 20px 20px;
+  }
+}
+@media (max-width: 425px) {
+  .meps-left--row a {
+    font-size: 20px !important;
+  }
 }
 </style>
