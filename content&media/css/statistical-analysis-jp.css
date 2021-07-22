@@ -324,6 +324,17 @@ h2.cam-pay--3 span {
     align-items: center;
     padding: 20px 10px 10px;
   }
+  .cam-img,
+  .cam-img--small img.img-small {
+    padding: 40px 30px 50px;
+  }
+  .cam-element {
+    justify-content: center;
+  }
+  .cam-data a {
+    margin-left: 0;
+    text-align: center;
+  }
   .cam-partner {
     justify-content: center;
   }
@@ -349,8 +360,7 @@ h2.cam-pay--3 span {
     padding-right: 20px;
   }
   h2.cam-pay--3 {
-    margin-top: 10px;
-    margin-left: 0;
+    margin-left: 20px;
     text-align: center;
   }
 }
@@ -367,6 +377,11 @@ h2.cam-pay--3 span {
   .cam-row__pay {
     flex-direction: column;
     align-items: center;
+  }
+  h2.cam-pay--3 {
+    margin-top: 10px;
+    margin-left: 0;
+    width: 100%;
   }
 }
 </style>

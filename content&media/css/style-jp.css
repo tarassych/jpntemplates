@@ -17,6 +17,15 @@
   font-weight: 500 !important;
   margin: 0;
 }
+.cam .pt-15 {
+  padding-top: 15px;
+}
+.cam .pt-30 {
+  padding-top: 30px;
+}
+.cam .pt-60 {
+  padding-top: 60px;
+}
 .cam-container {
   margin: 0 auto;
   max-width: 1000px;
@@ -106,6 +115,7 @@
 }
 .cam-data ul {
   list-style: none;
+  margin-top: 0;
   margin-bottom: 30px;
   padding: 0 0 0 25px;
 }
@@ -316,6 +326,17 @@ h2.cam-pay--3 span {
     align-items: center;
     padding: 20px 10px 10px;
   }
+  .cam-img,
+  .cam-img--small img.img-small {
+    padding: 40px 30px 50px;
+  }
+  .cam-element {
+    justify-content: center;
+  }
+  .cam-data a {
+    margin-left: 0;
+    text-align: center;
+  }
   .cam-partner {
     justify-content: center;
   }
@@ -330,6 +351,7 @@ h2.cam-pay--3 span {
     margin-bottom: 10px;
   }
   .cam-pay {
+    flex-wrap: wrap;
     justify-content: center;
   }
   .cam-row__left {
@@ -339,21 +361,28 @@ h2.cam-pay--3 span {
   .cam-row__pay--1 {
     padding-right: 20px;
   }
+  h2.cam-pay--3 {
+    margin-left: 20px;
+    text-align: center;
+  }
 }
 @media (max-width: 768px) {
   .cam-data {
     width: 100%;
   }
-  .cam-img {
+  .cam-img,
+  .cam-img--small img.img-small {
+    padding: 40px 10px 50px;
     width: auto;
+    max-width: 100%;
   }
   .cam-row__pay {
     flex-direction: column;
     align-items: center;
   }
-  
   h2.cam-pay--3 {
-    margin-left: 30px;
+    margin-top: 10px;
+    width: 100%;
   }
 }
 </style>
