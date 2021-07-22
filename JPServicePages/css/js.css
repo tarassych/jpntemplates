@@ -6,6 +6,7 @@
 #js.js h4,
 #js.js h5,
 #js.js h6,
+#js.js a,
 #js.js li,
 #js.js p {
   color: #000;
@@ -49,9 +50,9 @@
   border-radius: 4px;
   color: #fff;
   display: inline-block;
-  font-size: 22px;
+  font-size: 15px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 19px;
   padding: 10px 27px;
 }
 
