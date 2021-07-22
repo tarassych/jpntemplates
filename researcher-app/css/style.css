@@ -28,7 +28,7 @@
 .rapp-header {
   background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/r-app-hero-bg.jpg) top center / cover no-repeat;
   margin-bottom: 20px;
-  padding: 180px 0 35px;
+  padding: 85px 0 70px;
 }
 .rapp-header h2 {
   color: #fff;
@@ -47,10 +47,24 @@
 }
 .rapp-header h3 {
   color: #fff;
-  font-size: 27px !important;
+  font-size: 22px !important;
+  line-height: 30px;
+  margin-top: 115px;
+  text-align: center;
+}
+.rapp-header--btn {
+  margin-top: 20px;
+  text-align: center;
+}
+.rapp-header--btn a {
+  background-color: #BA2532;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 28px !important;
+  font-weight: 700;
   line-height: 37px;
-  margin-top: 125px;
-  padding-left: 150px;
+  padding: 10px 30px;
+  text-decoration: none;
 }
 
 
@@ -236,7 +250,7 @@
 .rapp-start__logos {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding-left: 165px;
   height: 100%;
   width: 100%;
 }
