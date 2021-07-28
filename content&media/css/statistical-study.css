@@ -26,7 +26,7 @@
 }
 
 .cam-header {
-  background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/cam-header-bg.jpg) center / cover no-repeat;
+  background: url(https://www.edanz.com/sites/default/files/cam-header-bg.jpg) center / cover no-repeat;
   margin-bottom: 40px;
   padding: 85px 100px 115px;
 }
@@ -133,7 +133,7 @@
 }
 .cam-data ul li:before {
   content: "";
-  background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/cam-icon-check.png) center / 100% 100% no-repeat;
+  background: url(https://www.edanz.com/sites/default/files/cam-icon-check.png) center / 100% 100% no-repeat;
   position: absolute;
   left: -25px;
   top: 5px;
@@ -261,7 +261,7 @@ h2.cam-pay--3 span {
 }
 .cam-row__element ul li:before {
   content: "";
-  background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/cam-icon-check.png) center / 100% 100% no-repeat;
+  background: url(https://www.edanz.com/sites/default/files/cam-icon-check.png) center / 100% 100% no-repeat;
   position: absolute;
   left: -20px;
   top: 5px;
