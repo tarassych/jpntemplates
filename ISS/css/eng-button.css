@@ -81,7 +81,7 @@
 
 
 .iss-intro {
-	background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/intro-full.jpg) center / cover no-repeat;
+	background: url(https://www.edanz.com/sites/default/files/intro-full.jpg) center / cover no-repeat;
 	padding: 120px 0;
 }
 .iss-intro h1 {
@@ -268,7 +268,7 @@
 	width: calc(100% / 4 - 25px);
 }
 .iss-cards__header {
-	background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/card-header.png) top center / 100% 100% no-repeat;
+	background: url(https://www.edanz.com/sites/default/files/card-header.png) top center / 100% 100% no-repeat;
 	padding: 15px 0 24px;
 }
 .iss-cards__header h3 {
