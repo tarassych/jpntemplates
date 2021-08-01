@@ -1,0 +1,322 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500;600;700&display=swap');
+.rcd * {
+  box-sizing: border-box;
+}
+
+.rcd h1,
+.rcd h2,
+.rcd h3,
+.rcd h4,
+.rcd h5,
+.rcd h6,
+.rcd li,
+.rcd p,
+.rcd a {
+  font-family: 'Noto Sans', sans-serif !important;
+  font-weight: 500 !important;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.rcd-container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.rcd-header {
+  background: url(https://www.edanz.com/sites/default/files/rcd-header-bg.jpg) center / cover no-repeat;
+  margin-bottom: 35px;
+  padding: 100px 0px 65px;
+}
+.rcd-header h1 {
+  font-size: 45px !important;
+  line-height: 72px;
+  letter-spacing: -5px;
+  margin-bottom: 15px;
+}
+.rcd-header h2 {
+  font-size: 24px !important;
+  line-height: 42px;
+}
+.rcd-header h1 span,
+.rcd-header h2 span {
+  background-color: #fff;
+  margin: 0 10px;
+  padding: 5px;
+}
+
+.rcd-content {
+  border: 1px solid #DADADB;
+  border-top: 4px solid #023762;
+  padding: 25px 30px 45px 35px;
+}
+
+.rcd-top {
+  display: flex;
+  flex-direction: row;
+}
+
+.rcd-left {
+  padding-right: 35px;
+}
+.rcd-left--title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.rcd-left--title img {
+  margin-right: 15px;
+  height: 60px;
+  width: 60px;
+}
+.rcd-left--title > h2 {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  line-height: 42px;
+}
+.rcd-left > h3 {
+  color: #ba2532;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  line-height: 30px;
+  margin-bottom: 10px;
+  padding-left: 25px;
+}
+.rcd-left > p {
+  font-size: 16px !important;
+  line-height: 26px;
+  margin-bottom: 30px;
+  padding-left: 25px;
+}
+.rcd-left ul {
+  flex-grow: 1;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding: 0 0 0 50px;
+}
+.rcd-left ul li {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  line-height: 26px;
+  margin-bottom: 20px;
+  letter-spacing: -2px;
+  position: relative;
+}
+.rcd-left ul li:before {
+  content: "";
+  background: url(https://www.edanz.com/sites/default/files/cam-icon-check.png) center / 100% 100% no-repeat;
+  position: absolute;
+  left: -20px;
+  top: 5px;
+  height: 15px;
+  width: 15px;
+}
+.rcd-btn {
+  margin-bottom: 40px;
+  padding-left: 25px;
+}
+.rcd-btn a {  
+  background-color: #BA2532;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  line-height: 26px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.rcd-row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+  padding-left: 25px;
+}
+.rcd-row h4 {
+  font-size: 12px !important;
+  line-height: 18px;
+}
+.rcd-row h4 span {
+  display: block;
+}
+.rcd-row h3 {
+  color: #29CA9B;
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  line-height: 26px;
+  margin: 4px 0;
+}
+.rcd-row--left {
+  flex-grow: 1;
+}
+.rcd-row--right {
+  flex-shrink: 0;
+  width: 210px;
+}
+
+.rcd-right {
+  flex-shrink: 0;
+  width: 435px;
+}
+.rcd-right img {
+  width: 100%;
+}
+
+.rcd-content hr {
+  background-color: #ccc;
+  border: 0;
+  margin: 0;
+  height: 1px;
+}
+
+
+.rcd-bot {
+  margin-top: 40px;
+}
+.rcd-bot > h3 {
+  color: #ba2532;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  line-height: 30px;
+  margin-bottom: 10px;
+  padding-left: 25px;
+}
+.rcd-bot > h3 span {
+  color: #000;
+  display: block;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+}
+.rcd-bot ul {
+  flex-grow: 1;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding: 0 0 0 50px;
+}
+.rcd-bot ul li {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  line-height: 26px;
+  position: relative;
+}
+.rcd-bot ul li:before {
+  content: "";
+  background: url(https://www.edanz.com/sites/default/files/cam-icon-check.png) center / 100% 100% no-repeat;
+  position: absolute;
+  left: -20px;
+  top: 5px;
+  height: 15px;
+  width: 15px;
+}
+
+.rcd-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 90px;
+}
+.rcd-card {
+  background: url(https://www.edanz.com/sites/default/files/rcd-card-bg.png) center / 100% 100% no-repeat;
+  padding: 25px 10px 45px 20px;
+  position: relative;
+  width: calc(100% / 3 - 30px);
+}
+.rcd-card:before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 64px;
+  width: 60px;
+}
+.rcd-card:nth-child(1):before {
+  background: url(https://www.edanz.com/sites/default/files/rcd-card-top-1.png) center / 100% 100% no-repeat;
+}
+.rcd-card:nth-child(2):before {
+  background: url(https://www.edanz.com/sites/default/files/rcd-card-top-2.png) center / 100% 100% no-repeat;
+}
+.rcd-card:nth-child(3):before {
+  background: url(https://www.edanz.com/sites/default/files/rcd-card-top-3.png) center / 100% 100% no-repeat;
+}
+.rcd-card p {
+  font-size: 16px !important;
+  line-height: 26px;
+}
+.rcd-card p span {
+  display: block;
+  text-align: right;
+}
+
+@media (max-width: 1024px) {
+  .rcd-header {
+    text-align: center;
+  }
+  .rcd-header h1 {
+    font-size: 35px !important;
+    line-height: 60px;
+    letter-spacing: -5px;
+    margin-bottom: 15px;
+  }
+  .rcd-header h2 {
+    font-size: 20px !important;
+    line-height: 30px;
+  }
+  .rcd-top {
+    flex-direction: column;
+    align-items: center;
+  }
+  .rcd-content {
+    padding: 10px;
+  }
+  .rcd-left {
+    padding: 0;
+  }
+  .rcd-row {
+    flex-direction: column;
+  }
+  .rcd-btn {
+    text-align: center;
+  }
+  .rcd-row--left {
+    margin-bottom: 20px;
+  }
+  .rcd-row--left,
+  .rcd-row--right {
+    text-align: center;
+    width: 100%;
+  }
+  .rcd-right {
+    width: 100%;
+    max-width: 435px;
+  }
+
+  .rcd-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .rcd-card:not(:first-child) {
+    margin-top: 90px;
+  }
+  .rcd-card {
+    max-width: 320px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .rcd-header h1 {
+    font-size: 25px !important;
+    line-height: 40px;
+  }
+  .rcd-header h2 {
+    font-size: 16px !important;
+    line-height: 20px;
+  }
+}
+</style>
