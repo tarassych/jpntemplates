@@ -32,7 +32,7 @@
 .rcd-header h1 {
   font-size: 45px !important;
   line-height: 72px;
-  letter-spacing: -5px;
+  letter-spacing: -1px;
   margin-bottom: 15px;
 }
 .rcd-header h2 {
@@ -42,6 +42,7 @@
 .rcd-header h1 span,
 .rcd-header h2 span {
   background-color: #fff;
+  display: inline-block;
   margin: 0 10px;
   padding: 5px;
 }
@@ -51,6 +52,21 @@
   border-top: 4px solid #023762;
   padding: 25px 30px 45px 35px;
 }
+.rcd-content h3 {
+  color: #ba2532;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  line-height: 30px;
+  margin-bottom: 10px;
+  padding-left: 25px;
+}
+.rcd-content p {
+  font-size: 16px !important;
+  line-height: 26px;
+  margin-bottom: 30px;
+  padding-left: 25px;
+}
+
 
 .rcd-top {
   display: flex;
@@ -71,24 +87,10 @@
   height: 60px;
   width: 60px;
 }
-.rcd-left--title > h2 {
+.rcd-left--title h2 {
   font-size: 24px !important;
   font-weight: 700 !important;
   line-height: 42px;
-}
-.rcd-left > h3 {
-  color: #ba2532;
-  font-size: 18px !important;
-  font-weight: 700 !important;
-  line-height: 30px;
-  margin-bottom: 10px;
-  padding-left: 25px;
-}
-.rcd-left > p {
-  font-size: 16px !important;
-  line-height: 26px;
-  margin-bottom: 30px;
-  padding-left: 25px;
 }
 .rcd-left ul {
   flex-grow: 1;
@@ -133,6 +135,7 @@
 .rcd-row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   margin-bottom: 40px;
   padding-left: 25px;
 }
@@ -143,12 +146,12 @@
 .rcd-row h4 span {
   display: block;
 }
-.rcd-row h3 {
+.rcd-row h5 {
   color: #29CA9B;
   font-size: 24px !important;
   font-weight: 600 !important;
   line-height: 26px;
-  margin: 4px 0;
+  margin: 4px 0 0;
 }
 .rcd-row--left {
   flex-grow: 1;
@@ -156,6 +159,10 @@
 .rcd-row--right {
   flex-shrink: 0;
   width: 210px;
+}
+.rcd-row--bot {
+  margin-top: 4px !important;
+  width: 100%;
 }
 
 .rcd-right {
@@ -177,7 +184,7 @@
 .rcd-bot {
   margin-top: 40px;
 }
-.rcd-bot > h3 {
+.rcd-bot h3 {
   color: #ba2532;
   font-size: 18px !important;
   font-weight: 700 !important;
@@ -185,7 +192,7 @@
   margin-bottom: 10px;
   padding-left: 25px;
 }
-.rcd-bot > h3 span {
+.rcd-bot h3 span {
   color: #000;
   display: block;
   font-size: 16px !important;
@@ -218,6 +225,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 40px;
   padding-top: 90px;
 }
 .rcd-card {
@@ -253,6 +261,27 @@
   text-align: right;
 }
 
+.rcd-articles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 45px;
+}
+.rcd-articles h3 {
+  margin-bottom: 30px;
+  width: 100%;
+}
+.rcd-article {
+  width: 260px;
+}
+.rcd-article img {
+  width: 100%;
+}
+.rcd-article:hover img {
+  transform: scale(2.5);
+}
+
 @media (max-width: 1024px) {
   .rcd-header {
     text-align: center;
@@ -260,7 +289,6 @@
   .rcd-header h1 {
     font-size: 35px !important;
     line-height: 60px;
-    letter-spacing: -5px;
     margin-bottom: 15px;
   }
   .rcd-header h2 {
@@ -279,17 +307,20 @@
   }
   .rcd-row {
     flex-direction: column;
+    padding: 0;
   }
   .rcd-btn {
+    padding: 0;
     text-align: center;
-  }
-  .rcd-row--left {
-    margin-bottom: 20px;
   }
   .rcd-row--left,
   .rcd-row--right {
+    margin-bottom: 20px;
     text-align: center;
     width: 100%;
+  }
+  .rcd-row h4 {
+    text-align: center;
   }
   .rcd-right {
     width: 100%;
