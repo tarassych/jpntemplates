@@ -1,6 +1,5 @@
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
 .mdsp * {
   box-sizing: border-box;
 }
@@ -10,24 +9,25 @@
 .mdsp h4,
 .mdsp h5,
 .mdsp h6,
-.mdsp a,
 .mdsp li,
+.mdsp a,
 .mdsp p {
-  font-family: 'Libre Franklin', sans-serif;
+  color: #000;
+  font-family: 'Noto Sans', sans-serif !important;
+  font-weight: 500 !important;
   margin: 0;
-  padding: 0;
 }
 .mdsp-container {
   margin: 0 auto;
-  padding: 0 100px 5px;
-  width: 1200px;
+  padding-bottom: 5px;
+  max-width: 1000px;
 }
 #mdsp-form {
-  padding-bottom: 75px;
+  padding-bottom: 80px;
 }
 
 .mdsp-header {
-  background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/cam-header-bg.jpg) center / 100% 100% no-repeat;
+  background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/cam-header-bg.jpg) center / cover no-repeat;
   margin-bottom: 40px;
   padding: 85px 100px 115px;
 }
@@ -49,15 +49,23 @@
   padding: 9px 6px;
 }
 
+
 .mdsp-element {
-  border-top: 4px solid #023762;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-top: 4px solid #023762;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-  padding: 30px 60px 60px 30px;
+  padding: 30px 40px 20px 30px;
 }
 .mdsp-element:not(:last-child) {
   margin-bottom: 40px;
+}
+.mdsp-left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  width: 555px;
 }
 .mdsp-title {
   display: flex;
@@ -79,11 +87,9 @@
   font-size: 16px !important;
   line-height: 26px;
   margin-bottom: 70px;
+  padding-left: 30px;
 }
 .mdsp-element ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   list-style: none;
   margin-bottom: 20px;
   padding: 0 0 0 25px;
@@ -92,21 +98,19 @@
   font-size: 16px !important;
   font-weight: 500 !important;
   line-height: 26px;
-  margin-bottom: 25px;
   position: relative;
-  width: 50%;
 }
 .mdsp-element ul li:before {
   content: "";
   background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/cam-icon-check.png) center / 100% 100% no-repeat;
   position: absolute;
-  left: -24px;
+  left: -25px;
   top: 5px;
   height: 15px;
   width: 15px;
 }
 .mdsp-btn {
-  padding-left: 30px;
+  padding-left: 90px;
 }
 .mdsp-btn a {
   background-color: #ba2532;
@@ -116,13 +120,27 @@
   font-size: 14px !important;
   font-weight: 700 !important;
   line-height: 19px;
-  padding: 11px 30px;
+  padding: 12px 24px;
   text-decoration: none;
 }
 .mdsp-pay {
   display: flex;
   flex-direction: row;
-  padding-left: 30px;
+  align-items: flex-start;
+  margin-top: 25px;
+}
+.mdsp-pay--bottom {
+  margin-top: 0;
+  width: 100%;
+}
+.mdsp-pay--bottom .mdsp-pay--1 {
+  margin-top: 0;
+}
+.mdsp-pay--bottom .mdsp-pay--2 {
+  padding-top: 20px;
+  margin-left: 40px;
+  max-width: 600px;
+  width: 100%;
 }
 .mdsp-pay h2 {
   flex-shrink: 0;
@@ -130,45 +148,125 @@
   font-weight: 700 !important;
   line-height: 26px;
   margin: 0;
-  width: 100px;
+  width: 110px;
 }
 .mdsp-pay--1 {
   background-color: #FCFCFC;
   display: flex;
   flex-direction: row;
-  margin-top: auto;
-  padding: 15px 30px 15px 15px;
+  margin-top: 25px;
+  margin-right: 10px;
+  padding: 15px 0px 15px 15px;
 }
 .mdsp-pay--1 span {
   color: #29ca9b;
   display: block;
   font-size: 24px !important;
   line-height: 30px;
-  margin-top: 8px;
+  margin-top: 7px;
 }
 .mdsp-pay--1 h2:first-child {
   margin-right: 20px;
 }
 .mdsp-pay--2 {
-  background-color: #fcfcfc;
   margin-left: auto;
   flex-shrink: 0;
-  padding: 10px 40px 10px 40px;
   min-height: 100px;
-  width: 51%;
+  width: 240px;
 }
 .mdsp-pay--2 h2 {
   margin-bottom: 30px;
   width: 100%;
 }
-.mdsp-pay--2 p {
-  font-size: 12px !important;
-  line-height: 16px;
-  margin: 0;
-}
 .mdsp-pay--2 h2 span {
   display: block;
   font-weight: 500 !important;
   line-height: 16px;
+}
+
+.mdsp-right {
+  text-align: right;
+  max-width: 365px;
+  width: 100%;
+}
+.mdsp-right img:first-child {
+  margin-bottom: 25px;
+  height: 50px;
+  width: 50px;
+}
+.mdsp-right img:last-child {
+  width: 100%;
+}
+
+
+@media (max-width: 1024px) {
+  .mdsp-header {
+    padding: 85px 20px 115px;
+    text-align: center;
+  }
+  .mdsp-data {
+    align-items: center;
+    padding: 20px 10px 10px;
+  }
+  .mdsp-img,
+  .mdsp-img--small img.img-small {
+    padding: 40px 30px 50px;
+  }
+  .mdsp-element {
+    justify-content: center;
+  }
+  .mdsp-data a {
+    margin-left: 0;
+    text-align: center;
+  }
+  .mdsp-row__element {
+    width: 100%;
+  }
+  .mdsp-btn {
+    padding: 0;
+    text-align: center;
+  }
+  .mdsp-pay {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+  }
+  .mdsp-row__left {
+    display: flex;
+    flex-direction: row;
+  }
+  .mdsp-pay--1 {
+    padding: 15px;
+  }
+  .mdsp-pay--2 {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .mdsp-pay--bottom .mdsp-pay--1 {
+    margin: 0;
+  }
+  .mdsp-pay--bottom .mdsp-pay--2 {
+    margin: 0;
+    max-width: 100%;
+  }
+  .mdsp-left {
+    margin: 0;
+  }
+  .mdsp-right {
+    margin-top: 25px;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .mdsp-data {
+    width: 100%;
+  }
+  .mdsp-element {
+    padding: 20px 30px 40px;
+  }
+  .mdsp-pay--2 {
+    padding: 10px 0;
+  }
 }
 </style>
