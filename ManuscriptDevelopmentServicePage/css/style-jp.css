@@ -23,7 +23,7 @@
   max-width: 1000px;
 }
 #mdsp-form {
-  padding-bottom: 75px;
+  padding-bottom: 80px;
 }
 
 .mdsp-header {
@@ -49,15 +49,23 @@
   padding: 9px 6px;
 }
 
+
 .mdsp-element {
-  border-top: 4px solid #023762;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-top: 4px solid #023762;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-  padding: 30px 60px 60px 30px;
+  padding: 30px 40px 20px 30px;
 }
 .mdsp-element:not(:last-child) {
   margin-bottom: 40px;
+}
+.mdsp-left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  width: 555px;
 }
 .mdsp-title {
   display: flex;
@@ -82,32 +90,21 @@
   padding-left: 30px;
 }
 .mdsp-element ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   list-style: none;
   margin-bottom: 20px;
-  padding: 0 0 0 50px;
+  padding: 0 0 0 25px;
 }
 .mdsp-element ul li {
   font-size: 16px !important;
   font-weight: 500 !important;
   line-height: 26px;
-  margin-bottom: 25px;
   position: relative;
-}
-.mdsp-element ul li:nth-child(odd) {
-  padding-right: 40px;
-  width: 47%;
-}
-.mdsp-element ul li:nth-child(even) {
-  width: 53%;
 }
 .mdsp-element ul li:before {
   content: "";
   background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/cam-icon-check.png) center / 100% 100% no-repeat;
   position: absolute;
-  left: -24px;
+  left: -25px;
   top: 5px;
   height: 15px;
   width: 15px;
@@ -123,13 +120,27 @@
   font-size: 14px !important;
   font-weight: 700 !important;
   line-height: 19px;
-  padding: 11px 30px;
+  padding: 12px 24px;
   text-decoration: none;
 }
 .mdsp-pay {
   display: flex;
   flex-direction: row;
-  padding-left: 30px;
+  align-items: flex-start;
+  margin-top: 25px;
+}
+.mdsp-pay--bottom {
+  margin-top: 0;
+  width: 100%;
+}
+.mdsp-pay--bottom .mdsp-pay--1 {
+  margin-top: 0;
+}
+.mdsp-pay--bottom .mdsp-pay--2 {
+  padding-top: 20px;
+  margin-left: 40px;
+  max-width: 600px;
+  width: 100%;
 }
 .mdsp-pay h2 {
   flex-shrink: 0;
@@ -143,26 +154,26 @@
   background-color: #FCFCFC;
   display: flex;
   flex-direction: row;
-  margin-top: auto;
-  padding: 15px 30px 15px 15px;
+  margin-top: 25px;
+  margin-right: 10px;
+  padding: 15px 20px 15px 15px;
 }
 .mdsp-pay--1 span {
   color: #29ca9b;
   display: block;
   font-size: 24px !important;
   line-height: 30px;
-  margin-top: 8px;
+  margin-top: 7px;
 }
 .mdsp-pay--1 h2:first-child {
   margin-right: 20px;
+  width: 110px;
 }
 .mdsp-pay--2 {
-  background-color: #fcfcfc;
   margin-left: auto;
   flex-shrink: 0;
-  padding: 10px 40px;
   min-height: 100px;
-  width: 51%;
+  width: 240px;
 }
 .mdsp-pay--2 h2 {
   margin-bottom: 30px;
@@ -178,6 +189,22 @@
   font-weight: 500 !important;
   line-height: 16px;
 }
+
+.mdsp-right {
+  text-align: right;
+  max-width: 365px;
+  width: 100%;
+}
+.mdsp-right img:first-child {
+  margin-bottom: 25px;
+  height: 50px;
+  width: 50px;
+}
+.mdsp-right img:last-child {
+  width: 100%;
+}
+
+
 @media (max-width: 1024px) {
   .mdsp-header {
     padding: 85px 20px 115px;
@@ -215,12 +242,26 @@
     flex-direction: row;
   }
   .mdsp-pay--1 {
-    padding: 15px 0;
+    padding: 15px;
   }
   .mdsp-pay--2 {
     margin: 0;
     text-align: center;
     width: 100%;
+  }
+  .mdsp-pay--bottom .mdsp-pay--1 {
+    margin: 0;
+  }
+  .mdsp-pay--bottom .mdsp-pay--2 {
+    margin: 0;
+    max-width: 100%;
+  }
+  .mdsp-left {
+    margin: 0;
+  }
+  .mdsp-right {
+    margin-top: 25px;
+    text-align: center;
   }
 }
 @media (max-width: 768px) {
@@ -229,13 +270,6 @@
   }
   .mdsp-element {
     padding: 20px 30px 40px;
-  }
-  .mdsp-element ul {
-    flex-direction: column;
-  }
-  .mdsp-element ul li:nth-child(even),
-  .mdsp-element ul li:nth-child(odd) {
-    width: 100%;
   }
   .mdsp-pay--2 {
     padding: 10px 0;
