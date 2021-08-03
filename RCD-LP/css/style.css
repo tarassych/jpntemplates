@@ -28,23 +28,29 @@
   background: url(https://www.edanz.com/sites/default/files/rcd-header-bg.jpg) center / cover no-repeat;
   margin-bottom: 35px;
   padding: 100px 0px 65px;
+  position: relative;
 }
 .rcd-header h1 {
-  font-size: 45px !important;
-  line-height: 72px;
+  background-color: #fff;
+  font-size: 40px !important;
+  line-height: 40px;
   letter-spacing: -1px;
-  margin-bottom: 15px;
+  padding: 5px 50px;
+  position: relative;
+  text-align: center;
+  z-index: 99;
 }
-.rcd-header h2 {
+.rcd-header h1 span {
   font-size: 24px !important;
   line-height: 42px;
 }
-.rcd-header h1 span,
-.rcd-header h2 span {
-  background-color: #fff;
-  display: inline-block;
-  margin: 0 10px;
-  padding: 5px;
+.rcd-header img {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  width: 100%;
+  max-width: 800px;
+  z-index: 9;
 }
 
 .rcd-content {
@@ -167,11 +173,32 @@
 
 .rcd-right {
   flex-shrink: 0;
+  position: relative;
   width: 435px;
 }
 .rcd-right img {
   width: 100%;
 }
+.rcd-right h4 {
+  margin-top: 15px;
+  font-size: 12px !important;
+  line-height: 18px;
+  text-align: center;
+}
+.rcd-article {
+  position: absolute;
+  top: 240px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 290px;
+}
+.rcd-article img {
+  width: 100%;
+}
+.rcd-article:hover img {
+  transform: scale(2.5);
+}
+
 
 .rcd-content hr {
   background-color: #ccc;
@@ -230,9 +257,9 @@
 }
 .rcd-card {
   background: url(https://www.edanz.com/sites/default/files/rcd-card-bg.png) center / 100% 100% no-repeat;
-  padding: 25px 10px 45px 20px;
+  padding: 30px 20px 10px;
   position: relative;
-  width: calc(100% / 3 - 30px);
+  width: calc(100% / 3 - 20px);
 }
 .rcd-card:before {
   content: "";
@@ -255,32 +282,13 @@
 .rcd-card p {
   font-size: 16px !important;
   line-height: 26px;
+  padding-left: 0;
 }
 .rcd-card p span {
   display: block;
   text-align: right;
 }
 
-.rcd-articles {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 45px;
-}
-.rcd-articles h3 {
-  margin-bottom: 30px;
-  width: 100%;
-}
-.rcd-article {
-  width: 260px;
-}
-.rcd-article img {
-  width: 100%;
-}
-.rcd-article:hover img {
-  transform: scale(2.5);
-}
 
 @media (max-width: 1024px) {
   .rcd-header {
