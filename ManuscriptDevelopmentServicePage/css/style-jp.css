@@ -27,7 +27,7 @@
 }
 
 .mdsp-header {
-  background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/cam-header-bg.jpg) center / cover no-repeat;
+  background: url(https://www.edanz.com/sites/default/files/cam-header-bg.jpg) center / cover no-repeat;
   margin-bottom: 40px;
   padding: 85px 100px 115px;
 }
@@ -83,11 +83,10 @@
   font-weight: 700 !important;
   line-height: 26px;
 }
-.mdsp-element > p {
-  font-size: 16px !important;
+.mdsp-element p {
+  font-size: 17px !important;
   line-height: 26px;
-  margin-bottom: 70px;
-  padding-left: 30px;
+  margin-bottom: 30px;
 }
 .mdsp-element ul {
   list-style: none;
@@ -102,7 +101,7 @@
 }
 .mdsp-element ul li:before {
   content: "";
-  background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/cam-icon-check.png) center / 100% 100% no-repeat;
+  background: url(https://www.edanz.com/sites/default/files/cam-icon-check.png) center / 100% 100% no-repeat;
   position: absolute;
   left: -25px;
   top: 5px;
