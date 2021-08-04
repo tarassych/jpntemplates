@@ -1,5 +1,5 @@
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
 .rcd * {
   box-sizing: border-box;
 }
@@ -35,14 +35,14 @@
   font-size: 40px !important;
   line-height: 40px;
   letter-spacing: -1px;
-  padding: 5px 50px;
+  padding: 10px 50px;
   position: relative;
   text-align: center;
   z-index: 99;
 }
 .rcd-header h1 span {
   font-size: 24px !important;
-  line-height: 42px;
+  line-height: 24px;
 }
 .rcd-header img {
   position: absolute;
@@ -80,7 +80,7 @@
 }
 
 .rcd-left {
-  padding-right: 35px;
+  padding-right: 20px;
 }
 .rcd-left--title {
   display: flex;
@@ -110,7 +110,6 @@
   font-weight: 500 !important;
   line-height: 26px;
   margin-bottom: 20px;
-  letter-spacing: -2px;
   position: relative;
 }
 .rcd-left ul li:before {
@@ -194,9 +193,6 @@
 }
 .rcd-article img {
   width: 100%;
-}
-.rcd-article:hover img {
-  transform: scale(2.5);
 }
 
 
@@ -302,6 +298,9 @@
   .rcd-header h2 {
     font-size: 20px !important;
     line-height: 30px;
+  }
+  .rcd-header img {
+    left: 0;
   }
   .rcd-top {
     flex-direction: column;
