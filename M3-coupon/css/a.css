@@ -1,0 +1,228 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
+.m3c * {
+  box-sizing: border-box;
+}
+
+.m3c h1,
+.m3c h2,
+.m3c h3,
+.m3c h4,
+.m3c h5,
+.m3c h6,
+.m3c li,
+.m3c p,
+.m3c a {
+  font-family: 'Noto Sans', sans-serif !important;
+  font-weight: 500 !important;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.m3c {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.m3c-header {
+  width: 100%;
+}
+.m3c-header img {
+  width: 100%;
+}
+.m3c-content {
+  padding: 30px 20px;
+}
+.m3c-content--container {
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.m3c-top {
+  display: flex;
+  flex-direction: row;
+  padding: 0 20px 20px;
+}
+
+
+.m3c-left {
+  padding: 5px 50px 30px 20px;
+}
+.m3c-left h3 {
+  font-size: 25px !important;
+  font-weight: 600 !important;
+  line-height: 44px;
+  margin-bottom: 15px;
+}
+.m3c-left hr {
+  border: none;
+  background-color: #aebbc3;
+  margin: 11px 0;
+  height: 1px;
+  width: 100%;
+}
+.m3c-left p {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+.m3c-left p span {
+  color: #f00;
+}
+.m3c-left--row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.m3c-left--row h2 {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  line-height: 26px;
+}
+.m3c-left--row h2 span {
+  color: #05A3E0;
+  display: block;
+  font-size: 25px !important;
+  font-weight: 600 !important;
+  line-height: 30px;
+}
+.m3c-left--row a {
+  background-color: #203762;
+  border-radius: 11px;
+  color: #fff;
+  display: block;
+  flex-shrink: 0;
+  font-size: 23px !important;
+  font-weight: 700 !important;
+  line-height: 35px;
+  text-decoration: none;
+  padding: 15px 30px;
+}
+
+.m3c-right {
+  background-color: #fff;
+  border-top: 5px solid #023762;
+  flex-shrink: 0;
+  padding: 25px 45px;
+  width: 300px;
+}
+.m3c-right h4 {
+  font-size: 17px !important;
+  font-weight: 700 !important;
+  line-height: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.m3c-right h5 {
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.m3c-right ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.m3c-right ul li {
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  line-height: 25px;
+  position: relative;
+  height: 35px;
+  width: 100%;
+}
+.m3c-right ul li span {
+  color: #50a3e0;
+}
+.m3c-right ul li:not(:last-child):before {
+  content: "";
+  background: url(https://www.edanz.com/sites/default/files/m3c-arrow-down.png) center / 100% 100% no-repeat;
+  position: absolute;
+  bottom: -14px;
+  height: 7px;
+  width: 12px;
+}
+.m3c-right ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+.m3c-right ul li:nth-child(2) {
+  border-color: #05A3E0;
+  border-width: 2px;
+  color: #05A3E0;
+}
+
+.m3c-bottom {
+  background-color: #aebbc3;
+  padding: 10px 40px 35px;
+}
+.m3c-bottom h4 {
+  color: #fff;
+  font-size: 21px !important;
+  font-weight: 600 !important;
+  line-height: 36px;
+  margin-bottom: 10px;
+}
+.m3c-bottom ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.m3c-bottom ul li {
+  font-size: 14px !important;
+  line-height: 25px;
+}
+
+@media (max-width: 1200px) {
+  .m3c-left--row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .m3c-content,
+  .m3c-top {
+    padding: 0;
+  }
+  .m3c-top {
+    display: flex;
+    align-items: flex-start;
+  }
+  .m3c-left {
+    padding: 5px 10px 20px;
+  }
+  .m3c-right {
+    padding: 5px 20px 20px;
+  }
+}
+@media (max-width: 767px) {
+  .m3c-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .m3c-content--container {
+    padding: 10px;
+  }
+  .m3c-left {
+    padding: 5px 0 20px;
+  }
+  .m3c-right {
+    margin-bottom: 20px;
+    padding: 5px 15px 15px;
+  }
+  .m3c-bottom {
+    padding: 10px 20px 20px;
+  }
+}
+@media (max-width: 425px) {
+  .m3c-left--row a {
+    font-size: 20px !important;
+  }
+}
+</style>
