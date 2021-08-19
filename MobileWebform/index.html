@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="mw-form">
+    <div class="mw-title">
+      <h2>
+        お見積り
+      </h2>
+    </div>
+
+    <div class="mw-radio-container">
+      <h3>
+        お見積りをご希望のサービスをお選びください
+      </h3>
+      
+      <div class="mw-radio">
+        <input type="radio" name="service" value="" id="service1">
+        <label for="service1">英文校正のみ</label>
+      </div>
+      <div class="mw-radio">
+        <input type="radio" name="service" value="" id="service2">
+        <label for="service2">英文校正＋強化サービス</label>
+      </div>
+    </div>
+
+    <div class="mw-radio-container">
+      <h3>
+        原稿はご用意できていますか？
+      </h3>
+      
+      <div class="mw-radio">
+        <input type="radio" name="ready" value="" id="ready1">
+        <label for="ready1">はい</label>
+      </div>
+      <div class="mw-radio">
+        <input type="radio" name="ready" value="" id="ready2">
+        <label for="ready2"> いいえ</label>
+      </div>
+    </div>
+
+    <div class="mw-attach">
+      <h3>原稿全文および参考資料を添付してください。</h3>
+
+      <a href="">
+        +添付ファイルを追加
+      </a>
+    </div>
+
+    <div class="mw-input mw-words">
+      <h3>原稿のおおよその単語数、文字数を教えてください。</h3>
+      <input type="text">
+    </div>
+
+    <div class="mw-radio-container">
+      <h3>
+        ご希望の納期をお選びください。
+      </h3>
+      
+      <div class="mw-radio">
+        <input type="radio" name="date" value="" id="date1">
+        <label for="date1">1営業日</label>
+      </div>
+      <div class="mw-radio">
+        <input type="radio" name="date" value="" id="date2">
+        <label for="date2">2営業日</label>
+      </div>
+      <div class="mw-radio">
+        <input type="radio" name="date" value="" id="date3">
+        <label for="date3">3営業日</label>
+      </div>
+    </div>
+
+    <div class="mw-title">
+      <h2>
+        お客様情報
+      </h2>
+    </div>
+
+    <div class="mw-input">
+      <h3>お名前（フルネーム）</h3>
+      <input type="text">
+    </div>
+
+    <div class="mw-input">
+      <h3>メールアドレス</h3>
+      <input type="text">
+    </div>
+
+    <div class="mw-input">
+      <h3>お電話番号</h3>
+      <input type="text">
+    </div>
+
+    <div class="mw-submit">
+      <button type="submit">送信する</button>
+    </div>
+  </div>
+
+  <script>
+    const attach = document.querySelector(".mw-attach")
+    const words = document.querySelector(".mw-words")
+    const ready1 = document.querySelector("#ready1")
+    const ready2 = document.querySelector("#ready2")
+
+    ready1.addEventListener("click", () => {
+      attach.classList.add("show")
+      words.classList.remove("show")
+    })
+    ready2.addEventListener("click", () => {
+      words.classList.add("show")
+      attach.classList.remove("show")
+    })
+  </script>
+</body>
+</html>
