@@ -81,11 +81,14 @@
   line-height: 26px;
 }
 .m3c-left--row h2 span {
-  color: #05A3E0;
   display: block;
   font-size: 25px !important;
   font-weight: 600 !important;
   line-height: 30px;
+}
+.m3c-left--row h2 span a {
+  color: #05A3E0;
+  text-decoration: none;
 }
 
 .m3c-right {
@@ -127,8 +130,9 @@
   height: 35px;
   width: 100%;
 }
-.m3c-right ul li span {
-  color: #50a3e0;
+.m3c-right ul li a {
+  color: #000;
+  text-decoration: none;
 }
 .m3c-right ul li:not(:last-child):before {
   content: "";
