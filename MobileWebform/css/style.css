@@ -21,66 +21,67 @@
 .mw-form {
   border: 1px solid #707070;
   margin: 0 auto;
-  padding: 0 0 85px;
+  padding: 0 0 40px;
   width: 100%;
-  max-width: 850px;
+  max-width: 375px;
 }
 .mw-title {
   background-color: #eaedf0;
-  margin-bottom: 50px;
-  padding: 20px 0;
+  margin-bottom: 25px;
+  padding: 10px 0;
 }
 .mw-title h2 {
-  font-size: 30px;
+  font-size: 15px;
   font-weight: 500;
-  line-height: 60px;
+  line-height: 30px;
   text-align: center;
 }
 
 .mw-form h3 {
-  font-size: 30px;
-  line-height: 60px;
+  font-size: 15px;
+  line-height: 30px;
 }
 
 .mw-radio-container {
-  margin-bottom: 70px;
-  padding: 0 50px;
+  margin-bottom: 35px;
+  padding: 0 25px;
 }
 .mw-radio {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-left: 25px;
+  padding-left: 15px;
 }
 .mw-radio input {
   flex-shrink: 0;
-  margin-right: 15px;
-  height: 30px;
-  width: 30px;
+  margin-right: 10px;
+  height: 15px;
+  width: 15px;
 }
 .mw-radio label {
-  font-size: 30px;
-  line-height: 60px;
+  font-size: 15px;
+  line-height: 30px;
 }
 
 .mw-attach {
   display: none;
-  margin-bottom: 70px;
-  padding: 0 50px;
+  margin-bottom: 35px;
+  padding: 0 25px;
 }
 .mw-attach h3 {
-  margin-bottom: 30px;
+  font-size: 13px;
+  margin-bottom: 10px;
 }
 .mw-attach a {
   background-color: #BA3435;
   border: 0;
-  border-radius: 20px;
+  border-radius: 10px;
   color: #fff;
   display: inline-block;
-  font-size: 30px;
-  line-height: 60px;
-  margin: 0 20px;
-  padding: 15px 30px;
+  font-size: 15px;
+  line-height: 30px;
+  margin: 0 10px;
+  padding: 10px 15px;
   text-decoration: none;
 }
 
@@ -95,19 +96,20 @@
 .mw-input {
   display: flex;
   flex-direction: column;
-  margin-bottom: 45px;
-  padding: 0 50px;
+  margin-bottom: 20px;
+  padding: 0 25px;
 }
 .mw-input h3 {
-  margin-bottom: 35px;
+  font-size: 13px;
+  margin-bottom: 10px;
 }
 .mw-input input {
   border: 1px solid #333333;
   flex-grow: 1;
-  font-size: 30px;
-  line-height: 38px;
-  margin: 0 20px;
-  padding: 10px 20px;
+  font-size: 15px;
+  line-height: 19px;
+  margin: 0 10px;
+  padding: 5px 10px;
 }
 
 .mw-submit {
@@ -116,73 +118,103 @@
 .mw-submit button {
   background-color: #BA3435;
   border: 0;
-  border-radius: 20px;
+  border-radius: 10px;
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-size: 30px;
-  line-height: 60px;
-  padding: 10px 0;
+  font-size: 15px;
+  line-height: 30px;
+  padding: 5px 0;
   text-decoration: none;
   text-align: center;
-  width: 340px;
+  width: 170px;
   max-width: 100%;
 }
 
-@media (max-width: 767px) {
+
+@media (min-width: 768px) {
+  .mw-form {
+    padding: 0 0 80px;
+    max-width: 750px;
+  }
+  .mw-title {
+    margin-bottom: 50px;
+    padding: 10px 0;
+  }
+  .mw-title h2,
+  .mw-form h3 {
+    font-size: 30px;
+    line-height: 60px;
+  }
+
+  .mw-radio-container {
+    margin-bottom: 70px;
+    padding: 0 50px;
+  }
+  .mw-radio {
+    padding-left: 30px;
+  }
+  .mw-radio input {
+    margin-right: 20px;
+    height: 30px;
+    width: 30px;
+  }
+  .mw-radio label {
+    font-size: 30px;
+    line-height: 60px;
+  }
+
+  .mw-attach {
+    margin-bottom: 70px;
+    padding: 0 50px;
+  }
+  .mw-attach h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  .mw-attach a {
+    border-radius: 20px;
+    font-size: 30px;
+    line-height: 60px;
+    margin: 0 20px;
+    padding: 20px 30px;
+  }
+
+  .mw-input {
+    margin-bottom: 40px;
+    padding: 0 50px;
+  }
+  .mw-input h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  .mw-input input {
+    font-size: 30px;
+    line-height: 38px;
+    margin: 0 20px;
+    padding: 10px 20px;
+  }
+
+  .mw-submit button {
+    border-radius: 20px;
+    font-size: 30px;
+    line-height: 60px;
+    padding: 10px 0;
+    width: 340px;
+  }
+}
+@media (max-width: 374px) {
   .mw-form {
     text-align: center;
   }
-  .mw-title {
-    padding: 5px 0;
-  }
   .mw-title h2,
   .mw-form h3,
   .mw-radio label,
   .mw-attach a,
   .mw-submit button {
-    font-size: 25px;
-  }
-  .mw-form h3 {
-    line-height: 40px;
-    margin-bottom: 15px;
+    font-size: 12px;
   }
   .mw-attach a {
-    padding: 5px 30px;
-  }
-}
-
-@media (max-width: 425px) {
-  .mw-radio-container,
-  .mw-attach {
-    padding: 0 10px;
-  }
-  .mw-title h2,
-  .mw-form h3,
-  .mw-radio label,
-  .mw-attach a,
-  .mw-submit button {
-    font-size: 20px;
-  }
-  .mw-form h3 {
-    line-height: 30px;
-    margin-bottom: 10px;
-    padding: 0 20px;
-  }
-  .mw-attach a {
-    margin: 0;
-    padding: 5px 0;
-    text-align: center;
-    width: 100%;
-  }
-  .mw-input {
-    padding: 0 10px;
-  }
-  .mw-input input {
-    margin: 0;
-    max-width: 100%;
-  }
-  .mw-submit {
-    padding: 0 10px;
+    padding: 5px 20px;
   }
 }
