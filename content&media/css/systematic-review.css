@@ -19,15 +19,14 @@
 }
 .cam-container {
   margin: 0 auto;
-  padding: 0 100px 0;
-  width: 1200px;
+  max-width: 1000px;
 }
 #cam-form {
   padding-bottom: 70px;
 }
 
 .cam-header {
-  background: url(https://www.edanz.com/sites/default/files/cam-header-bg.jpg) center / 100% 100% no-repeat;
+  background: url(https://www.edanz.com/sites/default/files/cam-header-bg.jpg) center / cover no-repeat;
   margin-bottom: 40px;
   padding: 85px 100px 115px;
 }
@@ -76,20 +75,23 @@
   width: 505px;
 }
 .cam-img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
-  padding: 40px 30px 50px;
-  text-align: center;
+  padding: 20px 25px 50px;
   width: 495px;
 }
 .cam-img img {
-  height: 550px;
-  width: 100%;
+  height: auto;
+  width: 435px;
 }
 .cam-img--small img {
   height: auto;
 }
 .cam-img--small img.img-small {
-  width: 350px;
+  width: 360px;
 }
 .cam-title {
   display: flex;
@@ -119,7 +121,6 @@
 .cam-data p {
   font-size: 16px !important;
   line-height: 26px;
-  padding-left: 25px;
   margin-bottom: 30px;
 }
 .cam-data ul {
@@ -150,6 +151,7 @@
   font-size: 14px !important;
   font-weight: 700 !important;
   line-height: 19px;
+  margin-left: 25px;
   margin-bottom: 15px;
   padding: 11px 30px;
   text-decoration: none;
@@ -158,7 +160,7 @@
   display: flex;
   flex-direction: row;
   margin-top: auto;
-  padding-left: 15px;
+  padding-left: 25px;
   width: 100%;
 }
 .cam-pay h2 {
@@ -309,5 +311,75 @@ h2.cam-pay--3 span {
   font-size: 12px !important;
   font-weight: 500 !important;
   line-height: 16px;
+}
+
+@media (max-width: 1024px) {
+  .cam-header {
+    padding: 85px 20px 115px;
+    text-align: center;
+  }
+  .cam-data {
+    align-items: center;
+    padding: 20px 10px 10px;
+  }
+  .cam-img,
+  .cam-img--small img.img-small {
+    padding: 40px 30px 50px;
+  }
+  .cam-element {
+    justify-content: center;
+  }
+  .cam-data a {
+    margin-left: 0;
+    text-align: center;
+  }
+  .cam-partner {
+    justify-content: center;
+  }
+  .cam-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cam-row__element {
+    width: 100%;
+  }
+  .cam-row__element:first-child {
+    margin-bottom: 10px;
+  }
+  .cam-pay {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .cam-row__left {
+    display: flex;
+    flex-direction: row;
+  }
+  .cam-row__pay--1 {
+    padding-right: 20px;
+  }
+  h2.cam-pay--3 {
+    margin-left: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .cam-data {
+    width: 100%;
+  }
+  .cam-img,
+  .cam-img--small img.img-small {
+    padding: 40px 10px 50px;
+    width: auto;
+    max-width: 100%;
+  }
+  .cam-row__pay {
+    flex-direction: column;
+    align-items: center;
+  }
+  h2.cam-pay--3 {
+    margin-top: 10px;
+    margin-left: 0;
+    width: 100%;
+  }
 }
 </style>

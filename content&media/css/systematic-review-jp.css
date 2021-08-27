@@ -75,20 +75,23 @@
   width: 515px;
 }
 .cam-img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
-  padding: 40px 30px 50px 20px;
-  text-align: center;
+  padding: 20px 25px 50px 20px;
   width: 485px;
 }
 .cam-img img {
-  height: 550px;
-  width: 100%;
+  height: auto;
+  width: 435px;
 }
 .cam-img--small img {
   height: auto;
 }
 .cam-img--small img.img-small {
-  width: 350px;
+  width: 360px;
 }
 .cam-title {
   display: flex;
@@ -118,7 +121,6 @@
 .cam-data p {
   font-size: 16px !important;
   line-height: 26px;
-  padding-left: 25px;
   margin-bottom: 30px;
 }
 .cam-data ul {
