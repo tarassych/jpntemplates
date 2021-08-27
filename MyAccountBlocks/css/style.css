@@ -1,0 +1,245 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap');
+
+/* Notification block styles */
+.nfb * {
+  box-sizing: border-box;
+}
+.nfb h1,
+.nfb h2,
+.nfb h3,
+.nfb h4,
+.nfb h5,
+.nfb h6,
+.nfb a,
+.nfb li,
+.nfb p {
+  color: #4d4d4d;
+  font-family: 'Libre Franklin', sans-serif !important;
+  margin: 0;
+  padding: 0;
+}
+
+.nfb {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nfb-user {
+  color: #434343;
+  margin-right: 70px;
+}
+.nfb-user h2 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 5px;
+}
+.nfb-user h3 {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.nfb-info {
+  background: url(../img/nfb-info-background-image.png) center / 100% 100% no-repeat;
+  display: flex;
+  flex-direction: row;
+  padding: 20px 50px 25px 50px;
+  width: 1155px;
+  max-width: 100%;
+}
+.nfb-info img {
+  margin-right: 12px;
+  height: 60px;
+  width: 60px;
+}
+.nfb-info p {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+}
+.nfb-info p a {
+  font-size: 14px;
+  font-style: italic;
+}
+
+
+
+/* Notification block styles */
+.isb * {
+  box-sizing: border-box;
+}
+.isb h1,
+.isb h2,
+.isb h3,
+.isb h4,
+.isb h5,
+.isb h6,
+.isb a,
+.isb li,
+.isb p {
+  color: #4d4d4d;
+  font-family: 'Libre Franklin', sans-serif !important;
+  margin: 0;
+  padding: 0;
+}
+
+
+.isb {
+  width: 1380px;
+  max-width: 100%;
+}
+.isb-top {
+  background: url(../img/isb-top-title-bg.png) center / 100% 100% no-repeat;
+  border-radius: 10px 0 0 0;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  height: 30px;
+}
+.isb-top h2 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 0 70px 0 15px;
+}
+.isb-content {
+  border-radius: 0px 20px 20px 20px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  padding: 60px 30px 55px;
+}
+.isb-content > h2 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 60px;
+}
+
+.isb-blocks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.isb-block {
+  border-radius: 4px;
+  box-shadow: 0px 11px 35px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: calc((100% - 160px) / 3);
+}
+.isb-block img {
+  width: 100%;
+}
+.isb-block--data {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 15px 25px 30px;
+}
+.isb-block h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.isb-block p {
+  flex-grow: 1;
+  color: #4F5059;
+  font-size: 14px;
+  line-height: 24px;
+}
+.isb-block--link {
+  text-align: right;
+}
+.isb-block--link a {
+  color: #6584B5;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 24px;
+}
+
+
+
+/* Notification block styles */
+.ftb * {
+  box-sizing: border-box;
+}
+.ftb h1,
+.ftb h2,
+.ftb h3,
+.ftb h4,
+.ftb h5,
+.ftb h6,
+.ftb a,
+.ftb li,
+.ftb p {
+  font-family: 'Libre Franklin', sans-serif !important;
+  margin: 0;
+  padding: 0;
+}
+
+
+.ftb {
+  width: 430px;
+  max-width: 100%;
+}
+.ftb-top {
+  background: url(../img/isb-top-title-bg.png) center / 100% 100% no-repeat;
+  border-radius: 10px 0 0 0;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  height: 30px;
+}
+.ftb-top h2 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 0 70px 0 15px;
+}
+.ftb-content {
+  border-radius: 0px 20px 20px 20px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  padding: 30px 30px 5px;
+}
+
+.ftb-book {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+.ftb-book-left {
+  margin-right: 30px;
+}
+.ftb-book-left h2 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+.ftb-book-left a {
+  color: rgb(0, 0, 0, .8);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  text-decoration: none;
+}
+.ftb-book-right {
+  flex-shrink: 0;
+  width: 150px;
+}
+.ftb-book-right img {
+  width: 100%;
+}
+
+
+</style>
