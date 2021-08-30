@@ -1,0 +1,413 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
+.ups * {
+  box-sizing: border-box;
+}
+
+.ups h1,
+.ups h2,
+.ups h3,
+.ups h4,
+.ups h5,
+.ups h6,
+.ups li,
+.ups p,
+.ups a {
+  font-family: 'Noto Sans', sans-serif !important;
+  font-weight: 500 !important;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.ups-container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.ups-header {
+  background: url(https://www.edanz.com/sites/default/files/upc-header-bg.jpg) center / cover no-repeat;
+  margin-bottom: 35px;
+  padding: 100px 0px 65px;
+  position: relative;
+}
+.ups-header h1 {
+  background-color: #fff;
+  font-size: 40px !important;
+  line-height: 40px;
+  letter-spacing: -1px;
+  padding: 10px 50px;
+  position: relative;
+  text-align: center;
+  z-index: 99;
+}
+.ups-header h1 span {
+  font-size: 24px !important;
+  line-height: 24px;
+}
+
+.ups-content {
+  border: 1px solid #DADADB;
+  border-top: 4px solid #023762;
+  padding: 25px 30px 45px 35px;
+}
+.ups-content h3 {
+  color: #ba2532;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  line-height: 30px;
+  margin-bottom: 10px;
+  padding-left: 25px;
+}
+.ups-content p {
+  font-size: 15px !important;
+  line-height: 26px;
+  margin-bottom: 30px;
+  padding-left: 25px;
+}
+
+
+.ups-top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.ups-left {
+  padding-right: 20px;
+  width: 553px;
+}
+.ups-left--title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 25px;
+  width: 100%;
+}
+.ups-left--title img {
+  margin-right: 15px;
+  height: 60px;
+  width: 60px;
+}
+.ups-left--title h2 {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  line-height: 42px;
+}
+.ups-left ul {
+  flex-grow: 1;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.ups-left ul li {
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  line-height: 26px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.ups-left ul li:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  height: 17px;
+}
+.ups-list--1 {
+  padding-left: 58px;
+}
+.ups-list--2 {
+  padding-left: 67px;
+}
+.ups-list--1 li:before {
+  background: url(https://www.edanz.com/sites/default/files/upc-icon-1.png) center / 100% 100% no-repeat;
+  left: -33px;
+  width: 19px;
+}
+.ups-list--2 li:before {
+  background: url(https://www.edanz.com/sites/default/files/upc-icon-2.png) center / 100% 100% no-repeat;
+  left: -42px;
+  width: 25px;
+}
+.ups-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 40px;
+  padding-left: 25px;
+  width: 100%;
+}
+.ups-btn a {  
+  background-color: #BA2532;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  line-height: 26px;
+  margin-right: 90px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.ups-btn h5 {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.ups-right {
+  flex-shrink: 0;
+  padding-top: 20px;
+  width: 380px;
+}
+.ups-right img {
+  width: 100%;
+}
+
+.ups-top--bot {
+  width: 100%;
+}
+
+
+.ups-content hr {
+  background-color: #ccc;
+  border: 0;
+  margin: 0;
+  height: 1px;
+}
+
+
+.ups-bot {
+  margin-top: 40px;
+}
+.ups-bot h3 span {
+  color: #000;
+  display: block;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+}
+.ups-bot p {
+  color: #000;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  line-height: 20px;
+  padding-left: 30px;
+}
+.ups-bot p span {
+  font-size: 16px;
+}
+.ups-bot ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding: 0 0 0 60px;
+}
+.ups-bot ul li {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  line-height: 26px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.ups-bot ul li:before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 5px;
+  height: 22px;
+  width: 22px;
+}
+.ups-bot ul li:nth-child(1),
+.ups-bot ul li:nth-child(4) {
+  width: 40%;
+}
+.ups-bot ul li:nth-child(2),
+.ups-bot ul li:nth-child(5) {
+  width: 30%;
+}
+.ups-bot ul li:nth-child(3),
+.ups-bot ul li:nth-child(6) {
+  width: 30%;
+}
+.ups-bot ul li:nth-child(1):before {
+  background: url(https://www.edanz.com/sites/default/files/upc-icon-3.png) center / 100% 100% no-repeat;
+}
+.ups-bot ul li:nth-child(2):before {
+  background: url(https://www.edanz.com/sites/default/files/upc-icon-4.png) center / 100% 100% no-repeat;
+}
+.ups-bot ul li:nth-child(3):before {
+  background: url(https://www.edanz.com/sites/default/files/upc-icon-5.png) center / 100% 100% no-repeat;
+}
+.ups-bot ul li:nth-child(4):before {
+  background: url(https://www.edanz.com/sites/default/files/upc-icon-6.png) center / 100% 100% no-repeat;
+}
+.ups-bot ul li:nth-child(5):before {
+  background: url(https://www.edanz.com/sites/default/files/upc-icon-7.png) center / 100% 100% no-repeat;
+}
+.ups-bot ul li:nth-child(6):before {
+  background: url(https://www.edanz.com/sites/default/files/upc-icon-8.png) center / 100% 100% no-repeat;
+}
+.ups-bot ul li:nth-child(7) {
+  width: 100%;
+}
+.ups-bot ul li:nth-child(7):before {
+  background: url(https://www.edanz.com/sites/default/files/upc-icon-9.png) center / 100% 100% no-repeat;
+}
+
+.ups-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 90px;
+}
+.ups-card {
+  background: url(https://www.edanz.com/sites/default/files/upc-card-bg.png) center / 100% 100% no-repeat;
+  padding: 30px 20px 10px;
+  position: relative;
+  width: calc(100% / 2 - 55px);
+}
+.ups-card:before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 64px;
+  width: 60px;
+}
+.ups-card:nth-child(1):before {
+  background: url(https://www.edanz.com/sites/default/files/rcd-card-top-1.png) center / 100% 100% no-repeat;
+}
+.ups-card:nth-child(2):before {
+  background: url(https://www.edanz.com/sites/default/files/rcd-card-top-2.png) center / 100% 100% no-repeat;
+}
+.ups-card p {
+  font-size: 16px !important;
+  line-height: 26px;
+  padding-left: 0;
+}
+.ups-card p span {
+  display: block;
+  text-align: right;
+}
+
+.ups-info {
+  margin: 80px auto 0;
+  position: relative;
+  text-align: center;
+  width: 600px;
+  max-width: 100%;
+}
+.ups-info:before,
+.ups-info:after {
+  content: "";
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  height: 50px;
+  width: 2px;
+}
+.ups-info:before {
+  transform: rotateZ(-25deg);
+  left: 0;
+}
+.ups-info:after {
+  transform: rotateZ(25deg);
+  right: 0;
+}
+.ups-info h4 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 40px;
+  margin-bottom: 25px;
+}
+.ups-info h5 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+
+@media (max-width: 1024px) {
+  .ups-header {
+    text-align: center;
+  }
+  .ups-header h1 {
+    font-size: 35px !important;
+    line-height: 60px;
+    margin-bottom: 15px;
+  }
+  .ups-header h2 {
+    font-size: 20px !important;
+    line-height: 30px;
+  }
+  .ups-top {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ups-left--title,
+  .ups-top--bot {
+    width: auto;
+  }
+  .ups-content {
+    padding: 10px;
+  }
+  .ups-content h3,
+  .ups-content p {
+    padding: 0;
+  }
+  .ups-left {
+    padding: 0;
+  }
+  .ups-btn {
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+  }
+  .ups-btn a {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .ups-right {
+    width: 100%;
+    max-width: 435px;
+  }
+
+  .ups-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ups-card:not(:first-child) {
+    margin-top: 90px;
+  }
+  .ups-card {
+    max-width: 320px;
+    width: 100%;
+  }
+
+  .ups-bot ul li {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .ups-header h1 {
+    font-size: 25px !important;
+    line-height: 40px;
+  }
+  .ups-header h2 {
+    font-size: 16px !important;
+    line-height: 20px;
+  }
+  .ups-left,
+  .ups-right {
+    width: 100%;
+  }
+  .ups-info {
+    padding: 0 25px;
+  }
+}
+</style>
