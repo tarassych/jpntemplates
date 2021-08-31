@@ -26,7 +26,9 @@
 }
 .nfb-user {
   color: #434343;
+  flex-shrink: 0;
   margin-right: 70px;
+  width: 170px;
 }
 .nfb-user h2 {
   font-size: 22px;
@@ -44,8 +46,8 @@
   background: url(https://www.edanz.com/sites/default/files/nfb-info-background-image.png) center / 100% 100% no-repeat;
   display: flex;
   flex-direction: row;
+  flex-grow: 1;
   padding: 20px 50px 25px 50px;
-  width: 1155px;
   max-width: 100%;
 }
 .nfb-info img {
