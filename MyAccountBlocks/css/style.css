@@ -1,6 +1,5 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap');
-
 /* Notification block styles */
 .nfb * {
   box-sizing: border-box;
@@ -42,7 +41,7 @@
 }
 
 .nfb-info {
-  background: url(../img/nfb-info-background-image.png) center / 100% 100% no-repeat;
+  background: url(https://www.edanz.com/sites/default/files/nfb-info-background-image.png) center / 100% 100% no-repeat;
   display: flex;
   flex-direction: row;
   padding: 20px 50px 25px 50px;
@@ -66,10 +65,11 @@
   font-size: 14px;
   font-style: italic;
 }
+</style>
 
-
-
-/* Notification block styles */
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap');
+/* Innovative block styles */
 .isb * {
   box-sizing: border-box;
 }
@@ -93,25 +93,8 @@
   width: 1380px;
   max-width: 100%;
 }
-.isb-top {
-  background: url(../img/isb-top-title-bg.png) center / 100% 100% no-repeat;
-  border-radius: 10px 0 0 0;
-  display: inline-flex;
-  flex-direction: row;
-  align-items: center;
-  height: 30px;
-}
-.isb-top h2 {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 24px;
-  padding: 0 70px 0 15px;
-}
 .isb-content {
-  border-radius: 0px 20px 20px 20px;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-  padding: 60px 30px 55px;
+  padding: 50px 10px 45px;
 }
 .isb-content > h2 {
   font-size: 18px;
@@ -164,11 +147,13 @@
   font-weight: 700;
   font-style: italic;
   line-height: 24px;
+  text-decoration: underline;
 }
+</style>
 
-
-
-/* Notification block styles */
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap');
+/* Featured block styles */
 .ftb * {
   box-sizing: border-box;
 }
@@ -186,30 +171,12 @@
   padding: 0;
 }
 
-
 .ftb {
   width: 430px;
   max-width: 100%;
 }
-.ftb-top {
-  background: url(../img/isb-top-title-bg.png) center / 100% 100% no-repeat;
-  border-radius: 10px 0 0 0;
-  display: inline-flex;
-  flex-direction: row;
-  align-items: center;
-  height: 30px;
-}
-.ftb-top h2 {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 24px;
-  padding: 0 70px 0 15px;
-}
 .ftb-content {
-  border-radius: 0px 20px 20px 20px;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-  padding: 30px 30px 5px;
+  padding: 20px 10px 5px;
 }
 
 .ftb-book {
@@ -240,6 +207,4 @@
 .ftb-book-right img {
   width: 100%;
 }
-
-
 </style>
