@@ -103,7 +103,6 @@
   font-size: 15px !important;
   font-weight: 500 !important;
   line-height: 26px;
-  margin-bottom: 10px;
   position: relative;
 }
 .ups-left ul li:before {
@@ -136,7 +135,7 @@
   padding-left: 25px;
   width: 100%;
 }
-.ups-btn a {  
+.ups-btn a {
   background-color: #BA2532;
   border-radius: 5px;
   color: #fff;
@@ -202,7 +201,7 @@
   flex-grow: 1;
   list-style: none;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   padding: 0 0 0 60px;
 }
 .ups-bot ul li {
