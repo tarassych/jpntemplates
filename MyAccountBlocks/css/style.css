@@ -1,4 +1,4 @@
-/*<style>*/
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap');
 /* Notification block styles */
 .nfb * {
@@ -24,11 +24,15 @@
   flex-direction: row;
   align-items: center;
 }
+.nfb .welcome,
+.nfb .date {
+  white-space: nowrap;
+}
 .nfb-user {
   color: #434343;
   flex-shrink: 0;
   margin-right: 70px;
-  width: 170px;
+  width: auto;
 }
 .nfb-user h2 {
   font-size: 22px;
@@ -43,7 +47,9 @@
 }
 
 .nfb-info {
-  background: url(https://www.edanz.com/sites/default/files/nfb-info-background-image.png) center / 100% 100% no-repeat;
+  background: linear-gradient(#aaebff 0%, #6cc1ff 100%);
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   display: flex;
   flex-direction: row;
   flex-grow: 1;
@@ -68,6 +74,7 @@
   color: #19365C;
   font-size: 14px;
   font-style: italic;
+  text-decoration: underline;
 }
 .nfb-info p span {
   color: #1A375D;
