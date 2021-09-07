@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap');
+    /* Notification block styles */
+    .nfb * {
+      box-sizing: border-box;
+    }
+    .nfb h1,
+    .nfb h2,
+    .nfb h3,
+    .nfb h4,
+    .nfb h5,
+    .nfb h6,
+    .nfb a,
+    .nfb li,
+    .nfb p {
+      color: #4d4d4d;
+      font-family: 'Libre Franklin', sans-serif !important;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nfb {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .nfb .welcome,
+    .nfb .date {
+      white-space: nowrap;
+    }
+    .nfb-user {
+      color: #434343;
+      flex-shrink: 0;
+      margin-right: 70px;
+      width: auto;
+    }
+    .nfb-user h2 {
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 30px;
+      margin-bottom: 5px;
+    }
+    .nfb-user h3 {
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 16px;
+    }
+
+    .nfb-info {
+      background: linear-gradient(#aaebff 0%, #6cc1ff 100%);
+      border-radius: 10px;
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1;
+      padding: 20px 50px 25px 50px;
+      max-width: 100%;
+    }
+    .nfb-info img {
+      margin-right: 12px;
+      height: 60px;
+      width: 60px;
+    }
+    .nfb-info p {
+      color: #1A375D;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19px;
+    }
+    .nfb-info p a {
+      color: #19365C;
+      font-size: 14px;
+      font-style: italic;
+      text-decoration: underline;
+    }
+    .nfb-info p span {
+      color: #1A375D;
+      font-size: 14px;
+    }
+  </style>
+
+  <div class="nfb">
+    <div class="nfb-user">
+      <div class="welcome">
+        <h2>[edanz:user-name-en-jp]様、エダンズへようこそ</h2>
+      </div>
+      
+      <div class="date">
+        <h3>[edanz:current-date-en-jp]</h3>
+      </div>
+    </div>
+
+    <div class="nfb-info">
+      <img src="https://www.edanz.com/sites/default/files/nfb-info-logo.png" alt="">
+
+      <p>
+        査読コメントは受領済ですか？
+        <a href="#isd">
+          査読コメントに対して適切に、わかりやすく、かつ専門的に回答できているかの確認はこちらから
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap');
+    /* Innovative block styles */
+    .isb * {
+      box-sizing: border-box;
+    }
+    .isb h1,
+    .isb h2,
+    .isb h3,
+    .isb h4,
+    .isb h5,
+    .isb h6,
+    .isb a,
+    .isb li,
+    .isb p {
+      color: #4d4d4d;
+      font-family: 'Libre Franklin', sans-serif !important;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    .isb {
+      width: 1380px;
+      max-width: 100%;
+    }
+    .isb-content {
+      padding: 50px 10px 45px;
+    }
+    .isb-content > h2 {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 24px;
+      margin-bottom: 60px;
+    }
+
+    .isb-blocks {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+    .isb-block {
+      border-radius: 4px;
+      box-shadow: 0px 11px 35px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      height: 400px;
+      width: calc((100% - 160px) / 3);
+    }
+    .isb-block img {
+      width: 100%;
+    }
+    .isb-block--data {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      padding: 15px 25px 30px;
+    }
+    .isb-block h3 {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      margin-bottom: 10px;
+    }
+    .isb-block p {
+      flex-grow: 1;
+      color: #4F5059;
+      font-size: 14px;
+      line-height: 24px;
+    }
+    .isb-block--link {
+      text-align: right;
+    }
+    .isb-block--link a {
+      color: #6584B5;
+      font-size: 16px;
+      font-weight: 700;
+      font-style: italic;
+      line-height: 24px;
+      text-decoration: underline;
+    }
+  </style>
+
+  <div class="isb" id="isd">
+    <div class="isb-content">
+      <h2>
+        [edanz:user-name-en-jp]様の研究プロジェクトを強化する、おすすめソリューションはこちら：
+      </h2>
+
+      <div class="isb-blocks">
+        <div class="isb-block">
+          <img src="https://www.edanz.com/sites/default/files/isb-block-title-img-1.jpg" alt="">
+
+          <div class="isb-block--data">
+            <h3>
+              再投稿サポート：<br>
+              回答レター内容チェック
+            </h3>
+            
+            <p>
+              査読経験が豊富な専門家が、回答レターの内容と論文の修正内容が一致しているか、論文と回答レター両方が査読者のコメントに適切かつ正確に対応できているか、などを細かく確認。
+            </p>
+            
+            <div class="isb-block--link">
+              <a href="https://jp.edanz.com/services/letter_edit_manuscript_check">
+                詳細を見る
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="isb-block">
+          <img src="https://www.edanz.com/sites/default/files/isb-block-title-img-2.png" alt="">
+
+          <div class="isb-block--data">
+            <h3>
+              リサーチインフォグラフィック (ビジュアルサマリー) 
+            </h3>
+            
+            <p>
+              サイエンス専門のグラフィックデザイナーが研究をビジュアル化。研究内容をより活き活きと魅力的に伝えます。
+            </p>
+            
+            <div class="isb-block--link">
+              <a href="https://jp.edanz.com/content-media">
+                詳細を見る
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="isb-block">
+          <img src="https://www.edanz.com/sites/default/files/isb-block-title-img-3.png" alt="">
+
+          <div class="isb-block--data">
+            <h3>
+              研究コンセプト作成
+            </h3>
+            
+            <p>
+              研究計画の概要、基本的な研究デザイン、投稿先にふさわしいジャーナルの提案を含む、斬新な研究コンセプトを作成します。
+            </p>
+            
+            <div class="isb-block--link">
+              <a href="https://jp.edanz.com/study-design">
+                詳細を見る
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap');
+    /* Featured block styles */
+    .ftb * {
+      box-sizing: border-box;
+    }
+    .ftb h1,
+    .ftb h2,
+    .ftb h3,
+    .ftb h4,
+    .ftb h5,
+    .ftb h6,
+    .ftb a,
+    .ftb li,
+    .ftb p {
+      font-family: 'Libre Franklin', sans-serif !important;
+      margin: 0;
+      padding: 0;
+    }
+
+    .ftb {
+      width: 430px;
+      max-width: 100%;
+    }
+    .ftb-content {
+      padding: 20px 10px 5px;
+    }
+
+    .ftb-book {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 15px;
+    }
+    .ftb-book-left {
+      margin-right: 30px;
+    }
+    .ftb-book-left h2 {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 24px;
+      margin-bottom: 25px;
+    }
+    .ftb-book-left a {
+      color: rgb(0, 0, 0, .8);
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 22px;
+      text-decoration: none;
+    }
+    .ftb-book-right {
+      flex-shrink: 0;
+      width: 150px;
+    }
+    .ftb-book-right img {
+      width: 100%;
+    }
+  </style>
+
+  <div class="ftb">
+    <div class="ftb-content">
+      <div class="ftb-book">
+        <div class="ftb-book-left">
+          <h2>
+            Recently Published 
+          </h2>
+
+          <a href="https://www.tandfonline.com/doi/full/10.1080/14656566.2019.1614167">
+            Efficacy of istradefylline for gait disorders with freezing of gait in Parkinson’s disease: A single-arm, open-label, prospective, multicenter study.
+          </a>
+        </div>
+
+        <div class="ftb-book-right">
+          <img src="https://www.edanz.com/sites/default/files/ftb-feature-book-1.png" alt="">
+        </div>
+      </div>
+
+      <div class="ftb-book">
+        <div class="ftb-book-left">
+          <a href="https://link.springer.com/article/10.1007/s00213-018-4977-6">
+            Multi-center, randomized, double-blind, placebo-controlled study of quetiapine extended-release formulation in Japanese patients with bipolar depression.
+          </a>
+        </div>
+
+        <div class="ftb-book-right">
+          <img src="https://www.edanz.com/sites/default/files/ftb-feature-book-2.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
