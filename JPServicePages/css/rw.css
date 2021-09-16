@@ -20,6 +20,7 @@
   background-color: #FAFAFA;
   margin: 0 auto;
   width: 1200px;
+  max-width: 100%;
 }
 #rw-form {
   position: relative;
@@ -28,7 +29,7 @@
 
 
 #rw .rw-header {
-  background: url(https://edanz.com/sites/default/files/header-bg-rw-1.jpg) center / 100% 100% no-repeat;
+  background: url(https://edanz.com/sites/default/files/header-bg-rw-1.jpg) center / cover no-repeat;
   padding: 80px 110px 65px 90px;
 }
 #rw .rw-header h1 {
@@ -270,5 +271,41 @@
   font-size: 14px;
   line-height: 26px;
   text-align: center;
+}
+
+@media (max-width: 1024px) {
+  #rw .rw-header {
+    padding: 5px 10px;
+    text-align: center;
+  }
+
+  #rw .rw-content {
+    flex-wrap: wrap;
+  }
+  #rw .rw-left {
+    width: 100%;
+  }
+  #rw .rw-right {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  #rw .rw-header h1 {
+    font-size: 30px;
+  }
+  #rw .rw-content {
+    padding: 0;
+  }
+  #rw .rw-left__list,
+  #rw .rw-left__check h3,
+  #rw .rw-left__check p,
+  #rw .rw-left__biglist > p {
+    padding-left: 0;
+  }
+  #rw .rw-left__btn a {
+    font-size: 18px;
+    padding: 10px 30px;
+  }
 }
 </style>

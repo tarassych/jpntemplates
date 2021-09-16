@@ -20,11 +20,12 @@
   background-color: #FAFAFA;
   margin: 0 auto;
   width: 1200px;
+  max-width: 100%;
 }
 
 
 #js .js-header {
-  background: url(https://edanz.com/sites/default/files/header-bg-js-1.jpg) center / 100% 100% no-repeat;
+  background: url(https://edanz.com/sites/default/files/header-bg-js-1.jpg) center / cover no-repeat;
   padding: 80px 110px 65px 90px;
 }
 #js .js-header h1 {
@@ -317,5 +318,41 @@
   font-size: 14px;
   line-height: 26px;
   text-align: center;
+}
+
+@media (max-width: 1024px) {
+  #js .js-header {
+    padding: 5px 10px;
+    text-align: center;
+  }
+
+  #js .js-content {
+    flex-wrap: wrap;
+  }
+  #js .js-left {
+    width: 100%;
+  }
+  #js .js-right {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  #js .js-header h1 {
+    font-size: 30px;
+  }
+  #js .js-content {
+    padding: 0;
+  }
+  #js .js-left__list,
+  #js .js-left__check h3,
+  #js .js-left__check p,
+  #js .js-left__biglist > p {
+    padding-left: 0;
+  }
+  #js .js-left__btn a {
+    font-size: 18px;
+    padding: 10px 30px;
+  }
 }
 </style>

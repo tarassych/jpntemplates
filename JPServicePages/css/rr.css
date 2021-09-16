@@ -20,11 +20,12 @@
   background-color: #FAFAFA;
   margin: 0 auto;
   width: 1200px;
+  max-width: 100%;
 }
 
 
 #rr .rr-header {
-  background: url(https://wwwedanz.com/sites/default/files/header-bg.jpg) center / 100% 100% no-repeat;
+  background: url(https://edanz.com/sites/default/files/header-bg.jpg) center / cover no-repeat;
   padding: 80px 110px 65px 90px;
 }
 #rr .rr-header h1 {
@@ -255,7 +256,7 @@
 }
 #rr .rr-right__top,
 #rr .rr-right__bot {
-  background: url(https://wwwedanz.com/sites/default/files/right-header-bg.png) top center / 100% auto no-repeat, #fff;
+  background: url(https://edanz.com/sites/default/files/right-header-bg.png) top center / 100% auto no-repeat, #fff;
   border-bottom: 5px solid #023762;
   border-radius: 4px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.16);
@@ -314,5 +315,41 @@
   font-size: 14px;
   line-height: 26px;
   text-align: center;
+}
+
+@media (max-width: 1024px) {
+  #rr .rr-header {
+    padding: 5px 10px;
+    text-align: center;
+  }
+
+  #rr .rr-content {
+    flex-wrap: wrap;
+  }
+  #rr .rr-left {
+    width: 100%;
+  }
+  #rr .rr-right {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  #rr .rr-header h1 {
+    font-size: 30px;
+  }
+  #rr .rr-content {
+    padding: 0;
+  }
+  #rr .rr-left__list,
+  #rr .rr-left__check h3,
+  #rr .rr-left__check p,
+  #rr .rr-left__biglist > p {
+    padding-left: 0;
+  }
+  #rr .rr-left__btn a {
+    font-size: 18px;
+    padding: 10px 30px;
+  }
 }
 </style>

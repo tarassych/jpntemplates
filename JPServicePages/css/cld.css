@@ -20,11 +20,12 @@
   background-color: #FAFAFA;
   margin: 0 auto;
   width: 1200px;
+  max-width: 100%;
 }
 
 
 #cld .cld-header {
-  background: url(https://edanz.com/sites/default/files/header-bg-cld-1.jpg) center / 100% 100% no-repeat;
+  background: url(https://edanz.com/sites/default/files/header-bg-cld-1.jpg) center / cover no-repeat;
   padding: 80px 110px 65px 90px;
 }
 #cld .cld-header h1 {
@@ -319,5 +320,41 @@
   font-size: 14px;
   line-height: 26px;
   text-align: center;
+}
+
+@media (max-width: 1024px) {
+  #cld .cld-header {
+    padding: 5px 10px;
+    text-align: center;
+  }
+
+  #cld .cld-content {
+    flex-wrap: wrap;
+  }
+  #cld .cld-left {
+    width: 100%;
+  }
+  #cld .cld-right {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  #cld .cld-header h1 {
+    font-size: 30px;
+  }
+  #cld .cld-content {
+    padding: 0;
+  }
+  #cld .cld-left__list,
+  #cld .cld-left__check h3,
+  #cld .cld-left__check p,
+  #cld .cld-left__biglist > p {
+    padding-left: 0;
+  }
+  #cld .cld-left__btn a {
+    font-size: 18px;
+    padding: 10px 30px;
+  }
 }
 </style>

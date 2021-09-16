@@ -20,11 +20,12 @@
   background-color: #FAFAFA;
   margin: 0 auto;
   width: 1200px;
+  max-width: 100%;
 }
 
 
 #esr .esr-header {
-  background: url(https://edanz.com/sites/default/files/header-bg-esr-1.jpg) center / 100% 100% no-repeat;
+  background: url(https://edanz.com/sites/default/files/header-bg-esr-1.jpg) center / cover no-repeat;
   padding: 80px 110px 65px 90px;
 }
 #esr .esr-header h1 {
@@ -308,5 +309,45 @@
   font-size: 14px;
   line-height: 26px;
   text-align: center;
+}
+
+@media (max-width: 1024px) {
+  #esr .esr-header {
+    padding: 5px 10px;
+    text-align: center;
+  }
+
+  #esr .esr-content {
+    flex-wrap: wrap;
+  }
+  #esr .esr-left {
+    width: 100%;
+  }
+  #esr .esr-right {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  #esr .esr-header h1 {
+    font-size: 30px;
+  }
+  #esr .esr-content {
+    padding: 0;
+  }
+  #esr .esr-left__list,
+  #esr .esr-left__check h3,
+  #esr .esr-left__check p,
+  #esr .esr-left__description ul,
+  #esr .esr-left__biglist > p {
+    padding-left: 0;
+  }
+  #esr .esr-left__description h4 {
+    padding: 0;
+  }
+  #esr .esr-left__btn a {
+    font-size: 18px;
+    padding: 10px 30px;
+  }
 }
 </style>
