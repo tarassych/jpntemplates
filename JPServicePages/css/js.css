@@ -24,7 +24,7 @@
 
 
 #js .js-header {
-  background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/header-bg.jpg) center / 100% 100% no-repeat;
+  background: url(https://edanz.com/sites/default/files/header-bg-js-1.jpg) center / 100% 100% no-repeat;
   padding: 80px 110px 65px 90px;
 }
 #js .js-header h1 {
@@ -213,12 +213,12 @@
 #js .js-left__check p {
   display: flex;
   flex-direction: row;
-  align-items: center;
   font-size: 15px;
   line-height: 26px;
   padding: 0 30px;
 }
 #js .js-left__check p img {
+  margin-top: 5px;
   margin-right: 10px;
   height: 15px;
   width: 15px;
@@ -264,7 +264,7 @@
 }
 #js .js-right__top,
 #js .js-right__bot {
-  background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/right-header-bg.png) top center / 100% auto no-repeat, #fff;
+  background: url(https://edanz.com/sites/default/files/right-header-bg.png) top center / 100% auto no-repeat, #fff;
   border-bottom: 5px solid #023762;
   border-radius: 4px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.16);

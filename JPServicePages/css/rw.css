@@ -21,10 +21,14 @@
   margin: 0 auto;
   width: 1200px;
 }
+#rw-form {
+  position: relative;
+  top: -250px;
+}
 
 
 #rw .rw-header {
-  background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/header-bg.jpg) center / 100% 100% no-repeat;
+  background: url(https://edanz.com/sites/default/files/header-bg-rw-1.jpg) center / 100% 100% no-repeat;
   padding: 80px 110px 65px 90px;
 }
 #rw .rw-header h1 {
@@ -190,12 +194,12 @@
 #rw .rw-left__check p {
   display: flex;
   flex-direction: row;
-  align-items: center;
   font-size: 16px;
   line-height: 26px;
   padding-left: 100px;
 }
 #rw .rw-left__check p img {
+  margin-top: 5px;
   margin-right: 10px;
   height: 15px;
   width: 15px;
@@ -207,7 +211,7 @@
 }
 #rw .rw-right__top,
 #rw .rw-right__bot {
-  background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/right-header-bg.png) top center / 100% auto no-repeat, #fff;
+  background: url(https://edanz.com/sites/default/files/right-header-bg.png) top center / 100% auto no-repeat, #fff;
   border-bottom: 5px solid #023762;
   border-radius: 4px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.16);

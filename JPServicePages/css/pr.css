@@ -21,10 +21,14 @@
   margin: 0 auto;
   width: 1200px;
 }
+#pr-form {
+  position: relative;
+  top: -250px;
+}
 
 
 #pr .pr-header {
-  background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/header-bg-2.jpg) center / 100% 100% no-repeat;
+  background: url(https://edanz.com/sites/default/files/header-bg-2.jpg) center / 100% 100% no-repeat;
   padding: 75px 110px 55px 100px;
 }
 #pr .pr-header h1 {
@@ -236,7 +240,7 @@
 }
 #pr .pr-right__top,
 #pr .pr-right__bot {
-  background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/right-header-bg.png) top center / 100% auto no-repeat, #fff;
+  background: url(https://edanz.com/sites/default/files/right-header-bg.png) top center / 100% auto no-repeat, #fff;
   border-bottom: 5px solid #023762;
   border-radius: 4px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.16);
