@@ -20,6 +20,7 @@
 
 .m3-calc {
   margin: 0 auto;
+  height: 290px;
   width: 1000px;
   max-width: 100%;
 }
@@ -83,6 +84,7 @@
   color: #fff;
   font-size: 20px;
   line-height: 25px;
+  margin-right: 20px;
 }
 .m3-calc-content h4 {
   color: #fff;
@@ -106,10 +108,57 @@
   flex-direction: row;
   align-items: center;
 }
-.m3-calc-info img {
-  flex-shrink: 0;
+
+.m3-calc-tooltip {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   margin: 0 12px;
-  height: 16px;
-  width: 15px;
+  position: relative;
+}
+.m3-calc-tooltip img {
+  cursor: pointer;
+  flex-shrink: 0;
+  height: 15px;
+  width: 14px;
+}
+.m3-calc-tooltip:hover .m3-calc-tooltip--content {
+  display: block;
+}
+.m3-calc-tooltip--content {
+  background-color: #fff;
+  border: 1px solid #707070;
+  border-radius: 5px;
+  display: none;
+  padding: 20px 15px 15px;
+  position: absolute;
+  left: -45px;
+  top: calc(100% + 32px);
+  width: 350px;
+  z-index: 999;
+}
+.m3-calc-tooltip--content:after {
+  content: "";
+  background-color: #fff;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  position: absolute;
+  top: -29px;
+  left: 36px;
+  width: 30px;
+  height: 30px;
+}
+.m3-calc-tooltip--content:before {
+  content: "";
+  background-color: #707070;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  position: absolute;
+  top: -32px;
+  left: 35px;
+  width: 32px;
+  height: 32px;
+}
+.m3-calc-tooltip p {
+  font-size: 12px;
+  line-height: 14px;
 }
 </style>
