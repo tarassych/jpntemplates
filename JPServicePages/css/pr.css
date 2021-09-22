@@ -222,6 +222,28 @@
 }
 
 
+#pr .pr-left__info {
+  padding: 45px 0;
+  text-align: center;
+}
+#pr .pr-left__info h3 {
+  color: #203762;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  margin-bottom: 13px;
+}
+#pr .pr-left__info p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+}
+#pr .pr-left__info p a {
+  color: #BA2532;
+  text-decoration: underline;
+}
+
+
 #pr .pr-left__btn {
   text-align: center;
 }
