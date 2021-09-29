@@ -96,9 +96,24 @@
 #edit .edit-left__description {
   padding-bottom: 30px;
 }
+#edit .edit-left__description h2 {
+  color: #023762;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-top: 40px;
+  margin-bottom: 16px;
+  text-align: center;
+}
 #edit .edit-left__description p {
   font-size: 16px;
   line-height: 26px;
+}
+#edit .edit-left__description h6 {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 38px;
+  padding-left: 30px;
 }
 #edit .edit-left__description p:first-of-type {
   margin-bottom: 38px;
@@ -106,7 +121,6 @@
 #edit .edit-left__description h3 {
   font-size: 16px;
   line-height: 26px;
-  /*margin-top: 75px;*/
   padding-left: 30px;
   position: relative;
 }
@@ -129,6 +143,10 @@
   font-size: 16px;
   line-height: 26px;
   position: relative;
+}
+#edit .edit-left__description ul li img {
+  margin-bottom: 11px;
+  width: 500px;
 }
 #edit .edit-left__description ul li a {
   color: #BA2532;
@@ -171,11 +189,16 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 23px;
+  margin-bottom: 25px;
   text-align: center;
+}
+#edit .edit-left__biglist h2 span {
+  color: #000;
+  display: block;
 }
 #edit .edit-left__list {
   list-style: none;
-  padding-left: 100px;
+  padding-left: 70px;
 }
 #edit .edit-left__list li {
   display: flex;
@@ -212,8 +235,9 @@
   font-size: 11px;
   line-height: 20px;
   margin-bottom: 45px;
-  padding-left: 100px;
+  padding-left: 70px;
 }
+
 
 
 #edit .edit-left__check {
@@ -234,16 +258,16 @@
   text-align: center;
 }
 #edit .edit-left__check h4 {
-  font-size: 16px;
-  line-height: 26px;
-  padding-left: 70px;
+  font-size: 15px;
+  line-height: 24px;
+  padding-left: 30px;
 }
 #edit .edit-left__check p {
   display: flex;
   flex-direction: row;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 26px;
-  padding-left: 50px;
+  padding-left: 70px;
 }
 #edit .edit-left__check p span {
   border: 1px solid #000;
@@ -253,6 +277,11 @@
   height: 15px;
   width: 15px;
 }
+#edit .edit-left__check p a {
+  color: #BA2532;
+  text-decoration: underline;
+}
+
 
 
 #edit .edit-left__info {
@@ -387,12 +416,6 @@
 }
 #edit .edit-right__top > p.edit-right--logo:before {
   left: -10px;
-}
-#edit .edit-right__top > h4 {
-  font-size: 12px;
-  line-height: 13px;
-  margin-top: 15px;
-  margin-bottom: 15px;
 }
 
 
