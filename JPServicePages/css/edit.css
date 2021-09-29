@@ -1,0 +1,463 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+#edit.edit h1,
+#edit.edit h2,
+#edit.edit h3,
+#edit.edit h4,
+#edit.edit h5,
+#edit.edit h6,
+#edit.edit a,
+#edit.edit li,
+#edit.edit p {
+  color: #000;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
+  margin: 0;
+}
+
+
+#edit .edit-container {
+  background-color: #FAFAFA;
+  margin: 0 auto;
+  width: 1200px;
+  max-width: 100%;
+}
+
+
+#edit .edit-header {
+  background: url(https://stg-comm-jp-author-services.edanz.com/sites/default/files/header-bg-edit.png) center / cover no-repeat;
+  padding: 80px 110px 65px 90px;
+}
+#edit .edit-header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  margin-bottom: 11px;
+}
+#edit .edit-header h2 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  margin-bottom: 11px;
+}
+#edit .edit-header h1 span,
+#edit .edit-header h2 span {
+  background-color: #fff;
+  display: inline-block;
+  padding: 8px 10px;
+}
+#edit .edit-header a {
+  background-color: #BA2532;
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 19px;
+  padding: 10px 27px;
+}
+
+
+#edit .edit-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px 110px 120px 90px;
+}
+
+
+#edit .edit-left {
+  background-color: #fff;
+  border-top: 5px solid #023762;
+  padding: 30px 30px 45px;
+  width: 700px;
+}
+#edit .edit-left hr {
+  background-color: #bbb;
+  margin: 0;
+  height: 1px;
+}
+
+#edit .edit-left__title {
+  text-align: center;
+}
+#edit .edit-left__title img {
+  height: 60px;
+  width: 60px;
+}
+#edit .edit-left__title h2 {
+  color: #023762;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 35px;
+}
+
+#edit .edit-left__description {
+  padding-bottom: 30px;
+}
+#edit .edit-left__description p {
+  font-size: 16px;
+  line-height: 26px;
+}
+#edit .edit-left__description p:first-of-type {
+  margin-bottom: 38px;
+}
+#edit .edit-left__description h3 {
+  font-size: 16px;
+  line-height: 26px;
+  /*margin-top: 75px;*/
+  padding-left: 30px;
+  position: relative;
+}
+#edit .edit-left__description h3 span {
+  background-color: #203762;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 15px;
+  width: 15px;
+}
+#edit .edit-left__description ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 50px;
+}
+#edit .edit-left__description ul li {
+  font-size: 16px;
+  line-height: 26px;
+  position: relative;
+}
+#edit .edit-left__description ul li a {
+  color: #BA2532;
+  text-decoration: underline;
+}
+#edit .edit-left__description--circle:before {
+  content: "";
+  border: 4px solid #0F1467;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: -20px;
+  height: 15px;
+  width: 15px;
+}
+#edit .edit-left__description--pl {
+  padding-left: 35px;
+}
+#edit .edit-left__description h4 {
+  font-size: 16px;
+  line-height: 26px;
+  padding: 0 0 0 50px;
+}
+#edit .edit-left__description h5 {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  line-height: 26px;
+  padding-left: 50px;
+}
+#edit .edit-left__description h5 span {
+  width: 50%;
+}
+
+#edit .edit-left__biglist {
+  padding: 45px 0 0;
+}
+#edit .edit-left__biglist h2 {
+  color: #023762;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  text-align: center;
+}
+#edit .edit-left__list {
+  list-style: none;
+  padding-left: 100px;
+}
+#edit .edit-left__list li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#edit .edit-left__list li h4 {
+  background-color: #023762;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 15px;
+  font-weight: 700;
+  margin-right: 20px;
+  height: 40px;
+  width: 40px;
+}
+#edit .edit-left__list li p {
+  font-size: 12px;
+  line-height: 26px;
+}
+#edit .edit-left__list li p span {
+  color: #203762;
+  display: block;
+  font-size: 16px;
+  line-height: 26px;
+}
+#edit .edit-left__biglist > p {
+  font-size: 11px;
+  line-height: 20px;
+  margin-bottom: 45px;
+  padding-left: 100px;
+}
+
+
+#edit .edit-left__check {
+  padding: 40px 0 45px;
+}
+#edit .edit-left__check h2 {
+  color: #203762;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+#edit .edit-left__check h3 {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 18px;
+  text-align: center;
+}
+#edit .edit-left__check h4 {
+  font-size: 16px;
+  line-height: 26px;
+  padding-left: 70px;
+}
+#edit .edit-left__check p {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  line-height: 26px;
+  padding-left: 50px;
+}
+#edit .edit-left__check p span {
+  border: 1px solid #000;
+  flex-shrink: 0;
+  margin-top: 5px;
+  margin-right: 10px;
+  height: 15px;
+  width: 15px;
+}
+
+
+#edit .edit-left__info {
+  padding: 45px 0;
+  text-align: center;
+}
+#edit .edit-left__info h3 {
+  color: #023762;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  margin-bottom: 13px;
+}
+#edit .edit-left__info p {
+  font-size: 16px;
+  line-height: 26px;
+}
+#edit .edit-left__info p a {
+  color: #BA2532;
+  text-decoration: underline;
+}
+
+#edit .edit-left__btn {
+  text-align: center;
+}
+#edit .edit-left__btn a {
+  background-color: #ba2532;
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 45px;
+  padding: 10px 50px;
+}
+
+
+#edit .edit-right {
+  width: 240px;
+}
+#edit .edit-right__top,
+#edit .edit-right__bot {
+  background: url(https://edanz.com/sites/default/files/right-header-bg.png) top center / 100% auto no-repeat, #fff;
+  border-radius: 4px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.16);
+  padding: 0 20px;
+}
+#edit .edit-right__bot {
+  border-bottom: 5px solid #023762;
+}
+#edit .edit-right__header h2 {
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 25px;
+  padding: 12px 0 18px;
+  text-align: center;
+}
+#edit .edit-right__top {
+  margin-bottom: 50px;
+  padding-bottom: 25px;
+}
+#edit .edit-right__table {
+  border: 1px solid #BBBBBB;
+}
+#edit .edit-right__row {
+  display: flex;
+  flex-direction: row;
+}
+#edit .edit-right__row--header {
+  background-color: #023762;
+  text-align: center;
+}
+#edit .edit-right__row--header h3 {
+  color: #ffffff;
+}
+#edit .edit-right__row--header .edit-right__col {
+  padding: 6px 10px !important;
+}
+#edit .edit-right__col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px 10px;
+}
+#edit .edit-right__col:first-child {
+  border-right: 1px solid #BBBBBB;
+  width: 90px;
+}
+#edit .edit-right__col:last-child {
+  padding-left: 28px;
+  width: 110px;
+}
+#edit .edit-right__row:not(:last-child) .edit-right__col {
+  border-bottom: 1px solid #BBBBBB;
+}
+#edit .edit-right__row--header .edit-right__col:first-child {
+  border-right: 1px solid #ffffff;
+}
+#edit .edit-right__col h3 {
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+}
+#edit .edit-right__col h3 {
+  font-size: 10px;
+  position: relative;
+}
+#edit .edit-right--logo:before {
+  content: "";
+  background: url("https://stg-comm-jp-author-services.edanz.com/sites/default/files/p-logo.png") center / 100% 100% no-repeat;
+  position: absolute;
+  top: 4px;
+  left: -18px;
+  height: 18px;
+  width: 18px;
+}
+#edit .edit-right__row > p {
+  padding: 4px 9px;
+}
+#edit .edit-right__top p {
+  font-size: 12px;
+  line-height: 13px;
+  position: relative;
+}
+#edit .edit-right__top > p {
+  margin-top: 6px;
+  margin-bottom: 14px;
+  padding-left: 10px;
+}
+#edit .edit-right__top > p.edit-right--logo:before {
+  left: -10px;
+}
+#edit .edit-right__top > h4 {
+  font-size: 12px;
+  line-height: 13px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+#edit .edit-right__icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 25px 0 35px;
+}
+#edit .edit-right__icon {
+  width: 50px;
+}
+#edit .edit-right__icon a {
+  display: block;
+  margin-bottom: 10px;
+  height: 50px;
+  width: 100%;
+}
+#edit .edit-right__icon a img {
+  width: 100%;
+}
+#edit .edit-right__icon h5 {
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  #edit .edit-header {
+    padding: 5px 10px;
+    text-align: center;
+  }
+
+  #edit .edit-content {
+    flex-wrap: wrap;
+  }
+  #edit .edit-left {
+    width: 100%;
+  }
+  #edit .edit-right {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  #edit .edit-header h1 {
+    font-size: 30px;
+  }
+  #edit .edit-content {
+    padding: 0;
+  }
+  #edit .edit-left__list,
+  #edit .edit-left__check h3,
+  #edit .edit-left__check p,
+  #edit .edit-left__biglist > p {
+    padding-left: 0;
+  }
+  #edit .edit-left__btn a {
+    font-size: 18px;
+    padding: 10px 30px;
+  }
+}
+</style>
