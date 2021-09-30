@@ -145,7 +145,7 @@
   width: 15px;
 }
 #edit .edit-left__description--pl {
-  padding-left: 35px;
+  padding-left: 25px;
 }
 #edit .edit-left__description h4 {
   font-size: 16px;
@@ -298,7 +298,7 @@
   background: url(https://edanz.com/sites/default/files/right-header-bg.png) top center / 100% auto no-repeat, #fff;
   border-radius: 4px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.16);
-  padding: 0 20px;
+  padding: 0 15px;
 }
 #edit .edit-right__bot {
   border-bottom: 5px solid #023762;
@@ -338,14 +338,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 5px 10px;
+  padding: 5px;
 }
 #edit .edit-right__col:first-child {
   border-right: 1px solid #BBBBBB;
-  width: 90px;
+  width: 100px;
 }
 #edit .edit-right__col:last-child {
-  padding-left: 28px;
+  padding-left: 20px;
   width: 110px;
 }
 #edit .edit-right__row:not(:last-child) .edit-right__col {
@@ -355,29 +355,32 @@
   border-right: 1px solid #ffffff;
 }
 #edit .edit-right__col h3 {
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 14px;
+  line-height: 20px;
   text-align: center;
-}
-#edit .edit-right__col h3 {
-  font-size: 10px;
   position: relative;
+}
+#edit .edit-right__col h3 span {
+  font-size: 10px;
 }
 #edit .edit-right--logo:before {
   content: "";
   background: url("https://edanz.com/sites/default/files/p-logo.png") center / 100% 100% no-repeat;
   position: absolute;
-  top: 4px;
-  left: -18px;
+  top: 3px;
+  left: -14px;
   height: 18px;
   width: 18px;
+}
+#edit p.edit-right--logo:before {
+  top: 2px;
 }
 #edit .edit-right__row > p {
   padding: 4px 9px;
 }
 #edit .edit-right__top p {
   font-size: 12px;
-  line-height: 13px;
+  line-height: 14px;
   position: relative;
 }
 #edit .edit-right__top > p {
