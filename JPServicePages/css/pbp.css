@@ -1,14 +1,14 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
-#edit.edit h1,
-#edit.edit h2,
-#edit.edit h3,
-#edit.edit h4,
-#edit.edit h5,
-#edit.edit h6,
-#edit.edit a,
-#edit.edit li,
-#edit.edit p {
+#pbp.pbp h1,
+#pbp.pbp h2,
+#pbp.pbp h3,
+#pbp.pbp h4,
+#pbp.pbp h5,
+#pbp.pbp h6,
+#pbp.pbp a,
+#pbp.pbp li,
+#pbp.pbp p {
   color: #000;
   font-family: 'Noto Sans', sans-serif;
   font-weight: 500;
@@ -16,7 +16,7 @@
 }
 
 
-#edit .edit-container {
+#pbp .pbp-container {
   background-color: #FAFAFA;
   margin: 0 auto;
   width: 1200px;
@@ -24,29 +24,29 @@
 }
 
 
-#edit .edit-header {
+#pbp .pbp-header {
   background: url(https://edanz.com/sites/default/files/header-bg-edit.png) center / cover no-repeat;
   padding: 80px 110px 65px 90px;
 }
-#edit .edit-header h1 {
+#pbp .pbp-header h1 {
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
   margin-bottom: 11px;
 }
-#edit .edit-header h2 {
+#pbp .pbp-header h2 {
   font-size: 18px;
   font-weight: 700;
   line-height: 23px;
   margin-bottom: 11px;
 }
-#edit .edit-header h1 span,
-#edit .edit-header h2 span {
+#pbp .pbp-header h1 span,
+#pbp .pbp-header h2 span {
   background-color: #fff;
   display: inline-block;
   padding: 8px 10px;
 }
-#edit .edit-header a {
+#pbp .pbp-header a {
   background-color: #BA2532;
   border-radius: 4px;
   color: #fff;
@@ -58,7 +58,7 @@
 }
 
 
-#edit .edit-content {
+#pbp .pbp-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -66,26 +66,26 @@
 }
 
 
-#edit .edit-left {
+#pbp .pbp-left {
   background-color: #fff;
   border-top: 5px solid #023762;
   padding: 30px 30px 45px;
   width: 700px;
 }
-#edit .edit-left hr {
+#pbp .pbp-left hr {
   background-color: #bbb;
   margin: 0;
   height: 1px;
 }
 
-#edit .edit-left__title {
+#pbp .pbp-left__title {
   text-align: center;
 }
-#edit .edit-left__title img {
+#pbp .pbp-left__title img {
   height: 60px;
   width: 60px;
 }
-#edit .edit-left__title h2 {
+#pbp .pbp-left__title h2 {
   color: #023762;
   font-size: 24px;
   font-weight: 700;
@@ -93,10 +93,10 @@
   margin-bottom: 35px;
 }
 
-#edit .edit-left__description {
+#pbp .pbp-left__description {
   padding-bottom: 30px;
 }
-#edit .edit-left__description h2 {
+#pbp .pbp-left__description h2 {
   color: #023762;
   font-size: 18px;
   font-weight: 700;
@@ -105,26 +105,26 @@
   margin-bottom: 16px;
   text-align: center;
 }
-#edit .edit-left__description p {
+#pbp .pbp-left__description p {
   font-size: 16px;
   line-height: 26px;
 }
-#edit .edit-left__description h6 {
+#pbp .pbp-left__description h6 {
   font-size: 16px;
   line-height: 26px;
   margin-bottom: 38px;
   padding-left: 30px;
 }
-#edit .edit-left__description p:first-of-type {
+#pbp .pbp-left__description p:first-of-type {
   margin-bottom: 38px;
 }
-#edit .edit-left__description h3 {
+#pbp .pbp-left__description h3 {
   font-size: 16px;
   line-height: 26px;
   padding-left: 30px;
   position: relative;
 }
-#edit .edit-left__description h3 span {
+#pbp .pbp-left__description h3 span {
   background-color: #203762;
   display: block;
   position: absolute;
@@ -134,25 +134,26 @@
   height: 15px;
   width: 15px;
 }
-#edit .edit-left__description ul {
+#pbp .pbp-left__description ul {
   list-style: none;
   margin: 0;
   padding: 0 0 0 50px;
 }
-#edit .edit-left__description ul li {
+#pbp .pbp-left__description ul li {
   font-size: 16px;
   line-height: 26px;
   position: relative;
 }
-#edit .edit-left__description ul li img {
+#pbp .pbp-left__description ul li img {
   margin-bottom: 11px;
   width: 500px;
+  max-width: 100%;
 }
-#edit .edit-left__description ul li a {
+#pbp .pbp-left__description ul li a {
   color: #BA2532;
   text-decoration: underline;
 }
-#edit .edit-left__description--circle:before {
+#pbp .pbp-left__description--circle:before {
   content: "";
   border: 4px solid #0F1467;
   border-radius: 50%;
@@ -162,29 +163,29 @@
   height: 15px;
   width: 15px;
 }
-#edit .edit-left__description--pl {
+#pbp .pbp-left__description--pl {
   padding-left: 35px;
 }
-#edit .edit-left__description h4 {
+#pbp .pbp-left__description h4 {
   font-size: 16px;
   line-height: 26px;
   padding: 0 0 0 50px;
 }
-#edit .edit-left__description h5 {
+#pbp .pbp-left__description h5 {
   display: flex;
   flex-direction: row;
   font-size: 16px;
   line-height: 26px;
   padding-left: 50px;
 }
-#edit .edit-left__description h5 span {
+#pbp .pbp-left__description h5 span {
   width: 50%;
 }
 
-#edit .edit-left__biglist {
+#pbp .pbp-left__biglist {
   padding: 45px 0 0;
 }
-#edit .edit-left__biglist h2 {
+#pbp .pbp-left__biglist h2 {
   color: #023762;
   font-size: 18px;
   font-weight: 700;
@@ -192,21 +193,21 @@
   margin-bottom: 25px;
   text-align: center;
 }
-#edit .edit-left__biglist h2 span {
+#pbp .pbp-left__biglist h2 span {
   color: #000;
   display: block;
 }
-#edit .edit-left__list {
+#pbp .pbp-left__list {
   list-style: none;
   padding-left: 70px;
 }
-#edit .edit-left__list li {
+#pbp .pbp-left__list li {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-bottom: 20px;
 }
-#edit .edit-left__list li h4 {
+#pbp .pbp-left__list li h4 {
   background-color: #023762;
   border-radius: 50%;
   color: #fff;
@@ -221,17 +222,17 @@
   height: 40px;
   width: 40px;
 }
-#edit .edit-left__list li p {
+#pbp .pbp-left__list li p {
   font-size: 12px;
   line-height: 26px;
 }
-#edit .edit-left__list li p span {
+#pbp .pbp-left__list li p span {
   color: #203762;
   display: block;
   font-size: 16px;
   line-height: 26px;
 }
-#edit .edit-left__biglist > p {
+#pbp .pbp-left__biglist > p {
   font-size: 11px;
   line-height: 20px;
   margin-bottom: 45px;
@@ -240,10 +241,10 @@
 
 
 
-#edit .edit-left__check {
+#pbp .pbp-left__check {
   padding: 40px 0 45px;
 }
-#edit .edit-left__check h2 {
+#pbp .pbp-left__check h2 {
   color: #203762;
   font-size: 18px;
   font-weight: 700;
@@ -251,63 +252,63 @@
   margin-bottom: 10px;
   text-align: center;
 }
-#edit .edit-left__check h3 {
+#pbp .pbp-left__check h3 {
   font-size: 16px;
   line-height: 26px;
   margin-bottom: 18px;
   text-align: center;
 }
-#edit .edit-left__check h4 {
+#pbp .pbp-left__check h4 {
   font-size: 15px;
   line-height: 24px;
   padding-left: 30px;
 }
-#edit .edit-left__check p {
+#pbp .pbp-left__check p {
   display: flex;
   flex-direction: row;
   font-size: 15px;
   line-height: 26px;
   padding-left: 70px;
 }
-#edit .edit-left__check p span {
-  border: 1px solid #000;
+#pbp .pbp-left__check p img {
   flex-shrink: 0;
   margin-top: 5px;
   margin-right: 10px;
   height: 15px;
   width: 15px;
 }
-#edit .edit-left__check p a {
+#pbp .pbp-left__check p a {
   color: #BA2532;
+  display: inline-block;
   text-decoration: underline;
 }
 
 
 
-#edit .edit-left__info {
+#pbp .pbp-left__info {
   padding: 45px 0;
   text-align: center;
 }
-#edit .edit-left__info h3 {
+#pbp .pbp-left__info h3 {
   color: #023762;
   font-size: 18px;
   font-weight: 700;
   line-height: 23px;
   margin-bottom: 13px;
 }
-#edit .edit-left__info p {
+#pbp .pbp-left__info p {
   font-size: 16px;
   line-height: 26px;
 }
-#edit .edit-left__info p a {
+#pbp .pbp-left__info p a {
   color: #BA2532;
   text-decoration: underline;
 }
 
-#edit .edit-left__btn {
+#pbp .pbp-left__btn {
   text-align: center;
 }
-#edit .edit-left__btn a {
+#pbp .pbp-left__btn a {
   background-color: #ba2532;
   border-radius: 4px;
   color: #fff;
@@ -319,20 +320,20 @@
 }
 
 
-#edit .edit-right {
+#pbp .pbp-right {
   width: 240px;
 }
-#edit .edit-right__top,
-#edit .edit-right__bot {
+#pbp .pbp-right__top,
+#pbp .pbp-right__bot {
   background: url(https://edanz.com/sites/default/files/right-header-bg.png) top center / 100% auto no-repeat, #fff;
   border-radius: 4px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.16);
   padding: 0 15px;
 }
-#edit .edit-right__bot {
+#pbp .pbp-right__bot {
   border-bottom: 5px solid #023762;
 }
-#edit .edit-right__header h2 {
+#pbp .pbp-right__header h2 {
   color: #fff;
   display: block;
   font-size: 18px;
@@ -342,60 +343,60 @@
   padding: 12px 0 18px;
   text-align: center;
 }
-#edit .edit-right__top {
+#pbp .pbp-right__top {
   margin-bottom: 50px;
   padding-bottom: 25px;
 }
-#edit .edit-right__table {
+#pbp .pbp-right__table {
   border: 1px solid #BBBBBB;
 }
-#edit .edit-right__row {
+#pbp .pbp-right__row {
   display: flex;
   flex-direction: row;
 }
-#edit .edit-right__row--header {
+#pbp .pbp-right__row--header {
   background-color: #023762;
   text-align: center;
 }
-#edit .edit-right__row--header h3 {
+#pbp .pbp-right__row--header h3 {
   color: #ffffff;
 }
-#edit .edit-right__row--header .edit-right__col {
+#pbp .pbp-right__row--header .pbp-right__col {
   padding: 6px 10px !important;
 }
-#edit .edit-right__col {
+#pbp .pbp-right__col {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 5px;
 }
-#edit .edit-right__col:first-child {
+#pbp .pbp-right__col:first-child {
   border-right: 1px solid #BBBBBB;
   width: 100px;
 }
-#edit .edit-right__col:last-child {
+#pbp .pbp-right__col:last-child {
   padding-left: 26px;
   width: 110px;
 }
-#edit .edit-right__row:not(:last-child) .edit-right__col {
+#pbp .pbp-right__row:not(:last-child) .pbp-right__col {
   border-bottom: 1px solid #BBBBBB;
 }
-#edit .edit-right__row--header .edit-right__col:first-child {
+#pbp .pbp-right__row--header .pbp-right__col:first-child {
   border-right: 1px solid #ffffff;
 }
-#edit .edit-right__col h3 {
+#pbp .pbp-right__col h3 {
   font-size: 14px;
   line-height: 20px;
   text-align: center;
   position: relative;
 }
-#edit .edit-right__col:last-child h3 {
+#pbp .pbp-right__col:last-child h3 {
   text-align: left;
 }
-#edit .edit-right__col h3 span {
+#pbp .pbp-right__col h3 span {
   font-size: 10px;
 }
-#edit .edit-right--logo:before {
+#pbp .pbp-right--logo:before {
   content: "";
   background: url("https://edanz.com/sites/default/files/p-logo.png") center / 100% 100% no-repeat;
   position: absolute;
@@ -404,20 +405,20 @@
   height: 18px;
   width: 18px;
 }
-#edit .edit-right__row > p {
+#pbp .pbp-right__row > p {
   padding: 4px 9px;
 }
-#edit .edit-right__top p {
+#pbp .pbp-right__top p {
   font-size: 12px;
   line-height: 14px;
   position: relative;
 }
-#edit .edit-right__top > p {
+#pbp .pbp-right__top > p {
   margin-top: 6px;
   margin-bottom: 14px;
   padding-left: 10px;
 }
-#edit .edit-right__top > p.edit-right--logo:before {
+#pbp .pbp-right__top > p.pbp-right--logo:before {
   left: -10px;
 }
 
@@ -427,61 +428,62 @@
 
 
 
-#edit .edit-right__icons {
+#pbp .pbp-right__icons {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 25px 0 35px;
 }
-#edit .edit-right__icon {
+#pbp .pbp-right__icon {
   width: 50px;
 }
-#edit .edit-right__icon a {
+#pbp .pbp-right__icon a {
   display: block;
   margin-bottom: 10px;
   height: 50px;
   width: 100%;
 }
-#edit .edit-right__icon a img {
+#pbp .pbp-right__icon a img {
   width: 100%;
 }
-#edit .edit-right__icon h5 {
+#pbp .pbp-right__icon h5 {
   font-size: 14px;
   line-height: 26px;
   text-align: center;
 }
 
 @media (max-width: 1024px) {
-  #edit .edit-header {
+  #pbp .pbp-header {
     padding: 5px 10px;
     text-align: center;
   }
 
-  #edit .edit-content {
+  #pbp .pbp-content {
     flex-wrap: wrap;
   }
-  #edit .edit-left {
+  #pbp .pbp-left {
     width: 100%;
   }
-  #edit .edit-right {
+  #pbp .pbp-right {
     margin: 0 auto;
   }
 }
 
 @media (max-width: 768px) {
-  #edit .edit-header h1 {
+  #pbp .pbp-header h1 {
     font-size: 30px;
   }
-  #edit .edit-content {
+  #pbp .pbp-content {
     padding: 0;
   }
-  #edit .edit-left__list,
-  #edit .edit-left__check h3,
-  #edit .edit-left__check p,
-  #edit .edit-left__biglist > p {
+  #pbp .pbp-left__list,
+  #pbp .pbp-left__check h3,
+  #pbp .pbp-left__check h4,
+  #pbp .pbp-left__check p,
+  #pbp .pbp-left__biglist > p {
     padding-left: 0;
   }
-  #edit .edit-left__btn a {
+  #pbp .pbp-left__btn a {
     font-size: 18px;
     padding: 10px 30px;
   }
