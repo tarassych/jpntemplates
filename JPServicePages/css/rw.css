@@ -104,6 +104,10 @@
   font-size: 16px;
   line-height: 26px;
 }
+#rw .rw-left__description p a {
+  color: #BA2532;
+  text-decoration: underline;
+}
 #rw .rw-left__description h3 {
   font-size: 16px;
   line-height: 26px;
@@ -191,6 +195,10 @@
   line-height: 26px;
   margin-bottom: 15px;
   padding-left: 100px;
+}
+#rw .rw-left__check h3 a {
+  color: #BA2532;
+  text-decoration: underline;
 }
 #rw .rw-left__check p {
   display: flex;
