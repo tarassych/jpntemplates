@@ -128,9 +128,8 @@
   background-color: #203762;
   display: block;
   position: absolute;
-  top: 50%;
+  top: 5px;
   left: 0;
-  transform: translateY(-50%);
   height: 15px;
   width: 15px;
 }
