@@ -1,9 +1,0 @@
-
-RewriteEngine on
-DirectoryIndex index.html
-RewriteCond %{HTTP_HOST} ^atlasoceanvoyages\.com$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.atlasoceanvoyages\.com$
-RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
-RewriteRule ^/?$ "https\:\/\/www\.atlasoceanvoyages\.com" [R=301,L]
-
