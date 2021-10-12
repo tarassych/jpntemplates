@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700&family=Roboto&display=swap');
+
+.d20 * {
+  box-sizing: border-box;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+}
+
+.d20 {
+
+}
+.d20-container {
+  margin: 0 auto;
+  width: 1200px;
+  max-width: 100%;
+}
+.d20-container--wide {
+  width: 1440px;
+}
+.d20-row {
+  display: flex;
+  flex-direction: row;
+}
+.d20-col {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.d20-block {
+  display: flex;
+  padding: 30px;
+  flex-direction: row;
+  align-items: flex-end;
+  height: 220px;
+  width: 360px;
+}
+.d20-block-1 {
+  background: url(../img/d20-promo-bg-1.png) center / 100% 100% no-repeat;
+}
+.d20-block-2 {
+  background: url(../img/d20-promo-bg-2.png) center / 100% 100% no-repeat;
+}
+.d20-block-3 {
+  background: url(../img/d20-promo-bg-3.png) center / 100% 100% no-repeat;
+}
+.d20-block-4 {
+  background: url(../img/d20-promo-bg-4.png) center / 100% 100% no-repeat;
+}
+.d20-block-5 {
+  background: url(../img/d20-promo-bg-5.png) center / 100% 100% no-repeat;
+}
+.d20-block-6 {
+  background: url(../img/d20-promo-bg-6.png) center / 100% 100% no-repeat;
+}
+.d20-block-7 {
+  background: url(../img/d20-promo-bg-7.png) center / 100% 100% no-repeat;
+}
+.d20-block-8 {
+  background: url(../img/d20-promo-bg-8.png) center / 100% 100% no-repeat;
+}
+.d20-block div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.d20-block div img {
+  margin-right: 21px;
+  width: 50px;
+}
+.d20-block div h2 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.d20-block--big {
+  background: url(../img/d20-promo-bg-big-1.png) center / 100% 100% no-repeat;
+  padding: 95px 45px 0;
+  height: 440px;
+  width: 720px;
+}
+.d20-block__title {
+  position: relative;
+}
+.d20-block__title > h2 {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 55px;
+}
+.d20-block__btns {
+  border: 1px solid #000000;
+  border-radius: 7px;
+  display: inline-block;
+  position: absolute;
+  top: 60px;
+  right: 0;
+}
+.d20-block__btns button {
+  font-size: 14px;
+  line-height: 14px;
+  padding: 18px 20px;
+}
+.d20-block__btns button:first-child {
+  border-right: 1px solid #000000;
+}
+.d20-block__btns button span {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  margin: 0 8px;
+}
+.d20-block--big > p {
+  font-size: 16px;
+  line-height: 25px;
+}
+.d20-promo__btn-full {
+  background-color: #D60000;
+  color: #ffffff;
+  font-size: 14px;
+  margin-right: 3px;
+  padding: 18px 35px;
+}
+.d20-promo__btn-text {
+  color: #d60000;
+  font-size: 14px;
+  padding: 18px 35px;
+}
+
+@media (max-width: 1439px) {
+  .d20-row {
+    flex-direction: column;
+  }
+  .d20-col {
+    justify-content: center;
+  }
+  .d20-block {
+    width: calc(100% / 4);
+  }
+}
+@media (max-width: 1023px) {
+  .d20-block--big {
+    width: 100%;
+  }
+  .d20-block {
+    width: calc(100% / 2);
+  }
+}
+@media (max-width: 767px) {
+  .d20-block--big {
+    padding-bottom: 45px;
+    height: auto;
+  }
+  .d20-block {
+    width: 100%;
+  }
+  .d20-block__title > h2 {
+    margin-bottom: 10px;
+  }
+  .d20-block__title > h2 br {
+    display: none;
+  }
+  .d20-block__btns {
+    position: relative;
+    top: 0;
+  }
+}
+@media (max-width: 480px) {
+  .d20-block--big {
+    padding: 20px 10px 10px;
+  }
+  .d20-block__title > h2 {
+    text-align: center;
+  }
+  .d20-block__btns {
+    display: flex;
+    flex-direction: column;
+  }
+  .d20-block__btns button:first-child {
+    border-right: 0;
+    border-bottom: 1px solid #000000;
+  }
+  .d20-block__btns button {
+    text-align: center;
+    padding: 15px 0;
+  }
+  .d20-block--big > p {
+    text-align: center;
+  }
+  .d20-promo__btn-full,
+  .d20-promo__btn-text {
+    width: 100%;
+  }
+  .d20-block div {
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  .d20-block div img {
+    margin: 0;
+  }
+}
