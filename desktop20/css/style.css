@@ -1,23 +1,33 @@
-/*<style>*/
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&family=Roboto&display=swap');
 
-.d20 * {
+#d20.d20 * {
   box-sizing: border-box;
 }
 
-h2, h3, h4, h5, h6, p, a, ul, li, button {
+#d20 h2,
+#d20 h3,
+#d20 h4,
+#d20 h5,
+#d20 h6,
+#d20 p,
+#d20 a,
+#d20 ul,
+#d20 li,
+#d20 button {
   font-family: 'Libre Franklin', sans-serif;
   font-weight: 400;
   margin: 0;
   padding: 0;
 }
-button {
+
+#d20 button {
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
-body {
+#d20 body {
   font-family: 'Libre Franklin', sans-serif;
   font-weight: 400;
   line-height: 1.2;
@@ -25,26 +35,30 @@ body {
   padding: 0;
 }
 
-.d20 {}
-.d20-container {
+
+#d20 .d20-container {
   margin: 0 auto;
   width: 1200px;
   max-width: 100%;
 }
-.d20-container--wide {
+
+#d20 .d20-container--wide {
   padding-bottom: 55px;
   width: 1440px;
 }
-.d20-row {
+
+#d20 .d20-row {
   display: flex;
   flex-direction: row;
 }
-.d20-col {
+
+#d20 .d20-col {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.d20-block {
+
+#d20 .d20-block {
   display: flex;
   padding: 30px;
   flex-direction: row;
@@ -52,59 +66,75 @@ body {
   height: 220px;
   width: 360px;
 }
-.d20-block-1 {
+
+#d20 .d20-block-1 {
   background: url(https://www.edanz.com/sites/default/files/d20-promo-bg-1.png) center / 100% 100% no-repeat;
 }
-.d20-block-2 {
+
+#d20 .d20-block-2 {
   background: url(https://www.edanz.com/sites/default/files/d20-promo-bg-2.png) center / 100% 100% no-repeat;
 }
-.d20-block-3 {
+
+#d20 .d20-block-3 {
   background: url(https://www.edanz.com/sites/default/files/d20-promo-bg-3.png) center / 100% 100% no-repeat;
 }
-.d20-block-4 {
+
+#d20 .d20-block-4 {
   background: url(https://www.edanz.com/sites/default/files/d20-promo-bg-4.png) center / 100% 100% no-repeat;
 }
-.d20-block-5 {
+
+#d20 .d20-block-5 {
   background: url(https://www.edanz.com/sites/default/files/d20-promo-bg-5.png) center / 100% 100% no-repeat;
 }
-.d20-block-6 {
+
+#d20 .d20-block-6 {
   background: url(https://www.edanz.com/sites/default/files/d20-promo-bg-6.png) center / 100% 100% no-repeat;
 }
-.d20-block-7 {
+
+#d20 .d20-block-7 {
   background: url(https://www.edanz.com/sites/default/files/d20-promo-bg-7.png) center / 100% 100% no-repeat;
 }
-.d20-block-8 {
+
+#d20 .d20-block-8 {
   background: url(https://www.edanz.com/sites/default/files/d20-promo-bg-8.png) center / 100% 100% no-repeat;
 }
-.d20-block div {
+
+#d20 .d20-block div {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.d20-block div img {
+
+#d20 .d20-block div img {
   margin-right: 21px;
   width: 50px;
 }
-.d20-block div h2 {
+
+#d20 .d20-block div h2 {
   font-size: 18px;
   font-weight: 400;
   line-height: 18px;
 }
-.d20-block--big {
+
+#d20 .d20-block--big {
   background: url(https://www.edanz.com/sites/default/files/d20-promo-bg-big-1.png) center / 100% 100% no-repeat;
   padding: 95px 45px 0;
   height: 440px;
   width: 720px;
 }
-.d20-block__title {
+
+#d20 .d20-block__title {
   position: relative;
 }
-.d20-block__title > h2 {
+
+#d20 .d20-block__title > h2 {
   font-size: 36px;
-  font-weight: 400;
+  font-weight: 600;
+  line-height: 36px;
   margin-bottom: 55px;
 }
-.d20-block__btns {
+
+#d20 .d20-block__btns {
   border: 1px solid #000000;
   border-radius: 7px;
   display: inline-block;
@@ -112,119 +142,139 @@ body {
   top: 60px;
   right: 0;
 }
-.d20-block__btns button {
+
+#d20 .d20-block__btns button {
   font-size: 14px;
   line-height: 14px;
   padding: 18px 20px;
 }
-.d20-block__btns button:first-child {
+
+#d20 .d20-block__btns button:first-child {
   border-right: 1px solid #000000;
 }
-.d20-block__btns button span {
+
+#d20 .d20-block__btns button span {
   font-size: 16px;
   font-weight: 700;
   line-height: 16px;
   margin: 0 8px;
 }
-.d20-block--big > p {
+
+#d20 .d20-block--big > p {
   font-size: 16px;
   line-height: 25px;
   margin-bottom: 25px;
 }
-.d20-block--big > button {
+
+#d20 .d20-block--big > button {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
 }
-.d20-promo__btn-full {
+
+#d20 .d20-promo__btn-full {
   background-color: #D60000;
   color: #ffffff;
   margin-right: 3px;
   padding: 18px 35px;
 }
-.d20-promo__btn-text {
+
+#d20 .d20-promo__btn-text {
   color: #d60000;
   padding: 18px 35px;
 }
 
 
-.d20-info {
+#d20 .d20-info {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
   padding-top: 100px;
 }
-.d20-info.rr {
+
+#d20 .d20-info.rr {
   flex-direction: row-reverse;
 }
-.d20-info img {
+
+#d20 .d20-info img {
   flex-shrink: 0;
   width: 570px;
   max-width: 100%;
 }
-.d20-info-data {
+
+#d20 .d20-info-data {
   padding-top: 8px;
   max-width: 520px;
 }
-.d20-pt60 {
+
+#d20 .d20-pt60 {
   padding-top: 59px;
 }
-.d20-info-data h3 {
+
+#d20 .d20-info-data h3 {
   color: #D60000;
   font-size: 14px;
   line-height: 17px;
   margin-bottom: 13px;
   text-transform: uppercase;
 }
-.d20-info-data h2 {
+
+#d20 .d20-info-data h2 {
   font-size: 36px;
   font-weight: 600;
   line-height: 44px;
   margin-bottom: 30px;
 }
-.d20-info-data p {
+
+#d20 .d20-info-data p {
   font-size: 18px;
   line-height: 30px;
   margin-bottom: 25px;
 }
-.d20-info-data p span {
+
+#d20 .d20-info-data p span {
   font-weight: 700;
 }
-.d20-info-data button {
+
+#d20 .d20-info-data button {
   color: #D60000;
   font-size: 18px;
   font-weight: 600;
   line-height: 22px;
   padding: 12px 16px;
 }
-.d20-info-btn--full {
+
+#d20 .d20-info-btn--full {
   border: 1px solid #D60000;
   border-radius: 10px;
 }
-.d20-info-btn--text {
+
+#d20 .d20-info-btn--text {
   margin: 0 15px;
 }
 
 
-.d20-logos {
+#d20 .d20-logos {
   display: flex;
   flex-direction: row;
   padding-top: 95px;
   width: 100%;
 }
-.d20-logos div {
+
+#d20 .d20-logos div {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   width: calc(100% / 5);
 }
-.d20-logos div img {
+
+#d20 .d20-logos div img {
   max-width: 100%;
 }
 
 
-.d20-brands {
+#d20 .d20-brands {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -232,7 +282,8 @@ body {
   margin: 41px auto 117px;
   max-width: 950px;
 }
-.d20-brands h2 {
+
+#d20 .d20-brands h2 {
   color: #D60000;
   font-size: 14px;
   line-height: 17px;
@@ -240,40 +291,48 @@ body {
   text-transform: uppercase;
   width: 100%;
 }
-.d20-brand {
+
+#d20 .d20-brand {
   width: calc(100% / 4 - 50px);
 }
-.d20-brand h3 {
+
+#d20 .d20-brand h3 {
   font-size: 14px;
   font-weight: 600;
   line-height: 22px;
   margin-bottom: 3px;
 }
-.d20-brand-1 {
+
+#d20 .d20-brand-1 {
   color: #E03491;
 }
-.d20-brand-2 {
+
+#d20 .d20-brand-2 {
   color: #63CAEF;
 }
-.d20-brand-3 {
+
+#d20 .d20-brand-3 {
   color: #5ED3D9;
 }
-.d20-brand-4 {
+
+#d20 .d20-brand-4 {
   color: #0E9441;
 }
-.d20-brand h4 {
+
+#d20 .d20-brand h4 {
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 13px;
 }
-.d20-brand p {
+
+#d20 .d20-brand p {
   font-size: 16px;
   line-height: 22px;
   opacity: 0.7;
 }
 
 
-.d20-premium {
+#d20 .d20-premium {
   background-color: #044796;
   border-radius: 20px;
   box-shadow: 10px 10px 0 rgba(214, 0, 0, 0.5);
@@ -283,8 +342,9 @@ body {
   margin: 0 20px;
   padding: 35px 50px;
 }
-.d20-premium--left:before,
-.d20-premium--mid:before {
+
+#d20 .d20-premium--left:before,
+#d20 .d20-premium--mid:before {
   content: "";
   background-color: #ffffff;
   opacity: .3;
@@ -294,23 +354,27 @@ body {
   height: calc(100% - 4px);
   width: 1px;
 }
-.d20-premium--left {
+
+#d20 .d20-premium--left {
   padding-right: 40px;
   position: relative;
   text-align: center;
   width: 25%;
 }
-.d20-premium--left img {
+
+#d20 .d20-premium--left img {
   margin-bottom: 9px;
   width: 53px;
 }
-.d20-premium--left h2 {
+
+#d20 .d20-premium--left h2 {
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
   margin-bottom: 5px;
 }
-.d20-premium--left p {
+
+#d20 .d20-premium--left p {
   font-size: 14px;
   line-height: 17px;
   margin: 0 auto;
@@ -318,7 +382,7 @@ body {
   max-width: 185px;
 }
 
-.d20-premium--mid {
+#d20 .d20-premium--mid {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -326,19 +390,22 @@ body {
   position: relative;
   width: 50%;
 }
-.d20-premium--mid ul {
+
+#d20 .d20-premium--mid ul {
   display: flex;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
   list-style: none;
 }
-.d20-premium--mid ul li {
+
+#d20 .d20-premium--mid ul li {
   padding: 6px 10px 6px 32px;
   position: relative;
   width: 50%;
 }
-.d20-premium--mid ul li:before {
+
+#d20 .d20-premium--mid ul li:before {
   content: "";
   background: url(https://www.edanz.com/sites/default/files/d20-check-icon.png) center / 100% 100% no-repeat;
   position: absolute;
@@ -349,7 +416,7 @@ body {
   width: 22px;
 }
 
-.d20-premium--right {
+#d20 .d20-premium--right {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -358,19 +425,22 @@ body {
   text-align: center;
   width: 25%;
 }
-.d20-premium--right h3 {
+
+#d20 .d20-premium--right h3 {
   font-size: 36px;
   font-weight: 600;
   line-height: 36px;
   margin-bottom: 10px;
 }
-.d20-premium--right p {
+
+#d20 .d20-premium--right p {
   font-size: 14px;
   line-height: 17px;
   margin-bottom: 22px;
   opacity: 0.7;
 }
-.d20-premium--right button {
+
+#d20 .d20-premium--right button {
   border: 1px solid #FFFFFF;
   border-radius: 10px;
   color: #ffffff;
@@ -378,221 +448,255 @@ body {
 }
 
 
-.d20-help {
+#d20 .d20-help {
   padding: 55px 0 40px;
 }
-.d20-help span {
+
+#d20 .d20-help span {
   display: block;
   font-size: 18px;
   line-height: 22px;
   text-align: center;
   width: 100%;
 }
-.d20-help span a {
+
+#d20 .d20-help span a {
   color: #D60000;
   font-weight: 500;
   text-decoration: none;
 }
 
 
-
-
-
 @media (max-width: 1439px) {
-  .d20-row {
+  #d20 .d20-row {
     flex-direction: column;
   }
-  .d20-col {
+
+  #d20 .d20-col {
     justify-content: center;
   }
-  .d20-block--big {
+
+  #d20 .d20-block--big {
     width: 100%;
   }
-  .d20-block {
+
+  #d20 .d20-block {
     width: calc(100% / 4);
   }
 
 
-  .d20-info,
-  .d20-info.rr {
+  #d20 .d20-info,
+  #d20 .d20-info.rr {
     flex-direction: column;
     align-items: center;
     padding-top: 0;
   }
-  .d20-info-data {
+
+  #d20 .d20-info-data {
     padding: 20px;
     width: 100%;
     max-width: 100%;
   }
-  .d20-info-btns {
+
+  #d20 .d20-info-btns {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
 
 
-  .d20-logos {
+  #d20 .d20-logos {
     padding: 30px 0;
   }
 
 
-  .d20-brands {
+  #d20 .d20-brands {
     margin: 20px auto 30px;
     padding: 0 20px;
   }
-  .d20-brands h2 {
+
+  #d20 .d20-brands h2 {
     margin-bottom: 10px;
   }
-  .d20-brand {
+
+  #d20 .d20-brand {
     margin-bottom: 10px;
     width: 50%;
   }
 
 
-  .d20-premium--mid ul li {
+  #d20 .d20-premium--mid ul li {
     width: 100%;
   }
 }
+
 @media (max-width: 1023px) {
-  .d20-block {
+  #d20 .d20-block {
     width: calc(100% / 2);
   }
 
-  .d20-premium {
+  #d20 .d20-premium {
     padding: 15px 30px;
   }
-  .d20-premium--left {
+
+  #d20 .d20-premium--left {
     padding-right: 20px;
   }
-  .d20-premium--right {
+
+  #d20 .d20-premium--right {
     padding-left: 30px;
   }
 }
+
 @media (max-width: 767px) {
-  .d20-block--big {
+  #d20 .d20-block--big {
     padding-bottom: 45px;
     height: auto;
   }
-  .d20-block {
+
+  #d20 .d20-block {
     width: 100%;
   }
-  .d20-block__title > h2 {
+
+  #d20 .d20-block__title > h2 {
     margin-bottom: 10px;
   }
-  .d20-block__title > h2 br {
+
+  #d20 .d20-block__title > h2 br {
     display: none;
   }
-  .d20-block__btns {
+
+  #d20 .d20-block__btns {
     position: relative;
     top: 0;
   }
 
 
-  .d20-logos {
+  #d20 .d20-logos {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .d20-logos div {
+
+  #d20 .d20-logos div {
     width: calc(100% / 3);
   }
 
 
-  .d20-brand {
+  #d20 .d20-brand {
     width: 100%;
   }
 
-  .d20-premium {
+  #d20 .d20-premium {
     flex-direction: column;
   }
-  .d20-premium--left,
-  .d20-premium--mid,
-  .d20-premium--right {
+
+  #d20 .d20-premium--left,
+  #d20 .d20-premium--mid,
+  #d20 .d20-premium--right {
     padding: 0;
     width: 100%;
   }
-  .d20-premium--left:before,
-  .d20-premium--mid:before {
+
+  #d20 .d20-premium--left:before,
+  #d20 .d20-premium--mid:before {
     top: auto;
     bottom: 0;
     height: 1px;
     width: 100%;
   }
-  .d20-premium--left p {
+
+  #d20 .d20-premium--left p {
     max-width: 100%;
   }
-  .d20-premium--mid {
+
+  #d20 .d20-premium--mid {
     padding: 20px 0;
   }
-  .d20-premium--mid ul li {
+
+  #d20 .d20-premium--mid ul li {
     width: 50%;
   }
-  .d20-premium--right {
+
+  #d20 .d20-premium--right {
     padding-top: 10px;
   }
 }
+
 @media (max-width: 520px) {
-  .d20-premium--mid ul li {
+  #d20 .d20-premium--mid ul li {
     width: 100%;
   }
 }
+
 @media (max-width: 480px) {
-  .d20-block--big {
+  #d20 .d20-block--big {
     padding: 20px 10px 10px;
   }
-  .d20-block__title > h2 {
+
+  #d20 .d20-block__title > h2 {
     text-align: center;
   }
-  .d20-block__btns {
+
+  #d20 .d20-block__btns {
     display: flex;
     flex-direction: column;
   }
-  .d20-block__btns button:first-child {
+
+  #d20 .d20-block__btns button:first-child {
     border-right: 0;
     border-bottom: 1px solid #000000;
   }
-  .d20-block__btns button {
+
+  #d20 .d20-block__btns button {
     text-align: center;
     padding: 15px 0;
   }
-  .d20-block--big > p {
+
+  #d20 .d20-block--big > p {
     text-align: center;
   }
-  .d20-promo__btn-full,
-  .d20-promo__btn-text {
+
+  #d20 .d20-promo__btn-full,
+  #d20 .d20-promo__btn-text {
     width: 100%;
   }
-  .d20-block div {
+
+  #d20 .d20-block div {
     flex-direction: column;
     flex-grow: 1;
   }
-  .d20-block div img {
+
+  #d20 .d20-block div img {
     margin: 0;
   }
 
 
-  .d20-info-data h2 {
+  #d20 .d20-info-data h2 {
     font-size: 26px;
     line-height: 30px;
   }
-  .d20-info-data p {
+
+  #d20 .d20-info-data p {
     line-height: 26px;
   }
-  .d20-info-btns {
+
+  #d20 .d20-info-btns {
     flex-direction: column;
   }
 
 
-  .d20-logos {
+  #d20 .d20-logos {
     padding-top: 0;
   }
-  .d20-logos div {
+
+  #d20 .d20-logos div {
     margin-bottom: 10px;
     width: 100%;
   }
 
-  .d20-help {
+  #d20 .d20-help {
     padding-right: 10px;
     padding-left: 10px;
   }
 }
-</style>
+</style >
