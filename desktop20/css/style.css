@@ -27,7 +27,7 @@
   cursor: pointer;
 }
 
-#d20 body {
+body {
   font-family: 'Libre Franklin', sans-serif;
   font-weight: 400;
   line-height: 1.2;
@@ -38,33 +38,41 @@
 
 #d20 .d20-container {
   margin: 0 auto;
-  width: 1200px;
+  width: 1145px;
   max-width: 100%;
 }
 
-#d20 .d20-container--wide {
-  padding-bottom: 55px;
-  width: 1440px;
+#d20 .d20-promo {
+  padding-bottom: 35px;
 }
 
 #d20 .d20-row {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 20px;
 }
 
 #d20 .d20-col {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 #d20 .d20-block {
+  border-radius: 15px;
   display: flex;
-  padding: 30px;
   flex-direction: row;
   align-items: flex-end;
-  height: 220px;
-  width: 360px;
+  padding: 0 0 20px 25px;
+  height: 185px;
+  width: 270px;
+}
+
+#d20 .d20-col:last-child .d20-block:nth-child(1) {
+  margin-bottom: 20px;
 }
 
 #d20 .d20-block-1 {
@@ -106,81 +114,135 @@
 }
 
 #d20 .d20-block div img {
-  margin-right: 21px;
+  margin-right: 15px;
   width: 50px;
 }
 
 #d20 .d20-block div h2 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 16px;
 }
 
 #d20 .d20-block--big {
   background: url(https://www.edanz.com/sites/default/files/d20-promo-bg-big-1.png) center / 100% 100% no-repeat;
-  padding: 95px 45px 0;
-  height: 440px;
-  width: 720px;
-}
-
-#d20 .d20-block__title {
-  position: relative;
+  border-radius: 15px;
+  margin-right: 20px;
+  padding: 55px 40px 0;
+  height: 390px;
+  width: 560px;
 }
 
 #d20 .d20-block__title > h2 {
   font-size: 36px;
   font-weight: 600;
   line-height: 36px;
-  margin-bottom: 55px;
+  margin-bottom: 20px;
 }
 
-#d20 .d20-block__btns {
+#d20 .d20-block--big > p {
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 35px;
+}
+
+#d20 .d20-dropdowns {
   border: 1px solid #000000;
   border-radius: 7px;
-  display: inline-block;
-  position: absolute;
-  top: 60px;
-  right: 0;
+  display: inline-flex;
+  flex-direction: row;
+  margin-bottom: 7px;
+  height: 55px;
 }
 
-#d20 .d20-block__btns button {
+#d20 .d20-dropdowns div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   font-size: 14px;
   line-height: 14px;
-  padding: 18px 20px;
 }
 
-#d20 .d20-block__btns button:first-child {
+#d20 .d20-dropdowns div:nth-of-type(1) {
   border-right: 1px solid #000000;
+  width: 140px;
 }
 
-#d20 .d20-block__btns button span {
+#d20 .d20-dropdowns div:nth-of-type(2) {
+  border-right: 1px solid #000000;
+  width: 115px;
+}
+
+#d20 .d20-dropdowns div:nth-of-type(3) {
+  width: 95px;
+}
+
+#d20 .d20-dropdown {
+  cursor: pointer;
+}
+
+#d20 .d20-dropdown span {
   font-size: 16px;
   font-weight: 700;
   line-height: 16px;
   margin: 0 8px;
 }
+#d20 .d20-dropdown i {
+  background: url(https://www.edanz.com/sites/default/files/d20-arrow-down.png) center / 100% 100% no-repeat;
+  margin-left: 8px;
+  height: 8px;
+  width: 12px;
+}
 
-#d20 .d20-block--big > p {
-  font-size: 16px;
-  line-height: 25px;
-  margin-bottom: 25px;
+#d20 .d20-promo h3 {
+  font-size: 14px;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+
+#d20 .d20-promo h3 a {
+  color: #000000;
+  text-decoration: none;
+  position: relative;
+}
+#d20 .d20-promo h3 a:before {
+  content: "";
+  border-bottom: 1px dashed #000000;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+}
+
+#d20 .d20-promo h3 span {
+  font-weight: 600;
 }
 
 #d20 .d20-block--big > button {
-  font-family: 'Roboto', sans-serif;
+  border-radius: 10px;
   font-size: 14px;
 }
 
 #d20 .d20-promo__btn-full {
   background-color: #D60000;
   color: #ffffff;
-  margin-right: 3px;
+  font-weight: 600;
+  margin-right: 10px;
   padding: 18px 35px;
+}
+#d20 .d20-promo__btn-full:hover {
+  transform: scale(1.2);
 }
 
 #d20 .d20-promo__btn-text {
+  border: 1px solid rgba(214, 0, 0, 0.1);
   color: #d60000;
+  font-weight: 500;
   padding: 18px 35px;
+}
+#d20 .d20-promo__btn-text:hover {
+  border: 1px solid #D60000;
 }
 
 
@@ -198,38 +260,43 @@
 
 #d20 .d20-info img {
   flex-shrink: 0;
-  width: 570px;
+  width: 580px;
   max-width: 100%;
 }
 
 #d20 .d20-info-data {
-  padding-top: 8px;
-  max-width: 520px;
+  padding-top: 35px;
+  max-width: 510px;
 }
 
-#d20 .d20-pt60 {
-  padding-top: 59px;
+#d20 .d20-pt50 {
+  padding-top: 85px;
 }
 
 #d20 .d20-info-data h3 {
-  color: #D60000;
-  font-size: 14px;
-  line-height: 17px;
-  margin-bottom: 13px;
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 25px;
   text-transform: uppercase;
 }
 
 #d20 .d20-info-data h2 {
-  font-size: 36px;
+  font-size: 48px;
   font-weight: 600;
-  line-height: 44px;
+  line-height: 48px;
   margin-bottom: 30px;
+}
+
+#d20 .d20-info.rr .d20-info-data h2 {
+  font-size: 36px;
+  line-height: 36px;
+  margin-bottom: 25px;
 }
 
 #d20 .d20-info-data p {
   font-size: 18px;
-  line-height: 30px;
-  margin-bottom: 25px;
+  line-height: 26px;
+  margin-bottom: 35px;
 }
 
 #d20 .d20-info-data p span {
@@ -237,6 +304,7 @@
 }
 
 #d20 .d20-info-data button {
+  border-radius: 10px;
   color: #D60000;
   font-size: 18px;
   font-weight: 600;
@@ -246,11 +314,19 @@
 
 #d20 .d20-info-btn--full {
   border: 1px solid #D60000;
-  border-radius: 10px;
+  margin-right: 15px;
+}
+#d20 .d20-info-btn--full:hover {
+  background-color: #d60000;
+  color: #ffffff;
 }
 
 #d20 .d20-info-btn--text {
+  border: 1px solid rgba(214, 0, 0, 0.1);
   margin: 0 15px;
+}
+#d20 .d20-info-btn--text:hover {
+  border: 1px solid #D60000;
 }
 
 
@@ -279,15 +355,13 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 41px auto 117px;
-  max-width: 950px;
+  margin: 125px auto 115px;
 }
 
 #d20 .d20-brands h2 {
-  color: #D60000;
-  font-size: 14px;
-  line-height: 17px;
-  margin-bottom: 32px;
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 55px;
   text-transform: uppercase;
   width: 100%;
 }
@@ -321,6 +395,7 @@
 
 #d20 .d20-brand h4 {
   font-size: 24px;
+  font-weight: 500;
   line-height: 24px;
   margin-bottom: 13px;
 }
@@ -339,7 +414,6 @@
   color: #ffffff;
   display: flex;
   flex-direction: row;
-  margin: 0 20px;
   padding: 35px 50px;
 }
 
@@ -359,7 +433,7 @@
   padding-right: 40px;
   position: relative;
   text-align: center;
-  width: 25%;
+  width: 22%;
 }
 
 #d20 .d20-premium--left img {
@@ -388,7 +462,7 @@
   align-items: center;
   padding: 0 55px;
   position: relative;
-  width: 50%;
+  width: 56%;
 }
 
 #d20 .d20-premium--mid ul {
@@ -400,6 +474,8 @@
 }
 
 #d20 .d20-premium--mid ul li {
+  font-size: 18px;
+  line-height: 22px;
   padding: 6px 10px 6px 32px;
   position: relative;
   width: 50%;
@@ -423,7 +499,7 @@
   align-items: center;
   padding-left: 50px;
   text-align: center;
-  width: 25%;
+  width: 22%;
 }
 
 #d20 .d20-premium--right h3 {
@@ -467,21 +543,66 @@
 }
 
 
+#d20 .d20-slider {
+  padding-top: 130px;
+}
+#d20 .d20-slider h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  opacity: .7;
+  text-align: center;
+  text-transform: uppercase;
+}
+#d20 .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#d20 .swiper-slide h2 {
+  font-size: 36px;
+  line-height: 48px;
+  margin-bottom: 21px;
+  width: 950px;
+  max-width: 100%;
+}
+#d20 .swiper-slide h3 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 48px;
+}
+#d20 .swiper-slide p {
+  font-size: 16px;
+  line-height: 16px;
+  padding-bottom: 55px;
+  width: 295px;
+  max-width: 100%;
+}
+#d20 .swiper-pagination-bullet {
+  margin: 0 9px;
+  height: 10px;
+  width: 10px;
+}
+#d20 .swiper-pagination-bullet-active {
+  background-color: #d60000;
+}
+
+
 @media (max-width: 1439px) {
   #d20 .d20-row {
     flex-direction: column;
-  }
-
-  #d20 .d20-col {
-    justify-content: center;
+    padding-bottom: 0;
   }
 
   #d20 .d20-block--big {
+    margin-right: 0;
+    margin-bottom: 20px;
     width: 100%;
   }
 
   #d20 .d20-block {
-    width: calc(100% / 4);
+    width: calc(100% / 4 - 20px);
   }
 
 
@@ -525,6 +646,9 @@
   }
 
 
+  #d20 .d20-premium {
+    margin: 0 20px;
+  }
   #d20 .d20-premium--mid ul li {
     width: 100%;
   }
@@ -532,7 +656,12 @@
 
 @media (max-width: 1023px) {
   #d20 .d20-block {
-    width: calc(100% / 2);
+    margin-bottom: 10px;
+    width: calc(100% / 2 - 10px);
+  }
+  #d20 .d20-block--big,
+  #d20 .d20-col:last-child .d20-block:nth-child(1){
+    margin-bottom: 10px;
   }
 
   #d20 .d20-premium {
@@ -682,6 +811,9 @@
 
   #d20 .d20-info-btns {
     flex-direction: column;
+  }
+  #d20 .d20-info-data button {
+    margin: 0 0 10px 0;
   }
 
 
