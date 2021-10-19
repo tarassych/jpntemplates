@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .wix-switcher * {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
+  .wix-switcher h2,
+  .wix-switcher p,
+  .wix-switcher a {
+    font-family: 'Noto Sans', sans-serif !important;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0;
+  }
+
+  .wix-switcher > h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    margin: 20px 0 10px;
+    padding: 10px 0 10px;
+    text-align: center;
+  }
+
+  .wix-switcher > p {
+    border: 1px solid #000;
+    padding: 0.3em 1em;
+    margin: 0 auto;
+    width: 100px;
+    text-align: center;
+  }
+
+  .wix-switcher__tabs {
+    display: flex;
+    flex-direction: row;
+    margin: 20px auto;
+    padding: 0;
+    width: 310px;
+  }
+
+  .wix-switcher__tabs button {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #000;
+    color: #000;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0 5px;
+    padding: 12px 0;
+    position: relative;
+    width: 50%;
+  }
+
+  .wix-switcher__tabs button.active {
+    color: #ae2d40;
+    border-bottom: 1px solid #ae2d40;
+    text-decoration: none;
+  }
+
+  .wix-switcher__tabs button.active:before {
+    top: 100%;
+    left: 50%;
+    content: ' ';
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(174, 45, 64, 0);
+    border-top-color: #ae2d40;
+    border-style: solid;
+    border-width: 15px;
+    margin-left: -15px;
+    margin-top: 0;
+  }
+
+  .wix-switcher-content {
+    margin-bottom: 10px;
+  }
+
+  .wix-switcher-content__tab {
+    display: none;
+  }
+
+  .wix-switcher-content__tab.show {
+    display: block;
+  }
+
+  .wix-switcher-content__tab p {
+    font-size: 15px;
+    line-height: 31px;
+  }
+
+  .wix-switcher-content__tab p span {
+    color: #c30d23;
+  }
+
+  .wix-switcher-content__tab p span:hover {
+    text-decoration: underline;
+  }
+</style>
+<div class="wix-switcher">
+  <h2>
+    日本人が間違いやすい文法や句読点を、
+    <br>
+    正確に修正
+  </h2>
+
+  <p>SAMPLE</p>
+
+  <div class="wix-switcher__tabs">
+    <button class="wix-switcher-before active">
+      校正前
+    </button>
+
+    <button class="wix-switcher-after">
+      校正後
+    </button>
+  </div>
+
+  <div class="wix-switcher-content">
+    <div class="wix-switcher-content__tab wix-switcher-content--before show">
+      <p>Chronic granumolatous disease (CGD) is due to an genetic disolder of phagocytic cells that effects on the
+        phagocytes’ power to have the respiratory burst that needs to kill specific kind of bacteria and fungus. In
+        addition to persistent tissue granuloma formation, this phagocytic insufficiency leads to a syndrome of
+        recurrence potentially deadly bacteria and fangas infections that 1950’s reports descriptions showed a complex
+        comprised of recurrent corruptions, dropsy, Hyper Gamma Globulinemia, biliousness, and lymphadenopathy. Almost
+        the cases are detected in boys before five-years-old and &gt;90％passed away before the age of 10-years-old [1].
+        This diagnosis typically is determined due to CGD caused by NAPDH oxidase system mutations and a history of
+        unusual, recurring, or persistant infections. with almost all of them detected by the age of sixteen. Milder
+        phenotypes have been indentified as a result of the discovering of this defect. Disease in patient with the
+        milder phenotypes is often milder, and has unusual presentations and can result in delayed symptoms and
+        diagnosis, sometimes even until adulthood 2-3. Our</p>
+    </div>
+
+    <div class="wix-switcher-content__tab wix-switcher-content--after">
+      <p>
+        Chronic granulomatous disease (CGD) is an inherited disorder of phagocytes that affects their ability to undergo
+        the respiratory burst needed to kill certain types of bacteria and fungi. In addition to persistent tissue
+        granuloma formation, this leads to recurrent potentially deadly bacterial and fungal infections. <span>Early reports in the 1950s described a syndrome comprising recurrent infections, edema, hypergammaglobulinemia, liver disease</span>
+        Please consider citing a recent review and/or whether the definition has developed.<br> Please make sure this is
+        correct, and be careful to use modern terminology. , and lymphadenopathy. Most cases are detected in boys under
+        5 years old. <span>Almost all are detected by the age of 16 years </span> We have moved this here as it seems
+        more logical. , and &gt;90% of patients die before the age of 10 years [1]. This diagnosis is usually considered
+        because of a history of unusual, recurrent, or persistent infections. <span>CGD is caused by mutations in the nicotinamide adenine dinucleotide phosphate (NADPH) oxidase system.</span>
+        The original was unclear. Please check whether this reflects your intended meaning. The identification of this
+        defect has allowed the identification of milder phenotypes. These milder phenotypes may result in milder
+        disease, unusual features, and delayed symptoms, which then delays diagnosis, sometimes even until adulthood
+        <span>[2–3]</span> Please note the citation formatting was inconsistent. We have formatted it in accordance with
+        journal guidelines. .
+      </p>
+    </div>
+  </div>
+</div>
+
+<script>
+    const btnBefore = document.querySelector(".wix-switcher-before")
+    const btnAfter = document.querySelector(".wix-switcher-after")
+    const before = document.querySelector(".wix-switcher-content--before")
+    const after = document.querySelector(".wix-switcher-content--after")
+
+    btnBefore.addEventListener("click", () => {
+        after.classList.remove("show")
+        before.classList.add("show")
+        btnAfter.classList.remove("active")
+        btnBefore.classList.add("active")
+    })
+    btnAfter.addEventListener("click", () => {
+        before.classList.remove("show")
+        after.classList.add("show")
+        btnBefore.classList.remove("active")
+        btnAfter.classList.add("active")
+    })
+</script>
+</body>
+</html>
