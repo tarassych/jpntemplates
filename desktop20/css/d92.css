@@ -1,4 +1,4 @@
-/*<style>*/
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&family=Roboto&display=swap');
 
 #d92.d92 * {
@@ -14,6 +14,7 @@
 #d92 a,
 #d92 ul,
 #d92 li,
+#d92 input,
 #d92 button {
   font-family: 'Libre Franklin', sans-serif;
   font-weight: 400;
@@ -94,7 +95,7 @@ body {
 }
 
 #d92 .d92-block--big {
-  background: url(../img/d20-bg-line-1.png) left 55px bottom 25px no-repeat, rgba(255, 255, 255, .9);
+  background: url(https://www.edanz.com/sites/default/files/d20-bg-line-1.png) left 55px bottom 25px no-repeat, rgba(255, 255, 255, .9);
   border-radius: 20px;
   margin-right: 20px;
   padding: 35px 40px 0;
@@ -115,51 +116,76 @@ body {
   margin-bottom: 25px;
 }
 
+#d92 .d92-block--big h4 {
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 10px;
+}
+
 #d92 .d92-dropdowns {
   display: inline-flex;
   flex-direction: row;
-  margin-bottom: 7px;
-  height: 55px;
+  margin-bottom: 30px;
 }
 
 #d92 .d92-dropdowns > div {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
   font-size: 14px;
   line-height: 14px;
+  padding-left: 20px;
 }
 
-#d92 .d92-dropdown-1 {
+#d92 div.d92-dropdown-1 {
   border: 1px solid #000000;
   border-radius: 7px 0 0 7px;
-  width: 140px;
+  padding-left: 0;
+  width: 110px;
+}
+
+#d92 .d92-dropdown-1 input {
+  border-radius: 7px 0 0 7px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  padding: 0 0 0 20px;
+  height: 100%;
+  width: 100%;
+}
+#d92 .d92-dropdown-1 input::placeholder {
+  color: #000000;
+}
+#d92 .d92-dropdown-1 input:hover,
+#d92 .d92-dropdown-1 input:focus {
+  outline: none;
 }
 
 #d92 .d92-dropdown-2 {
   border: 1px solid #000000;
   border-left: 0;
-  width: 115px;
+  cursor: pointer;
+  width: 100px;
 }
 
 #d92 .d92-dropdown-3 {
   border: 1px solid #000000;
   border-left: 0;
   border-radius: 0 7px 7px 0;
-  width: 95px;
+  width: 80px;
 }
 
 #d92 .d92-dropdown {
-  cursor: pointer;
   position: relative;
+  height: 55px;
 }
 
 #d92 .d92-dropdown span {
   font-size: 16px;
   font-weight: 700;
   line-height: 16px;
-  margin: 0 8px;
+  margin: 0 8px 0 0;
 }
 #d92 .d92-dropdown span.underline {
   text-decoration: underline;
@@ -177,7 +203,7 @@ body {
   background-color: #ffffff;
   display: none;
   flex-direction: column;
-  padding: 11px 23px;
+  padding: 11px 20px;
   position: absolute;
   left: -1px;
   top: calc(100% + 1px);
@@ -187,40 +213,33 @@ body {
 #d92 .d92-dropdown:hover .d92-dropdown-content {
   display: flex;
 }
-#d92 .d92-dropdown-1:hover {
-  border-radius: 7px 0 0 0;
+#d92 .d92-dropdown-el {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 #d92 .d92-dropdown-el:not(:last-child) {
   margin-bottom: 13px;
 }
 
-#d92 .d92-promo h3 {
+#d92 .d92-dropdown-4 h3 {
   font-size: 14px;
-  line-height: 32px;
-  margin-bottom: 30px;
+  line-height: 17px;
+  opacity: .7;
 }
 
-#d92 .d92-promo h3 a {
-  color: #000000;
-  text-decoration: none;
-  position: relative;
-}
-#d92 .d92-promo h3 a:before {
-  content: "";
-  border-bottom: 1px dashed #000000;
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 100%;
-}
-
-#d92 .d92-promo h3 span {
+#d92 .d92-dropdown-4 h3 span {
   font-weight: 600;
 }
 
-#d92 .d92-block--big > button {
+#d92 .d92-promo__btns > button {
   border-radius: 10px;
   font-size: 14px;
+}
+
+#d92 .d92-promo__btns {
+  display: flex;
+  flex-direction: row;
 }
 
 #d92 .d92-promo__btn-full {
@@ -267,10 +286,10 @@ body {
   max-width: 510px;
 }
 #d92 .d92-info .d92-info-data {
-  background: url(../img/d20-bg-line-2.png) left bottom 23px no-repeat;
+  background: url(https://www.edanz.com/sites/default/files/d20-bg-line-2.png) left bottom 23px no-repeat;
 }
 #d92 .d92-info.rr .d92-info-data {
-  background: url(../img/d20-bg-line-3.png) left bottom 59px no-repeat;
+  background: url(https://www.edanz.com/sites/default/files/d20-bg-line-3.png) left bottom 59px no-repeat;
 }
 
 #d92 .d92-pt50 {
@@ -480,7 +499,7 @@ body {
 }
 #d92 .d92-premium:before {
   content: "";
-  background: url(../img/d20-bg-line-4.png) center no-repeat;
+  background: url(https://www.edanz.com/sites/default/files/d20-bg-line-4.png) center no-repeat;
   position: absolute;
   bottom: 60px;
   right: -50px;
@@ -626,6 +645,7 @@ body {
 
 @media (max-width: 1439px) {
   #d92 .d92-promo {
+    padding-top: 10px;
     padding-bottom: 50px;
   }
 
@@ -729,7 +749,7 @@ body {
 
 @media (max-width: 767px) {
   #d92 .d92-block--big {
-    padding-bottom: 45px;
+    padding-bottom: 50px;
     height: auto;
   }
 
@@ -809,10 +829,8 @@ body {
 
 @media (max-width: 480px) {
   #d92 .d92-block--big {
-    padding: 20px 10px 10px;
-  }
-  #d92 .d92-block--big {
     background: rgba(255, 255, 255, .9);
+    padding: 20px 10px 10px;
   }
 
   #d92 .d92-block__title > h2 {
@@ -838,8 +856,27 @@ body {
     text-align: center;
   }
 
+  #d92 .d92-dropdowns {
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+
+  #d92 div.d92-dropdown-4 {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  #d92 .d92-dropdown-4 br {
+    display: none;
+  }
+
+  #d92 .d92-promo__btns {
+    flex-direction: column;
+  }
+
   #d92 .d92-promo__btn-full,
   #d92 .d92-promo__btn-text {
+    margin-bottom: 10px;
     width: 100%;
   }
 
@@ -849,7 +886,7 @@ body {
   }
 
   #d92 .d92-block div img {
-    margin: 0;
+    margin-bottom: 25px;
   }
 
 
