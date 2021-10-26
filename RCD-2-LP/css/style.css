@@ -1,0 +1,469 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
+.rcd2 * {
+  box-sizing: border-box;
+}
+
+.rcd2 h1,
+.rcd2 h2,
+.rcd2 h3,
+.rcd2 h4,
+.rcd2 h5,
+.rcd2 h6,
+.rcd2 li,
+.rcd2 p,
+.rcd2 a {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+}
+
+#rcd2-form {
+  position: relative;
+  top: -155px;
+}
+
+h3.rcd2-title--red {
+  color: #BA2532;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+h3.rcd2-title--red span {
+  color: #000;
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+}
+a.rcd2-btn {
+  background-color: #ba2532;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  padding: 20px 50px;
+  text-decoration: none;
+}
+
+
+.rcd2-container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+
+.rcd2-header {
+  background: url(https://www.edanz.com/sites/default/files/rcd2-header-bg.png) center / cover no-repeat;
+  margin-bottom: 35px;
+  padding: 100px 0px 65px;
+  position: relative;
+}
+.rcd2-header h1 {
+  background-color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: -1px;
+  padding: 10px 50px;
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+.rcd2-header h1 span {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.rcd2-header img {
+  position: absolute;
+  top: -70px;
+  left: 5%;
+  width: 100%;
+  max-width: 800px;
+  z-index: 1;
+}
+
+
+.rcd2-content {
+  border: 1px solid #DADADB;
+  border-top: 4px solid #023762;
+}
+
+
+.rcd2-top-header {
+  padding: 25px 50px 45px;
+}
+.rcd2-top-header__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 13px;
+  padding: 0 15px;
+}
+.rcd2-top-header__title img {
+  height: 60px;
+}
+.rcd2-top-header__title h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 42px;
+  margin-left: 16px;
+  margin-right: 28px;
+}
+.rcd2-top-header__title .rcd2-starts {
+  height: 50px;
+}
+.rcd2-top-header > h4 {
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 25px;
+  padding: 0 15px;
+}
+.rcd2-top-header p {
+  color: #747474;
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 40px;
+  padding: 0 15px;
+}
+
+.rcd2-top-row {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+}
+.rcd2-left {
+  width: 500px;
+}
+.rcd2-left ul {
+  list-style: none;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  padding: 0;
+}
+.rcd2-left ul li {
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 30px;
+  padding-left: 30px;
+  position: relative;
+}
+.rcd2-left ul li:before {
+  content: "";
+  background: url(https://www.edanz.com/sites/default/files/rcd2-check-icon.png) center / 100% 100% no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 25px;
+  width: 25px;
+}
+.rcd2-top-info {
+  padding-top: 50px;
+  padding-left: 25px;
+}
+.rcd2-top-info h4 {
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 5px;
+}
+.rcd2-top-info h2 {
+  color: #29CA9B;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+
+.rcd2-right {
+  padding-left: 10px;
+  width: 395px;
+  max-width: 100%;
+}
+.rcd2-right img {
+  width: 100%;
+}
+
+
+.rcd2 hr {
+  background-color: #cccccc;
+  border: none;
+  margin: 0 30px;
+  height: 1px;
+  width: calc(100% - 60px);
+}
+
+
+.rcd2-flow {
+  padding: 40px 60px 50px;
+}
+.rcd2-flow ul {
+  margin-top: 15px;
+  margin-bottom: 25px;
+  padding: 0;
+  list-style: none;
+}
+.rcd2-flow ul li {
+  font-size: 16px;
+  line-height: 26px;
+  padding-left: 20px;
+  position: relative;
+}
+.rcd2-flow ul li:before {
+  content: "";
+  background: url(https://www.edanz.com/sites/default/files/rcd2-check-icon.png) center / 100% 100% no-repeat;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  height: 15px;
+  width: 15px;
+}
+.rcd2-flow img {
+  margin-left: 25px;
+  height: 95px;
+  max-width: 100%;
+}
+
+
+.rcd2-feedback {
+  padding: 50px 60px 60px;
+}
+.rcd2-quotes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 35px;
+  margin-bottom: 50px;
+}
+.rcd2-quote {
+  background: url(https://www.edanz.com/sites/default/files/rsd2-quote-bg.png) center / 100% 100% no-repeat;
+  padding: 30px 15px 40px;
+  width: calc(100% / 3 - 20px);
+}
+.rcd2-quote p {
+  font-size: 14px;
+  line-height: 26px;
+}
+.rcd2-quote p span {
+  display: block;
+  font-size: 12px;
+  text-align: right;
+}
+
+.rcd2-faq {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+.rcd2-faq h2,
+.rcd2-faq h3 {
+  display: flex;
+  flex-direction: row;
+}
+.rcd2-faq h2 span,
+.rcd2-faq h3 span {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  height: 40px;
+  width: 40px;
+}
+.rcd2-faq h2 {
+  color: #023762;
+  align-items: center;
+  font-size: 16px;
+  line-height: 26px;
+}
+.rcd2-faq h2 span {
+  background-color: #023762;
+  color: #ffffff;
+  margin-right: 15px;
+}
+.rcd2-faq h3 {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 20px;
+  padding-left: 40px;
+}
+.rcd2-faq h3 span {
+  background-color: #eef3f6;
+  border: 2px solid #023762;
+  color: #023762;
+  margin-right: 18px;
+}
+.rcd2-feedback-btn {
+  text-align: center;
+}
+
+
+.rcd2-example {
+  padding: 65px 30px 80px;
+}
+.rcd2-example .rcd2-title--red {
+  padding: 0 30px;
+}
+.rcd2-example-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.rcd2-example-row a {
+  display: block;
+  width: calc(100% / 3 - 20px);
+}
+.rcd2-example-row a img {
+  width: 100%;
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+  a.rcd2-btn {
+    padding: 20px 0;
+    text-align: center;
+    width: 320px;
+    max-width: 100%;
+  }
+  .rcd2-header {
+    text-align: center;
+  }
+  .rcd2-header h1 {
+    font-size: 35px;
+    line-height: 60px;
+    margin-bottom: 15px;
+  }
+  .rcd2-header h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .rcd2-header img {
+    left: 0;
+  }
+
+  .rcd2-content {
+    padding: 10px;
+  }
+
+  .rcd2-top-header {
+    padding: 15px 20px 20px;
+  }
+  .rcd2-top-header > h3 {
+    text-align: center;
+  }
+  .rcd2-top-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .rcd2-left,
+  .rcd2-right {
+    width: auto;
+    max-width: 100%;
+  }
+  .rcd2-left {
+    text-align: center;
+  }
+  .rcd2-left ul {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  .rcd2-top-info {
+    padding-left: 0;
+    padding-top: 20px;
+    text-align: left;
+  }
+  .rcd2-right img {
+    max-width: 500px;
+  }
+
+  .rcd2-flow {
+    padding: 20px 30px 25px;
+  }
+  .rcd2-flow img {
+    height: auto;
+  }
+
+  .rcd2-quotes {
+    flex-direction: column;
+    align-items: center;
+  }
+  .rcd2-quote {
+    width: 280px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .rcd2-header h1 {
+    font-size: 25px;
+    line-height: 40px;
+    padding: 10px 20px;
+  }
+  .rcd2-header h2 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .rcd2-top-header {
+    padding: 5px 0 10px;
+  }
+
+  .rcd2-top-header__title {
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+  }
+  .rcd2-top-header > h4,
+  .rcd2-top-header > p {
+    padding: 0;
+  }
+
+  .rcd2-flow,
+  .rcd2-example {
+    padding: 10px 5px 20px;
+  }
+
+  .rcd2-feedback {
+    padding: 10px 0px 20px;
+  }
+  .rcd2-feedback h3.rcd2-title--red {
+    text-align: center;
+  }
+
+  .rcd2-faq h3 {
+    padding-left: 20px;
+  }
+
+  .rcd2-example-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .rcd2-example-row a {
+    width: 400px;
+    max-width: 100%;
+  }
+  .rcd2-example .rcd2-title--red {
+    padding: 0;
+    text-align: center;
+  }
+
+  .rcd2 hr {
+    margin: 0;
+    width: 100%;
+  }
+}
+</style>
