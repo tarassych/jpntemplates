@@ -24,6 +24,12 @@
   padding: 0;
 }
 
+#premium #premiumBuy {
+  position: relative;
+  top: -310px;
+  visibility: hidden;
+}
+
 #premium button {
   background-color: transparent;
   border: none;
