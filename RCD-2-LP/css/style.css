@@ -214,6 +214,10 @@ a.rcd2-btn {
   padding-left: 20px;
   position: relative;
 }
+.rcd2-flow ul li span {
+  display: block;
+  font-size: 14px;
+}
 .rcd2-flow ul li:before {
   content: "";
   background: url(https://www.edanz.com/sites/default/files/rcd2-check-icon.png) center / 100% 100% no-repeat;
@@ -292,8 +296,8 @@ a.rcd2-btn {
   margin-right: 15px;
 }
 .rcd2-faq h3 {
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 24px;
   margin-bottom: 20px;
   padding-left: 40px;
 }
@@ -343,13 +347,12 @@ a.rcd2-btn {
     text-align: center;
   }
   .rcd2-header h1 {
-    font-size: 35px;
-    line-height: 60px;
+    font-size: 30px;
+    line-height: 40px;
     margin-bottom: 15px;
   }
-  .rcd2-header h2 {
+  .rcd2-header h1 span {
     font-size: 20px;
-    line-height: 30px;
   }
   .rcd2-header img {
     left: 0;
@@ -410,12 +413,11 @@ a.rcd2-btn {
 @media (max-width: 768px) {
   .rcd2-header h1 {
     font-size: 25px;
-    line-height: 40px;
+    line-height: 35px;
     padding: 10px 20px;
   }
-  .rcd2-header h2 {
-    font-size: 16px;
-    line-height: 20px;
+  .rcd2-header h1 span {
+    font-size: 15px;
   }
 
   .rcd2-top-header {
