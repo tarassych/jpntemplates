@@ -1,0 +1,277 @@
+/*<style>*/
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&family=Roboto&display=swap');
+
+#sc.sc * {
+  box-sizing: border-box;
+}
+
+#sc h2,
+#sc h3,
+#sc h4,
+#sc h5,
+#sc h6,
+#sc p,
+#sc a,
+#sc ul,
+#sc li,
+#sc input,
+#sc span,
+#sc button {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+}
+
+#sc button {
+  background-color: transparent;
+  border: none;
+}
+#sc a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+#sc .sc-btn--primary {
+  border: 1px solid #D60000;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  color: #D60000;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  padding: 13px 22px;
+}
+#sc .sc-btn--primary:hover {
+  background-color: #d60000;
+  color: #ffffff;
+}
+
+#sc .sc-btn--secondary {
+  border: 1px solid #000000;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  padding: 13px 18px;
+}
+#sc .sc-btn--secondary:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#sc .sc-container {
+  margin: 0 auto;
+  width: 1140px;
+  max-width: 100%;
+}
+
+
+
+
+
+#sc .sc-benefits {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 135px;
+  padding-top: 145px;
+}
+#sc .sc-benefits h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  margin-bottom: 110px;
+  text-align: center;
+  width: 100%;
+}
+#sc .sc-benefit {
+  text-align: center;
+  width: calc((100% - 120px) / 4);
+}
+#sc .sc-benefit img {
+  margin-bottom: 30px;
+  width: 95px;
+}
+#sc .sc-benefit h2 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 25px;
+}
+#sc .sc-benefit p {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+
+
+
+#sc .sc-slider h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  opacity: .7;
+  text-align: center;
+  text-transform: uppercase;
+}
+#sc .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#sc .swiper-slide h2 {
+  font-size: 36px;
+  line-height: 48px;
+  margin-bottom: 21px;
+  width: 950px;
+  max-width: 100%;
+}
+#sc .swiper-slide h3 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 48px;
+}
+#sc .swiper-slide p {
+  font-size: 16px;
+  line-height: 16px;
+  padding-bottom: 55px;
+  width: 295px;
+  max-width: 100%;
+}
+#sc .swiper-pagination-bullet {
+  margin: 0 9px;
+  height: 10px;
+  width: 10px;
+}
+#sc .swiper-pagination-bullet-active {
+  background-color: #d60000;
+}
+
+
+#sc .sc-approach {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 165px;
+  width: 980px;
+  max-width: 100%;
+}
+#sc .sc-approach-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-grow: 1;
+  margin-right: 50px;
+}
+#sc .sc-approach-col {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  max-width: 100%;
+}
+#sc .sc-approach-col:first-child {
+  margin-right: 20px;
+}
+#sc .sc-approach-col img {
+  width: 100%;
+}
+#sc .sc-approach-col img:first-child {
+  margin-bottom: 20px;
+}
+
+#sc .sc-approach-right {
+  width: 370px;
+}
+#sc .sc-approach-right h2 {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 78px;
+  margin-bottom: 45px;
+}
+#sc .sc-approach-right p {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 60px;
+}
+
+
+#sc .sc-info {
+  margin: 0 auto;
+  padding: 195px 0 165px;
+  text-align: center;
+  width: 750px;
+  max-width: 100%;
+}
+#sc .sc-info h2 {
+  font-size: 48px;
+  line-height: 58px;
+  margin-bottom: 40px;
+}
+#sc .sc-info h2 span {
+  font-weight: 600;
+}
+
+
+#sc .sc-help {
+  padding: 0 0 25px;
+}
+
+#sc .sc-help span {
+  display: block;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  width: 100%;
+}
+
+#sc .sc-help span a {
+  color: #D60000;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+
+
+@media (max-width: 1366px) {
+
+}
+
+@media (max-width: 1023px) {
+  #sc .sc-benefits {
+    margin-bottom: 30px;
+  }
+
+
+  #sc .sc-benefits {
+    flex-wrap: wrap;
+  }
+  #sc .sc-benefit {
+    margin-bottom: 20px;
+    width: calc(100% / 2 - 10px);
+  }
+}
+
+@media (max-width: 767px) {
+  #sc .sc-benefit {
+    width: 100%
+  }
+}
+
+@media (max-width: 480px) {
+  #sc .sc-help {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+/*</style>*/
