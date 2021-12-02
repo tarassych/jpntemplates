@@ -104,6 +104,16 @@
   max-width: 100%;
 }
 
+#d96 .d96-books {
+  margin: 0 auto 90px;
+  width: 1200px;
+  max-width: 100%;
+}
+#d96 .d96-books img {
+  width: 100%;
+  max-width: 100%;
+}
+
 
 #d96 .d96-email {
   background-color: #e6e6e6;
@@ -130,11 +140,6 @@
   line-height: 58px;
   margin-bottom: 40px;
   text-transform: uppercase;
-}
-#d96 .d96-email img {
-  margin-bottom: 65px;
-  width: 610px;
-  max-width: 100%;
 }
 #d96 .d96-email h4 {
   font-size: 18px;
@@ -259,11 +264,44 @@
 }
 
 
+#d96 .d96-more {
+  background-color: #f8f8f8;
+  margin-top: 100px;
+}
+#d96 .d96-more--container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  padding: 15px 0;
+  width: 780px;
+  max-width: 100%;
+}
+#d96 .d96-more img {
+  width: 250px;
+}
+#d96 .d96-more__text {
+  padding-left: 10px;
+}
+#d96 .d96-more__text a {
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 26px;
+  text-decoration: underline;
+}
+#d96 .d96-more__text p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+
 #d96 .d96-benefits {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 0 245px;
+  padding: 110px 0 245px;
 }
 #d96 .d96-benefits__row {
   display: flex;
@@ -469,6 +507,12 @@
 }
 
 @media (max-width: 767px) {
+  #d96 .d96-books {
+    margin-bottom: 20px;
+  }
+
+
+
   #d96 .d96-email {
     margin-bottom: 40px;
     padding: 40px 10px;
@@ -504,6 +548,12 @@
     margin-bottom: 10px;
     padding: 30px 30px 50px;
     width: 100%;
+  }
+
+
+  #d96 .d96-more--container {
+    flex-direction: column;
+    align-items: center;
   }
 
 
