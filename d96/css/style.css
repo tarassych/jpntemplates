@@ -105,13 +105,16 @@
 }
 
 #d96 .d96-books {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0 auto 90px;
   width: 1200px;
   max-width: 100%;
 }
 #d96 .d96-books img {
-  width: 100%;
-  max-width: 100%;
+  width: 170px;
 }
 
 
@@ -476,7 +479,21 @@
   }
 }
 
+@media (max-width: 1080px) {
+  #d96 .d96-books img {
+    width: 150px;
+  }
+}
+
 @media (max-width: 1023px) {
+  #d96 .d96-books {
+    justify-content: space-around;
+  }
+  #d96 .d96-books img:nth-child(5),
+  #d96 .d96-books img:nth-child(6) {
+    display: none;
+  }
+
   #d96 .d96-list ul li {
     width: calc((100% - 50px) / 2);
   }
@@ -509,6 +526,10 @@
 @media (max-width: 767px) {
   #d96 .d96-books {
     margin-bottom: 20px;
+  }
+  #d96 .d96-books img:nth-child(3),
+  #d96 .d96-books img:nth-child(4) {
+    display: none;
   }
 
 
