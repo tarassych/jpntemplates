@@ -1,0 +1,343 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
+
+#pbp.pbp * {
+  box-sizing: border-box;
+}
+
+#pbp h2,
+#pbp h3,
+#pbp h4,
+#pbp h5,
+#pbp h6,
+#pbp p,
+#pbp a,
+#pbp ul,
+#pbp li,
+#pbp input,
+#pbp span,
+#pbp button {
+  color: #393939;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+}
+
+#pbp button {
+  background-color: transparent;
+  border: none;
+}
+#pbp a {
+  display: inline-block;
+  text-decoration: none;
+}
+#pbp .pbp-btn {
+  background-color: #ba2532;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+  padding: 12px 24px;
+}
+#pbp .pbp-btn--green {
+  background-color: #14b4be;
+}
+
+
+#pbp .pbp-container {
+  margin: 0 auto;
+  width: 1000px;
+  max-width: 100%;
+}
+
+
+#pbp .pbp-header {
+  background: url(https://www.edanz.com/sites/default/files/pbp/pbp-header-bg.png) center / auto 100% no-repeat, rgba(9, 51, 190, 41%);
+  width: 100%;
+}
+#pbp .pbp-header .pbp-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  position: relative;
+}
+#pbp .pbp-header h2,
+#pbp .pbp-header h3 {
+  color: #000000;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+#pbp .pbp-header h2 {
+  margin-bottom: 15px;
+}
+#pbp .pbp-header .pbp-container:before {
+  content: "";
+  background: url(https://www.edanz.com/sites/default/files/pbp/pbp-img-idea.png) center / 100% 100% no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 230px;
+  width: 155px;
+}
+
+
+#pbp .pbp-gift {
+  background-color: #e0e0e0;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 70px auto 0;
+  padding: 30px 115px 30px 100px;
+  width: 965px;
+  max-width: 100%;
+}
+#pbp .pbp-gift__left {
+  width: 500px;
+}
+.pbp-gift__left-discount {
+  text-align: center;
+  width: 255px;
+}
+#pbp .pbp-gift__left h3 {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+#pbp .pbp-gift__left h4 {
+  background-color: #ffffff;
+  border: dashed 1px #FD8922;
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-bottom: 15px;
+  padding: 7px 20px;
+}
+#pbp .pbp-gift__left h5 {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#pbp .pbp-gift__right {
+  width: 380px;
+}
+#pbp .pbp-gift__right img {
+  width: 100%;
+}
+
+
+#pbp .pbp-list {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 16%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+  padding: 20px 0 35px;
+  width: 100%;
+}
+#pbp .pbp-list h2 {
+  color: #04233a;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+#pbp .pbp-list ul {
+  list-style: none;
+  padding: 0;
+  width: 730px;
+  max-width: 100%;
+}
+#pbp .pbp-list ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  height: 45px;
+}
+#pbp .pbp-list ul li span {
+  background-color: #04233a;
+  color: #ffffff;
+  display: inline-block;
+  margin-right: 40px;
+  padding: 7px 18px;
+  text-transform: uppercase;
+}
+#pbp .pbp-list ul li h3 {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 20px;
+}
+#pbp .pbp-list ul li:not(:last-child) {
+  margin-bottom: 50px;
+}
+#pbp .pbp-list ul li:not(:last-child):before {
+  content: "";
+  background: url(https://www.edanz.com/sites/default/files/pbp/pbp-icon-arrow-down.png) center / 100%  100% no-repeat;
+  position: absolute;
+  top: 60px;
+  left: 320px;
+  height: 19px;
+  width: 35px;
+}
+
+
+#pbp .pbp-info {
+  padding-top: 70px;
+  padding-bottom: 35px;
+}
+#pbp .pbp-info__additional {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#pbp .pbp-info__additional h3 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  margin-top: 55px;
+  margin-bottom: 25px;
+}
+#pbp .pbp-info__additional h4 {
+  color: #fb0707;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  margin-bottom: 35px;
+}
+#pbp .pbp-info__table {
+  border: 1px solid #000;
+  width: 640px;
+  max-width: 100%;
+}
+#pbp .pbp-info__table-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#pbp .pbp-info__table-row:not(:last-child) {
+  border-bottom: 1px solid #000;
+}
+#pbp .pbp-info__table-row h5 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+  width: 50%;
+}
+#pbp .pbp-info__table-row h5:first-child {
+  border-right: 1px solid #000;
+}
+#pbp .pbp-info__table-row h5.text-red {
+  color: #fb0707;
+}
+
+
+
+
+@media (max-width: 1023px) {
+  #pbp .pbp-header .pbp-container:before {
+    display: none;
+  }
+
+
+  #pbp .pbp-gift {
+    padding: 30px 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  #pbp .pbp-header .pbp-container {
+    padding: 20px 0;
+  }
+  #pbp .pbp-header h2 {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  #pbp .pbp-header h3 {
+    text-align: center;
+  }
+
+
+
+  #pbp .pbp-gift {
+    flex-direction: column-reverse;
+    margin-top: 20px;
+  }
+  #pbp .pbp-gift__left,
+  #pbp .pbp-gift__right {
+    width: 100%;
+  }
+  #pbp .pbp-gift__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  #pbp .pbp-list {
+    margin-top: 20px;
+  }
+  #pbp .pbp-list ul li {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  #pbp .pbp-list ul li span {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  #pbp .pbp-list ul li h3 {
+    padding: 0 15px;
+    text-align: center;
+  }
+  #pbp .pbp-list ul li:not(:last-child):before {
+    top: calc(100% + 15px);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+
+  #pbp .pbp-info {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  #pbp .pbp-gift {
+    padding: 15px 20px;
+  }
+  #pbp .pbp-gift__left h2 {
+    padding: 0;
+  }
+  #pbp .pbp-gift__right {
+    padding-bottom: 10px;
+  }
+  #pbp .pbp-gift__img-2 {
+    display: none;
+  }
+}
+</style>
