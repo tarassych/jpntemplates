@@ -1,0 +1,90 @@
+/*<style>*/
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap');
+/* Featured block styles */
+.ftb * {
+  box-sizing: border-box;
+}
+.ftb h1,
+.ftb h2,
+.ftb h3,
+.ftb h4,
+.ftb h5,
+.ftb h6,
+.ftb a,
+.ftb li,
+.ftb p {
+  font-family: 'Libre Franklin', sans-serif !important;
+  margin: 0;
+  padding: 0;
+}
+
+.ftb {
+  width: 430px;
+  max-width: 100%;
+}
+.ftb-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 25px 15px 30px;
+}
+
+h2.ftb-title {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.ftb-left {
+  flex-shrink: 0;
+  width: 180px;
+}
+.ftb-left img {
+  width: 100%;
+}
+.ftb-right {
+  padding-left: 5px;
+  width: 220px;
+}
+.ftb-right img {
+  margin-bottom: 25px;
+  width: 195px;
+}
+.ftb-right h3 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  padding-left: 10px;
+}
+.ftb-right h4 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+  padding-left: 10px;
+}
+.ftb-right p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-bottom: 60px;
+  padding-left: 10px;
+}
+.ftb-right p span {
+  color: #f94687;
+}
+.ftb-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.ftb-btn a {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px;
+  background-color: #fa4788;
+  padding: 10px 30px;
+  text-decoration: none;
+}
+/*</style>*/
