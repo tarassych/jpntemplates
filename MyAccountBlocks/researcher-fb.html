@@ -7,18 +7,115 @@
   <link rel="stylesheet" href="css/style-3.css">
 </head>
 <body>
-  <div class="ftb">
-    <div class="ftb-content">
-      <h2 class="ftb-title">
-        Never Miss Important Research
-      </h2>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap');
+/* Featured block styles */
+.ftb * {
+  box-sizing: border-box;
+}
+.ftb h1,
+.ftb h2,
+.ftb h3,
+.ftb h4,
+.ftb h5,
+.ftb h6,
+.ftb a,
+.ftb li,
+.ftb p {
+  font-family: 'Libre Franklin', sans-serif !important;
+  margin: 0;
+  padding: 0;
+}
 
+.ftb {
+  width: 100%;
+  max-width: 100%;
+}
+.ftb-content {
+  padding: 15px 0 20px;
+}
+
+.ftb-container {
+  display: flex;
+  flex-direction: row;
+}
+
+h2.ftb-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.ftb-left {
+  flex-shrink: 0;
+  width: 170px;
+}
+.ftb-left img {
+  width: 100%;
+}
+.ftb-right {
+  padding-left: 5px;
+  min-width: 210px;
+}
+.ftb-right img {
+  margin-bottom: 25px;
+  width: 195px;
+}
+.ftb-right h3 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  padding-left: 10px;
+}
+.ftb-right h4 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+  padding-left: 10px;
+}
+.ftb-right p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-bottom: 60px;
+  padding-left: 10px;
+}
+.ftb-right p span {
+  color: #f94687;
+}
+.ftb-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.ftb-btn a {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px;
+  background-color: #fa4788;
+  padding: 10px 30px;
+  text-decoration: none;
+}
+</style>
+
+<div class="ftb">
+  <div class="ftb-content">
+    <h2 class="ftb-title">
+      Never Miss Important Research
+    </h2>
+
+    <div class="ftb-container">
       <div class="ftb-left">
-        <img src="img/ftb-mobile-phone-view.png" alt="">
+        <img src="https://www.edanz.com/sites/default/files/ftb-mobile-phone-view.png" alt="">
       </div>
 
       <div class="ftb-right">
-        <img src="img/ftb-researcher-logo.png" alt="">
+        <img src="https://www.edanz.com/sites/default/files/ftb-researcher-logo.png" alt="">
 
         <h3>Used by</h3>
 
@@ -34,5 +131,6 @@
       </div>
     </div>
   </div>
+</div>
 </body>
 </html>

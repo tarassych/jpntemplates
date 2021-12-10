@@ -1,4 +1,4 @@
-/*<style>*/
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap');
 /* Featured block styles */
 .ftb * {
@@ -19,18 +19,20 @@
 }
 
 .ftb {
-  width: 430px;
+  width: 100%;
   max-width: 100%;
 }
 .ftb-content {
+  padding: 15px 0 20px;
+}
+
+.ftb-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  padding: 25px 15px 30px;
 }
 
 h2.ftb-title {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 26px;
   margin-bottom: 15px;
@@ -38,14 +40,14 @@ h2.ftb-title {
 }
 .ftb-left {
   flex-shrink: 0;
-  width: 180px;
+  width: 170px;
 }
 .ftb-left img {
   width: 100%;
 }
 .ftb-right {
   padding-left: 5px;
-  width: 220px;
+  min-width: 210px;
 }
 .ftb-right img {
   margin-bottom: 25px;
@@ -79,6 +81,9 @@ h2.ftb-title {
   justify-content: center;
 }
 .ftb-btn a {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   color: #fff;
   font-size: 13px;
   font-weight: 700;
@@ -87,4 +92,4 @@ h2.ftb-title {
   padding: 10px 30px;
   text-decoration: none;
 }
-/*</style>*/
+</style>
