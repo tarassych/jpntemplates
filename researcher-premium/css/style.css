@@ -1,0 +1,455 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&family=Roboto&display=swap');
+
+#rp.rp * {
+  box-sizing: border-box;
+}
+
+#rp h2,
+#rp h3,
+#rp h4,
+#rp h5,
+#rp h6,
+#rp p,
+#rp a,
+#rp ul,
+#rp li,
+#rp input,
+#rp span,
+#rp button {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+}
+
+#rp button {
+  background-color: transparent;
+  border: none;
+}
+#rp a {
+  display: inline-block;
+  text-decoration: none;
+}
+#rp .btn {
+  background-color: #d60000;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+  padding: 12px 55px;
+}
+
+
+#rp .rp-container {
+  margin: 0 auto;
+  width: 1150px;
+  max-width: 100%;
+}
+
+
+#rp .rp-logo {
+  padding: 30px 0 40px;
+  text-align: center;
+}
+#rp .rp-logo img {
+  width: 355px;
+  max-width: 100%;
+}
+
+
+#rp .rp-welcome {
+  padding-bottom: 85px;
+}
+#rp .rp-welcome h2 {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 44px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+#rp .rp-welcome h3 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 55px;
+  text-align: center;
+}
+#rp .rp-welcome h3 span {
+  font-weight: 600;
+}
+#rp .rp-welcome__block {
+  background-color: #f7f7f7;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  padding: 40px 110px 50px 45px;
+}
+#rp .rp-welcome__block-left {
+  flex-shrink: 0;
+  padding-top: 50px;
+}
+#rp .rp-welcome__block-left img {
+  width: 175px;
+}
+
+#rp .rp-welcome__block-right {
+  padding-left: 50px;
+}
+#rp .rp-welcome__block-right h4 {
+  color: #d60000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 34px;
+  margin-bottom: 15px;
+}
+#rp .rp-welcome__block-right p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  margin-bottom: 65px;
+}
+#rp .rp-welcome__block-right h5 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+
+#rp .rp-what {
+  background: url(https://www.edanz.com/sites/default/files/rp/rp-what-bg-img.png) bottom center / cover no-repeat;
+}
+#rp .rp-what .rp-container {
+  padding: 95px 0 165px;
+}
+#rp .rp-what h3 {
+  color: #d60000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+#rp .rp-what h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+#rp .rp-what__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#rp .rp-what__block {
+  background-color: #ffffff;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  padding: 45px 30px 30px;
+  width: calc((100% - 40px) / 3);
+}
+#rp .rp-what__block h5 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  margin-bottom: 8px;
+}
+#rp .rp-what__block h5.rp-color--green {
+  color: #0e9441;
+}
+#rp .rp-what__block h5.rp-color--blue {
+  color: #5ed3d9;
+}
+#rp .rp-what__block h5.rp-color--red {
+  color: #d60000;
+}
+#rp .rp-what__block h4 {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 28px;
+}
+#rp .rp-what__block hr {
+  background-color: rgba(0, 0, 0, .4);
+  margin: 20px 0;
+  height: 1px;
+  width: 100%;
+}
+#rp .rp-what__block h6 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 25px;
+}
+#rp .rp-what__block ul {
+  list-style: none;
+  padding: 0;
+}
+#rp .rp-what__block ul li {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  padding-left: 45px;
+  position: relative;
+}
+#rp .rp-what__block ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+#rp .rp-what__block ul li:before {
+  content: "";
+  background: url(https://www.edanz.com/sites/default/files/rp/rp-icon-check.png) center / 100% 100% no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+}
+
+
+#rp .rp-benefits {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 120px 0 110px;
+}
+#rp .rp-benefits__block {
+  width: calc((100% - 120px) / 4);
+}
+#rp .rp-benefits__img {
+  margin-bottom: 45px;
+}
+#rp .rp-benefits__img img {
+  height: 95px;
+  width: auto;
+}
+#rp .rp-benefits__img--left {
+  position: relative;
+  left: -48.4px;
+}
+#rp .rp-benefits__block h2 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+#rp .rp-benefits__block h3 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+
+#rp .rp-promo {
+  background-color: #ffcccc;
+}
+#rp .rp-promo .rp-container {
+  padding: 75px 0 120px;
+}
+#rp .rp-promo h2 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+#rp .rp-promo__block {
+  background-color: #ffffff;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  margin: 0 auto;
+  padding: 30px 50px 80px;
+  text-align: center;
+  width: 600px;
+  max-width: 100%;
+}
+#rp .rp-promo__block ol {
+  margin-bottom: 35px;
+  padding: 0 0 0 30px;
+  text-align: left;
+}
+#rp .rp-promo__block ol li {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+
+#rp .rp-questions {
+  padding: 90px 0 55px;
+}
+#rp .rp-questions h2 {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-bottom: 55px;
+}
+#rp .rp-questions h2 span {
+  font-weight: 600;
+}
+#rp .rp-questions__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#rp .rp-questions__block {
+  margin-bottom: 55px;
+  width: calc((100% - 40px) / 2);
+}
+#rp .rp-questions__block h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+#rp .rp-questions__block p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+
+#rp .rp-help {
+  padding: 0 0 25px;
+}
+#rp .rp-help span {
+  display: block;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  width: 100%;
+}
+#rp .rp-help span a {
+  color: #D60000;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+
+@media (max-width: 1023px) {
+  #rp .rp-welcome {
+    padding-bottom: 20px;
+  }
+
+
+  #rp .rp-what h2 {
+    margin-bottom: 10px;
+  }
+  #rp .rp-what__row {
+    align-items: center;
+    flex-direction: column;
+  }
+  #rp .rp-what__block {
+    margin-bottom: 15px;
+    width: 400px;
+    max-width: 100%;
+  }
+  #rp .rp-what .rp-container {
+    padding-bottom: 30px;
+  }
+
+
+  #rp .rp-benefits {
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #rp .rp-benefits__block {
+    margin-bottom: 20px;
+    width: calc((100% - 50px) / 2);
+  }
+  #rp .rp-benefits__img {
+    margin-bottom: 10px;
+  }
+
+
+  #rp .rp-questions {
+    padding: 30px 0 0;
+  }
+  #rp .rp-questions h2 {
+    margin-bottom: 10px;
+  }
+  #rp .rp-questions__row {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #rp .rp-questions__block {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  #rp .rp-welcome__block {
+    padding: 10px;
+  }
+  #rp .rp-welcome__block-left {
+    padding-top: 10px;
+  }
+  #rp .rp-welcome__block-left img {
+    width: 100px;
+  }
+  #rp .rp-welcome__block-right {
+    padding-left: 10px;
+  }
+
+
+  #rp .rp-what .rp-container {
+    padding-top: 30px;
+  }
+
+
+  #rp .rp-benefits {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+  #rp .rp-benefits__block {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #rp .rp-welcome__block {
+    flex-direction: column;
+    text-align: center;
+  }
+  #rp .rp-welcome__block-left img {
+    width: 150px;
+  }
+
+
+  #rp .rp-what h3 {
+    margin-bottom: 0;
+  }
+  #rp .rp-what h2 {
+    font-size: 38px;
+  }
+
+
+  #rp .rp-promo__block {
+    padding: 10px 20px 30px;
+  }
+  #rp .rp-promo__block ol li {
+    line-height: 30px;
+  }
+
+
+  #rp .rp-questions h2 {
+    text-align: center;
+  }
+
+
+  #rp .rp-help {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+</style>
