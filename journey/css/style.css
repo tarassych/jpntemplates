@@ -54,8 +54,9 @@
   align-items: center;
 }
 #journey .journey-header h3 {
-  font-size: 25px;
+  font-size: 22px;
   line-height: 25px;
+  margin-bottom: 10px;
 }
 #journey .journey-header h2 {
   font-size: 55px;
@@ -63,6 +64,9 @@
   line-height: 60px;
   margin-bottom: 20px;
   text-align: center;
+}
+#journey .journey-header h2 span {
+  font-size: 45px;
 }
 #journey .journey-header__blocks {
   display: flex;
@@ -84,6 +88,7 @@
 }
 #journey .journey-header__block--bg h4 {
   font-size: 20px;
+  font-weight: 600;
   line-height: 30px;
 }
 #journey .journey-header__block--bg h5 {
@@ -92,6 +97,7 @@
   align-items: center;
   justify-content: center;
   font-size: 40px;
+  font-weight: 600;
   line-height: 30px;
 }
 #journey .journey-header__block--bg h5 span {
@@ -101,23 +107,25 @@
 }
 #journey .journey-header__block--bg h5 span span {
   font-size: 8px;
+  font-weight: 600;
   line-height: 8px;
 }
 #journey .journey-header__block--bg h6 {
   font-size: 25px;
+  font-weight: 600;
   line-height: 30px;
 }
 #journey .journey-header__block--bg h6 span {
   font-size: 15px;
+  font-weight: 600;
   line-height: 15px;
 }
 #journey .journey-header__block--bg h6 strong {
   font-size: 40px;
-  font-weight: 500;
   line-height: 40px;
   letter-spacing: -5px;
 }
-#journey .journey-header__block--btn {
+#journey a.journey-header__block--btn {
   background-color: #ba2531;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -125,6 +133,7 @@
   border-radius: 10px;
   color: #ffffff;
   font-size: 25px;
+  font-weight: 600;
   line-height: 30px;
   text-decoration: none;
   text-align: center;
@@ -161,6 +170,7 @@
   flex-direction: row;
   align-items: center;
   font-size: 25px;
+  font-weight: 600;
   line-height: 25px;
   margin-bottom: 5px;
 }
@@ -214,12 +224,13 @@
 #journey .journey-list__row ul li {
   font-size: 15px;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 25px;
   padding-left: 25px;
   position: relative;
 }
 #journey .journey-list__row ul li a {
   color: #000000;
+  text-decoration: underline;
 }
 #journey .journey-list__row ul li span {
   font-size: 12px;
@@ -248,16 +259,9 @@
   max-width: 100%;
 }
 #journey .journey-biglist h2 {
-  color: #023762;
-  font-size: 18px;
+  font-size: 25px;
   font-weight: 700;
-  line-height: 23px;
-  text-align: center;
-}
-#journey .journey-biglist h3 {
-  font-size: 12px;
-  line-height: 26px;
-  margin-bottom: 20px;
+  line-height: 25px;
   text-align: center;
 }
 #journey .journey-biglist__list {
@@ -293,7 +297,7 @@
 #journey .journey-biglist__list li p span {
   display: block;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 30px;
 }
 #journey .journey-biglist > p {
@@ -302,12 +306,6 @@
   margin-bottom: 50px;
   text-align: center;
 }
-
-
-
-
-
-
 
 
 #journey .journey-table {
@@ -358,19 +356,30 @@
   align-items: center;
   justify-content: center;
   font-size: 20px;
+  font-weight: 600;
   line-height: 60px;
   min-height: 60px;
   width: calc(100% / 3);
 }
+#journey .journey-table__row:nth-child(5) .journey-table__col:first-child {
+  padding-left: 15px;
+}
 #journey .journey-table__col h4 {
   font-size: 20px;
+  font-weight: 600;
   line-height: 30px;
   text-align: center;
 }
-#journey .journey-table__col h4 span {
+#journey .journey-table__col span,
+#journey .journey-table__col sup {
   display: block;
-  font-size: 12px;
+  font-size: 10px;
+  font-weight: 400;
   line-height: 15px;
+}
+#journey .journey-table__col strong {
+  font-size: 30px;
+  font-weight: 600;
 }
 #journey .journey-table__row--blue .journey-table__col:not(:last-child) {
   border-right: 1px solid #ffffff;
@@ -390,6 +399,7 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
+  padding-left: 75px;
 }
 
 
@@ -435,7 +445,7 @@
   font-size: 25px;
   font-weight: 600;
   line-height: 25px;
-  padding: 18px 50px;
+  padding: 25px 50px;
   text-decoration: none;
 }
 
@@ -522,7 +532,7 @@
   line-height: 25px;
   margin-bottom: 40px;
 }
-#journey .journey-info a {
+#journey .journey-info > a {
   background-color: #ba2531;
   color: #ffffff;
   display: inline-block;
@@ -530,7 +540,7 @@
   font-weight: 600;
   line-height: 25px;
   margin-bottom: 60px;
-  padding: 18px 50px;
+  padding: 25px 50px;
   text-decoration: none;
 }
 #journey .journey-info h3 {
@@ -548,6 +558,7 @@
   max-width: 100%;
 }
 #journey .journey-info__block {
+  text-decoration: none;
   width: 80px;
 }
 #journey .journey-info--icon {
@@ -567,6 +578,7 @@
   width: 35px;
 }
 #journey .journey-info__block h4 {
+  color: #000000;
   font-size: 15px;
   line-height: 30px;
   text-align: center;
