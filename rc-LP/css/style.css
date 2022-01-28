@@ -237,11 +237,13 @@
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
+  margin-bottom: 45px;
   text-align: center;
 }
 
 #rclp .rclp-biglist__list {
   list-style: none;
+  margin-bottom: 45px;
   padding: 0;
 }
 #rclp .rclp-biglist__list li {
@@ -271,7 +273,7 @@
 }
 #rclp .rclp-biglist__list li p span {
   display: block;
-  font-size: 16px;
+  font-size: 14px;
 }
 #rclp .rclp-biglist__list li p small {
   font-size: 14px;
