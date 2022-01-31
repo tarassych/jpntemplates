@@ -327,6 +327,7 @@
 }
 #journey .journey-table p a {
   color: #000000;
+  text-decoration: underline;
 }
 #journey .journey-table__table {
   -webkit-border-radius: 10px;
