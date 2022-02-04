@@ -602,11 +602,14 @@
   line-height: 25px;
   margin-bottom: 15px;
 }
-#journey .journey-footer a {
-  color: #000000;
+#journey .journey-footer h3 {
   font-size: 15px;
   line-height: 30px;
   text-decoration: none;
+}
+#journey .journey-footer a {
+  color: #000000;
+  text-decoration: underline;
 }
 
 
