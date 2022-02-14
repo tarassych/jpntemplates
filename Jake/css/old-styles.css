@@ -19,6 +19,7 @@ time, mark, audio, video {
   font-weight: 400;
   vertical-align: baseline;
 }
+/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -808,12 +809,53 @@ ol, ul {
   html {
     font-size: 8px;
   }
+
+
+  /*.jake-header__title {*/
+  /*  padding-top: 5rem;*/
+  /*}*/
+
+
+  /*.jake-header__slider .jake-header__slide,*/
+  /*.jake-main__container {*/
+  /*  padding: 0 5rem;*/
+  /*}*/
+  /*.jake-header__slider {*/
+  /*  padding: 10rem 0;*/
+  /*  height: 50rem;*/
+  /*}*/
+
+
+  /*.jake-main__book a {*/
+  /*  padding: 2.2rem 0;*/
+  /*  width: 100%;*/
+  /*}*/
+
+
+  /*.jake-jota {*/
+  /*  padding: 1.5rem 5rem;*/
+  /*}*/
 }
 
 @media (max-width: 1024px) {
   html {
     font-size: 6px;
   }
+
+
+  /*.jake-main__col:last-child {*/
+  /*  flex-direction: column;*/
+  /*}*/
+
+  /*.jake-main__vline span:nth-child(3) {*/
+  /*  top: 32%;*/
+  /*}*/
+  /*.jake-main__vline span:nth-child(4) {*/
+  /*  top: 89rem;*/
+  /*}*/
+  /*.jake-main__vline {*/
+  /*  height: calc(100% - 47.3rem);*/
+  /*}*/
 }
 
 @media (max-width: 768px) {
@@ -822,10 +864,79 @@ ol, ul {
   }
 }
 
+@media (max-width: 535px) {
+  /*html {*/
+  /*  font-size: 6px;*/
+  /*}*/
+}
+
 @media (max-width: 480px) {
   html {
     font-size: 3px;
   }
+
+
+  /*.jake-header__title h1 {*/
+  /*  font-size: 6rem;*/
+  /*}*/
+
+  /*.jake-header__slider {*/
+  /*  height: 25rem;*/
+  /*}*/
+  /*.jake-header__mp3 .play {*/
+  /*  height: 6.3rem;*/
+  /*  width: 7.3rem;*/
+  /*}*/
+
+
+  /*.jake-main__countdown h2 {*/
+  /*  font-size: 7.0rem;*/
+  /*  line-height: 7.6rem;*/
+  /*}*/
+  /*.jake-main__countdown h3 {*/
+  /*  font-size: 2.0rem;*/
+  /*  line-height: 3.1rem;*/
+  /*}*/
+
+
+  /*.jake-main__address h2 {*/
+  /*  font-size: 4rem;*/
+  /*}*/
+  /*.jake-main__address h5 {*/
+  /*  font-size: 2.5rem;*/
+  /*}*/
+
+
+  /*.jake-main__hotels h2 {*/
+  /*  font-size: 5rem;*/
+  /*  line-height: 6rem;*/
+  /*}*/
+  /*.jake-main__hotels-block h3 {*/
+  /*  font-size: 4rem;*/
+  /*}*/
+  /*.jake-main__hotels-block a {*/
+  /*  font-size: 2.5rem;*/
+  /*}*/
+  /*.jake-main__hotels-block {*/
+  /*  margin-bottom: 7rem;*/
+  /*  width: 100%;*/
+  /*}*/
+
+  /*.jake-footer__container {*/
+  /*  padding: 0 5rem;*/
+  /*  width: calc(100% - 10rem);*/
+  /*}*/
+  /*.jake-footer__bl {*/
+  /*  background-size: auto 8.4rem;*/
+  /*}*/
+  /*.jake-footer__wil {*/
+  /*  background-size: auto 2.8rem;*/
+  /*}*/
+
+  /*.jake-footer h2,*/
+  /*.jake-footer__registry a {*/
+  /*  margin-bottom: 5rem;*/
+  /*}*/
 }
 
 @media (max-width: 374px) {
