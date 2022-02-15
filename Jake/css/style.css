@@ -182,8 +182,36 @@ ol, ul {
 }
 
 
+.jake-start {
+  padding: 11.7rem 0 0;
+  text-align: center;
+}
+.jake-start h2 {
+  color: #ffffff;
+  font-size: 4.0rem;
+  font-weight: 800;
+  line-height: 5.5rem;
+  margin-bottom: 2rem;
+}
+.jake-start h3 {
+  color: #9da1b9;
+  font-size: 3.0rem;
+  font-weight: 600;
+  line-height: 4.1rem;
+  margin-bottom: 7.7rem;
+}
+.jake-start__img {
+  margin: 0 auto;
+  width: 81.5rem;
+  max-width: 100%;
+}
+.jake-start__img img {
+  width: 100%;
+}
+
+
 .jake-main__title {
-  padding: 7.0rem 0 5.5rem;
+  padding: 6.0rem 0 5.5rem;
   text-align: center;
 }
 .jake-main__title h3 {
@@ -234,12 +262,16 @@ ol, ul {
 
 
 .jake-main__countdown {
+  border: 0.3rem solid #9DA1B9;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  border-radius: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 auto;
-  padding: 5.5rem 0 12.5rem;
-  width: 87.0rem;
+  margin: 9.8rem auto 7.9rem;
+  padding: 2.6rem 8.5rem;
+  width: 80.0rem;
   max-width: 100%;
 }
 .jake-main__countdown-block {
@@ -333,15 +365,19 @@ ol, ul {
   font-size: 2.4rem;
   font-weight: 700;
 }
-.jake-main__cta a {
+.jake-main__cta a,
+.jake-main__cta button {
   display: inline-block;
   height: 8.5rem;
   width: 8.5rem;
 }
-.jake-main__cta-calendar a {
-  background: url(../img/calendar-icon.png) center / 100% 100% no-repeat;
+.jake-main__cta-calendar button {
+  background: url(../img/calendar-icon.png) center / 100% 100% no-repeat, transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
 }
-.jake-main__cta-calendar a:hover {
+.jake-main__cta-calendar button:hover {
   background: url(../img/calendar-icon-hover.png) center / 100% 100% no-repeat;
 }
 .jake-main__cta-map a {
@@ -526,6 +562,88 @@ ol, ul {
 }
 
 
+.calendar {
+  overflow: hidden;
+}
+.calendar .calendar-popup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.calendar-popup {
+  background-color: rgba(0, 0, 0, 53%);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+}
+.calendar-popup__container {
+  background-color: #ffffff;
+  -webkit-border-radius: 1.6rem;
+  -moz-border-radius: 1.6rem;
+  border-radius: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 3.8rem 0;
+  width: 39.1rem;
+}
+.calendar-close {
+  background: url(../img/jake-close.png) center / 100% 100% no-repeat, transparent;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 1.1rem;
+  right: 1.3rem;
+  height: 1.3rem;
+  width: 1.3rem;
+}
+.calendar-popup h2 {
+  color: #9da1b9;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  margin-bottom: 2.8rem;
+}
+.calendar-popup__btns {
+  display: flex;
+  flex-direction: column;
+}
+.calendar-popup__btns a {
+  border: 1px solid #9DA1B9;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  border-radius: 5rem;
+  color: #636679;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.9rem;
+  position: relative;
+  text-decoration: none;
+  height: 4rem;
+  width: 23.5rem;
+}
+.calendar-popup__btns a:not(:last-child) {
+  margin-bottom: 1.7rem;
+}
+.calendar-popup__btns a img {
+  position: absolute;
+  top: 50%;
+  left: 0.8rem;
+  transform: translateY(-50%);
+  height: 2.5rem;
+}
+
+
 @media (max-width: 1530px) {
   html {
     font-size: 9px;
@@ -549,7 +667,7 @@ ol, ul {
 
   .jake-header__title {
     margin-bottom: 0;
-    padding-top: 26.0rem;
+    padding-top: 13.1rem;
   }
   .jake-header__title h1 {
     font-size: 8.0rem;
@@ -605,6 +723,25 @@ ol, ul {
   }
 
 
+  .jake-start {
+    padding: 10.5rem 0 0;
+  }
+  .jake-start h2 {
+    font-size: 7.0rem;
+    line-height: 9.6rem;
+    margin: 0 auto 4.1rem;
+    width: 75.0rem;
+  }
+  .jake-start h3 {
+    font-size: 3.5rem;
+    line-height: 4.7rem;
+    margin-bottom: 10.6rem;
+  }
+  .jake-start__img {
+    width: 99.0rem;
+  }
+
+
   .jake-main__title {
     padding: 8.0rem 0 9.0rem;
   }
@@ -619,8 +756,9 @@ ol, ul {
 
 
   .jake-main__countdown {
-    padding: 5.2rem 0 12.5rem;
-    width: 89.0rem;
+    margin: 6.7rem 0 5.5rem;
+    padding: 2.9rem 9rem 2.7rem;
+    width: calc(100% - 18.6rem);
   }
   .jake-main__countdown h2 {
     font-size: 10.0rem;
@@ -801,6 +939,36 @@ ol, ul {
   }
   .jake-jota img {
     width: 18.1rem;
+  }
+
+
+  .calendar-popup__container {
+    padding: 10.4rem 0;
+    width: 107.3rem;
+  }
+  .calendar-close {
+    top: 3rem;
+    right: 3.6rem;
+    height: 3.7rem;
+    width: 3.7rem;
+  }
+  .calendar-popup h2 {
+    font-size: 4.9rem;
+    line-height: 6.6rem;
+    margin-bottom: 7.7rem;
+  }
+  .calendar-popup__btns a {
+    font-size: 3.8rem;
+    line-height: 5.2rem;
+    height: 11rem;
+    width: 64.5rem;
+  }
+  .calendar-popup__btns a:not(:last-child) {
+    margin-bottom: 4.6rem;
+  }
+  .calendar-popup__btns a img {
+    left: 2.2rem;
+    height: 6.9rem;
   }
 }
 

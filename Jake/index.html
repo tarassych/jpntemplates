@@ -129,6 +129,20 @@
 
 <main class="jake-main">
   <div class="jake-main__container">
+    <article class="jake-start">
+      <h2>
+        It Started With a Watermelon Photo…
+      </h2>
+
+      <h3>
+        …and the rest is history.
+      </h3>
+
+      <div class="jake-start__img">
+        <img src="img/jake-start-img.png" alt="">
+      </div>
+    </article>
+
     <article class="jake-main__title">
       <h3>
         Save the Date
@@ -163,8 +177,7 @@
             </div>
 
             <div class="jake-main__cta jake-main__cta-calendar">
-              <a href="">
-              </a>
+              <button class="calendar-cta1"></button>
             </div>
           </div>
         </div>
@@ -206,8 +219,7 @@
             </div>
 
             <div class="jake-main__cta jake-main__cta-calendar">
-              <a href="">
-              </a>
+              <button class="calendar-cta2"></button>
             </div>
           </div>
         </div>
@@ -342,7 +354,8 @@
     </h2>
 
     <div class="jake-footer__registry">
-      <a href="https://www.bloomingdales.com/registry/wedding/guest?registryId=2414644&cm_sp=BWEDD_Find_Registry-_-View_GVR-_-n" class="jake-footer__bl">
+      <a href="https://www.bloomingdales.com/registry/wedding/guest?registryId=2414644&cm_sp=BWEDD_Find_Registry-_-View_GVR-_-n"
+         class="jake-footer__bl">
       </a>
 
       <a href="https://www.williams-sonoma.com/registry/dwktf2wkht/registry-list.html" class="jake-footer__wil">
@@ -354,6 +367,33 @@
     <img src="img/jota-logo.png" alt="">
   </div>
 </footer>
+
+<div class="calendar-popup">
+  <div class="calendar-popup__container">
+    <button class="calendar-close"></button>
+
+    <h2>
+      Add event to your calendar
+    </h2>
+
+    <div class="calendar-popup__btns">
+      <a href="">
+        <img src="img/jake-google.png" alt="">
+        Google Calendar
+      </a>
+
+      <a href="">
+        <img src="img/jake-apple.png" alt="">
+        Apple Calendar
+      </a>
+
+      <a href="">
+        <img src="img/jake-outlook.png" alt="">
+        Outlook Calendar
+      </a>
+    </div>
+  </div>
+</div>
 
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script>
@@ -377,27 +417,42 @@
 
     play.addEventListener("click", () => {
         if (play.classList.contains("mute")) {
-          audioElement.pause();
-          audioElement.currentTime = 0;
-          play.classList.remove("mute")
+            audioElement.pause();
+            audioElement.currentTime = 0;
+            play.classList.remove("mute")
         } else {
-          audioElement.play();
-          play.classList.add("mute")
+            audioElement.play();
+            play.classList.add("mute")
         }
     });
+
+    // Calendar btn
+    const calendarBtn1 = document.querySelector(".calendar-cta1");
+    const calendarBtn2 = document.querySelector(".calendar-cta2");
+    const calendarClose = document.querySelector(".calendar-close");
+
+    calendarBtn1.addEventListener("click", () => {
+        document.body.classList.add("calendar");
+    })
+    calendarBtn2.addEventListener("click", () => {
+        document.body.classList.add("calendar");
+    })
+    calendarClose.addEventListener("click", () => {
+        document.body.classList.remove("calendar");
+    })
 
     // Countdown Nov 27, 2022 4pm EST
     const countDownDate = new Date("Nov 27, 2022 16:00:00 GMT-5").getTime();
 
-    const x = setInterval(function() {
-      const now = new Date().getTime();
-      const distance = countDownDate - now;
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    const x = setInterval(function () {
+        const now = new Date().getTime();
+        const distance = countDownDate - now;
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      document.getElementById("countdown").innerHTML = `
+        document.getElementById("countdown").innerHTML = `
         <div class="jake-main__countdown-block">
           <h2>${days}</h2>
           <h3>Days</h3>
@@ -419,10 +474,10 @@
         </div>
       `;
 
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("countdown").classList.add("hide");
-      }
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countdown").classList.add("hide");
+        }
     }, 1000);
 </script>
 </body>
