@@ -1,0 +1,56 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap');
+/* Featured block styles */
+.ftb * {
+  box-sizing: border-box;
+}
+.ftb h1,
+.ftb h2,
+.ftb h3,
+.ftb h4,
+.ftb h5,
+.ftb h6,
+.ftb a,
+.ftb li,
+.ftb p {
+  font-family: 'Libre Franklin', sans-serif !important;
+  margin: 0;
+  padding: 0;
+}
+
+.ftb {
+  width: 100%;
+  max-width: 100%;
+}
+.ftb-content {
+  padding: 0 0 25px;
+}
+
+.ftb-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 385px;
+}
+.ftb-container img {
+  margin-bottom: 35px;
+  width: 100%;
+}
+.ftb-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.ftb-btn a {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px;
+  background-color: #fa4788;
+  padding: 11px 35px;
+  text-decoration: none;
+}
+</style>
