@@ -414,18 +414,20 @@
     });
 
     // MP3 playing
-    const audioElement = document.querySelector("#my-audio");
-    const play = document.querySelector(".play");
+    window.addEventListener('DOMContentLoaded', (event) => {
+      const audioElement = document.querySelector("#my-audio");
+      const play = document.querySelector(".play");
 
-    play.addEventListener("click", () => {
-        if (play.classList.contains("mute")) {
-            audioElement.pause();
-            audioElement.currentTime = 0;
-            play.classList.remove("mute")
-        } else {
-            audioElement.play();
-            play.classList.add("mute")
-        }
+      play.addEventListener("click", () => {
+          if (play.classList.contains("mute")) {
+              audioElement.pause();
+              audioElement.currentTime = 0;
+              play.classList.remove("mute")
+          } else {
+              audioElement.play();
+              play.classList.add("mute")
+          }
+      });
     });
 
     // Calendar btn
