@@ -47,16 +47,21 @@ ol, ul {
   left: 0;
   height: 100%;
   width: 100%;
+  z-index: 1;
 }
 .jake-header__blur {
   backdrop-filter: blur(.4rem);
   --webkit-backdrop-filter: blur(.4rem);
   background-color: rgba(0, 0, 0, 0.21);
+  position: relative;
+  z-index: 2;
 }
 .jake-header__container {
   margin: 0 auto;
   width: 153.0rem;
   max-width: 100%;
+  position: relative;
+  z-index: 3;
 }
 .jake-header__title {
   margin-bottom: 5.5rem;
@@ -148,7 +153,9 @@ ol, ul {
 }
 .jake-header__mp3 {
   padding-bottom: 3.5rem;
+  position: relative;
   text-align: center;
+  z-index: 99;
 }
 .jake-header__mp3 .play {
   background-color: transparent;

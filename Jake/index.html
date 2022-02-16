@@ -394,6 +394,8 @@
     </div>
   </div>
 </div>
+<audio id="my-audio" src="mp3/Natalie-Merchant-One-Fine-Day.mp3">
+</audio>
 
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script>
@@ -406,13 +408,13 @@
         speed: 2000,
         loop: true,
         loopedSlides: 8,
-        // autoplay: {
-        //     delay: 2000,
-        // },
+        autoplay: {
+            delay: 2000,
+        },
     });
 
     // MP3 playing
-    const audioElement = new Audio('mp3/Natalie-Merchant-One-Fine-Day.mp3');
+    const audioElement = document.querySelector("#my-audio");
     const play = document.querySelector(".play");
 
     play.addEventListener("click", () => {
