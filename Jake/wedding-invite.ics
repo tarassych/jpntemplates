@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+DTSTART:20221122T230000Z
+DTEND:20221123T043000Z
+DTSTAMP:20220214T181900Z
+ORGANIZER;CN=Jacob Slevin:mailto:jacob@designerpages.com
+UID:7l7eftqkunk5d292p25kmjok8p@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=alison.werber@gmail.com;X-NUM-GUESTS=0:mailto:alison.werber@gmail.c
+ om
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=Jacob Slevin;X-NUM-GUESTS=0:mailto:jacob@designerpages.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=taras.sych@gmail.com;X-NUM-GUESTS=0:mailto:taras.sych@gmail.com
+X-MICROSOFT-CDO-OWNERAPPTID:-1578058625
+CREATED:20220214T181753Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nDo not edit this section of the description.\n\nV
+ iew your event at https://calendar.google.com/calendar/event?action=VIEW&ei
+ d=N2w3ZWZ0cWt1bms1ZDI5MnAyNWttam9rOHAgdGFyYXMuc3ljaEBt&tok=MjMjamFjb2JAZGVz
+ aWduZXJwYWdlcy5jb21iY2QxODIyODFhNzZkMGFmMTE1YmJkZTNmZDRkOTY1ZGQyZTNjZGRl&ct
+ z=Europe%2FKiev&hl=en&es=1.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20220214T181859Z
+LOCATION:Montage Palmetto Bluff\, 477 Mt Pelia Rd\, Bluffton\, SC 29910\, U
+ SA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Alison Werber / Jacob Slevin Wedding @ Montage
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

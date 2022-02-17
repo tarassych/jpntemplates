@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+DTSTART:20221123T020000Z
+DTEND:20221123T043000Z
+DTSTAMP:20220214T185750Z
+ORGANIZER;CN=Jacob Slevin:mailto:jacob@designerpages.com
+UID:47jourq970aqj46aa5cb8t4u3c@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=alison.werber@gmail.com;X-NUM-GUESTS=0:mailto:alison.werber@gmail.c
+ om
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=Jacob Slevin;X-NUM-GUESTS=0:mailto:jacob@designerpages.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=taras.sych@gmail.com;X-NUM-GUESTS=0:mailto:taras.sych@gmail.com
+X-MICROSOFT-CDO-OWNERAPPTID:-59987317
+CREATED:20220214T185622Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nDo not edit this section of the description.\n\nV
+ iew your event at https://calendar.google.com/calendar/event?action=VIEW&ei
+ d=NDdqb3VycTk3MGFxajQ2YWE1Y2I4dDR1M2MgdGFyYXMuc3ljaEBt&tok=MjMjamFjb2JAZGVz
+ aWduZXJwYWdlcy5jb20zZDFmMGUyOGJhY2I3ZjA3MTM1NDA5ZTdhZjkxMWNjMjg1MzA1NGRh&ct
+ z=Europe%2FKiev&hl=en&es=1.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20220214T185748Z
+LOCATION:Cha Bella\, 102 E Broad St\, Savannah\, GA 31401\, USA
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Alison Werber / Jacob Slevin Rehearsal Dinner @ Cha Bella
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
