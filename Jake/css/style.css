@@ -663,6 +663,26 @@ ol, ul {
   }
 
 
+  .jake-header__slider .jake-header__slide-2 {
+    width: 81vw !important;
+  }
+  .jake-header__slider .jake-header__slide-3 {
+    width: 70.3vw !important;
+  }
+  .jake-header__slider .jake-header__slide-4 {
+    width: 62.2vw !important;
+  }
+  .jake-header__slider .jake-header__slide-5 {
+    width: 55vw !important;
+  }
+  .jake-header__slider .jake-header__slide-1 .jake-header__slide-img,
+  .jake-header__slider .jake-header__slide-2 .jake-header__slide-img,
+  .jake-header__slider .jake-header__slide-3 .jake-header__slide-img,
+  .jake-header__slider .jake-header__slide-4 .jake-header__slide-img,
+  .jake-header__slider .jake-header__slide-5 .jake-header__slide-img {
+    height: 27vw;
+    width: 27vw;
+  }
   .jake-header__slider .jake-header__slide-6,
   .jake-header__slider .jake-header__slide-7,
   .jake-header__slider .jake-header__slide-8 {
