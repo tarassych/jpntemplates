@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap');
+
+.slr * {
+  box-sizing: border-box;
+}
+
+.slr h1,
+.slr h2,
+.slr h3,
+.slr h4,
+.slr h5,
+.slr h6,
+.slr li,
+.slr p,
+.slr a {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.slr-color__blue {
+  background-color: #00a9e5;
+}
+.slr-color__red {
+  background-color: #d60000;
+}
+.slr-color__green {
+  background-color: #007b3d;
+}
+.slr-color__black {
+  background-color: #000000;
+}
+
+
+.slr-container {
+  margin: 0 auto;
+  width: 755px;
+  max-width: 100%;
+}
+
+
+.slr-header {
+  text-align: center;
+}
+.slr-header .slr-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slr-header__logo {
+  margin-bottom: 15px;
+  width: 390px;
+  max-width: 100%;
+}
+.slr-header__img {
+  margin-bottom: 100px;
+  width: 105px;
+}
+.slr-header h3 {
+  color: #d60000;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+.slr-header h2 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  margin-bottom: 70px;
+}
+
+
+.slr-main {
+  background: url(https://www.edanz.com/sites/default/files/slr/slr-main-bg.png) center / cover no-repeat;
+  padding: 95px 0 130px;
+}
+.slr-block {
+  background-color: #ffffff;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  padding: 40px 50px 50px 0;
+}
+.slr-block:not(:last-child) {
+  margin-bottom: 30px;
+}
+.slr-left {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 295px;
+}
+.slr-block:nth-child(1) .slr-left img {
+  width: 130px;
+  max-width: 100%;
+}
+.slr-block:nth-child(2) .slr-left img {
+  width: 200px;
+  max-width: 100%;
+}
+.slr-block:nth-child(3) .slr-left img {
+  width: 200px;
+  max-width: 100%;
+}
+.slr-block:nth-child(4) .slr-left img {
+  width: 140px;
+  max-width: 100%;
+}
+.slr-block:nth-child(5) .slr-left img {
+  width: 180px;
+  max-width: 100%;
+}
+.slr-block:nth-child(6) .slr-left img {
+  width: 205px;
+  max-width: 100%;
+}
+.slr-right {
+  flex-grow: 1;
+}
+.slr-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.slr-title span {
+  border: 2px solid #000000;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 21px;
+  line-height: 32px;
+  margin-right: 20px;
+  height: 50px;
+  width: 50px;
+}
+.slr-title h2 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+.slr-link {
+  display: block;
+  text-decoration: none;
+}
+.slr-link:not(:last-of-type) {
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+div.slr-link {
+  border-top: 1px solid rgba(0, 0, 0, .3);
+  margin-top: 20px;
+  padding-top: 20px;
+}
+.slr-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.slr-row h3 {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff8f8;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  margin-right: 10px;
+  padding: 0 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.slr-row h4 {
+  color: #000000;
+  font-size: 18px;
+  line-height: 22px;
+  margin-right: 5px;
+}
+.slr-link p {
+  color: rgba(0, 0, 0, .7);
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 5px;
+}
+.slr-link p > a {
+  color: rgba(0, 0, 0, .7);
+  text-decoration: none;
+}
+
+
+.slr-footer {
+  padding: 120px 0 25px;
+}
+.slr-footer h2 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+}
+.slr-footer h2 a {
+  color: #d60000;
+  font-weight: 500;
+  text-decoration: none;
+}
+.slr-footer h2 a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .slr-container {
+    padding: 0 15px;
+  }
+
+
+  .slr-header__img {
+    margin-bottom: 30px;
+  }
+
+
+  .slr-block {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 50px 50px;
+  }
+  .slr-left {
+    margin-bottom: 15px;
+  }
+
+
+  .slr-footer {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .slr-container {
+    padding: 0 5px;
+  }
+
+
+  .slr-main {
+    padding: 30px 0;
+  }
+  .slr-block {
+    padding: 15px 10px 20px;
+  }
+}
