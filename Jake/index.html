@@ -164,7 +164,7 @@
     <article class="jake-main__plan">
       <div class="jake-main__row">
         <div class="jake-main__col">
-          <div class="jake-main__info flex-rr jake-main__place-1">
+          <div class="jake-main__info jake-main__place-1">
             <div class="jake-main__address">
               <h2>
                 Rehearsal Dinner
@@ -174,10 +174,6 @@
               <h5>
                 Thank You Joanna and Ronnie
               </h5>
-            </div>
-
-            <div class="jake-main__cta jake-main__cta-calendar">
-              <a href="invite-rehearsal-dinner.ics" target="_blank"><button class="calendar-cta1"></button></a>
             </div>
           </div>
         </div>
@@ -206,7 +202,7 @@
 
       <div class="jake-main__row">
         <div class="jake-main__col">
-          <div class="jake-main__info flex-rr jake-main__place-2">
+          <div class="jake-main__info jake-main__place-2">
             <div class="jake-main__address">
               <h2>
                 Wedding Day
@@ -216,10 +212,6 @@
               <h5>
                 Thank You Serena and Rick
               </h5>
-            </div>
-
-            <div class="jake-main__cta jake-main__cta-calendar">
-              <a href="wedding-invite.ics" target="_blank"><button class="calendar-cta2"></button></a>
             </div>
           </div>
         </div>
@@ -368,32 +360,6 @@
   </div>
 </footer>
 
-<div class="calendar-popup">
-  <div class="calendar-popup__container">
-    <button class="calendar-close"></button>
-
-    <h2>
-      Add event to your calendar
-    </h2>
-
-    <div class="calendar-popup__btns">
-      <a href="">
-        <img src="img/jake-google.png" alt="">
-        Google Calendar
-      </a>
-
-      <a href="">
-        <img src="img/jake-apple.png" alt="">
-        Apple Calendar
-      </a>
-
-      <a href="">
-        <img src="img/jake-outlook.png" alt="">
-        Outlook Calendar
-      </a>
-    </div>
-  </div>
-</div>
 <iframe src="mp3/250-milliseconds-of-silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
 <audio controls autoplay id="my-audio" style="display: none">
    <source src="mp3/Natalie-Merchant-One-Fine-Day.ogg" type="audio/ogg">
@@ -433,21 +399,6 @@
           }
       });
     });
-
-    // Calendar btn
-    // const calendarBtn1 = document.querySelector(".calendar-cta1");
-    // const calendarBtn2 = document.querySelector(".calendar-cta2");
-    // const calendarClose = document.querySelector(".calendar-close");
-    //
-    // calendarBtn1.addEventListener("click", () => {
-    //     document.body.classList.add("calendar");
-    // })
-    // calendarBtn2.addEventListener("click", () => {
-    //     document.body.classList.add("calendar");
-    // })
-    // calendarClose.addEventListener("click", () => {
-    //     document.body.classList.remove("calendar");
-    // })
 
     // Countdown Nov 27, 2022 4pm EST
     const countDownDate = new Date("Nov 27, 2022 16:00:00 GMT-5").getTime();
