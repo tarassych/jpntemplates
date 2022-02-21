@@ -51,7 +51,7 @@ ol, ul {
 }
 .jake-header__blur {
   backdrop-filter: blur(.4rem);
-  --webkit-backdrop-filter: blur(.4rem);
+  -webkit-backdrop-filter: blur(.4rem);
   background-color: rgba(0, 0, 0, 0.21);
 }
 .jake-header__container {
