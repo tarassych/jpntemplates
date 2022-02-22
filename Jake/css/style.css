@@ -180,18 +180,20 @@ ol, ul {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 800;
   line-height: 2.7rem;
   letter-spacing: 2px;
   margin: 0 auto;
   padding: 0;
   text-transform: uppercase;
-  height: 5.2rem;
-  width: 30rem;
+  height: 7.2rem;
+  width: 40rem;
+  white-space: nowrap;
 }
 .jake-header__mp3 .play:before {
   content: "PLAY Soundtrack";
+  white-space: nowrap;
 }
 .jake-header__mp3 .play:hover {
   border: 0.2rem solid #ffffff;

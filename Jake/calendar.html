@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ALISON & JAKE</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
+  <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+  />
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="text/javascript" src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+</head>
+<body>
+  <a title="Add to Calendar" class="addeventatc" data-id="bf12211739" href="https://www.addevent.com/event/bf12211739" target="_blank" rel="nofollow">Add to Calendar</a>
+
+  <button class="calendar-cta1">Test Lightbox</button>
+
+
+  <div class="calendar-popup">
+    <div class="calendar-popup__container">
+      <button class="calendar-close"></button>
+
+      <p style="margin:0px 0px 10px 0px;text-align:center;font-size:17px;line-height:150%;color:#000;font-weight:bold;">Add event to calendar</p> <p style="margin:0px 0px 10px 0px;text-align:center;font-size:0px;"> <a href="https://www.addevent.com/event/bf12211739+apple" title="Apple" target="_blank" style="display:inline;"><img src="https://cdn.addevent.com/libs/imgs/icon-emd-share-apple-t1.png" alt="Apple" width="45" border="0" style="width:45px;display:inline;"></a> <a href="https://www.addevent.com/event/bf12211739+google" title="Google" target="_blank" style="display:inline;"><img src="https://cdn.addevent.com/libs/imgs/icon-emd-share-google-t1.png" alt="Google" width="45" border="0" style="width:45px;display:inline;"></a> <a href="https://www.addevent.com/event/bf12211739+office365" title="Office 365" target="_blank" style="display:inline;"><img src="https://cdn.addevent.com/libs/imgs/icon-emd-share-office365-t1.png" alt="Office 365" width="45" border="0" style="width:45px;display:inline;"></a> <a href="https://www.addevent.com/event/bf12211739+outlook" title="Outlook" target="_blank" style="display:inline;"><img src="https://cdn.addevent.com/libs/imgs/icon-emd-share-outlook-t1.png" alt="Outlook" width="45" border="0" style="width:45px;display:inline;"></a> <a href="https://www.addevent.com/event/bf12211739+outlookcom" title="Outlook.com" target="_blank" style="display:inline;"><img src="https://cdn.addevent.com/libs/imgs/icon-emd-share-outlookcom-t1.png" alt="Outlook.com" width="45" border="0" style="width:45px;display:inline;"></a> <a href="https://www.addevent.com/event/bf12211739+yahoo" title="Yahoo" target="_blank" style="display:inline;"><img src="https://cdn.addevent.com/libs/imgs/icon-emd-share-yahoo-t1.png" alt="Yahoo" width="45" border="0" style="width:45px;display:inline;"></a> </p>
+    </div>
+  </div>
+</body>
+<script>
+  const calendarBtn1 = document.querySelector(".calendar-cta1");
+  const calendarClose = document.querySelector(".calendar-close");
+  
+  calendarBtn1.addEventListener("click", () => {
+      document.body.classList.add("calendar");
+  });
+
+  calendarClose.addEventListener("click", () => {
+      document.body.classList.remove("calendar");
+  });
+
+</script>
+</html>
