@@ -403,10 +403,10 @@ ol, ul {
   width: 6.8rem;
 }
 .jake-main__cta-map a {
-  background: url(../img/map-icon.png) center / 100% 100% no-repeat;
+  background: url(../img/map-icon.svg) center / 100% 100% no-repeat;
 }
 .jake-main__cta-map a:hover {
-  background: url(../img/map-icon-hover.png) center / 100% 100% no-repeat;
+  background: url(../img/map-icon-hover.svg) center / 100% 100% no-repeat;
 }
 .jake-main__book {
   margin-top: 3.0rem;
