@@ -23,7 +23,7 @@
 
 #nmep .nmep-container {
   margin: 0 auto;
-  width: 1480px;
+  width: 1160px;
   max-width: 100%;
 }
 
@@ -47,20 +47,20 @@
   text-align: center;
 }
 #nmep .nmep-header__text h2 {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 40px;
   margin-bottom: 30px;
 }
 #nmep .nmep-header__text h3 {
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 700;
   line-height: 50px;
   margin-bottom: 30px;
 }
 #nmep .nmep-header__text h4 {
   color: #f8e750;
-  font-size: 35px;
+  font-size: 22px;
   font-weight: 700;
   line-height: 50px;
 }
@@ -68,11 +68,11 @@
 
 #nmep .nmep-blocks {
   margin: 0 20px;
-  padding: 50px 0 90px;
+  padding: 50px 0 60px;
 }
 #nmep .nmep-blocks > h2 {
   color: #ba2532;
-  font-size: 30px;
+  font-size: 23px;
   font-weight: 700;
   line-height: 30px;
   margin-bottom: 10px;
@@ -84,14 +84,14 @@
   padding: 45px 75px 75px;
 }
 #nmep .nmep-blocks__border > h2 {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   text-align: center;
 }
 #nmep .nmep-blocks__border > h2 span {
-  font-size: 20px;
+  font-size: 16px;
 }
 #nmep .nmep-blocks__row {
   display: flex;
@@ -104,64 +104,57 @@
   flex-shrink: 0;
   position: relative;
   text-align: center;
-}
-#nmep .nmep-blocks__block:nth-of-type(1) {
-  width: 300px;
-}
-#nmep .nmep-blocks__block:nth-of-type(2) {
-  width: 310px;
-}
-#nmep .nmep-blocks__block:nth-of-type(3) {
-  width: 400px;
+  width: 285px;
 }
 #nmep .nmep-blocks__row > img {
-  height: 84px;
-  width: 84px;
+  height: 40px;
+  width: 42px;
 }
-#nmep .nmep-blocks__block > h2 {
-  font-size: 23px;
+.nmep-blocks__block-bg {
+  background: url(https://www.edanz.com/sites/default/files/n-mep-block-bg.png) center / 100% 100% no-repeat;
+}
+#nmep .nmep-blocks__block h2 {
+  font-size: 15px;
   font-weight: 700;
-  line-height: 23px;
+  line-height: 20px;
   margin-bottom: 8px;
-  min-height: 25px;
+  min-height: 20px;
 }
-#nmep .nmep-blocks__block > h3 {
-  font-size: 25px;
+#nmep .nmep-blocks__block h3 {
+  font-size: 18px;
   font-weight: 600;
   line-height: 25px;
-  margin-bottom: 15px;
   padding: 8px 0;
 }
-#nmep .nmep-blocks__block > h4 {
-  font-size: 25px;
+#nmep .nmep-blocks__block h4 {
+  font-size: 18px;
   font-weight: 700;
-  line-height: 32px;
+  line-height: 25px;
   margin-bottom: 15px;
+  padding-top: 15px;
 }
-#nmep .nmep-blocks__block > h4 span:nth-of-type(1) {
-  font-size: 22px;
-}
-#nmep .nmep-blocks__block > h4 span:nth-of-type(2) {
+#nmep .nmep-blocks__block h4 span {
   border-bottom: 10px solid rgba(248, 231, 80, 59%);
 }
-#nmep .nmep-blocks__block > h5 {
+#nmep .nmep-blocks__block h5 {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: 40px;
+  font-size: 33px;
   font-weight: 700;
   line-height: 60px;
 }
-#nmep .nmep-blocks__block > h5 img {
+#nmep .nmep-blocks__block h5 img {
   margin-right: 10px;
-  height: 55px;
-  width: 55px;
+  height: 35px;
+  width: 35px;
 }
-#nmep .nmep-blocks__block > h6 {
-  font-size: 20px;
+#nmep .nmep-blocks__block h6 {
+  font-size: 15px;
   font-weight: 500;
   line-height: 30px;
+  padding-bottom: 20px;
 }
 #nmep .nmep-blocks__block .grey-bg {
   background-color: #818181;
@@ -173,7 +166,7 @@
 }
 #nmep .nmep-blocks__block .red-text {
   color: #ba2532;
-  font-size: 60px;
+  font-size: 40px;
 }
 
 
@@ -182,7 +175,7 @@
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   border-radius: 50px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   padding: 40px 100px 20px;
 }
 #nmep .nmep-info h2 {
@@ -193,7 +186,7 @@
   margin-bottom: 35px;
 }
 #nmep .nmep-info h3 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 35px;
   margin-bottom: 35px;
@@ -215,12 +208,14 @@
   border-radius: 50px;
   display: flex;
   flex-direction: row;
-  margin-bottom: 105px;
+  align-items: center;
+  margin-bottom: 50px;
   padding: 15px 45px 20px;
 }
 #nmep .nmep-list img {
-  margin-right: 55px;
-  width: 450px;
+  flex-shrink: 0;
+  margin-right: 25px;
+  width: 300px;
   max-width: 100%;
 }
 #nmep .nmep-list__text {
@@ -231,17 +226,17 @@
   font-size: 25px;
   font-weight: 700;
   line-height: 35px;
-  margin-bottom: 45px;
-  padding-left: 30px;
+  margin-bottom: 35px;
+  padding-left: 50px;
 }
 #nmep .nmep-list__text ul {
   list-style: none;
   padding: 0;
 }
 #nmep .nmep-list__text ul li {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 700;
-  line-height: 40px;
+  line-height: 26px;
 }
 #nmep .nmep-list__text ul li span {
   color: #ba2532;
@@ -249,7 +244,7 @@
 
 
 #nmep .nmep-btn {
-  margin-bottom: 120px;
+  margin-bottom: 50px;
   text-align: center;
 }
 #nmep .nmep-btn a {
@@ -259,20 +254,18 @@
   border-radius: 11px;
   color: #ffffff;
   display: inline-block;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 700;
-  line-height: 50px;
-  padding: 40px 100px;
+  line-height: 37px;
+  padding: 22px 80px;
   text-decoration: none;
 }
 
 
 #nmep .nmep-notes {
   background-color: #aebbc3;
-  margin: 0 auto 135px;
-  padding: 30px 90px 40px;
-  width: 1310px;
-  max-width: 100%;
+  margin: 0 auto 90px;
+  padding: 25px 75px 40px;
 }
 #nmep .nmep-notes h2 {
   font-size: 21px;
@@ -328,20 +321,54 @@
   #nmep .nmep-header img {
     margin: 0 0 20px;
   }
+  #nmep .nmep-header__text h2 {
+    font-size: 16px;
+  }
+  #nmep .nmep-header__text h3 {
+    font-size: 26px;
+  }
+  #nmep .nmep-header__text h4 {
+    font-size: 18px;
+  }
 
 
   #nmep .nmep-blocks__block {
     max-width: 100%;
   }
+  #nmep .nmep-blocks__block h6 {
+    padding-bottom: 0;
+  }
   #nmep .nmep-blocks__row > img {
     margin-bottom: 50px;
+  }
+  #nmep .nmep-blocks__border > h2 {
+    font-size: 16px;
+  }
+
+
+  #nmep .nmep-info h2 {
+    font-size: 21px;
+    text-align: center;
+  }
+  #nmep .nmep-info h3 {
+    font-size: 14px;
+  }
+
+
+  #nmep .nmep-list__text h2 {
+    padding-left: 0;
+    text-align: center;
+  }
+  #nmep .nmep-list__text ul li {
+    font-size: 16px;
   }
 
 
   #nmep .nmep-btn a {
+    font-size: 21px;
     padding: 40px 10px;
     text-align: center;
-    width: 100%;
+    width: calc(100% - 20px);
   }
 }
 </style>
