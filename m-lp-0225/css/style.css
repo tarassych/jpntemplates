@@ -40,7 +40,7 @@ a {
   height: 12.5rem;
 }
 .mlp-header__menu-btn {
-  background: url(../img/mlp-menu-icon.png) center / 100% 100% no-repeat;
+  background: url(https://www.edanz.com/sites/default/files/m-lp-0225/mlp-menu-icon.png) center / 100% 100% no-repeat;
   height: 5.0rem;
   width: 6.7rem;
 }
@@ -83,7 +83,7 @@ a {
 
 
 .mlp-promo {
-  background: url(../img/mlp-promo-bg.png) center / 75.0rem 100% no-repeat, #B4292C;
+  background: url(https://www.edanz.com/sites/default/files/m-lp-0225/mlp-promo-bg.png) center / 75.0rem 100% no-repeat, #B4292C;
   padding: 2.0rem 4.0rem 3.5rem;
 }
 .mlp-promo h1 {
@@ -226,7 +226,7 @@ a {
 
 
 .mlp-free {
-  background: url(../img/mlp-free-bg.png) center / 100% 100% no-repeat;
+  background: url(https://www.edanz.com/sites/default/files/m-lp-0225/mlp-free-bg.png) center / 100% 100% no-repeat;
   padding: 0 .5rem 5.0rem;
 }
 .mlp-free h2 {
