@@ -1,0 +1,92 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
+
+#nmep * {
+  box-sizing: border-box;
+}
+
+#nmep h1,
+#nmep h2,
+#nmep h3,
+#nmep h4,
+#nmep h5,
+#nmep h6,
+#nmep li,
+#nmep p,
+#nmep a {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+}
+
+
+#nmep.nmep-card {
+  background-color: #E0E0E0;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 30px 15px;
+  text-align: center;
+  width: 540px;
+  max-width: 100%;
+}
+#nmep .nmep-card__row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#nmep .nmep-card__row img {
+  margin-left: 15px;
+  width: 100%;
+  max-width: 210px;
+}
+#nmep .nmep-card__info {
+  flex-shrink: 0;
+}
+#nmep .nmep-card__info h4 {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+#nmep .nmep-card__info h5 {
+  background-color: #ffffff;
+  border: 1px dashed #FD8922;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 23px;
+  margin-bottom: 15px;
+  padding: 10px 20px;
+}
+#nmep .nmep-card__info h6 {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+
+@media (max-width: 1024px) {
+  #nmep .nmep-card__row {
+    flex-direction: column;
+  }
+  #nmep .nmep-card__row img {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #nmep.nmep-card {
+    margin-top: 5px;
+    padding: 15px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  #nmep.nmep-card {
+    padding: 5px 15px;
+  }
+}
+</style>
