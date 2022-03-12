@@ -309,7 +309,7 @@
 
 
 #journey .journey-table {
-  padding: 40px 0 55px;
+  padding: 40px 0 35px;
 }
 #journey .journey-table h2 {
   font-size: 25px;
@@ -400,7 +400,17 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
+  margin-bottom: 25px;
   padding-left: 75px;
+}
+#journey .journey-addblock {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  max-width: 100%;
+}
+#journey .journey-addblock img {
+  width: 100%;
 }
 
 
