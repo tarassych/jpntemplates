@@ -1,3 +1,4 @@
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Libre+Franklin:wght@400;500;600;700&display=swap');
 
 #hpp.hpp * {
@@ -105,7 +106,7 @@ html {
 
 
 #hpp .hpp-header {
-  background: url(../../../img/hpp-header-bg-img-2.png) center / cover no-repeat;
+  background: url(https://www.edanz.com/sites/default/files/hpp_0/hpp-header-bg-img-2.png) center / cover no-repeat;
 }
 #hpp .hpp-header .hpp-container {
   padding: 1.8rem 0 5.8rem;
@@ -133,9 +134,6 @@ html {
 }
 
 
-#hpp .hpp-blocks {
-
-}
 #hpp .hpp-block {
   display: flex;
   flex-direction: row;
@@ -186,9 +184,6 @@ html {
   margin-right: .8rem;
   height: 2.4rem;
   width: 2.4rem;
-}
-#hpp .hpp-block__text a {
-
 }
 #hpp .hpp-block > img {
   flex-shrink: 0;
@@ -255,7 +250,7 @@ html {
 
 
 #hpp .hpp-content {
-  background: url(../../../img/hpp-content-bg.png) center / cover no-repeat;
+  background: url(https://www.edanz.com/sites/default/files/hpp_0/hpp-content-bg.png) center / cover no-repeat;
   padding: 8rem 0;
 }
 #hpp .hpp-content h2 {
@@ -317,6 +312,7 @@ html {
 
   #hpp .hpp-container {
     padding: 0 2rem;
+    max-width: calc(100% - 4rem);
   }
 }
 @media (max-width: 1280px) {
@@ -328,10 +324,39 @@ html {
   html {
     font-size: 7px;
   }
+
+
+  #hpp .hpp-flow {
+    padding-top: 0;
+  }
+  #hpp .hpp-flow__row {
+    flex-direction: column;
+  }
+  #hpp .hpp-flow__block {
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+
+  #hpp .hpp-content__row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #hpp .hpp-content__block {
+    margin: 0 2rem 2rem;
+  }
 }
 @media (max-width: 768px) {
   html {
     font-size: 6px;
+  }
+
+  #hpp .hpp-block {
+    flex-direction: column-reverse;
+    padding-bottom: 5rem;
+  }
+  #hpp .hpp-block > img {
+    margin-bottom: 2rem;
   }
 }
 @media (max-width: 480px) {
@@ -349,3 +374,4 @@ html {
     font-size: 3px;
   }
 }
+</style>
