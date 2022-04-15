@@ -1,3 +1,4 @@
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Libre+Franklin:wght@400;500;600;700&display=swap');
 
 #hpp.hpp * {
@@ -169,8 +170,11 @@ html {
 #hpp .hpp-help__block:nth-child(2) .hpp-help__blocks   {
   border: 3px solid #4A51E8;
 }
-#hpp .hpp-help__blocks img {
+#hpp .hpp-help__blocks a {
+  display: inline-block;
   margin: 1.2rem;
+}
+#hpp .hpp-help__blocks img {
   width: 18.4rem;
 }
 
@@ -527,3 +531,4 @@ html {
     font-size: 3px;
   }
 }
+</style>
