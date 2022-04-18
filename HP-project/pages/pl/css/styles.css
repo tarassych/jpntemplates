@@ -107,6 +107,7 @@ html {
 
 #hpp .hpp-header {
   background: url(https://www.edanz.com/sites/default/files/hpp_0/hpp-header-bg-img-2.png) center / cover no-repeat;
+  margin-bottom: 4.8rem;
 }
 #hpp .hpp-header .hpp-container {
   padding: 1.8rem 0 5.8rem;
