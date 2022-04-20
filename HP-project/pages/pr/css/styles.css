@@ -176,6 +176,163 @@ html {
 }
 
 
+#hpp .hpp-plans {
+  margin-bottom: 10.4rem;
+}
+#hpp .hpp-plans .hpp-container {
+  background-color: #ecfeff;
+  -webkit-border-radius: 3.2rem;
+  -moz-border-radius: 3.2rem;
+  border-radius: 3.2rem;
+  padding: 0 !important;
+}
+#hpp .hpp-plans h2,
+#hpp .hpp-plans h3,
+#hpp .hpp-plans h4,
+#hpp .hpp-plans h5,
+#hpp .hpp-plans h6,
+#hpp .hpp-plans input,
+#hpp .hpp-plans p {
+  font-family: 'Libre Franklin', sans-serif;
+}
+#hpp .hpp-plans__top {
+  padding: 4.8rem 2rem;
+  text-align: center;
+}
+#hpp .hpp-plans h2 {
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: 6.4rem;
+  margin-bottom: 1.6rem;
+  text-align: center;
+}
+#hpp .hpp-plans input {
+  -webkit-border-radius: .4rem;
+  -moz-border-radius: .4rem;
+  border-radius: .4rem;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2rem;
+  margin: 0 auto 4.8rem;
+  padding: 1rem 1.6rem;
+  width: 36rem;
+}
+#hpp .hpp-plans__top > p {
+  color: #777777;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2rem;
+  margin: 0 auto 4.8rem;
+  max-width: 39.2rem;
+}
+#hpp .hpp-plans input::placeholder {
+  color: #cfcfcf;
+}
+#hpp .hpp-plans__row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+#hpp .hpp-plans__block {
+  background-color: #ffffff;
+  -webkit-border-radius: 1.6rem;
+  -moz-border-radius: 1.6rem;
+  border-radius: 1.6rem;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.1);
+  margin: 0 1.2rem;
+  width: 36rem;
+  max-width: 100%;
+}
+#hpp .hpp-plans__block h3 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 3.6rem;
+  padding: 2.4rem 2.4rem .8rem;
+  text-align: left;
+}
+#hpp .hpp-plans__block p {
+  color: #777777;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2rem;
+  margin-bottom: 2.4rem;
+  padding: 0 2.4rem;
+  text-align: left;
+}
+#hpp .hpp-plans__block img {
+  margin-bottom: 2.4rem;
+  width: 100%;
+}
+#hpp .hpp-plans__block h4 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 5.2rem;
+  margin-bottom: 2.4rem;
+  padding: 0 2.4rem;
+  text-align: left;
+}
+#hpp .hpp-plans__block a {
+  margin-bottom: 2.4rem;
+}
+#hpp .hpp-plans__special {
+  background: url(https://www.edanz.com/sites/default/files/hpp_4/hpp-plans-special-bg.png) center / cover no-repeat;
+  -webkit-border-radius: 0 0 3.2rem 3.2rem;
+  -moz-border-radius: 0 0 3.2rem 3.2rem;
+  border-radius: 0 0 3.2rem 3.2rem;
+  padding: 5.3rem;
+}
+#hpp .hpp-plans__special h5 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  margin-bottom: 2.4rem;
+  text-align: center;
+}
+#hpp .hpp-plans__special-info {
+  background-color: #ffffff;
+  -webkit-border-radius: 1.6rem;
+  -moz-border-radius: 1.6rem;
+  border-radius: 1.6rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  padding: 3.6rem 11.9rem;
+  width: 92rem;
+  max-width: 100%;
+}
+#hpp .hpp-plans__special-info img {
+  margin-right: .8rem;
+  height: 7.2rem;
+  width: 7.2rem;
+}
+#hpp .hpp-plans__special-info h6 {
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: 6.4rem;
+  margin-right: .8rem;
+}
+#hpp .hpp-plans__special-info p {
+  color: #777777;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2rem;
+  text-align: center;
+}
+#hpp .hpp-plans__btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 8.4rem 0 12.5rem;
+}
+#hpp .hpp-plans__btns a {
+  margin: 0 1.6rem;
+}
+
+
 #hpp .hpp-flow {
   padding: 0 0 11.2rem;
 }

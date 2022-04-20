@@ -136,6 +136,9 @@ html {
 
 
 #hpp .hpp-block {
+  -webkit-border-radius: 1.6rem;
+  -moz-border-radius: 1.6rem;
+  border-radius: 1.6rem;
   display: flex;
   flex-direction: row;
   align-items: center;
