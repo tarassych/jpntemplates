@@ -33,16 +33,16 @@ html {
   background-color: #f7f7f7;
 }
 
-.pb-0 {
+#dmo .pb-0 {
   padding-bottom: 0 !important;
 }
-.no-arrow::before {
+#dmo .no-arrow::before {
   content: none !important;
 }
 
 
 #dmo .dmo-header {
-  background: url(../img/dmo-header-bg.png) center / cover no-repeat;
+  background: url(https://www.edanz.com/sites/default/files/dmo/dmo-header-bg.png) center / cover no-repeat;
   padding: 8rem 0;
 }
 #dmo .dmo-header h2 {
@@ -55,7 +55,7 @@ html {
 
 
 #dmo .dmo-blocks {
-  background: url(../img/dmo-blocks-bg.png) center / cover no-repeat;
+  background: url(https://www.edanz.com/sites/default/files/dmo/dmo-blocks-bg.png) center / cover no-repeat;
   padding: 4rem 0 3rem;
 }
 #dmo .dmo-blocks__container {
@@ -103,11 +103,11 @@ html {
 }
 #dmo .dmo-blocks__col > a,
 #dmo .dmo-blocks__col > img {
-  width: 61rem;
+  height: 19rem;
   max-width: 100%;
 }
 #dmo .dmo-blocks__col > a > img {
-  width: 100%;
+  height: 100%;
 }
 #dmo .dmo-blocks__col h3 {
   color: #707070;
@@ -115,6 +115,15 @@ html {
   font-weight: 700;
   line-height: 2.2rem;
   padding: 1.4rem 0 .5rem;
+  text-align: center;
+  width: 100%;
+}
+#dmo .dmo-blocks__col h4 {
+  color: #4B4B4B;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2rem;
+  padding: 1.4rem 0 1.2rem;
   text-align: center;
   width: 100%;
 }
@@ -128,11 +137,11 @@ html {
   width: 6.3rem;
 }
 #dmo .dmo-blocks__col:first-child::before {
-  background: url(../img/dmo-arrow-1.png) center / 100% 100% no-repeat;
-  right: 1rem;
+  background: url(https://www.edanz.com/sites/default/files/dmo/dmo-arrow-1.png) center / 100% 100% no-repeat;
+  right: 2rem;
 }
 #dmo .dmo-blocks__col:last-child::before {
-  background: url(../img/dmo-arrow-2.png) center / 100% 100% no-repeat;
+  background: url(https://www.edanz.com/sites/default/files/dmo/dmo-arrow-2.png) center / 100% 100% no-repeat;
   left: 2rem;
 }
 
@@ -152,7 +161,7 @@ html {
   background-color: #fcfcfc;
   margin: 0 auto;
   padding: 4.3rem 8.5rem;
-  width: 140rem;
+  width: 127rem;
   max-width: 100%;
 }
 #dmo .dmo-footer__container h3 {
@@ -167,10 +176,9 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  flex-wrap: wrap;
 }
 #dmo .dmo-footer__block {
-  margin: 0 5rem;
+  margin: 0 .9rem;
   text-align: center;
   width: 300px;
   max-width: 100%;
@@ -201,9 +209,10 @@ html {
 }
 
 @media (max-width: 1680px) {
-  #dmo .dmo-blocks__col {
+  #dmo .dmo-blocks__col:first-child,
+  #dmo .dmo-blocks__col:last-child {
     justify-content: center;
-    padding: 0 5rem 3rem 5rem !important;
+    padding: 0 5rem 3rem 5rem;
   }
   #dmo .dmo-blocks__col:first-child::before,
   #dmo .dmo-blocks__col:last-child::before {
@@ -250,24 +259,41 @@ html {
     padding: 4rem 1rem;
   }
   #dmo .dmo-footer__block {
-    margin: 0 2rem 3rem;
+    margin: 0 0.9rem 3rem;
   }
-}
-@media (max-width: 480px) {
-  html {
-    font-size: 9px;
+  #dmo .dmo-footer__block h4 {
+    font-size: 1.1rem;
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
+  html {
+    font-size: 9px;
+  }
+
+  #dmo .dmo-footer__row {
+    flex-wrap: wrap;
+  }
+  #dmo .dmo-footer__block h4 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
   html {
     font-size: 8px;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   html {
     font-size: 7px;
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 6px;
   }
 }
 </style>
