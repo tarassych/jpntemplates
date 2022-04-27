@@ -98,16 +98,19 @@ html {
 #hpp .hpp-expert {
   margin-top: 8rem;
 }
-#hpp .hpp-expert .hpp-container {
-  margin: 0 auto;
+#hpp .hpp-expert__grid {
+  column-count: 3;
+  column-gap: 3rem;
 }
 #hpp .hpp-expert__block {
   -webkit-border-radius: 2.5rem;
   -moz-border-radius: 2.5rem;
   border-radius: 2.5rem;
-  margin-bottom: 2.3rem;
-  width: 388px;
-  /*max-width: 38.8rem;*/
+  display: grid;
+  grid-template-rows: 1fr auto;
+  break-inside: avoid;
+  margin: 0 auto 2.3rem;
+  max-width: 38.8rem;
 }
 #hpp .hpp-expert__block-header {
   -webkit-border-radius: 2.5rem 2.5rem 0 0;
@@ -249,30 +252,47 @@ html {
   html {
     font-size: 8px;
   }
+
+
 }
 @media (max-width: 1024px) {
   html {
     font-size: 7px;
   }
+
+
+  #hpp .hpp-expert__block {
+    max-width: 50rem;
+  }
+  #hpp .hpp-expert__grid {
+    column-count: 2;
+  }
 }
 @media (max-width: 768px) {
   html {
-    font-size: 6px;
+    font-size: 7px;
+  }
+
+  #hpp .hpp-expert__block {
+    max-width: 60rem;
+  }
+  #hpp .hpp-expert__grid {
+    column-count: 1;
   }
 }
 @media (max-width: 480px) {
   html {
-    font-size: 5px;
+    font-size: 6px;
   }
 }
 @media (max-width: 425px) {
   html {
-    font-size: 4px;
+    font-size: 5px;
   }
 }
 @media (max-width: 375px) {
   html {
-    font-size: 3px;
+    font-size: 4px;
   }
 }
 </style>
