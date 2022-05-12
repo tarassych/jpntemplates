@@ -204,7 +204,13 @@ html {
   font-size: 3.6rem;
   font-weight: 700;
   line-height: 6rem;
-  margin-bottom: 4rem;
+}
+#hpp .hpp-flow .hpp-container > p {
+  color: #374151;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  margin-bottom: 2rem;
 }
 #hpp .hpp-flow__row {
   display: flex;
