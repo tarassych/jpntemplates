@@ -176,9 +176,6 @@ html {
 }
 
 
-#hpp .hpp-plans {
-  margin-bottom: 10.4rem;
-}
 #hpp .hpp-plans .hpp-container {
   background-color: #ecfeff;
   -webkit-border-radius: 3.2rem;
@@ -203,7 +200,7 @@ html {
   font-size: 3.6rem;
   font-weight: 600;
   line-height: 6.4rem;
-  margin-bottom: 1.6rem;
+  margin-bottom: 4.8rem;
   text-align: center;
 }
 #hpp .hpp-plans input {
@@ -217,14 +214,6 @@ html {
   margin: 0 auto 4.8rem;
   padding: 1rem 1.6rem;
   width: 36rem;
-}
-#hpp .hpp-plans__top > p {
-  color: #777777;
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 2rem;
-  margin: 0 auto 4.8rem;
-  max-width: 39.2rem;
 }
 #hpp .hpp-plans input::placeholder {
   color: #cfcfcf;
@@ -321,16 +310,6 @@ html {
   line-height: 2rem;
   text-align: center;
 }
-#hpp .hpp-plans__btns {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 8.4rem 0 12.5rem;
-}
-#hpp .hpp-plans__btns a {
-  margin: 0 1.6rem;
-}
 
 
 #hpp .hpp-flow {
@@ -342,12 +321,19 @@ html {
   font-size: 3.6rem;
   font-weight: 700;
   line-height: 6rem;
-  margin-bottom: 4rem;
+  margin-bottom: .5rem;
+}
+#hpp .hpp-flow p {
+  color: #374151;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
 }
 #hpp .hpp-flow__row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 2.1rem;
 }
 #hpp .hpp-flow__block {
   width: 28rem;
@@ -375,6 +361,12 @@ html {
   opacity: .4;
   width: 100%;
 }
+#hpp .hpp-flow__row-graph.blue-color span:first-child {
+  background-color: #4A51E8;
+}
+#hpp .hpp-flow__row-graph.blue-color span:last-child {
+  border-top: 2px dashed #787EFF;
+}
 #hpp .hpp-flow__block h3 {
   color: #111827;
   font-family: 'Libre Franklin', sans-serif;
@@ -400,6 +392,14 @@ html {
   line-height: 6rem;
   margin-bottom: 4.8rem;
 }
+#hpp .hpp-should p {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.6rem;
+  letter-spacing: -0.04rem;
+  margin-bottom: 3.2rem;
+}
 #hpp .hpp-should__blocks {
   display: flex;
   flex-direction: row;
@@ -418,20 +418,12 @@ html {
   height: 7.2rem;
   width: 7.2rem;
 }
-#hpp .hpp-should__text {
-
-}
 #hpp .hpp-should__text h3 {
   color: #111827;
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 4rem;
   margin-bottom: .8rem;
-}
-#hpp .hpp-should__text p {
-  color: #374151;
-  font-size: 1.6rem;
-  line-height: 2.4rem;
 }
 
 
