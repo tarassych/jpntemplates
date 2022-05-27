@@ -108,8 +108,23 @@ html {
 }
 
 
-#hpp .hpp-header {
-  background: url(https://www.edanz.com/sites/default/files/hpp_1/hpp-header-bg-img-3.png) top center / 100% auto no-repeat;
+#hpp .hpp-header--1 {
+  background: url(https://www.edanz.com/sites/default/files/hpp_9/hpp-header-bg-img-4.png) top center / 100% auto no-repeat;
+}
+#hpp .hpp-header--2 {
+  background: url(https://www.edanz.com/sites/default/files/hpp_9/hpp-header-bg-img-5.png) top center / 100% auto no-repeat;
+}
+#hpp .hpp-header--3 {
+  background: url(https://www.edanz.com/sites/default/files/hpp_9/hpp-header-bg-img-6.png) top center / 100% auto no-repeat;
+}
+#hpp .hpp-header--4 {
+  background: url(https://www.edanz.com/sites/default/files/hpp_9/hpp-header-bg-img-7.png) top center / 100% auto no-repeat;
+}
+#hpp .hpp-header--5 {
+  background: url(https://www.edanz.com/sites/default/files/hpp_9/hpp-header-bg-img-8.png) top center / 100% auto no-repeat;
+}
+#hpp .hpp-header--6 {
+  background: url(https://www.edanz.com/sites/default/files/hpp_9/hpp-header-bg-img-9.png) top center / 100% auto no-repeat;
 }
 #hpp .hpp-header .hpp-container {
   padding: 20.8vw 0 4.8rem;
@@ -137,7 +152,7 @@ html {
 
 
 #hpp .hpp-block {
-  margin-bottom: 10.4rem;
+  margin-bottom: 6.4rem;
   padding: 4.8rem;
   width: 100%;
 }
@@ -238,16 +253,7 @@ html {
   font-size: 3rem;
   font-weight: 600;
   line-height: 3.6rem;
-  padding: 2.4rem 2.4rem .8rem;
-  text-align: left;
-}
-#hpp .hpp-plans__block p {
-  color: #777777;
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 2rem;
-  margin-bottom: 2.4rem;
-  padding: 0 2.4rem;
+  padding: 2.4rem;
   text-align: left;
 }
 #hpp .hpp-plans__block img {
@@ -309,6 +315,28 @@ html {
   font-weight: 400;
   line-height: 2rem;
   text-align: center;
+}
+
+
+#hpp .hpp-samples {
+  padding: 0 0 24.1rem;
+}
+#hpp .hpp-samples h2 {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 6rem;
+  margin-bottom: 3.1rem;
+}
+#hpp .hpp-samples__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#hpp .hpp-samples__row img {
+  height: 57.5rem;
+  max-width: 100%;
 }
 
 
@@ -440,6 +468,17 @@ html {
 @media (max-width: 1280px) {
   html {
     font-size: 8px;
+  }
+
+  #hpp .hpp-samples h2 {
+    text-align: center;
+  }
+  #hpp .hpp-samples__row {
+    justify-content: center;
+  }
+  #hpp .hpp-samples__row img {
+    margin: 0 2rem 2rem;
+    height: 50rem;
   }
 }
 @media (max-width: 1024px) {
