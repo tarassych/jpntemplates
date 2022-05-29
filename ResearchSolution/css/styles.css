@@ -1,0 +1,183 @@
+/*<style>*/
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap');
+
+#rs.rs * {
+  box-sizing: border-box;
+}
+
+#rs h2,
+#rs h3,
+#rs h4,
+#rs h5,
+#rs h6,
+#rs p,
+#rs a,
+#rs ul,
+#rs li,
+#rs input,
+#rs span,
+#rs button {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+}
+
+
+#rs .rs-container {
+  margin: 0 auto;
+  width: 1120px;
+  max-width: 100%;
+}
+
+#rs .rs-header {
+  background: url(../img/rs-header-bg-img.png) center / cover no-repeat;
+  padding: 190px 0 160px;
+}
+#rs .rs-header h2 {
+  color: #ffffff;
+  font-size: 77px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+#rs .rs-header h2 span {
+  display: block;
+  font-size: 65px;
+}
+#rs .rs-header p {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 500;
+  max-width: 550px;
+}
+
+
+#rs .rs-logos {
+
+}
+#rs .rs-logos .rs-container {
+  background-color: #ffffff;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 50%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 100px 40px;
+  position: relative;
+  top: -60px;
+}
+#rs .rs-logos img:nth-child(1) {
+  height: 70px;
+}
+#rs .rs-logos img:nth-child(2) {
+  height: 80px;
+}
+
+
+#rs .rs-can {
+  padding-bottom: 50px;
+}
+#rs .rs-can .rs-container > h2 {
+  color: #BA2532;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+}
+#rs .rs-can .rs-container > p {
+  color: #474ba8;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0 auto 55px;
+  text-align: center;
+  max-width: 710px;
+}
+#rs .rs-can .rs-container > img {
+  margin-bottom: 50px;
+  width: 100%;
+}
+#rs .rs-can__row {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+#rs .rs-can__row.row-reverse {
+  flex-direction: row-reverse;
+}
+#rs .rs-can__row > img {
+  max-width: 600px;
+}
+#rs .rs-description {
+  padding: 30px 20px 0 20px;
+}
+#rs .rs-description h2 {
+  color: #474BA8;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+#rs .rs-description p {
+  color: #474ba8;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+#rs .rs-description ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#rs .rs-description ul li {
+  color: #474ba8;
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+#rs .rs-description ul li img {
+  margin-right: 10px;
+  height: 18px;
+  width: 18px;
+}
+#rs .rs-description a {
+  background-color: #ba2532;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 19px;
+  font-weight: 600;
+  margin-top: 10px;
+  padding: 13px 16px;
+  text-decoration: none;
+}
+
+
+#rs .rs-solution {
+  background-color: #e2fbf5;
+  padding: 80px 0 90px;
+}
+#rs .rs-solution .rs-container {
+  display: flex;
+  flex-direction: row;
+}
+#rs .rs-solution .rs-container > img {
+  margin: 0 75px;
+  max-width: 450px;
+}
+
+
+#rs .rs-form {
+  padding-top: 75px;
+}
+#rs .rs-form h2 {
+  color: #3e429c;
+  font-size: 35px;
+  font-weight: 700;
+  margin: 0 auto;
+  max-width: 725px;
+  text-align: center;
+}
+/*</style>*/
