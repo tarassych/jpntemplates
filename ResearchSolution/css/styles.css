@@ -59,27 +59,22 @@ html {
 }
 
 
-#rs .rs-logos {
-
-}
 #rs .rs-logos .rs-container {
   background-color: #ffffff;
   box-shadow: 1.1rem 1.1rem 2.4rem rgba(0, 0, 0, 17%);
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 5.0rem 10.0rem 4.0rem;
   position: relative;
   top: -6.0rem;
 }
 #rs .rs-logos img:nth-child(1) {
-  /*height: 7.0rem;*/
-  width: 42rem;
+  width: 31.4rem;
   max-width: 100%;
 }
 #rs .rs-logos img:nth-child(2) {
-  /*height: 8.0rem;*/
-  width: 38rem;
+  width: 28.5rem;
   max-width: 100%;
 }
 
@@ -101,12 +96,12 @@ html {
   font-size: 2.2rem;
   font-weight: 500;
   line-height: 3.0rem;
-  margin: 0 auto 5.5rem;
+  margin: 0 auto 2rem;
   text-align: center;
   max-width: 71.0rem;
 }
 #rs .rs-can .rs-container > img {
-  margin-bottom: 5.0rem;
+  margin-bottom: 14.5rem;
   width: 100%;
 }
 #rs .rs-can__row {
@@ -115,6 +110,9 @@ html {
   display: flex;
   flex-direction: row;
   margin-bottom: 5.0rem;
+}
+#rs .rs-can__row:first-of-type {
+  margin-top: 7.7rem;
 }
 #rs .rs-can__row.row-reverse {
   flex-direction: row-reverse;
@@ -192,8 +190,17 @@ html {
   color: #3e429c;
   font-size: 3.5rem;
   font-weight: 700;
-  margin: 0 auto;
+  margin: 0 auto 4rem;
   max-width: 72.5rem;
+  text-align: center;
+}
+#rs .rs-form p {
+  color: #3e429c;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+  margin: 0 auto;
+  max-width: 50rem;
   text-align: center;
 }
 
