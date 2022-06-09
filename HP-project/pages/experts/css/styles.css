@@ -97,6 +97,7 @@ html {
 
 #hpp .hpp-expert {
   margin-top: 8rem;
+  padding-bottom: 6.5rem;
 }
 #hpp .hpp-expert__grid {
   column-count: 3;
@@ -207,6 +208,10 @@ html {
   color: #181818;
   border-color: #181818;
 }
+#hpp .color-13 {
+  color: #D81C23;
+  border-color: #D81C23;
+}
 
 #hpp .hpp-expert__info {
   display: none;
@@ -216,16 +221,15 @@ html {
   display: block;
 }
 #hpp .hpp-expert__info p,
-#hpp .hpp-expert__info ul li{
+#hpp .hpp-expert__info ul li {
   color: rgba(0, 0, 0, .7);
   font-size: 1.4rem;
   line-height: 2rem;
-  margin-bottom: 2.4rem;
   text-align: left;
 }
 #hpp .hpp-expert__info ul {
   list-style-type: disc;
-  margin: 0;
+  margin: 0 0 2.4rem;
   padding-left: 2rem;
 }
 
@@ -234,6 +238,88 @@ html {
 }
 #hpp .hpp-expert__info.open+.hpp-expert__btn:before {
   content: "Show Less";
+}
+
+
+#hpp .hpp-senior {
+  background: url(https://www.edanz.com/sites/default/files/hpp_11/hpp-bg-img-1.png) top right / 117rem auto no-repeat, #ECFEFF;
+  padding: 4rem 0 1.5rem;
+}
+#hpp .hpp-senior__col {
+  margin-bottom: 8rem;
+}
+#hpp .hpp-senior__col h2 {
+  color: #ba2532;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 3.8rem;
+  margin-bottom: 4.5rem;
+}
+#hpp .hpp-senior__row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+#hpp .hpp-senior__row.row-reverse {
+  flex-direction: row-reverse;
+}
+#hpp .hpp-senior__row .hpp-senior__text {
+  padding-top: 1rem;
+}
+#hpp .hpp-senior__row.row-reverse .hpp-senior__text {
+  padding-top: 5rem;
+  padding-left: 5rem;
+}
+#hpp .hpp-senior__row img {
+  margin-right: 5rem;
+  width: 29rem;
+}
+#hpp .hpp-senior__row.row-reverse img {
+  margin-left: 3rem;
+  margin-right: 0;
+}
+#hpp .hpp-senior__row h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 3.4rem;
+  margin-bottom: 3rem;
+}
+#hpp .hpp-senior__row p {
+  color: #444444;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+}
+
+
+#hpp .hpp-about {
+  background: url(https://www.edanz.com/sites/default/files/hpp_11/hpp-bg-img-1.png) top right / 117rem auto no-repeat, #ECFEFF;
+  padding: 6rem 0 9rem;
+}
+#hpp .hpp-about .hpp-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+#hpp .hpp-about__text {
+  padding-right: 8rem;
+}
+#hpp .hpp-about__text h2 {
+  color: #ba2532;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 3.8rem;
+  margin-bottom: 2.5rem;
+}
+#hpp .hpp-about__text p {
+  color: #444444;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+}
+#hpp .hpp-about img {
+  margin-top: 4rem;
+  width: 89rem;
 }
 
 
@@ -267,6 +353,11 @@ html {
   #hpp .hpp-expert__grid {
     column-count: 2;
   }
+
+
+  #hpp .hpp-about img {
+    width: 50rem;
+  }
 }
 @media (max-width: 768px) {
   html {
@@ -278,6 +369,32 @@ html {
   }
   #hpp .hpp-expert__grid {
     column-count: 1;
+  }
+
+
+  #hpp .hpp-senior__row img {
+    margin-right: 3rem;
+    width: 20rem;
+  }
+  #hpp .hpp-senior__row.row-reverse .hpp-senior__text {
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+
+  #hpp .hpp-about {
+    padding: 0 0 5rem;
+  }
+  #hpp .hpp-about .hpp-container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  #hpp .hpp-about__text {
+    padding-right: 0;
+  }
+  #hpp .hpp-about img {
+    margin-top: 0;
+    margin-bottom: 2rem;
   }
 }
 @media (max-width: 480px) {
