@@ -97,7 +97,7 @@ html {
 
 #hpp .hpp-expert {
   margin-top: 8rem;
-  padding-bottom: 6.5rem;
+  padding-bottom: 5rem;
 }
 #hpp .hpp-expert__grid {
   column-count: 3;
@@ -241,6 +241,32 @@ html {
 }
 
 
+#hpp .hpp-description {
+  padding: 0 0 3.5rem;
+  text-align: center;
+}
+#hpp .hpp-description h3 {
+  color: #474ba8;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 6.4rem;
+  margin-bottom: 2.4rem;
+}
+#hpp .hpp-description p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+  margin: 0 auto 16rem;
+  max-width: 87rem;
+}
+#hpp .hpp-description h2 {
+  color: #ba2532;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 3.8rem;
+}
+
+
 #hpp .hpp-senior {
   background: url(https://www.edanz.com/sites/default/files/hpp_11/hpp-bg-img-1.png) top right / 117rem auto no-repeat, #ECFEFF;
   padding: 4rem 0 1.5rem;
@@ -250,7 +276,7 @@ html {
 }
 #hpp .hpp-senior__col h2 {
   color: #ba2532;
-  font-size: 3.5rem;
+  font-size: 2.4rem;
   font-weight: 700;
   line-height: 3.8rem;
   margin-bottom: 4.5rem;
