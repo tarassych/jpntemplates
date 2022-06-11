@@ -184,6 +184,7 @@ html {
 #hpp .hpp-edit .hpp-container {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
 }
 #hpp .hpp-edit__text {
 
@@ -383,6 +384,7 @@ html {
 #hpp .hpp-support__row {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
 }
 #hpp .hpp-support__row ul {
   list-style: none;
@@ -436,40 +438,85 @@ html {
 
 
 #hpp .hpp-faq {
-
+  padding: 8.6rem 0 9rem;
+  text-align: center;
 }
 #hpp .hpp-faq h2 {
   color: #474ba8;
   font-size: 3.2rem;
   font-weight: 700;
   line-height: 6rem;
+  margin: 4.8rem 0;
 }
 #hpp .hpp-faq__data {
-
+  margin: 0 auto;
+  max-width: 80rem;
 }
 #hpp .hpp-faq__block {
-
+  border: 1px solid #9CA3AF;
+  border-radius: 1rem;
+  margin-bottom: 1.6rem;
 }
 #hpp .hpp-faq__block-title {
-
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.2rem;
 }
 #hpp .hpp-faq__block-title h3 {
-
+  color: #111827;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.8rem;
 }
-#hpp .hpp-faq__block-title button {
-
+#hpp .hpp-faq__block-title.open h3 {
+  color: #474ba8;
+}
+#hpp .hpp-faq__block-title span {
+  background-color: transparent;
+  border: 0;
+  display: inline-block;
+  padding: 0;
+  position: relative;
+  height: 2.4rem;
+  width: 2.4rem;
+}
+#hpp .hpp-faq__block-title span::before {
+  content: '';
+  background: url(https://www.edanz.com/sites/default/files/hpp-eei-faq-icon-1.png) center / 100% 100% no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+#hpp .hpp-faq__block-title.open span::before {
+  background: url(https://www.edanz.com/sites/default/files/hpp-eei-faq-icon-2.png) center / 100% 100% no-repeat;
 }
 #hpp .hpp-faq__block-text {
-
+  display: none;
+  text-align: left;
+  padding: 0 3.2rem 3.2rem;
+}
+#hpp .hpp-faq__block-title.open+.hpp-faq__block-text {
+  display: block;
 }
 #hpp .hpp-faq__block-text p {
-
+  color: #4b5563;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
 }
 #hpp .hpp-faq__block-text ul {
-
+  padding-left: 3rem;
 }
 #hpp .hpp-faq__block-text ul li {
-
+  color: #4b5563;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
 }
 
 
@@ -502,7 +549,7 @@ html {
   align-items: center;
   margin: 0 2.5rem 3rem;
   padding: 1rem 1.5rem;
-  width: calc(50% - 8rem - 2px);
+  width: calc(50% - 5rem);
 }
 #hpp .hpp-what__block img {
   margin-right: 2.5rem;
@@ -513,7 +560,8 @@ html {
   color: #474ba8;
   font-size: 2rem;
   font-weight: 700;
-  line-height: 3.8rem;
+  line-height: 2.8rem;
+  text-align: left;
 }
 
 
@@ -532,15 +580,95 @@ html {
   html {
     font-size: 8px;
   }
+
+
+  #hpp .hpp-description {
+    padding-top: 0;
+  }
 }
 @media (max-width: 1024px) {
   html {
     font-size: 7px;
   }
+
+
+  #hpp .hpp-edit__img {
+    width: 30rem;
+  }
 }
 @media (max-width: 768px) {
   html {
     font-size: 6px;
+  }
+
+
+  #hpp .hpp-edit .hpp-container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  #hpp .hpp-edit__text {
+    width: 100%;
+  }
+  #hpp .hpp-edit__img {
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+
+
+  #hpp .hpp-workflow__row {
+    flex-wrap: wrap;
+  }
+  #hpp .hpp-workflow__block {
+    margin-bottom: 3rem;
+    width: 100%;
+  }
+  #hpp .hpp-workflow__block-icon span {
+    display: none;
+  }
+
+
+  #hpp .hpp-special__block {
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%;
+  }
+
+
+  #hpp .hpp-quality__block {
+    padding: 5rem 3rem;
+    max-width: 90%;
+  }
+
+
+  #hpp .hpp-support__row {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  #hpp .hpp-support__row ul {
+    margin-right: 0;
+    width: 100%;
+  }
+
+
+  #hpp .hpp-info {
+    padding: 5rem 0 0;
+  }
+  #hpp .hpp-info .hpp-container {
+    flex-direction: column;
+  }
+  #hpp .hpp-info__block {
+    margin-bottom: 5rem;
+  }
+
+
+  #hpp .hpp-faq__block-title span {
+    height: 3rem;
+    width: 3rem;
+  }
+
+
+  #hpp .hpp-what__block {
+    width: 100%;
   }
 }
 @media (max-width: 480px) {

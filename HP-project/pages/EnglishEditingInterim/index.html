@@ -5,7 +5,7 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Manuscript development</title>
+  <title>English editing interim</title>
 
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -399,7 +399,7 @@
               Who edits my manuscript?
             </h3>
 
-            <button>+</button>
+            <span></span>
           </div>
 
           <div class="hpp-faq__block-text">
@@ -424,7 +424,7 @@
               How will my references be edited?
             </h3>
 
-            <button>+</button>
+            <span></span>
           </div>
 
           <div class="hpp-faq__block-text">
@@ -434,13 +434,13 @@
 
             <ul>
               <li>Correct spelling and punctuation as per target journal instructions</li>
-
+              <br>
               <li>Adjust typography (e.g., bold, italics) as per target journal instructions</li>
-
+              <br>
               <li>Correct spacing, replace Asian characters, correct journal title style guide</li>
-
+              <br>
               <li>Reduce the number of listed author names in references as per journal requirements</li>
-
+              <br>
               <li>Correct the in-text citation style as per target journal instructions</li>
             </ul>
           </div>
@@ -452,7 +452,7 @@
               How will my tables and figures be edited?
             </h3>
 
-            <button>+</button>
+            <span></span>
           </div>
 
           <div class="hpp-faq__block-text">
@@ -464,7 +464,7 @@
               <li>
                 Check and correct the spelling/language of the text within the tables/figures and legends
               </li>
-
+              <br>
               <li>
                 Check that the style and formatting conform with the target journal's instructions for authors, or are
                 consistent if there is no target journal
@@ -479,17 +479,17 @@
               How much will it cost? Do you offer discounts?
             </h3>
 
-            <button>+</button>
+            <span></span>
           </div>
 
           <div class="hpp-faq__block-text">
             <ul>
               <li>You can enter your wordcount into the price calculator to find out the price of editing.</li>
-
+              <br>
               <li>You can get a 10% discount on your first order. Create an account to receive your coupon.</li>
-
+              <br>
               <li>Join our premium membership program for more discounts.</li>
-
+              <br>
               <li>
                 We also offer a 20% discount coupon each time you introduce a friend or colleague through our Referral
                 Rewards program. Anyone you refer will also receive a 20% discount coupon they can use with their first
@@ -505,7 +505,7 @@
               Will you check that my manuscript meets the journal’s guidelines?
             </h3>
 
-            <button>+</button>
+            <span></span>
           </div>
 
           <div class="hpp-faq__block-text">
@@ -569,5 +569,21 @@
     </div>
   </div>
 </div>
+
+<script>
+  const title = document.querySelectorAll('.hpp-faq__block-title');
+
+  title.forEach(el => {
+      el.addEventListener('click', (t) => {
+          if (!t.currentTarget.classList.contains('open')) {
+            title.forEach(title => {
+                title.classList.remove('open')
+            })
+          }
+
+          t.currentTarget.classList.toggle('open');
+    });
+  })
+</script>
 </body>
 </html>
