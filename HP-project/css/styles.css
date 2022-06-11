@@ -223,7 +223,7 @@ html {
 
 
 #hpp .hpp-can {
-  padding: 14rem 0 2rem;
+  padding: 10.6rem 0 2rem;
 }
 #hpp .hpp-can .hpp-container > h2 {
   color: #BA2532;
@@ -277,15 +277,28 @@ html {
   font-weight: 600;
   line-height: 3.2rem;
 }
-#hpp .hpp-description ul li img {
+#hpp .hpp-description ul li.text-underline {
+  text-decoration: underline;
+}
+#hpp .hpp-description ul li > img {
   margin-right: 1.0rem;
   height: 1.8rem;
   width: 1.8rem;
 }
-#hpp .hpp-description a {
+#hpp .hpp-description ul li > a {
   background-color: #ba2532;
-  -webkit-border-radius: 5.0rem;
-  -moz-border-radius: 5.0rem;
+  border-radius: 5.0rem;
+  display: inline-block;
+  font-size: 0;
+  margin-left: 1rem;
+  padding: .6rem 2rem;
+}
+#hpp .hpp-description ul li > a > img {
+  height: 1.2rem;
+  width: 1.5rem;
+}
+#hpp .hpp-description > a {
+  background-color: #ba2532;
   border-radius: 5.0rem;
   color: #ffffff;
   display: inline-block;
@@ -300,7 +313,6 @@ html {
 
 #hpp .hpp-statistic {
   background-color: #474ba8;
-  margin-bottom: 10rem;
   padding: 8rem 0;
 }
 #hpp .hpp-statistic .hpp-container {
