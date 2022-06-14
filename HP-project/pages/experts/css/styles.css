@@ -97,7 +97,7 @@ html {
 
 #hpp .hpp-expert {
   margin-top: 8rem;
-  padding-bottom: 5rem;
+  padding-bottom: 7.3rem;
 }
 #hpp .hpp-expert__grid {
   column-count: 3;
@@ -242,21 +242,20 @@ html {
 
 
 #hpp .hpp-description {
-  padding: 0 0 3.5rem;
   text-align: center;
 }
 #hpp .hpp-description h3 {
-  color: #474ba8;
-  font-size: 2.4rem;
+  color: #BA2532;
+  font-size: 3.5rem;
   font-weight: 700;
-  line-height: 6.4rem;
-  margin-bottom: 2.4rem;
+  line-height: 5.8rem;
+  margin-bottom: 3.3rem;
 }
 #hpp .hpp-description p {
-  font-size: 1.4rem;
+  font-size: 2rem;
   font-weight: 400;
-  line-height: 2rem;
-  margin: 0 auto 16rem;
+  line-height: 2.6rem;
+  margin: 0 auto 8.5rem;
   max-width: 87rem;
 }
 #hpp .hpp-description h2 {
@@ -264,6 +263,45 @@ html {
   font-size: 3.5rem;
   font-weight: 700;
   line-height: 3.8rem;
+  margin-bottom: 6rem;
+}
+
+
+#hpp .hpp-links {
+  padding-bottom: 20.7rem;
+}
+#hpp .hpp-links .hpp-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+#hpp .hpp-links ul {
+  margin: 0 .5rem 0 0;
+  padding: 0;
+}
+#hpp .hpp-links ul li {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+#hpp .hpp-links ul li a {
+  color: #474BA8;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 5.8rem;
+  text-decoration: none;
+}
+#hpp .hpp-links ul li a img {
+  margin-right: 2rem;
+  height: 6rem;
+  width: 6rem;
+}
+#hpp .hpp-links .hpp-container > img {
+  width: 47rem;
+  max-width: 100%;
 }
 
 
@@ -288,6 +326,7 @@ html {
 }
 #hpp .hpp-senior__row.row-reverse {
   flex-direction: row-reverse;
+  padding-bottom: 8rem;
 }
 #hpp .hpp-senior__row .hpp-senior__text {
   padding-top: 1rem;
@@ -395,6 +434,18 @@ html {
   }
   #hpp .hpp-expert__grid {
     column-count: 1;
+  }
+
+
+  #hpp .hpp-links .hpp-container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  #hpp .hpp-links ul {
+    width: 100%;
+  }
+  #hpp .hpp-links .hpp-container > img {
+    margin-bottom: 2rem;
   }
 
 
