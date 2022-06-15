@@ -273,6 +273,9 @@ html {
 }
 #hpp .hpp-description ul li {
   color: #474ba8;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   font-size: 1.9rem;
   font-weight: 600;
   line-height: 3.2rem;
