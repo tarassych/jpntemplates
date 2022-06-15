@@ -37,6 +37,10 @@ html {
   background: url(https://www.edanz.com/sites/default/files/ml/ml-header-img-1.png) center / cover no-repeat;
   padding: 13rem 0 14.5rem;
 }
+#ml .ml-header.ml-header__bg-2 {
+  background: url(https://www.edanz.com/sites/default/files/ml-header-img-2.png) center / cover no-repeat;
+  padding: 13rem 0 20rem;
+}
 #ml .ml-header h2 {
   color: #ffffff;
   font-size: 6.2rem;
@@ -53,10 +57,23 @@ html {
   font-size: 2.2rem;
   font-weight: 400;
 }
+#ml .ml-header.ml-header__bg-2 p {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.6rem;
+  margin-top: 5rem;
+}
+#ml .ml-header.ml-header__bg-2 p span {
+  font-size: 2.2rem;
+  font-weight: 400;
+}
 
 
 #ml .ml-info {
   background: url(https://www.edanz.com/sites/default/files/ml/ml-info-bg-img-1.png) center / 100% auto no-repeat;
+}
+#ml .ml-info.ml-info__bg-2 {
+  background: url(https://www.edanz.com/sites/default/files/ml-info-bg-img-2.png) center / 100% auto no-repeat;
 }
 #ml .ml-info .ml-container {
   padding: 6rem 0 5rem;
