@@ -1,0 +1,249 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;900&display=swap');
+
+html {
+  font-size: 10px;
+}
+
+#jc.jc h1,
+#jc.jc h2,
+#jc.jc h3,
+#jc.jc h4,
+#jc.jc h5,
+#jc.jc h6,
+#jc.jc li,
+#jc.jc p,
+#jc.jc a {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500 !important;
+  line-height: 1.2;
+  margin: 0;
+}
+
+#jc .jc-container {
+  margin: 0 auto;
+  width: 1400px;
+  max-width: 100%;
+}
+
+
+#jc .jc-header {
+  background-color: rgba(2, 55, 98, 42%);
+}
+#jc .jc-header .jc-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 6.5rem 0;
+}
+#jc .jc-header img {
+  height: 15rem;
+}
+#jc .jc-header h2 {
+  color: #023762;
+  font-size: 3.4rem;
+  font-weight: 600;
+  line-height: 4.6rem;
+  margin: 0 5rem;
+  text-align: center;
+}
+#jc .jc-header h2 span {
+  display: block;
+  font-size: 1.7rem;
+}
+
+
+#jc .jc-blocks {
+
+}
+#jc .jc-blocks .jc-container {
+  padding: 11rem 0 0;
+}
+#jc .jc-blocks__row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 13rem;
+}
+#jc .jc-blocks__row.row-reverse {
+  flex-direction: row-reverse;
+}
+#jc .jc-blocks__row > img {
+  margin-right: 8rem;
+  width: 60rem;
+}
+#jc .jc-blocks__row.row-reverse > img {
+  margin-left: 8rem;
+  margin-right: 0;
+}
+#jc .jc-blocks__data {
+  padding: 1rem;
+}
+#jc .jc-blocks__data h2 {
+  color: #023762;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 3rem;
+  margin-bottom: 2rem;
+  padding-left: 6rem;
+}
+#jc .jc-blocks__data p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.6rem;
+  margin-bottom: 3rem;
+}
+#jc .jc-blocks__data ul {
+  list-style: none;
+  margin: 0 0 3rem;
+  padding: 0;
+}
+#jc .jc-blocks__data ul li {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+}
+#jc .jc-blocks__data ul li img {
+  margin-right: 1rem;
+  height: 3.2rem;
+  width: 3.2rem;
+}
+#jc .jc-blocks__data a {
+  background-color: #ba2532;
+  border-radius: .4rem;
+  color: #ffffff;
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 3rem;
+  padding: 1.2rem 2.4rem;
+  text-decoration: none;
+}
+
+
+#jc .jc-promo {
+
+}
+#jc .jc-promo .jc-container {
+  background-color: #023762;
+  padding: 5rem 0 8rem;
+  text-align: center;
+}
+#jc .jc-promo h2 {
+  color: #ffffff;
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: 4.4rem;
+  margin-bottom: 3.5rem;
+}
+#jc .jc-promo__block {
+  background-color: #ffffff;
+  border: 1px solid #707070;
+  border-radius: 2rem;
+  margin: 0 auto 3rem;
+  padding: 3rem 6rem;
+  text-align: center;
+  max-width: 78rem;
+}
+#jc .jc-promo__block h5 {
+  color: #023762;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 3rem;
+}
+#jc .jc-promo__block h3 {
+  color: #023762;
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 4rem;
+}
+#jc .jc-promo__block hr {
+  border-top: 1px solid #707070;
+  margin: 1.5rem 0 2rem;
+  height: 0;
+}
+#jc .jc-promo__block > p {
+  color: #023762;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+}
+#jc .jc-promo__block > p span {
+  font-size: 2rem;
+  font-weight: 900;
+}
+#jc .jc-promo .jc-container > p {
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+}
+
+
+@media (max-width: 1439px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media (max-width: 1280px) {
+  html {
+    font-size: 8px;
+  }
+
+
+  #jc .jc-blocks__row > img {
+    margin-right: 2rem;
+  }
+  #jc .jc-blocks__row.row-reverse > img {
+    margin-left: 2rem;
+  }
+}
+@media (max-width: 1024px) {
+  html {
+    font-size: 7px;
+  }
+
+
+  #jc .jc-blocks__row > img {
+    width: 50rem;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 7px;
+  }
+
+
+  #jc .jc-header .jc-container {
+    flex-direction: column;
+    padding: 2rem 0;
+  }
+  #jc .jc-header h2 {
+    margin: 2rem;
+  }
+
+
+  #jc .jc-blocks__row,
+  #jc .jc-blocks__row.row-reverse {
+    flex-direction: column;
+    align-items: center;
+  }
+  #jc .jc-blocks__data {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 6px;
+  }
+}
+@media (max-width: 425px) {
+  html {
+    font-size: 6px;
+  }
+}
+@media (max-width: 375px) {
+  html {
+    font-size: 6px;
+  }
+}
+</style>
