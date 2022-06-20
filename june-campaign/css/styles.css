@@ -1,4 +1,4 @@
-<style>
+/*<style>*/
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;900&display=swap');
 
 html {
@@ -51,6 +51,11 @@ html {
 #jc .jc-header h2 span {
   display: block;
   font-size: 1.7rem;
+}
+#jc .jc-header h2 strong {
+  color: #ba2532;
+  display: block;
+  font-size: 1rem;
 }
 
 
