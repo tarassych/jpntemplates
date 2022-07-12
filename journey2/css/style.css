@@ -1,5 +1,6 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
 
 #journey.journey * {
   box-sizing: border-box;
@@ -91,7 +92,7 @@
   width: 190px;
 }
 #journey .journey-header h2 {
-  font-size: 55px;
+  font-size: 44px;
   font-weight: 700;
   line-height: 60px;
   margin-bottom: 20px;
@@ -99,6 +100,9 @@
 }
 #journey .journey-header h2 span {
   font-size: 45px;
+}
+#journey .journey-header h2 strong {
+  font-family: 'Caveat', cursive;
 }
 #journey .journey-header__blocks {
   display: flex;
@@ -132,6 +136,9 @@
   font-weight: 600;
   line-height: 30px;
 }
+#journey .journey-header__block--bg h5 span {
+  font-weight: 500;
+}
 #journey .journey-header__block--bg h5 span:last-child {
   display: block;
   font-size: 20px;
@@ -158,6 +165,7 @@
 }
 #journey .journey-header__block--bg h6 strong {
   font-size: 40px;
+  font-weight: 500;
   line-height: 40px;
   letter-spacing: -5px;
 }
@@ -275,6 +283,7 @@
   font-size: 8px;
   font-weight: 400;
   line-height: 14px;
+  margin-bottom: 0;
   padding: 0 15px 15px;
   text-align: left;
 }
