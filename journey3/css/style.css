@@ -1,0 +1,1185 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;900&display=swap');
+
+#journey.journey * {
+  box-sizing: border-box;
+}
+
+#journey.journey h1,
+#journey.journey h2,
+#journey.journey h3,
+#journey.journey h4,
+#journey.journey h5,
+#journey.journey h6,
+#journey.journey li,
+#journey.journey p,
+#journey.journey a {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+}
+
+#journey #off1,
+#journey #off2 {
+  position: relative;
+  top: -310px;
+  visibility: hidden;
+}
+
+#journey .journey-container--bg {
+  background-color: #f8f8f8;
+}
+#journey .journey-container {
+  background-color: #ffffff;
+  border-top: 5px solid #023762;
+  margin: 0 auto;
+  padding: 35px 50px 70px;
+  width: 850px;
+  max-width: 100%;
+}
+
+#journey .journey-container hr {
+  border: none;
+  border-top: 1px dashed #999999;
+  height: 0;
+  width: 100%;
+}
+
+
+#journey .journey-promo {
+  background-color: #ffff99;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 35px;
+  padding: 10px 0;
+  text-align: center;
+}
+#journey .journey-promo img {
+  margin-right: 10px;
+  width: 20px;
+}
+#journey .journey-promo a {
+  color: #000000;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 21px;
+  text-decoration: underline;
+}
+
+
+#journey .journey-header--container {
+  background: url(https://www.edanz.com/sites/default/files/journey/img/journey-header-bg.png) center / cover no-repeat;
+  margin: 0 auto 40px;
+  padding: 30px 0 15px;
+  width: 1120px;
+  max-width: 100%;
+}
+#journey .journey-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#journey .journey-header h3 {
+  display: flex;
+  flex-direction: row;
+  font-size: 22px;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+#journey .journey-header h3 span {
+  padding-top: 5px;
+}
+#journey .journey-header h3 img {
+  margin-right: 10px;
+  width: 190px;
+}
+#journey .journey-header h2 {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+#journey .journey-header h2 span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#journey .journey-header h2 span span {
+  font-size: 34px;
+}
+#journey .journey-header h2 small {
+  color: #000000;
+  font-size: 20px;
+}
+#journey .journey-header__blocks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  width: 660px;
+}
+#journey .journey-header__block {
+  border: 1px solid #000;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  text-align: center;
+  width: 200px;
+}
+#journey .journey-header__block--bg {
+  background: url(https://www.edanz.com/sites/default/files/journey/img/journey-header-blocks-bg.png) center / cover no-repeat;
+}
+#journey .journey-header__block--bg h4 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+#journey .journey-header__block--bg h5 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 30px;
+}
+#journey .journey-header__block--bg h5 span {
+  font-weight: 500;
+}
+#journey .journey-header__block--bg h5 span:last-child {
+  display: block;
+  font-size: 20px;
+  text-align: center;
+}
+#journey .journey-header__block--bg h5 span:last-child span {
+  font-size: 8px;
+  font-weight: 600;
+  line-height: 8px;
+}
+#journey .journey-header__block--bg h5 small {
+  color: #000000;
+  font-size: 30px;
+}
+#journey .journey-header__block--bg h6 {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+}
+#journey .journey-header__block--bg h6 span {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 15px;
+}
+#journey .journey-header__block--bg h6 strong {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: -5px;
+}
+#journey a.journey-header__block--btn {
+  background-color: #ba2531;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border: 1px solid #ba2531;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+#journey .journey-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 15px;
+}
+#journey .journey-top > img {
+  margin-bottom: 10px;
+  height: 80px;
+  width: 80px;
+}
+#journey .journey-top h2 {
+  color: #ba2531;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 25px;
+  margin-bottom: 25px;
+}
+#journey .journey-top h3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 25px;
+  margin-bottom: 5px;
+}
+#journey .journey-top h3 > img {
+  margin-right: 10px;
+  height: 45px;
+  width: 48px;
+}
+#journey .journey-top h3 sup {
+  font-size: 12px;
+}
+#journey .journey-top h3 span {
+  color: #ba2531;
+  font-size: 30px;
+}
+#journey .journey-top p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+}
+#journey .journey-top p a {
+  color: #023762;
+  display: inline-block;
+  text-decoration: underline;
+}
+
+#journey .journey-top__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+#journey .journey-top__block {
+  border: 1px solid #023762;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 280px;
+}
+#journey .journey-top__block h4 {
+  background-color: #023762;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  padding: 6px 0;
+  text-align: center;
+}
+#journey .journey-top__block ul {
+  list-style: none;
+  margin: 0;
+  padding: 25px 15px 15px;
+}
+#journey .journey-top__block ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 22px;
+}
+#journey .journey-top__block ul li img {
+  margin-top: 6px;
+  margin-right: 10px;
+  width: 5px;
+}
+#journey .journey-top__block p {
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 14px;
+  margin-bottom: 0;
+  padding: 0 15px 15px;
+  text-align: left;
+}
+#journey .journey-top__plus {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#journey .journey-top__plus h4 {
+  color: #ba2531;
+  font-size: 95px;
+  font-weight: 700;
+}
+
+#journey .journey-blockBg {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 15px 0 25px;
+  width: 100%;
+}
+#journey .journey-blockBg h3 {
+  margin-bottom: 15px;
+}
+#journey .journey-blockBg p {
+  margin-bottom: 25px;
+}
+#journey .journey-blockBg p > a {
+  color: #ba2531;
+  text-decoration: underline;
+}
+#journey .journey-blockBg img {
+  width: 445px;
+  max-width: 100%;
+}
+
+#journey .journey-personal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#journey .journey-personal__block {
+  margin: 0 16px;
+  text-align: center;
+  width: 120px;
+}
+#journey .journey-personal__block img {
+  width: 110px;
+}
+#journey .journey-personal__block h6 {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12px;
+  margin-bottom: 7px;
+}
+#journey .journey-personal__block h5 {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  text-align: left;
+}
+
+
+#journey .journey-table {
+  padding: 40px 0 0;
+}
+#journey .journey-table > h2 {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#journey .journey-table > p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+#journey .journey-table > p a {
+  color: #ba2531;
+  text-decoration: underline;
+}
+#journey .journey-table__table {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+#journey .journey-table__row {
+  border: 1px solid #023762;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#journey .journey-table__row:not(:first-child) {
+  border-top: none;
+}
+#journey .journey-table__row--blue {
+  background-color: #023762;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
+  color: #ffffff;
+}
+#journey .journey-table__col {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 60px;
+  min-height: 60px;
+  width: calc(100% / 4);
+}
+#journey .journey-table__row:nth-child(5) .journey-table__col:first-child {
+  padding-left: 15px;
+}
+#journey .journey-table__col h4 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+}
+#journey .journey-table__col h4 span {
+  font-size: 12px;
+  font-weight: 400;
+}
+#journey .journey-table__col span {
+  display: block;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 15px;
+}
+#journey .journey-table__col span span {
+  display: block;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 15px;
+}
+#journey .journey-table__col sup {
+  display: block;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 15px;
+}
+#journey .journey-table__col strong {
+  font-size: 30px;
+  font-weight: 600;
+}
+#journey .journey-table__row--blue .journey-table__col:not(:last-child) {
+  border-right: 1px solid #ffffff;
+}
+#journey .journey-table__col:not(:last-child) {
+  border-right: 1px solid #023762;
+}
+#journey .journey-table__col img {
+  margin-right: 10px;
+  height: 30px;
+  width: 30px;
+}
+#journey .journey-table__col-double {
+  width: calc((100% / 4) * 3);
+}
+#journey .journey-table > h3 {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 25px;
+  padding-left: 75px;
+}
+#journey .journey-table__col h5 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+#journey .journey-price {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 15px 0 25px;
+}
+#journey .journey-price h2 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#journey .journey-price h2 span {
+  font-size: 12px;
+}
+#journey .journey-price__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#journey .journey-price__block {
+  margin: 0 20px;
+  text-align: center;
+  width: 125px;
+}
+#journey .journey-price__block h3 {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 6px;
+}
+#journey .journey-price__block img {
+  border: 1px solid #707070;
+  margin-bottom: 10px;
+  width: 100%;
+}
+#journey .journey-price__block h4 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+#journey .journey-price__block h4 span {
+  font-size: 12px;
+}
+#journey .journey-price__block h5 {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 24px;
+}
+#journey .journey-price__block h5 strong {
+  font-size: 20px;
+  font-weight: 600;
+}
+#journey .journey-price__block h6 {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+#journey .journey-addblock {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  max-width: 100%;
+}
+#journey .journey-addblock img {
+  width: 100%;
+}
+
+#journey .journey-blocks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px 0 0;
+}
+#journey .journey-blocks h2 {
+  color: #ba2531;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+#journey .journey-blocks h2 span {
+  color: #000000;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12px;
+  margin-left: 35px;
+}
+#journey .journey-blocks h2 span a {
+  color: #ba2531;
+  display: inline-block;
+  text-decoration: underline;
+}
+#journey .journey-blocks h3 {
+  font-size: 15px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+#journey .journey-blocks__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+#journey .journey-blocks__block {
+  border: 1px solid #CCCCCC;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  position: relative;
+  min-height: 180px;
+  width: calc((100% - 90px) / 4);
+}
+#journey .journey-blocks__block:not(:last-child):before {
+  content: "";
+  background: url(https://www.edanz.com/sites/default/files/journey/img/journey-arrow-right.png) center / 100% 100% no-repeat;
+  position: absolute;
+  top: 50%;
+  right: -25px;
+  transform: translateY(-50%);
+  height: 30px;
+  width: 16px;
+}
+#journey .journey-blocks__block h4 {
+  background-color: #1a375d;
+  -webkit-border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0 0;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+#journey .journey-blocks__block p {
+  font-size: 10px;
+  line-height: 18px;
+  padding: 15px 5px 0;
+}
+#journey .journey-blocks__block h6 {
+  color: #ba2531;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 15px;
+  padding: 0 5px;
+}
+#journey .journey-blocks__block p span {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#journey .journey-warning {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 45px;
+}
+#journey .journey-warning img {
+  margin-right: 8px;
+  width: 50px;
+}
+#journey .journey-warning p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 0;
+  text-align: left;
+}
+#journey .journey-warning p a {
+  color: #000000;
+  display: inline-block;
+  text-decoration: underline;
+}
+
+#journey .journey-off {
+  padding: 25px 0 35px;
+  text-align: center;
+}
+#journey .journey-off img {
+  width: 70px;
+}
+#journey .journey-off h2 {
+  color: #ba2531;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 35px;
+}
+#journey .journey-off h3 {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 26px;
+}
+#journey .journey-off__text-bg {
+  background: url(https://www.edanz.com/sites/default/files/journey3-text-bg-1.png) center / auto 100% no-repeat;
+}
+#journey .journey-off__row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+#journey .journey-off__row h4 {
+  color: #ab3437;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 26px;
+}
+#journey .journey-off__row h5 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  text-align: left;
+}
+#journey .journey-off p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 21px;
+  margin-bottom: 25px;
+}
+#journey .journey-off a {
+  background-color: #ba2531;
+  border-radius: 10px;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 25px;
+  padding: 10px 70px;
+  text-decoration: none;
+}
+#journey .journey-off a span {
+  font-size: 16px;
+}
+#journey .journey-off__input input {
+  border: 1px solid #000000;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 15px;
+  margin-right: 10px;
+  padding: 2px 5px;
+  max-width: 150px;
+}
+#journey .journey-off__input button {
+  background-color: #ba2531;
+  border: 0;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  padding: 3px 15px;
+  text-decoration: none;
+}
+
+
+
+#journey .journey-list {
+  padding: 30px 0 40px;
+}
+#journey .journey-list--w2 {
+  margin: 0 auto;
+  width: 600px;
+  max-width: 100%;
+}
+#journey .journey-list h2 {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 25px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+#journey .journey-list__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+#journey .journey-list__row--3 ul {
+  width: 190px;
+}
+#journey .journey-list__row ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 50%;
+}
+#journey .journey-list__row ul li {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  padding-left: 25px;
+  position: relative;
+}
+#journey .journey-list__row ul li a {
+  color: #000000;
+  text-decoration: underline;
+}
+#journey .journey-list__row ul li span {
+  font-size: 12px;
+}
+#journey .journey-list__row ul li:before {
+  content: "";
+  background: url(https://www.edanz.com/sites/default/files/journey/img/journey-check-icon.png) center / 100% 100% no-repeat;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 18px;
+  width: 19px;
+}
+#journey .journey-list p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+}
+
+
+#journey .journey-biglist {
+  margin: 0 auto;
+  padding: 40px 0 0;
+  width: 550px;
+  max-width: 100%;
+}
+#journey .journey-biglist h2 {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: center;
+}
+#journey .journey-biglist__list {
+  list-style: none;
+  padding: 0;
+}
+#journey .journey-biglist__list li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#journey .journey-biglist__list li h4 {
+  background-color: #023762;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 25px;
+  font-weight: 700;
+  margin-right: 20px;
+  height: 50px;
+  width: 50px;
+}
+#journey .journey-biglist__list li p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+}
+#journey .journey-biglist__list li p span {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+#journey .journey-biglist > p {
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+
+#journey .journey-file {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0 45px;
+}
+#journey .journey-file h2 {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 25px;
+  margin-bottom: 25px;
+}
+#journey .journey-file h3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 15px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+#journey .journey-file h3 img {
+  margin-right: 10px;
+  height: 60px;
+  width: 60px;
+}
+#journey .journey-file p {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+}
+#journey .journey-file p {
+  font-size: 12px;
+}
+
+
+#journey .journey-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0 45px;
+}
+#journey .journey-info h3 {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 25px;
+  margin-bottom: 25px;
+}
+#journey .journey-info__blocks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 280px;
+  max-width: 100%;
+}
+#journey .journey-info__block {
+  text-decoration: none;
+  width: 80px;
+}
+#journey .journey-info--icon {
+  background-color: #ba2531;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  height: 80px;
+  width: 80px;
+}
+#journey .journey-info--icon img {
+  width: 35px;
+}
+#journey .journey-info__block h4 {
+  color: #000000;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+}
+
+
+#journey .journey-footer {
+  padding-top: 40px;
+  text-align: center;
+}
+#journey .journey-footer h2 {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+#journey .journey-footer h3 {
+  font-size: 15px;
+  line-height: 30px;
+  text-decoration: none;
+}
+#journey .journey-footer a {
+  color: #000000;
+  text-decoration: underline;
+}
+
+
+
+
+@media (max-width: 1024px) {
+  #journey .journey-container {
+    padding: 15px 10px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  #journey .journey-header h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  #journey .journey-header h2 span {
+    flex-wrap: wrap;
+  }
+  #journey .journey-header__blocks {
+    flex-direction: column;
+    align-items: center;
+  }
+  #journey .journey-header__block {
+    margin-bottom: 10px;
+  }
+  #journey .journey-header__blocks p {
+    text-align: center;
+  }
+  #journey .journey-header h3 {
+    flex-direction: column;
+    align-items: center;
+  }
+  #journey .journey-header h3 img {
+    margin-right: 0;
+  }
+
+
+  #journey .journey-top h3 {
+    font-size: 20px;
+  }
+
+  #journey .journey-top__row {
+    flex-direction: column;
+  }
+  #journey .journey-top__plus {
+    justify-content: center;
+  }
+
+  #journey .journey-personal {
+    flex-wrap: wrap;
+  }
+  #journey .journey-personal__block {
+    margin: 0 10px 10px;
+    width: 150px;
+  }
+  #journey .journey-personal__block h6 {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  #journey .journey-personal__block h5 {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  #journey .journey-price__row {
+    flex-wrap: wrap;
+  }
+  #journey .journey-price__block {
+    margin: 0 10px 20px;
+    width: 200px;
+  }
+
+  #journey .journey-warning {
+    flex-direction: column;
+  }
+
+
+  #journey .journey-list__row {
+    flex-direction: column;
+  }
+  #journey .journey-list__row ul {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+
+  #journey .journey-table__col {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  #journey .journey-table__col h4 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  #journey .journey-table__col h4 span {
+    font-size: 10px;
+  }
+  #journey .journey-table > h3 {
+    padding: 0;
+  }
+
+
+  #journey .journey-file a {
+    font-size: 22px;
+  }
+
+
+  #journey .journey-info h2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  #journey .journey-header h2 span {
+    font-size: 35px;
+    line-height: 45px;
+    text-align: center;
+  }
+  #journey .journey-header h3 {
+    font-size: 15px;
+  }
+  #journey .journey-header h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+
+  #journey .journey-top h2 {
+    font-size: 20px;
+  }
+  #journey .journey-top h3 {
+    font-size: 15px;
+  }
+  #journey .journey-top h3 span {
+    font-size: 20px;
+  }
+  #journey .journey-top p {
+    font-size: 12px;
+  }
+
+
+  #journey .journey-blocks h2 {
+    flex-direction: column;
+  }
+  #journey .journey-blocks h2 span {
+    margin-left: 0;
+    margin-top: 10px;
+    text-align: center;
+  }
+  #journey .journey-blocks__row {
+    flex-direction: column;
+  }
+  #journey .journey-blocks__block {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  #journey .journey-blocks__block:not(:last-child):before {
+    display: none;
+  }
+  #journey .journey-blocks__block p span {
+    font-size: 12px;
+  }
+
+
+  #journey .journey-list h2 {
+    font-size: 20px;
+  }
+
+
+  #journey .journey-biglist__list li p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  #journey .journey-biglist__list li p span {
+    font-size: 15px;
+  }
+
+
+  #journey .journey-table__col {
+    font-size: 10px;
+    line-height: 15px;
+  }
+  #journey .journey-table__col img {
+    display: none;
+  }
+  #journey .journey-table__col h4 {
+    font-size: 10px;
+    line-height: 15px;
+  }
+  #journey .journey-table__col h4 span {
+    font-size: 8px;
+  }
+  #journey .journey-table__col h5 {
+    font-size: 12px;
+  }
+  #journey .journey-table__col strong {
+    font-size: 20px;
+  }
+
+
+  #journey .journey-off__row {
+    flex-direction: column;
+  }
+  #journey .journey-off__row h5 {
+    text-align: center;
+  }
+
+  #journey .journey-off a,
+  #journey .journey-file a {
+    font-size: 20px;
+    padding: 18px 0;
+    text-align: center;
+    width: 100%;
+  }
+  #journey .journey-off__input input {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+</style>
