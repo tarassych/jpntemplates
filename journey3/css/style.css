@@ -64,7 +64,7 @@
 #journey .journey-promo a {
   color: #000000;
   display: inline-block;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 21px;
   text-decoration: underline;
@@ -93,10 +93,6 @@
 #journey .journey-header h3 span {
   padding-top: 5px;
 }
-#journey .journey-header h3 img {
-  margin-right: 10px;
-  width: 190px;
-}
 #journey .journey-header h2 {
   font-size: 44px;
   font-weight: 700;
@@ -114,7 +110,11 @@
 }
 #journey .journey-header h2 small {
   color: #000000;
-  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 40px;
+  width: 20px;
 }
 #journey .journey-header__blocks {
   display: flex;
@@ -254,7 +254,7 @@
   margin-bottom: 40px;
 }
 #journey .journey-top__block {
-  border: 1px solid #023762;
+  /*border: 1px solid #023762;*/
   border-radius: 10px;
   overflow: hidden;
   width: 280px;
@@ -269,6 +269,8 @@
   text-align: center;
 }
 #journey .journey-top__block ul {
+  border-left: 1px solid #023762;
+  border-right: 1px solid #023762;
   list-style: none;
   margin: 0;
   padding: 25px 15px 15px;
@@ -277,9 +279,12 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
-  line-height: 22px;
+  line-height: 16px;
+}
+#journey .journey-top__block ul li span sup {
+  font-size: 7px;
 }
 #journey .journey-top__block ul li img {
   margin-top: 6px;
@@ -287,6 +292,9 @@
   width: 5px;
 }
 #journey .journey-top__block p {
+  border-left: 1px solid #023762;
+  border-right: 1px solid #023762;
+  border-bottom: 1px solid #023762;
   font-size: 8px;
   font-weight: 400;
   line-height: 14px;
@@ -315,11 +323,11 @@
   padding: 15px 0 25px;
   width: 100%;
 }
+#journey .journey-blockBg > p {
+  margin-bottom: 25px;
+}
 #journey .journey-blockBg h3 {
   margin-bottom: 15px;
-}
-#journey .journey-blockBg p {
-  margin-bottom: 25px;
 }
 #journey .journey-blockBg p > a {
   color: #ba2531;
@@ -709,14 +717,18 @@
   border-radius: 10px;
   color: #ffffff;
   display: inline-block;
-  font-size: 25px;
-  font-weight: 700;
-  line-height: 25px;
-  padding: 10px 70px;
+  padding: 10px 70px 11px;
   text-decoration: none;
 }
 #journey .journey-off a span {
   font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+}
+#journey .journey-off a strong {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 25px;
 }
 #journey .journey-off__input input {
   border: 1px solid #000000;
