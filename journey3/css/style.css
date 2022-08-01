@@ -21,10 +21,14 @@
 }
 
 #journey #off1,
-#journey #off2 {
+#journey #off2,
+#journey #addBlock {
   position: relative;
   top: -310px;
   visibility: hidden;
+}
+#journey #addBlock {
+  top: -155px;
 }
 
 #journey .journey-container--bg {
@@ -94,7 +98,7 @@
   padding-top: 5px;
 }
 #journey .journey-header h2 {
-  font-size: 44px;
+  font-size: 50px;
   font-weight: 700;
   line-height: 60px;
   margin-bottom: 20px;
@@ -254,13 +258,12 @@
   margin-bottom: 40px;
 }
 #journey .journey-top__block {
-  /*border: 1px solid #023762;*/
-  border-radius: 10px;
   overflow: hidden;
   width: 280px;
 }
 #journey .journey-top__block h4 {
   background-color: #023762;
+  border-radius: 10px 10px 0 0;
   color: #ffffff;
   font-size: 20px;
   font-weight: 700;
@@ -295,6 +298,7 @@
   border-left: 1px solid #023762;
   border-right: 1px solid #023762;
   border-bottom: 1px solid #023762;
+  border-radius: 0 0 10px 10px;
   font-size: 8px;
   font-weight: 400;
   line-height: 14px;
@@ -384,7 +388,14 @@
 }
 #journey .journey-table > p a {
   color: #ba2531;
+  line-height: 30px;
   text-decoration: underline;
+}
+#journey .journey-table > p a img {
+  margin-right: 1px;
+  vertical-align: text-bottom;
+  height: 20px;
+  width: 20px;
 }
 #journey .journey-table__table {
   -webkit-border-radius: 10px;
