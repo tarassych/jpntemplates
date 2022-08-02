@@ -382,6 +382,10 @@
               ご依頼内容を入力し、
               論文のデータをアップロード。
             </p>
+
+            <h6>
+              割引クーポンはご依頼フォーム内にご入力ください
+            </h6>
           </div>
 
           <div class="journey-blocks__block">
@@ -441,6 +445,11 @@
             </h5>
           </div>
 
+          <div class="journey-off__row journey-off__input">
+            <input type="text" value="WELCOME-NEW-10" id="input1">
+            <button id="button1">コピーする</button>
+          </div>
+
           <p>
             1. はじめてエダンズへ英文校正を依頼する方限定のクーポンです。<br>
             2．会員登録後、クーポンコードが依頼フォームに自動的に入力され、料金が10％割引となります。
@@ -497,5 +506,15 @@
     </div>
   </div>
 </div>
+
+<script>
+    const input = document.querySelector('#input1');
+    const button = document.querySelector('#button1');
+
+    button.addEventListener('click', () => {
+        input.select();
+        document.execCommand("copy");
+    });
+</script>
 </body>
 </html>
