@@ -284,9 +284,6 @@
   height: 1px;
 }
 
-#esr .esr-right__bot {
-
-}
 #esr .esr-right__icons {
   display: flex;
   flex-direction: row;
@@ -310,6 +307,58 @@
   line-height: 26px;
   text-align: center;
 }
+
+#esr .esr-right__top {
+  padding: 0;
+}
+#esr .esr-right__table {
+  margin: 0 auto;
+  padding: 20px 0 30px;
+  width: 215px;
+}
+#esr .esr-right__table-row {
+  display: flex;
+  flex-direction: row;
+}
+#esr .esr-right__table-row:first-child {
+  background-color: #023762;
+}
+#esr .esr-right__table-row:first-child h3 {
+  color: #fff;
+}
+#esr .esr-right__table-col {
+  border-bottom: 1px solid #BBBBBB;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 0;
+  text-align: center;
+}
+#esr .esr-right__table-col:first-child {
+  border-right: 1px solid #BBBBBB;
+  border-left: 1px solid #BBBBBB;
+  flex-shrink: 0;
+  width: 100px;
+}
+#esr .esr-right__table-col:last-child {
+  border-right: 1px solid #BBBBBB;
+  flex-grow: 1;
+}
+#esr .esr-right__table-col h3 {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+}
+#esr .esr-right__table-col h4 {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+}
+#esr .esr-right__table-col h4 span {
+  font-size: 10px;
+}
+
 
 @media (max-width: 1024px) {
   #esr .esr-header {
