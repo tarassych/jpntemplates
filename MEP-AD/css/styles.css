@@ -1,0 +1,207 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+
+#mep * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+#mep h1,
+#mep h2,
+#mep h3,
+#mep h4,
+#mep h5,
+#mep h6,
+#mep li,
+#mep p,
+#mep a {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+}
+
+#mep .mep-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#mep .mep-container {
+  margin: 0 auto;
+  padding: 0 1rem;
+  width: 100%;
+  max-width: 100rem;
+}
+
+
+#mep .mep-header {
+  background: #4A0000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+}
+#mep .mep-header img {
+  width: 113rem;
+  max-width: 100%;
+}
+#mep .mep-header .mep-row {
+  width: 63rem;
+}
+#mep .mep-header__container {
+  position: absolute;
+  left: 50%;
+  bottom: 1rem;
+  transform: translateX(-50%);
+}
+#mep .mep-header h2 {
+  color: #ffff00;
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 3rem;
+  text-align: center;
+}
+#mep .mep-header h3 {
+  background-color: #ffffff;
+  color: #ff0000;
+  font-size: 3.4rem;
+  font-weight: 700;
+  line-height: 3.8rem;
+  margin: 0 2rem;
+  padding: .2rem 2rem;
+}
+#mep .mep-header h4 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.3rem;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+
+#mep .mep-cta {
+  padding: 4rem 0 0;
+  width: 100%;
+  max-width: 100%;
+}
+#mep .mep-cta .mep-row {
+  justify-content: space-between;
+}
+#mep .mep-cta h2 {
+  color: #ff0000;
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 4.6rem;
+  margin-bottom: 3rem;
+}
+#mep .mep-cta > p {
+  margin-bottom: 3rem;
+}
+#mep .mep-cta p {
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 4.1rem;
+}
+#mep .mep-cta p span {
+  color: #ff0000;
+}
+#mep .mep-cta a {
+  background-color: #0099ff;
+  border-radius: .4rem;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 3rem;
+  padding: 2rem 7rem;
+  text-decoration: none;
+}
+
+
+#mep .mep-info {
+  padding: 9rem 0 7.5rem;
+}
+#mep .mep-info h2 {
+  color: #0099ff;
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 4.6rem;
+}
+#mep .mep-info img {
+  margin: 2.8rem 0;
+  width: 100%;
+  max-width: 100%;
+}
+#mep .mep-info p {
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 3rem;
+}
+#mep .mep-info p strong {
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+#mep .mep-info p span {
+  color: #ff0000;
+}
+
+
+
+@media (max-width: 1680px) {
+
+}
+
+@media (max-width: 1280px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 8px;
+  }
+
+  #mep .mep-header__container {
+    display: none;
+  }
+
+  #mep .mep-cta .mep-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media (max-width: 425px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 5px;
+  }
+}
+</style>
