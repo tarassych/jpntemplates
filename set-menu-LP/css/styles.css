@@ -1,0 +1,157 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+
+#smlp * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+#smlp h1,
+#smlp h2,
+#smlp h3,
+#smlp h4,
+#smlp h5,
+#smlp h6,
+#smlp li,
+#smlp p,
+#smlp a {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+}
+
+#smlp .smlp-container {
+  margin: 0 auto;
+  width: 120rem;
+  max-width: 100%;
+}
+
+
+#smlp .smlp-header {
+  background-color: #f1ffea;
+  margin-bottom: 4rem;
+}
+#smlp .smlp-header h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 3.7rem;
+  padding: 1.5rem 0 1rem;
+  text-align: center;
+}
+
+
+#smlp .smlp-info {
+  padding-bottom: 16rem;
+}
+#smlp .smlp-info img {
+  width: 100%;
+}
+#smlp .smlp-row {
+  background-color: #f1ffea;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 5.5rem;
+  padding: 3.5rem 4.5rem 2.5rem;
+}
+#smlp .smlp-row h2 {
+  background-color: #ffffff;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 3.8rem;
+  margin-right: 4.5rem;
+  padding: 3.5rem 12rem 3rem 4rem;
+  white-space: nowrap;
+}
+#smlp .smlp-row ul {
+  list-style: none;
+  padding: 0;
+}
+#smlp .smlp-row ul li {
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 3rem;
+}
+#smlp .smlp-info h3 {
+  color: #ba2532;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 3.8rem;
+  margin-bottom: 1.5rem;
+}
+#smlp .smlp-info p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 3rem;
+  margin-bottom: 3rem;
+}
+#smlp .smlp-btn {
+  text-align: center;
+}
+#smlp .smlp-info a {
+  background-color: #ba2532;
+  border-radius: .4rem;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3rem;
+  margin-top: 8rem;
+  padding: 2rem 9rem;
+  text-decoration: none;
+}
+
+
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 9px;
+  }
+
+  #smlp .smlp-row {
+    flex-direction: column;
+  }
+  #smlp .smlp-row h2 {
+    margin-right: 0;
+    padding: 3rem 10rem;
+    text-align: center;
+  }
+  #smlp .smlp-info h3,
+  #smlp .smlp-info p {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 425px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 5px;
+  }
+}
+</style>
