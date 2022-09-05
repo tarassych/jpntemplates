@@ -807,8 +807,14 @@
   color: #000000;
   text-decoration: underline;
 }
+#journey .journey-list__row ul li strong {
+  display: block;
+  font-weight: 400;
+  padding: 10px 0;
+}
 #journey .journey-list__row ul li span {
   font-size: 12px;
+  line-height: 21px;
 }
 #journey .journey-list__row ul li:before {
   content: "";
