@@ -843,7 +843,11 @@
   font-size: 25px;
   font-weight: 700;
   line-height: 25px;
+  margin-bottom: 30px;
   text-align: center;
+}
+#journey .journey-biglist h2 span {
+  font-size: 22px;
 }
 #journey .journey-biglist__list {
   list-style: none;
