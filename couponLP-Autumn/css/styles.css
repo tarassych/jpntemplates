@@ -1,0 +1,150 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+
+#clp * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+#clp h1,
+#clp h2,
+#clp h3,
+#clp h4,
+#clp h5,
+#clp h6,
+#clp li,
+#clp p,
+#clp a {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+}
+
+#clp .clp-container {
+  margin: 0 auto;
+  width: 105rem;
+  max-width: 100%;
+}
+
+
+#clp .clp-header {
+  background-color: #F69E1E;
+  padding-top: 3rem;
+  text-align: center;
+}
+#clp .clp-header img {
+  vertical-align: bottom;
+  width: 88rem;
+  max-width: 100%;
+}
+
+
+#clp .clp-info {
+  padding: 8rem 0;
+}
+#clp .clp-info h2 {
+  color: #FF3200;
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 4.6rem;
+  margin-bottom: 3.5rem;
+}
+#clp .clp-info img {
+  margin-bottom: 7.5rem;
+  width: 100%;
+  max-width: 100%;
+}
+#clp .clp-info p {
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 3rem;
+  margin-bottom: 7.5rem;
+}
+#clp .clp-info p strong {
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+#clp .clp-info p span {
+  color: #FF3200;
+}
+#clp .clp-info__btn {
+  text-align: center;
+}
+#clp .clp-info__btn a {
+  background-color: #BA2532;
+  border-radius: 0.4rem;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3rem;
+  margin-bottom: 7.5rem;
+  padding: 2rem 9rem;
+  text-decoration: none;
+}
+#clp .clp-info h3 {
+  color: #ff3200;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4.5rem;
+  margin-bottom: 1rem;
+}
+#clp .clp-info h4 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 3rem;
+  margin-bottom: 7.5rem;
+}
+#clp .clp-info h4 span {
+  color: #ff3200;
+}
+#clp .clp-info h4 small {
+  font-size: 1.6rem;
+}
+
+
+
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 9px;
+  }
+
+  #clp .clp-container {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 425px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 5px;
+  }
+}
+</style>
