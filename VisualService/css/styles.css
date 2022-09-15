@@ -48,29 +48,29 @@ html {
 
 #vs .vs-header {
   background: url(https://www.edanz.com/sites/default/files/vs/vs-header-img-1.png) top center / auto 100% no-repeat;
-  padding: 17rem 6rem 10rem;
+  padding: 17rem 6rem 13rem;
 }
 #vs .vs-header h3 {
   color: #023762;
-  font-size: 3.7rem;
+  font-size: 3.3rem;
   font-weight: 500;
   line-height: 8.4rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 #vs .vs-header h2 {
   color: #ba2532;
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: 900;
-  line-height: 8.4rem;
-  margin-bottom: 3.5rem;
+  line-height: 6.5rem;
+  margin-bottom: 3.8rem;
 }
 #vs .vs-header h4 {
   color: #023762;
   font-size: 2.2rem;
   font-weight: 500;
-  line-height: 4rem;
-  margin-bottom: 6rem;
-  max-width: 65rem;
+  line-height: 3.1rem;
+  margin-bottom: 7.3rem;
+  max-width: 70rem;
 }
 #vs .vs-header p {
   font-size: 2rem;
@@ -82,12 +82,17 @@ html {
 #vs .vs-actions {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   padding-top: 5rem;
+}
+#vs .vs-actions > h2 {
+  width: 100%;
 }
 #vs .vs-actions__group {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 1.2rem;
   text-align: center;
   width: 100%;
   max-width: 40rem;
@@ -95,10 +100,6 @@ html {
 #vs .vs-actions__group .vs-row {
   flex-grow: 1;
   width: 100%;
-}
-#vs .vs-actions__group:first-child {
-  margin-right: 5rem;
-  max-width: 85rem;
 }
 #vs .vs-actions__group h2 {
   background: url(https://www.edanz.com/sites/default/files/vs/vs-title-bg-1.png) center / 100% 3.8rem no-repeat;
@@ -121,11 +122,15 @@ html {
   flex-direction: column;
   align-items: center;
   flex-grow: 1;
-  padding: 6rem 3rem 3rem;
-  max-width: 40rem;
+  padding: 6rem 2rem 2rem;
+  position: relative;
+  width: 100%;
 }
-#vs .vs-actions__block:not(:last-child) {
-  margin-right: 5rem;
+#vs .vs-actions__block > img {
+  position: absolute;
+  top: 0;
+  left: 4rem;
+  width: 6rem;
 }
 #vs .vs-actions__block h3 {
   color: #023762;
@@ -141,7 +146,9 @@ html {
   line-height: 2.4rem;
   margin-bottom: 3.5rem;
   text-align: left;
-  width: 100%;
+}
+#vs .vs-actions__block p span {
+  color: #fb0404;
 }
 #vs .vs-actions__block a {
   background-color: #ba2532;
@@ -158,7 +165,7 @@ html {
 
 #vs .vs-blocks {
   background-color: #ecfeff;
-  margin-top: 5.5rem;
+  margin-top: 11rem;
   padding: 3.5rem 0 3rem;
 }
 #vs .vs-blocks__container {
@@ -220,15 +227,19 @@ html {
   align-items: center;
   margin-top: 4rem;
 }
+#vs .vs-info__group {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1.5rem 2.7rem;
+  max-width: 60rem;
+}
 #vs .vs-info h3 {
   font-size: 2.6rem;
   font-weight: 600;
   line-height: 2.6rem;
-  margin-bottom: 2.2rem;
-}
-#vs .vs-info > img {
-  margin-bottom: 2.5rem;
-  max-width: 59rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 100%;
 }
 #vs .vs-info .vs-row {
   display: flex;
@@ -237,8 +248,8 @@ html {
   flex-wrap: wrap;
 }
 #vs .vs-info .vs-row > img {
-  margin: 0 .5rem;
-  max-width: 60rem;
+  width: 100%;
+  max-width: 100%;
 }
 
 
@@ -274,7 +285,7 @@ html {
   border-radius: 1rem;
   border: 1px solid #D7E7F4;
   margin: 0 1.5rem;
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   position: relative;
   max-width: 23rem;
   width: 25%;
@@ -293,7 +304,7 @@ html {
 #vs .vs-steps__block:nth-child(1):after,
 #vs .vs-steps__block:nth-child(2):after {
   content: "";
-  border: .1rem dashed rgba(46, 54, 150, 25%);
+  border-top: .2rem dotted rgba(46, 54, 150, 25%);
   position: absolute;
   top: -3.6rem;
   left: calc(100% + 1.5rem);
@@ -312,7 +323,7 @@ html {
   margin-bottom: 1rem;
 }
 #vs .vs-steps__block p {
-  font-size: 1rem;
+  font-size: .9rem;
   font-weight: 500;
   line-height: 1.6rem;
 }
@@ -328,9 +339,9 @@ html {
     flex-direction: column;
     align-items: center;
   }
-  #vs .vs-actions__group:first-child {
-    margin-right: 0;
-    margin-bottom: 5rem;
+  #vs .vs-actions__group {
+    margin: 0 0 3rem;
+    max-width: 45rem;
   }
 }
 
@@ -368,12 +379,6 @@ html {
 
   #vs .vs-actions__group {
     max-width: 100%;
-  }
-  #vs .vs-actions__group:first-child {
-    margin-bottom: 0;
-  }
-  #vs .vs-actions__block:not(:last-child) {
-    margin-right: 0;
   }
   #vs .vs-actions__block {
     margin: 0 1rem 5rem;
