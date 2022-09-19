@@ -339,8 +339,7 @@ html {
   height: 1.8rem;
   width: 1.8rem;
 }
-#vs .vs-steps__block:nth-child(1):after,
-#vs .vs-steps__block:nth-child(2):after {
+#vs .vs-steps__block:not(:last-child):after {
   content: "";
   border-top: .2rem dotted rgba(46, 54, 150, 25%);
   position: absolute;
@@ -406,8 +405,7 @@ html {
     flex-wrap: wrap;
   }
   #vs .vs-steps__block:before,
-  #vs .vs-steps__block:nth-child(1):after,
-  #vs .vs-steps__block:nth-child(2):after {
+  #vs .vs-steps__block:not(:last-child):after {
     content: none;
   }
   #vs .vs-steps__block {
