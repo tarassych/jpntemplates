@@ -1,0 +1,662 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
+
+#rclp.rclp * {
+  box-sizing: border-box;
+}
+
+#rclp.rclp h1,
+#rclp.rclp h2,
+#rclp.rclp h3,
+#rclp.rclp h4,
+#rclp.rclp h5,
+#rclp.rclp h6,
+#rclp.rclp li,
+#rclp.rclp p,
+#rclp.rclp a {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+}
+
+#rclp-form {
+  position: relative;
+  top: -155px;
+}
+#rclp .fs-11{
+  font-size: 11px;
+}
+#rclp .mt-30{
+  margin-top: 30px !important;
+}
+#rclp a.rclp-red-btn {
+  background-color: #ba2532;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26px;
+  padding: 20px 70px;
+  text-decoration: none;
+}
+
+#rclp hr {
+  background-color: #cccccc;
+  border: none;
+  margin: 0;
+  height: 1px;
+  width: 100%;
+}
+#rclp .rclp-h2{
+  padding: 0px 0 40px 0;
+  font-size: 26px !important;
+  line-height: 42px !important;
+  margin-bottom: 30px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#rclp .rclp-h2-big-2 {
+  font-size: 200%;
+}
+#rclp .rclp-2nd-main-group{
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+#rclp .rclp-2nd-single-group{
+  width: 49%;
+  color: #000;
+  padding:0 25px 20px 25px;
+  border: #000 solid 2px;
+  border-radius: 20px;
+  position: relative;
+}
+#rclp .rclp-2nd-single-group .rclp-single-group-heading-group{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  top: -50px;
+}
+#rclp .rclp-2nd-single-group .rclp-single-sub-group ul {
+  list-style: none;
+  margin: 0 0 15px;
+  padding: 0;
+}
+#rclp .rclp-2nd-single-group .rclp-single-sub-group ul li {
+  font-size: 15px;
+  line-height: 30px;
+  padding: 0;
+}
+#rclp .rclp-2nd-single-group .rclp-single-sub-group .rclp-small-text{
+  font-size: 11px;
+  line-height: 15px;
+}
+#rclp .rclp-2nd-single-group .rclp-single-group-heading{
+  background: #fff;
+  width: fit-content;
+  padding: 15px;
+  color: #ba2532;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+}
+#rclp .rclp-2nd-single-group .rclp-single-sub-group{
+  position: relative;
+  margin-top: -50px;
+  color: #333;
+  line-height: 200%;
+}
+#rclp .rclp-single-topic{
+  text-align: center;
+  color: #000;
+  border-bottom: #000 solid 2px;
+  font-weight: 700;
+  font-size: 17px;
+  padding: 5px 0;
+  margin-bottom: 20px;
+}
+#rclp .rclp-container {
+  border: 1px solid #DADADB;
+  border-top: 0 solid #023762;
+  margin: 0 auto;
+  padding: 30px 30px 100px;
+  max-width: 1000px;
+}
+#rclp .rclp-container-2{
+  border: 0;
+  padding: 30px 0;
+}
+
+#rclp .rclp-header {
+  background: url(http://images.edanzgroup.com/jp/images/rclp-banner-5px.jpg) center no-repeat;
+  margin-bottom: 15px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#rclp .rclp-img-group-left{
+  width: 20%;
+  margin-left: 5%;
+  text-align: right;
+}
+#rclp .rclp-img-group-right{
+  width: 20%;
+  margin-right: 5%;
+}
+#rclp .rclp-text-group{
+  width: 50%;
+  text-align: center;
+}
+.rclp-top-arrow {
+  position: relative;
+}
+.rclp-top-arrow:before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 1px;
+  background: #fff;
+  top: 0;
+  left: -15px;
+}
+.rclp-top-arrow:after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 15px;
+  background: #fff;
+  top: 0;
+  left: -15px;
+}
+.rclp-bottom-arrow {
+  position: relative;
+}
+.rclp-bottom-arrow:before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 1px;
+  background: #fff;
+  bottom: 15px;
+  right: -15px;
+}
+.rclp-bottom-arrow:after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 15px;
+  background: #fff;
+  bottom: 15px;
+  right: -15px;
+}
+#rclp .rclp-header--container {
+  margin: 0 auto;
+  padding: 30px 20px 30px 0;
+  max-width: 1000px;
+}
+#rclp .rclp-header__title {
+  color: #fff;
+  padding: 10px 0 15px;
+  text-align: center;
+}
+#rclp .rclp-header__title h1 {
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 65px;
+  letter-spacing: -2px;
+}
+#rclp .rclp-header__title .top-text {
+  font-size: 28px;
+  line-height: 38px;
+}
+#rclp .rclp-header__title .small-text {
+  font-size: 25px;
+  line-height: 38px;
+  font-weight: bold;
+}
+
+#rclp .rclp-desc {
+  padding-bottom: 55px;
+  text-align: center;
+}
+#rclp .rclp-desc img {
+  margin-bottom: 20px;
+  height: 60px;
+  width: 60px;
+}
+#rclp .rclp-desc h2 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 42px;
+  margin-bottom: 20px;
+}
+#rclp .rclp-desc h3 {
+  font-size: 17px;
+  line-height: 23px;
+  margin-bottom: 20px;
+}
+#rclp .rclp-desc h3 span {
+  font-size: 15px;
+}
+#rclp .rclp-desc h4 {
+  color: #747474;
+  font-size: 15px;
+  line-height: 23px;
+}
+
+
+#rclp .rclp-people {
+  padding: 0 0 65px;
+}
+#rclp .rclp-people h2 {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+}
+#rclp .rclp-people h2 span {
+  color: #ba2532;
+  display: block;
+  font-size: 19px;
+}
+
+#rclp .rclp-quotes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+#rclp .rclp-quote {
+  background: url(https://www.edanz.com/sites/default/files/rclp/rclp-quote-bg-img.png) center / 100% 100% no-repeat;
+  padding: 25px 20px;
+  position: relative;
+  width: calc(100% / 3 - 25px);
+}
+#rclp .rclp-quote:before {
+  content: "";
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 90px;
+  width: 80px;
+}
+#rclp .rclp-quote:nth-child(1):before {
+  background: url(https://www.edanz.com/sites/default/files/rclp/rclp-person-img-1.png) center / 100% 100% no-repeat;
+}
+#rclp .rclp-quote:nth-child(2):before {
+  background: url(https://www.edanz.com/sites/default/files/rclp/rclp-person-img-2.png) center / 100% 100% no-repeat;
+}
+#rclp .rclp-quote:nth-child(3):before {
+  background: url(https://www.edanz.com/sites/default/files/rclp/rclp-person-img-3.png) center / 100% 100% no-repeat;
+}
+#rclp .rclp-quote p {
+  font-size: 14px;
+  line-height: 26px;
+}
+#rclp .rclp-quote p span {
+  display: block;
+  font-size: 12px;
+  text-align: right;
+}
+
+
+#rclp .rclp-list {
+  margin: 0 auto;
+  padding: 55px 0;
+  width: 860px;
+  max-width: 100%;
+}
+#rclp .rclp-list h2 {
+  color: #ba2532;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+#rclp .rclp-list ul {
+  list-style: none;
+  padding: 0;
+}
+#rclp .rclp-list ul li {
+  margin-bottom: 40px;
+  padding-left: 55px;
+  position: relative;
+}
+#rclp .rclp-list ul li:before {
+  content: "";
+  background: url(https://www.edanz.com/sites/default/files/rclp/rclp-icon-check.png) center / 100% 100% no-repeat;
+  position: absolute;
+  left: 0;
+  top: -10px;
+  height: 45px;
+  width: 48px;
+}
+#rclp .rclp-list ul li h3 {
+  color: #023762;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 28px;
+}
+#rclp .rclp-list ul li h4 {
+  font-size: 14px;
+  line-height: 28px;
+  margin-top: 5px;
+}
+#rclp .rclp-list ul li p {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 15px;
+  line-height: 28px;
+  margin-top: 20px;
+}
+#rclp .rclp-list ul li p span {
+  width: 50%;
+}
+
+
+#rclp .rclp-biglist {
+  padding: 55px 0;
+  text-align: center;
+}
+#rclp .rclp-biglist h2 {
+  color: #ba2531;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 35px;
+  margin-bottom: 15px;
+}
+#rclp .rclp-biglist h4 {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 19px;
+  margin-bottom: 35px;
+}
+#rclp .rclp-biglist img {
+  width: 600px;
+  max-width: 100%;
+}
+#rclp .rclp-biglist ul {
+  list-style: none;
+  padding: 0;
+}
+#rclp .rclp-biglist ul li {
+  margin: 0 auto 30px;
+  text-align: left;
+  width: 370px;
+  max-width: 100%;
+}
+#rclp .rclp-biglist ul li h5 {
+  color: #033762;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 19px;
+}
+#rclp .rclp-biglist ul li h6 {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 26px;
+  margin-bottom: 9px;
+}
+#rclp .rclp-biglist ul li p {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 26px;
+}
+#rclp .rclp-biglist h3 {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+
+#rclp .rclp-feedback {
+  padding: 50px 0 55px;
+}
+#rclp .rclp-feedback h4 {
+  color: #ba2532;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+#rclp .rclp-faq {
+  margin-bottom: 50px;
+}
+#rclp .rclp-faq h2,
+#rclp .rclp-faq h3 {
+  display: flex;
+  flex-direction: row;
+}
+#rclp .rclp-faq h2 span,
+#rclp .rclp-faq h3 span {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  height: 40px;
+  width: 40px;
+}
+#rclp .rclp-faq h2 {
+  color: #023762;
+  align-items: center;
+  font-size: 16px;
+  line-height: 26px;
+}
+#rclp .rclp-faq h2 span {
+  background-color: #023762;
+  color: #ffffff;
+  margin-right: 15px;
+}
+#rclp .rclp-faq h3 {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  padding-left: 40px;
+}
+#rclp .rclp-faq h3 span {
+  background-color: #eef3f6;
+  border: 2px solid #023762;
+  color: #023762;
+  margin-right: 18px;
+}
+#rclp .rclp-feedback-btn {
+  text-align: center;
+}
+
+
+#rclp .rclp-example {
+  padding: 45px 0 0;
+}
+#rclp .rclp-example h3 {
+  color: #ba2532;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#rclp .rclp-example h4 {
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+#rclp .rclp-example-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#rclp .rclp-example-row a {
+  display: block;
+  width: calc(100% / 3 - 20px);
+}
+#rclp .rclp-example-row a img {
+  width: 100%;
+}
+
+
+
+
+@media (max-width: 1024px) {
+  #rclp .rclp-people {
+    padding-bottom: 0;
+  }
+  #rclp .rclp-quotes {
+    flex-direction: column;
+    align-items: center;
+  }
+  #rclp .rclp-quote {
+    margin-bottom: 70px;
+    width: 280px;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 991px){
+  #rclp .rclp-img-group-left{
+    width: 0;
+    margin-left: 0;
+    display: none;
+  }
+  #rclp .rclp-img-group-right{
+    width: 0;
+    margin-right: 0;
+    display: none;
+  }
+  #rclp .rclp-text-group{
+    width: 95%;
+    text-align: center;
+  }
+  #rclp .rclp-2nd-single-group .rclp-single-group-heading {
+    font-size: 23px;
+  }
+  #rclp .rclp-2nd-single-group .rclp-single-sub-group ul {
+    padding-left: 20px;
+  }
+  #rclp .rclp-2nd-single-group .rclp-single-sub-group .rclp-small-text{
+    padding-left: 20px;
+  }
+  #rclp .rclp-header__title .small-text {
+    font-size: 23px;
+    line-height: 28px;
+  }
+}
+@media (max-width: 768px) {
+  #rclp .rclp-container {
+    padding: 20px 20px 50px;
+  }
+
+  #rclp .rclp-header--container {
+    padding: 55px 0 35px;
+  }
+
+  #rclp .rclp-example {
+    padding: 10px 5px 20px;
+  }
+
+  #rclp .rclp-feedback {
+    padding: 10px 0 20px;
+  }
+
+  #rclp .rclp-faq h3 {
+    padding-left: 20px;
+  }
+
+  #rclp .rclp-example-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  #rclp .rclp-example-row a {
+    width: 400px;
+    max-width: 100%;
+  }
+
+  #rclp .rclp hr {
+    margin: 0;
+    width: 100%;
+  }
+  #rclp .rclp-2nd-main-group{
+    flex-wrap: wrap;
+  }
+  #rclp .rclp-2nd-single-group {
+    width: 95%;
+    margin: 30px auto;
+  }
+  #rclp .rclp-h2-big-2 {
+    font-size: 170%;
+  }
+  #rclp .rclp-h2 {
+    padding: 0;
+    font-size: 20px !important;
+    line-height: 24px !important;
+  }
+  #rclp .rclp-header__title .top-text {
+    font-size: 22px;
+  }
+  #rclp .rclp-header__title .small-text {
+    font-size: 21px;
+    line-height: 28px;
+  }
+
+  #rclp .rclp-2nd-single-group .rclp-single-group-heading {
+    font-size: 19px;
+  }
+  #rclp .rclp-2nd-single-group .rclp-single-group-heading-group {
+    top: -40px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  #rclp a.rclp-red-btn {
+    padding: 20px 0;
+    width: 100%;
+  }
+
+  #rclp .rclp-container {
+    padding: 10px 10px 30px;
+  }
+
+  #rclp .rclp-header__title h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  #rclp .rclp-list ul li p span {
+    width: 100%;
+  }
+}
+@media (min-width: 1800px) {
+  #rclp .rclp-img-group-left{
+    margin-left: 7%;
+  }
+  #rclp .rclp-img-group-right{
+    margin-right: 7%;
+  }
+  #rclp .rclp-text-group{
+    width: 46%;
+    text-align: center;
+  }
+}
+
+</style>
