@@ -99,6 +99,9 @@
   font-size: 11px;
   line-height: 15px;
 }
+#rclp .rclp-2nd-single-group .rclp-single-sub-group .rclp-small-text-center {
+  text-align: center;
+}
 #rclp .rclp-2nd-single-group .rclp-single-group-heading{
   background: #fff;
   width: fit-content;
