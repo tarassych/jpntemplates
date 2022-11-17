@@ -117,14 +117,18 @@
   color: #333;
   line-height: 200%;
 }
-#rclp .rclp-single-topic{
+#rclp .rclp-single-topic {
+  margin-bottom: 20px;
+  padding: 5px 0;
   text-align: center;
+}
+#rclp .rclp-single-topic h2 {
   color: #000;
+  display: inline-block;
   border-bottom: #000 solid 2px;
   font-weight: 700;
   font-size: 17px;
-  padding: 5px 0;
-  margin-bottom: 20px;
+  margin: 0;
 }
 #rclp .rclp-container {
   border: 1px solid #DADADB;
@@ -387,11 +391,13 @@
   margin-bottom: 35px;
 }
 #rclp .rclp-biglist img {
+  margin-bottom: 50px;
   width: 600px;
   max-width: 100%;
 }
 #rclp .rclp-biglist ul {
   list-style: none;
+  margin: 0;
   padding: 0;
 }
 #rclp .rclp-biglist ul li {
@@ -405,7 +411,7 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 32px;
-  margin-bottom: 19px;
+  margin-bottom: 10px;
 }
 #rclp .rclp-biglist ul li h6 {
   font-size: 13px;
