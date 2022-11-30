@@ -1,0 +1,230 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;900&display=swap');
+
+#sep.sep * {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+#sep.sep h1,
+#sep.sep h2,
+#sep.sep h3,
+#sep.sep h4,
+#sep.sep h5,
+#sep.sep h6,
+#sep.sep li,
+#sep.sep p,
+#sep.sep a {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+}
+
+#sep .sep-container {
+  margin: 0 auto;
+  width: 93rem;
+  max-width: 100%;
+}
+
+#sep .sep-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0 4rem;
+}
+#sep .sep-header--pc {
+  background: url(https://www.edanz.com/sites/default/files/sep-v2/sep-header-img-pc.png) top center / cover no-repeat;
+}
+#sep .sep-header--pc picture > img {
+  max-width: 100%;
+}
+#sep .sep-header__top-mobile {
+  display: none;
+}
+#sep .sep-header h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 3rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+
+#sep .sep-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+#sep .sep-info__block {
+  background: url(https://www.edanz.com/sites/default/files/sep-v2/sep-header-title-img.png) center / 100% 100% no-repeat;
+  margin: 0 1.5rem;
+  padding: 3rem 0;
+  text-align: center;
+  width: 43rem;
+  max-width: 100%;
+}
+#sep .sep-info__block img {
+  width: 30rem;
+  max-width: 100%;
+}
+
+
+#sep .sep-card {
+  background-color: #c9a87c;
+  border-radius: 1rem;
+  margin-top: 2.5rem;
+  padding: 2.5rem 8rem;
+}
+#sep .sep-card ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#sep .sep-card ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#sep .sep-card ul li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+#sep .sep-card ul li img {
+  margin-right: 2rem;
+  height: 10rem;
+  width: 10rem;
+}
+#sep .sep-card ul li h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.2rem;
+}
+#sep .sep-card ul li h2 span {
+  color: #ffffff;
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3.4rem;
+}
+#sep .sep-card ul li h2 small {
+  color: #000000;
+  font-size: 1.4rem;
+}
+
+
+
+#sep .sep-list {
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+}
+#sep .sep-list h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  text-align: center;
+}
+#sep .sep-list h2 span {
+  color: #023762;
+  display: block;
+  font-size: 2.4rem;
+}
+#sep .sep-list ul {
+  list-style: none;
+  margin: 5rem auto 0;
+  padding: 0;
+  max-width: 80rem;
+}
+#sep .sep-list ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#sep .sep-list ul li:not(:last-child) {
+  margin-bottom: 5rem;
+}
+#sep .sep-list ul li img {
+  margin-right: 3rem;
+  height: 6rem;
+  width: 6rem;
+}
+#sep .sep-list ul li h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+}
+#sep .sep-list ul li h3 small {
+  color: #000000;
+  font-size: 1.5rem;
+}
+#sep .sep-list ul li h3 small span {
+  color: #f90606;
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 9px;
+  }
+
+  #sep .sep-info {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+  }
+  #sep .sep-info__block {
+    margin: 1.5rem;
+  }
+
+
+  #sep .sep-card {
+    padding: 2.5rem;
+  }
+  #sep .sep-card ul li img {
+    height: 8rem;
+    width: 8rem;
+  }
+}
+
+@media (max-width: 635px) {
+  html {
+    font-size: 8px;
+  }
+
+  #sep .sep-header--pc {
+    background: none;
+    padding-bottom: 0;
+  }
+  #sep .sep-header__top-mobile {
+    display: block;
+    margin-top: 1.5rem;
+    width: 100%;
+  }
+
+
+  #sep .sep-info__block {
+    background: none;
+  }
+
+
+  #sep .sep-card {
+    padding: 2.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #sep .sep-header h3 {
+    text-align: left;
+  }
+}
+</style>
