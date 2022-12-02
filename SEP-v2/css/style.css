@@ -62,6 +62,7 @@ html {
 }
 #sep .sep-info__block {
   background: url(https://www.edanz.com/sites/default/files/sep-v2/sep-header-title-img.png) center / 100% 100% no-repeat;
+  border: 1px solid #EDEAEA;
   margin: 0 1.5rem;
   padding: 3rem 0;
   text-align: center;
@@ -127,6 +128,9 @@ html {
   line-height: 3.2rem;
   text-align: center;
 }
+#sep .sep-list h2 br {
+  display: none;
+}
 #sep .sep-list h2 span {
   color: #023762;
   display: block;
@@ -162,6 +166,7 @@ html {
 }
 #sep .sep-list ul li h3 small span {
   color: #f90606;
+  font-weight: 700;
 }
 
 
@@ -184,6 +189,7 @@ html {
   }
   #sep .sep-info__block {
     margin: 1.5rem;
+    padding: 1.5rem 0;
   }
 
 
@@ -218,13 +224,31 @@ html {
 
 
   #sep .sep-card {
+    margin-top: 1rem;
     padding: 2.5rem 1rem;
+  }
+
+
+  #sep .sep-list {
+    margin-bottom: 3rem;
+  }
+  #sep .sep-list h2 br {
+    display: block;
+  }
+  #sep .sep-list ul {
+    padding: 0 2rem;
+  }
+  #sep .sep-list ul li img {
+    margin-right: 2rem;
+    height: 5rem;
+    width: 5rem;
   }
 }
 
 @media (max-width: 480px) {
   #sep .sep-header h3 {
     text-align: left;
+    padding: 0 2rem;
   }
 }
 </style>
