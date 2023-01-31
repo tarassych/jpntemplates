@@ -1,0 +1,437 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;900&display=swap');
+
+#ps * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+#ps h1,
+#ps h2,
+#ps h3,
+#ps h4,
+#ps h5,
+#ps h6,
+#ps li,
+#ps p,
+#ps a {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+}
+
+#ps .no-img img {
+  visibility: hidden;
+}
+
+#ps {
+  background-color: #f8f8f8;
+}
+#ps .ps-container {
+  margin: 0 auto;
+  width: 120rem;
+  max-width: 100%;
+}
+#ps .ps-row {
+  display: flex;
+  flex-direction: row;
+}
+
+
+#ps .ps-header {
+  margin-bottom: 3rem;
+  width: 100%;
+  max-width: 100%;
+}
+#ps .ps-header img {
+  width: 100%;
+}
+
+
+#ps .ps-notification {
+  background-color: #ffffff;
+  border: 1px solid #CCCCCC;
+  margin-bottom: 5rem;
+  padding: 4rem 4rem 1rem;
+  text-align: center;
+}
+#ps .ps-notification h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+#ps .ps-notification h2 {
+  color: #c30c0e;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 6rem;
+  margin-bottom: 3rem;
+}
+#ps .ps-notification .ps-row {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#ps .ps-notification__block {
+  margin: 0 2rem 3rem;
+  width: 23rem;
+}
+#ps .ps-notification__border {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  border: 1px solid #000000;
+  padding: 1.5rem 0 2rem;
+}
+#ps .ps-notification__border--shadow {
+  background-color: #cccccc;
+  border-radius: 1rem;
+  color: #000000;
+  padding-bottom: 1rem;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+}
+#ps .ps-notification__border--shadow:before {
+  content: "";
+  background: url(https://www.edanz.com/sites/default/files/ps/ps-finger-icon.png) center / cover no-repeat;
+  position: absolute;
+  bottom: -1.5rem;
+  right: 1rem;
+  height: 5rem;
+  width: 2.8rem;
+}
+#ps .ps-notification__border h4 {
+  border-radius: 1.2rem;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+  padding: 0 1rem;
+}
+#ps .ps-notification__border img {
+  display: block;
+  margin: 0 auto;
+  width: 13.5rem;
+  max-width: 100%;
+}
+#ps .ps-notification__border p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  min-height: 4.8rem;
+}
+#ps .ps-notification__border h5 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  min-height: 4.8rem;
+  padding: 0 1rem;
+}
+#ps .ps-notification__border h5 span {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+#ps .ps-block--red {
+  background-color: #d62529;
+}
+#ps .ps-block--blue {
+  background-color: #022060;
+  margin-bottom: 1.5rem;
+}
+#ps .ps-notification__block > img {
+  margin: .5rem 0;
+  width: 3rem;
+}
+
+
+#ps .ps-info {
+  background-color: #ffffff;
+  border: 1px solid #CCCCCC;
+  margin-bottom: 5rem;
+  padding: 5rem 0 5.5rem;
+  text-align: center;
+}
+#ps .ps-info h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2rem;
+}
+#ps .ps-info h2 {
+  color: #c30c0e;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 6rem;
+  margin-bottom: 1rem;
+}
+#ps .ps-info > img {
+  margin-bottom: 1.5rem;
+  width: 17rem;
+  max-width: 100%;
+}
+#ps .ps-info p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+  margin-bottom: 3.5rem;
+}
+#ps .ps-info__list {
+  background-color: #eeeeee;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto 3rem;
+  padding: 2rem 3rem;
+  max-width: 90rem;
+}
+#ps .ps-info__border {
+  border: 2px solid #ffffff;
+  margin: 2rem 2rem 0;
+  position: relative;
+  width: calc(50% - 4rem);
+}
+#ps .ps-info__list .ps-info__border ul {
+  padding: 3rem 0 2rem 2rem;
+  width: 100%;
+}
+#ps .ps-info__list ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 50%;
+}
+#ps .ps-info__list ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 4rem;
+}
+#ps .ps-info__list ul li img {
+  margin-right: 1rem;
+  height: 3rem;
+  width: 3rem;
+}
+#ps .ps-info__list h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+#ps .ps-info__list h5 {
+  background-color: #ffffff;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 4rem;
+  padding: 0 2rem;
+  position: absolute;
+  left: 50%;
+  top: -2rem;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+
+#ps .ps-cta h2 {
+  color: #c30c0e;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+  margin-bottom: 2rem;
+}
+#ps .ps-cta h2 span {
+  text-decoration: underline;
+}
+#ps .ps-cta__group a {
+  margin: 0 1rem;
+}
+#ps .ps-cta a {
+  background-color: #c30c0e;
+  border-radius: 1rem;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 3rem;
+  margin-bottom: 2rem;
+  padding: 2rem 6rem;
+  text-decoration: none;
+}
+#ps .ps-cta a span {
+  text-decoration: underline;
+}
+#ps .ps-cta h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+}
+#ps .ps-cta h3 span {
+  display: block;
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 6rem;
+}
+
+
+#ps .ps-line {
+  background-color: #ffffff;
+  border: 1px solid #CCCCCC;
+  margin-bottom: 5rem;
+  padding: 4.5rem 0 5rem;
+  text-align: center;
+}
+#ps .ps-line h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2rem;
+}
+#ps .ps-line h2 {
+  color: #c30c0e;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 6rem;
+  margin-bottom: 5rem;
+}
+#ps .ps-line .ps-row {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#ps .ps-line__block {
+  background-color: #eeeeee;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 2rem 3rem;
+  position: relative;
+  height: 12rem;
+  width: 12rem;
+}
+#ps .ps-line__block h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+}
+#ps .ps-line__block:not(:last-child):before {
+  content: "";
+  background: url(https://www.edanz.com/sites/default/files/ps/ps-arrow-right.png) center / cover no-repeat;
+  position: absolute;
+  top: 50%;
+  right: -2.5rem;
+  transform: translateY(-50%);
+  height: 2rem;
+  width: 1rem;
+}
+
+
+#ps .ps-note {
+  background-color: #ffffff;
+  border: 1px solid #CCCCCC;
+  margin-bottom: 5rem;
+  padding: 3rem 0 1rem;
+  text-align: center;
+}
+#ps .ps-note h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2rem;
+}
+#ps .ps-note h2 {
+  color: #c30c0e;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 6rem;
+  margin-bottom: 3rem;
+}
+#ps .ps-note .ps-row {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#ps .ps-note__block {
+  background-color: #eeeeee;
+  border-radius: .5rem;
+  margin: 0 1.5rem 3rem;
+  padding: 1.5rem 2rem 5rem;
+  width: 32rem;
+}
+#ps .ps-note__block h4 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 2.8rem;
+}
+#ps .ps-note__block img {
+  width: 13.5rem;
+  max-width: 100%;
+}
+#ps .ps-note__block h5 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 2.1rem;
+  margin-bottom: 2rem;
+}
+#ps .ps-note__block p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+  text-align: left;
+}
+
+
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 8px;
+  }
+
+  #ps .ps-info p {
+    padding: 0 2rem;
+  }
+
+  #ps .ps-info__list ul,
+  #ps .ps-info__border {
+    width: 100%;
+  }
+
+  #ps .ps-info__border {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 425px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 7px;
+  }
+}
+</style>
