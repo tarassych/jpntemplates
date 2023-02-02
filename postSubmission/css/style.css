@@ -38,6 +38,7 @@ html {
 }
 #ps .ps-container {
   margin: 0 auto;
+  padding-bottom: 5rem;
   width: 120rem;
   max-width: 100%;
 }
@@ -159,6 +160,9 @@ html {
   margin-bottom: 5rem;
   padding: 5rem 0 5.5rem;
   text-align: center;
+}
+#ps .ps-info:last-of-type {
+  margin-bottom: 0;
 }
 #ps .ps-info h3 {
   font-size: 2rem;
