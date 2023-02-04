@@ -46,6 +46,12 @@ html {
   display: flex;
   flex-direction: row;
 }
+#ps #block-1,
+#ps #block-2,
+#ps #block-3 {
+  position: relative;
+  top: -155px;
+}
 
 
 #ps .ps-header {
@@ -111,7 +117,6 @@ html {
 }
 #ps .ps-notification__border h4 {
   border-radius: 1.2rem;
-  color: #ffffff;
   display: inline-block;
   font-size: 1.5rem;
   font-weight: 600;
@@ -131,22 +136,20 @@ html {
   min-height: 4.8rem;
 }
 #ps .ps-notification__border h5 {
+  color: #c30c0e;
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 2.4rem;
   min-height: 4.8rem;
+  margin-top: 1.6rem;
   padding: 0 1rem;
 }
 #ps .ps-notification__border h5 span {
   font-size: 1.3rem;
   font-weight: 600;
 }
-#ps .ps-block--red {
-  background-color: #d62529;
-}
-#ps .ps-block--blue {
-  background-color: #022060;
-  margin-bottom: 1.5rem;
+#ps .ps-block--grey {
+  background-color: #eeeeee;
 }
 #ps .ps-notification__block > img {
   margin: .5rem 0;
