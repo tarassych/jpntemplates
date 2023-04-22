@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: thankyouhinge-dot-com
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: thankyouhinge-dot-com
+  template:
+    metadata:
+      labels:
+        app: thankyouhinge-dot-com
+    spec:
+      containers:
+      - name: thankyouhinge-dot-com
+        image: thankyouhinge-dot-com
+        imagePullPolicy: Always
+        ports:
+          - containerPort: 80
