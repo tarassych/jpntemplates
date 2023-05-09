@@ -306,6 +306,10 @@ html {
 #plp .plp-how__block p span {
   text-decoration: underline;
 }
+#plp .plp-how__block p a {
+  color: #000000;
+  text-decoration: underline;
+}
 
 
 #plp .plp-faq {
@@ -321,6 +325,15 @@ html {
 #plp .plp-faq__row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+}
+#plp .plp-faq__row h6 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 2.3rem;
+  margin-top: 6rem;
+  text-align: center;
+  width: 100%;
 }
 #plp .plp-faq__left {
   width: 50%;
@@ -341,7 +354,17 @@ html {
 #plp .plp-faq__question {
   display: none;
   flex-direction: column;
-  padding-left: 2rem;
+  padding-left: 4rem;
+  position: relative;
+}
+#plp .plp-faq__question:before {
+  content: "";
+  background: url(https://www.edanz.com/sites/default/files/plp-icon-q.png) center / 100% 100% no-repeat;
+  position: absolute;
+  top: .4rem;
+  left: 1.5rem;
+  height: 2rem;
+  width: 2rem;
 }
 #plp .plp-faq__group.open > .plp-faq__question {
   display: flex;
@@ -354,7 +377,17 @@ html {
 }
 #plp .plp-faq__answer {
   display: none;
-  padding-left: 2rem;
+  padding-left: 3rem;
+  position: relative;
+}
+#plp .plp-faq__answer:before {
+  content: "";
+  background: url(https://www.edanz.com/sites/default/files/plp-icon-a.png) center / 100% 100% no-repeat;
+  position: absolute;
+  top: .5rem;
+  left: .5rem;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 #plp .plp-faq__question.open > .plp-faq__answer {
   display: flex;
