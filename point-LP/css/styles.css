@@ -233,7 +233,7 @@ html {
   height: 4.8rem;
   width: 4.8rem;
 }
-#plp .plp-zoom img {
+#plp .plp-zoom > img {
   width: 100%;
 }
 #plp .plp-zoom__big {
@@ -242,6 +242,7 @@ html {
   display: none;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   position: fixed;
   top: 50%;
   left: 50%;
