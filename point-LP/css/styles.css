@@ -42,17 +42,17 @@ html {
 
 
 #plp .plp-header {
-  background: url(https://www.edanz.com/sites/default/files/plp/plp-header-bg-img.png) center / cover no-repeat, #fcbc3a;
+  background: url(https://www.edanz.com/sites/default/files/plp-3/plp-header-bg-img-2.png) center / cover no-repeat;
   border-radius: 1.5rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 4rem;
-  padding: 2rem 3rem 0;
+  padding: 3.5rem 3rem 0;
 }
 #plp .plp-header img {
-  margin: 0 1rem 2rem;
+  margin: 0 0 4rem;
   max-height: 30rem;
   max-width: 100%;
 }
@@ -151,10 +151,9 @@ html {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 3rem;
 }
 #plp .plp-block {
-  margin: 0 3.5rem;
+  margin: 0 3.5rem 3rem;
   text-align: center;
   width: 30rem;
 }
@@ -193,19 +192,22 @@ html {
   margin: 2rem 0 3rem;
 }
 #plp .plp-block a {
-  background: url(https://www.edanz.com/sites/default/files/plp/plp-button-bg.png) center / cover no-repeat;
-  color: #333333;
+  background: url(https://www.edanz.com/sites/default/files/plp-3/plp-button-bg-2.png) center / 100% 100% no-repeat;
   display: inline-flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: 1.8rem;
-  font-weight: 700;
-  line-height: 3.1rem;
   margin: 0 auto;
   text-decoration: none;
   height: 5.5rem;
-  width: 22rem;
+  width: 23rem;
+}
+#plp .plp-block a span {
+  color: #000000;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 3.1rem;
+  margin-right: 2rem;
 }
 #plp .plp-block a img {
   margin-right: 1rem;
@@ -243,11 +245,12 @@ html {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  padding: 5rem 2rem;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 50vh;
+  height: 80vh;
   width: 50vw;
   z-index: 99;
 }
