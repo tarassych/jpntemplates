@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DP eblast</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    /* Client-specific Styles */
+    #outlook a {
+      padding: 0;
+    }
+
+    /* Force Outlook to provide a "view in browser" menu link. */
+    body {
+      width: 100% !important;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    body h1,
+    body h2,
+    body h3,
+    body h4,
+    body p {
+      margin: 0;
+    }
+
+    /* Force Hotmail to display emails at full width */
+    .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+      line-height: 100%;
+    }
+
+    /* Force Hotmail to display normal line spacing.*/
+    #backgroundTable {
+      margin: 0;
+      padding: 0;
+      width: 100% !important;
+      line-height: 100% !important;
+    }
+
+    img {
+      outline: none;
+      text-decoration: none;
+      border: none;
+      -ms-interpolation-mode: bicubic;
+    }
+
+    a img {
+      border: none;
+    }
+
+    table td {
+      border-collapse: collapse;
+    }
+
+    table {
+      border-collapse: collapse;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+
+    @media only screen and (max-width: 640px) {
+      table[class=devicewidth] {
+        padding: 0 20px;
+        max-width: 600px !important;
+      }
+    }
+
+    @media only screen and (max-width: 480px) {
+      table[class=devicewidth] {
+        padding: 0 20px;
+        max-width: 360px !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div>
+  <table width="100%" bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" id="backgroundTable">
+    <tbody>
+    <tr>
+      <td>
+        <table width="600" bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" align="center"
+               class="devicewidth">
+          <tbody>
+          <tr>
+            <td style="">
+              <table
+                  style="background: url(img/nc-header-bg-img.png) top center / 100% auto no-repeat; width: 100%;height: 100%;">
+                <tbody>
+                <tr>
+                  <td colspan="2" style="text-align:right;padding: 18px 22px;">
+                    <img style="width: 100px;max-width: 100%;margin-bottom: 30px;" src="img/nc-logo-1.png" alt="">
+                  </td>
+                </tr>
+
+                <tr>
+                  <td colspan="2" style="padding: 0 80px;">
+                    <img style="width: 220px;max-width: 100%;" src="img/nc-logo-2.png" alt="">
+                  </td>
+                </tr>
+
+                <tr>
+                  <td colspan="2" style="padding: 0 80px;">
+                    <img style="width: 18px;max-width: 100%;" src="img/nc-logo-3.png" alt="">
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding-left: 80px;width: 50%;">
+                    <img style="width: 100px;max-width: 100%;margin-bottom: 25px;" src="img/nc-logo-4.png" alt="">
+                  </td>
+
+                  <td style="padding-right: 80px;width: 50%;">
+                    <h2 style="color: #ffffff;font-size: 20px;font-weight: 700;line-height: 23px;margin-bottom: 25px;text-align:right;">
+                      June 12–14
+                    </h2>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td colspan="2" style="padding: 0 80px;">
+                    <img style="width: 100%;max-width: 100%;margin-bottom: 25px;" src="img/nc-img-1.png" alt="">
+                  </td>
+                </tr>
+
+                <tr>
+                  <td colspan="2" style="padding: 0 80px;">
+                    <h2 style="color: #272727;font-size: 25px;font-weight: 700;line-height: 40px;margin-bottom: 13px;">
+                      Prepare To Be Floored
+                    </h2>
+
+                    <p style="color: #919191;font-size: 14px;font-weight: 400;line-height: 25px;margin-bottom: 25px;">
+                      Discover the latest flooring collections for your next project at NeoCon 2023.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding-left: 80px;width: 50%;padding-bottom: 30px;padding-right: 25px;vertical-align:top;">
+                    <img src="img/nc-img-2.png" alt="" style="width: 200px;margin-bottom: 55px;">
+
+                    <h3 style="color: #272727;font-size: 12px;font-weight: 700;line-height: 20px;margin-bottom: 9px;">
+                      Even Path
+                    </h3>
+
+                    <p style="color: #919191;font-size: 11px;font-weight: 400;line-height: 20px;margin-bottom: 17px;">
+                      Even Path™ Collection of rigid core flooring is designed with the strength and beauty of nature to
+                      its very core. Its high-definition textures express the natural aesthetics of solid wood and
+                      permanent stone.
+                    </p>
+
+                    <a href=""
+                       style="display: inline-block;background-color: #7ebab9;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;padding: 6px 15px;color: #ffffff;font-size: 10px;font-weight: 700;line-height: 10px;text-decoration: none;">
+                      Learn More
+                    </a>
+                  </td>
+
+                  <td style="padding-right: 80px;width: 50%;padding-bottom: 30px;padding-left: 25px;vertical-align:top;">
+                    <h3 style="color: #272727;font-size: 12px;font-weight: 700;line-height: 20px;margin-bottom: 9px;padding-top: 12px;">
+                      Studio Set
+                    </h3>
+
+                    <p style="color: #919191;font-size: 11px;font-weight: 400;line-height: 20px;margin-bottom: 17px;">
+                      Studio Set LVT embraces a saturated spectrum of daring brights and warm neutrals with a subtle
+                      woodgrain pattern that suggests texture without demanding attention.
+                    </p>
+
+                    <a href=""
+                       style="display: inline-block;background-color: #7ebab9;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;padding: 6px 15px;color: #ffffff;font-size: 10px;font-weight: 700;line-height: 10px;text-decoration: none;margin-bottom: 60px;">
+                      Learn More
+                    </a>
+
+                    <img src="img/nc-img-3.png" alt="" style="width: 200px;margin-left: auto;">
+                  </td>
+                </tr>
+
+                <tr>
+                  <td colspan="2" style="padding: 0 80px;">
+                    <img style="width: 100%;max-width: 100%;margin-bottom: 30px;" src="img/nc-footer-img.png" alt="">
+                  </td>
+                </tr>
+
+                <tr>
+                  <td colspan="2" style="padding: 0 80px;">
+                    <hr style="border: 0;background-color: #e8e8e8;width: 100%;height: 1px;margin: 0;padding: 0;">
+                  </td>
+                </tr>
+
+                <tr>
+                  <td colspan="2" style="padding: 0 80px;">
+                    <p style="font-size: 10px;line-height: 14px;color: #888888; text-align: center;padding: 15px 0;">
+                      If you believe this has been sent to you in error, please safely
+                      <a href="#" style="color: #000000">
+                        unsubscribe.
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
