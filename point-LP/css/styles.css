@@ -204,13 +204,20 @@ html {
 }
 #plp .plp-block a span {
   color: #000000;
+  display: inline-block;
   font-size: 1.8rem;
   font-weight: 700;
-  line-height: 3.1rem;
-  margin-right: 2rem;
+  line-height: 1.8rem;
+  padding-bottom: .3rem;
+  position: relative;
 }
-#plp .plp-block a img {
-  margin-right: 1rem;
+#plp .plp-block a span:before {
+  content: "";
+  background: url(https://www.edanz.com/sites/default/files/plp/plp-icon-arrow.png) center / cover no-repeat;
+  position: absolute;
+  top: 50%;
+  left: -2rem;
+  transform: translateY(-50%);
   height: 2rem;
   width: 1rem;
 }
@@ -245,13 +252,13 @@ html {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 5rem 2rem;
+  padding: 2rem;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 80vh;
-  width: 50vw;
+  height: 50vh;
+  width: 40vw;
   z-index: 99;
 }
 #plp .plp-zoom.open > .plp-zoom__big {
