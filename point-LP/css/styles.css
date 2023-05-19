@@ -248,11 +248,11 @@ html {
   justify-content: center;
   padding: 2rem;
   position: fixed;
-  top: 50%;
+  bottom: 5rem;
   left: 50%;
-  transform: translate(-50%, -50%);
-  height: 50vh;
-  width: 40vw;
+  transform: translateX(-50%);
+  height: 65vh;
+  width: 50vw;
   z-index: 99;
 }
 #plp .plp-zoom.open > .plp-zoom__big {
@@ -418,6 +418,11 @@ html {
     padding-left: 5rem;
     padding-right: 5rem;
   }
+
+  #plp .plp-zoom__big {
+    height: 55vh;
+    width: 80vw;
+  }
 }
 
 @media (max-width: 768px) {
@@ -440,6 +445,12 @@ html {
   #plp .plp-faq__left,
   #plp .plp-faq__right {
     width: 100%;
+  }
+
+
+  #plp .plp-zoom__big {
+    height: 55vh;
+    width: 80vw;
   }
 }
 
