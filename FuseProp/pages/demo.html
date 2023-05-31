@@ -11,6 +11,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
   />
+  <link rel="stylesheet" href="../css/docSlider.css">
+
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
@@ -20,7 +22,7 @@
       <img src="../img/fp-login-logo-v2.png" alt="">
 
       <div class="fp-nav">
-        <div class="fp-nav__element" data-target="block1">
+        <div class="fp-nav__element active" id="block1">
           <div class="fp-nav__img">
             <div class="fp-nav__img-circle circle-aqua">
               <img src="../img/fp-nav-icon-1.png" alt="">
@@ -30,7 +32,7 @@
           </div>
         </div>
 
-        <div class="fp-nav__element" data-target="block2">
+        <div class="fp-nav__element" id="block2">
           <div class="fp-nav__img">
             <div class="fp-nav__img-circle circle-grey">
               <img src="../img/fp-nav-icon-2.png" alt="">
@@ -40,7 +42,7 @@
           </div>
         </div>
 
-        <div class="fp-nav__element active" data-target="block3">
+        <div class="fp-nav__element" id="block3">
           <div class="fp-nav__img">
             <div class="fp-nav__img-circle circle-grey">
               <img src="../img/fp-nav-icon-3.png" alt="">
@@ -50,7 +52,7 @@
           </div>
         </div>
 
-        <div class="fp-nav__element" data-target="block4">
+        <div class="fp-nav__element" id="block4">
           <div class="fp-nav__img">
             <div class="fp-nav__img-circle circle-grey">
               <img src="../img/fp-nav-icon-4.png" alt="">
@@ -60,7 +62,7 @@
           </div>
         </div>
 
-        <div class="fp-nav__element" data-target="block5">
+        <div class="fp-nav__element" id="block5">
           <div class="fp-nav__img">
             <div class="fp-nav__img-circle circle-grey">
               <img src="../img/fp-nav-icon-5.png" alt="">
@@ -72,123 +74,197 @@
       </div>
     </div>
 
-    <div class="fp-demo__right" id="block1">Home page</div>
+    <div class="docSlider">
+      <section class="fp-demo__right">Home page</section>
 
-    <div class="fp-demo__right--mobile fp-demo__right" id="block2">
-      <div class="fp-apps">
-        <a href="">
-          <img src="../img/fp-btn-apple.png" alt="">
-        </a>
+      <section class="fp-demo__right--mobile fp-demo__right">
+        <div class="fp-apps">
+          <a href="">
+            <img src="../img/fp-btn-apple.png" alt="">
+          </a>
 
-        <a href="">
-          <img src="../img/fp-btn-google.png" alt="">
-        </a>
-      </div>
+          <a href="">
+            <img src="../img/fp-btn-google.png" alt="">
+          </a>
+        </div>
 
-      <div class="fp-device">
-        <div class="fp-device__bg">
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="fp-mobile-img fp-mobile-img-1"></div>
+        <div class="fp-device">
+          <div class="fp-device__bg">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="image-container fp-mobile-img">
+                    <img src="../img/fp-mobile-img-1.png"
+                         srcset="../img/fp-mobile-img-1.png 1x, ../img/fp-mobile-img-1@2x.png 2x" alt=""
+                         class="default-image">
+                    <img src="../img/fp-mobile-img-1-h.png"
+                         srcset="../img/fp-mobile-img-1-h.png 1x, ../img/fp-mobile-img-1-h@2x.png 2x"
+                         alt="" class="hover-image">
+                  </div>
 
-                <img src="../img/fp-mobile-img-tooltip-1.png" alt="">
+                  <img src="../img/fp-mobile-img-tooltip-1.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="image-container fp-mobile-img">
+                    <img src="../img/fp-mobile-img-2.png"
+                         srcset="../img/fp-mobile-img-2.png 1x, ../img/fp-mobile-img-2@2x.png 2x" alt=""
+                         class="default-image">
+                    <img src="../img/fp-mobile-img-2-h.png"
+                         srcset="../img/fp-mobile-img-2-h.png 1x, ../img/fp-mobile-img-2-h@2x.png 2x"
+                         alt="" class="hover-image">
+                  </div>
+
+                  <img src="../img/fp-mobile-img-tooltip-2.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="image-container fp-mobile-img">
+                    <img src="../img/fp-mobile-img-3.png"
+                         srcset="../img/fp-mobile-img-3.png 1x, ../img/fp-mobile-img-3@2x.png 2x" alt=""
+                         class="default-image">
+                    <img src="../img/fp-mobile-img-3-h.png"
+                         srcset="../img/fp-mobile-img-3-h.png 1x, ../img/fp-mobile-img-3-h@2x.png 2x"
+                         alt="" class="hover-image">
+                  </div>
+
+                  <img src="../img/fp-mobile-img-tooltip-3.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="image-container fp-mobile-img">
+                    <img src="../img/fp-mobile-img-4.png"
+                         srcset="../img/fp-mobile-img-4.png 1x, ../img/fp-mobile-img-4@2x.png 2x" alt=""
+                         class="default-image">
+                    <img src="../img/fp-mobile-img-4-h.png"
+                         srcset="../img/fp-mobile-img-4-h.png 1x, ../img/fp-mobile-img-4-h@2x.png 2x"
+                         alt="" class="hover-image">
+                  </div>
+
+                  <img src="../img/fp-mobile-img-tooltip-4.png" alt="">
+                </div>
               </div>
 
-              <div class="swiper-slide">
-                <div class="fp-mobile-img fp-mobile-img-2"></div>
+              <div class="fp-swiper-navigation">
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
 
-                <img src="../img/fp-mobile-img-tooltip-2.png" alt="">
+                <!-- Navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
               </div>
-
-              <div class="swiper-slide">
-                <div class="fp-mobile-img fp-mobile-img-3"></div>
-
-                <img src="../img/fp-mobile-img-tooltip-3.png" alt="">
-              </div>
-
-              <div class="swiper-slide">
-                <div class="fp-mobile-img fp-mobile-img-4"></div>
-
-                <img src="../img/fp-mobile-img-tooltip-4.png" alt="">
-              </div>
-            </div>
-
-            <div class="fp-swiper-navigation">
-              <!-- Pagination -->
-              <div class="swiper-pagination"></div>
-
-              <!-- Navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <div class="fp-demo__right--desktop fp-demo__right active" id="block3">
-      <div class="fp-desktop__bg">
-        <div class="fp-desktop">
-          <div class="swiper2">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="fp-desktop-img fp-desktop-img-1"></div>
+      <section class="fp-demo__right--desktop fp-demo__right">
+        <div class="fp-desktop__bg">
+          <div class="fp-desktop">
+            <div class="swiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="image-container fp-desktop-img">
+                    <img src="../img/fp-desktop-img-1.png"
+                         srcset="../img/fp-desktop-img-1.png 1x, ../img/fp-desktop-img-1@2x.png 2x" alt=""
+                         class="default-image">
+                    <img src="../img/fp-desktop-img-1-h.png"
+                         srcset="../img/fp-desktop-img-1-h.png 1x, ../img/fp-desktop-img-1-h@2x.png 2x"
+                         alt="" class="hover-image">
+                  </div>
 
-                <img src="../img/fp-desktop-img-tooltip-1.png" alt="">
+                  <img src="../img/fp-desktop-img-tooltip-1.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="image-container fp-desktop-img">
+                    <img src="../img/fp-desktop-img-2.png"
+                         srcset="../img/fp-desktop-img-2.png 1x, ../img/fp-desktop-img-2@2x.png 2x" alt=""
+                         class="default-image">
+                    <img src="../img/fp-desktop-img-2-h.png"
+                         srcset="../img/fp-desktop-img-2-h.png 1x, ../img/fp-desktop-img-2-h@2x.png 2x"
+                         alt="" class="hover-image">
+                  </div>
+
+                  <img src="../img/fp-desktop-img-tooltip-2.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="image-container fp-desktop-img">
+                    <img src="../img/fp-desktop-img-3.png"
+                         srcset="../img/fp-desktop-img-3.png 1x, ../img/fp-desktop-img-3@2x.png 2x" alt=""
+                         class="default-image">
+                    <img src="../img/fp-desktop-img-3-h.png"
+                         srcset="../img/fp-desktop-img-3-h.png 1x, ../img/fp-desktop-img-3-h@2x.png 2x"
+                         alt="" class="hover-image">
+                  </div>
+
+                  <img src="../img/fp-desktop-img-tooltip-3.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="image-container fp-desktop-img">
+                    <img src="../img/fp-desktop-img-4.png"
+                         srcset="../img/fp-desktop-img-4.png 1x, ../img/fp-desktop-img-4@2x.png 2x" alt=""
+                         class="default-image">
+                    <img src="../img/fp-desktop-img-4-h.png"
+                         srcset="../img/fp-desktop-img-4-h.png 1x, ../img/fp-desktop-img-4-h@2x.png 2x"
+                         alt="" class="hover-image">
+                  </div>
+
+                  <img src="../img/fp-desktop-img-tooltip-4.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="image-container fp-desktop-img">
+                    <img src="../img/fp-desktop-img-5.png"
+                         srcset="../img/fp-desktop-img-5.png 1x, ../img/fp-desktop-img-5@2x.png 2x" alt=""
+                         class="default-image">
+                    <img src="../img/fp-desktop-img-5-h.png"
+                         srcset="../img/fp-desktop-img-5-h.png 1x, ../img/fp-desktop-img-5-h@2x.png 2x"
+                         alt="" class="hover-image">
+                  </div>
+
+                  <img src="../img/fp-desktop-img-tooltip-5.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="image-container fp-desktop-img">
+                    <img src="../img/fp-desktop-img-6.png"
+                         srcset="../img/fp-desktop-img-6.png 1x, ../img/fp-desktop-img-6@2x.png 2x" alt=""
+                         class="default-image">
+                    <img src="../img/fp-desktop-img-6-h.png"
+                         srcset="../img/fp-desktop-img-6-h.png 1x, ../img/fp-desktop-img-6-h@2x.png 2x"
+                         alt="" class="hover-image">
+                  </div>
+
+                  <img src="../img/fp-desktop-img-tooltip-6.png" alt="">
+                </div>
               </div>
 
-              <div class="swiper-slide">
-                <div class="fp-desktop-img fp-desktop-img-2"></div>
+              <div class="fp-swiper-navigation">
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
 
-                <img src="../img/fp-desktop-img-tooltip-2.png" alt="">
+                <!-- Navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
               </div>
-
-              <div class="swiper-slide">
-                <div class="fp-desktop-img fp-desktop-img-3"></div>
-
-                <img src="../img/fp-desktop-img-tooltip-3.png" alt="">
-              </div>
-
-              <div class="swiper-slide">
-                <div class="fp-desktop-img fp-desktop-img-4"></div>
-
-                <img src="../img/fp-desktop-img-tooltip-4.png" alt="">
-              </div>
-
-              <div class="swiper-slide">
-                <div class="fp-desktop-img fp-desktop-img-5"></div>
-
-                <img src="../img/fp-desktop-img-tooltip-5.png" alt="">
-              </div>
-
-              <div class="swiper-slide">
-                <div class="fp-desktop-img fp-desktop-img-6"></div>
-
-                <img src="../img/fp-desktop-img-tooltip-6.png" alt="">
-              </div>
-            </div>
-
-            <div class="fp-swiper-navigation">
-              <!-- Pagination -->
-              <div class="swiper-pagination"></div>
-
-              <!-- Navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section class="fp-demo__right">Scheduling page</section>
+
+      <section class="fp-demo__right">Install page</section>
     </div>
-
-    <div class="fp-demo__right" id="block4">Scheduling page</div>
-
-    <div class="fp-demo__right" id="block5">Install page</div>
   </div>
 </div>
+<div class="fp-img-preloader"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="../js/docSlider.min.js"></script>
 <script>
     const swiper = new Swiper('.swiper', {
         // Optional parameters
@@ -226,39 +302,27 @@
     const elements = document.querySelectorAll(".fp-nav__element");
     const blocks = document.querySelectorAll(".fp-demo__right");
 
-    elements.forEach(el => {
-        el.addEventListener('click', (e) => {
-            const target = e.currentTarget.dataset.target;
-            if (!e.currentTarget.classList.contains('active')) {
-                elements.forEach(c => {
-                    c.classList.remove('active');
-                })
-                blocks.forEach(b => {
-                    b.classList.remove('active');
-                })
-            }
-
-            document.querySelector(`#${target}`).classList.add('active');
-            e.currentTarget.classList.add('active');
-
-            // Update Swiper instances after changing the active block
-            setTimeout(() => {
-                swiper.update();
-                swiper2.update();
-            }, 100);
-        });
-    })
+    docSlider.init({
+        pager: false,
+        afterChange: function (index) {
+            elements.forEach(c => {
+                c.classList.remove('active');
+            })
+            document.querySelector(`#block${index + 1}`).classList.add('active');
+        }
+    });
 
     const imgsMobile = document.querySelectorAll(".fp-mobile-img");
+    const imgContainer = document.querySelectorAll(".image-container");
 
-    imgsMobile.forEach(el => {
+    imgContainer.forEach(el => {
         el.addEventListener('mouseover', (e) => {
             e.currentTarget.classList.add('tooltip');
         });
     })
 
-    document.addEventListener('mousedown', function(event) {
-        imgsMobile.forEach(el => {
+    document.addEventListener('mousedown', function () {
+        imgContainer.forEach(el => {
             el.classList.remove('tooltip');
         });
     });
@@ -271,7 +335,7 @@
         });
     })
 
-    document.addEventListener('mousedown', function(event) {
+    document.addEventListener('mousedown', function () {
         imgsDesktop.forEach(el => {
             el.classList.remove('tooltip');
         });
