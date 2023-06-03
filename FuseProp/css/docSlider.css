@@ -8,28 +8,28 @@
 
  -----------------------**/
 /* CHANGE THE PAGER STYLE */
-.docSlider-pager {
-  position: fixed;
-  z-index: 100;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-}
+/*.docSlider-pager {*/
+/*  position: fixed;*/
+/*  z-index: 100;*/
+/*  top: 50%;*/
+/*  right: 20px;*/
+/*  transform: translateY(-50%);*/
+/*}*/
 
 /* CHANGE THE BUTTON STYLE */
-.docSlider-button {
-  height: 18px;
-  width: 18px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: block;
-  margin: 5px 0;
-  background-color: #333;
-  opacity: .25;
-  appearance: none;
-  border: none;
-  box-sizing: border-box;
-}
+/*.docSlider-button {*/
+/*  height: 18px;*/
+/*  width: 18px;*/
+/*  border-radius: 50%;*/
+/*  cursor: pointer;*/
+/*  display: block;*/
+/*  margin: 5px 0;*/
+/*  background-color: #333;*/
+/*  opacity: .25;*/
+/*  appearance: none;*/
+/*  border: none;*/
+/*  box-sizing: border-box;*/
+/*}*/
 
 .docSlider-button.selected {
   opacity: 1;

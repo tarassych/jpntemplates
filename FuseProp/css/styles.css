@@ -139,7 +139,6 @@ body {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  /*height: 100%;*/
   position: fixed;
   top: 3rem;
   left: 4rem;
@@ -193,8 +192,8 @@ body {
   height: 4rem;
   width: 4rem;
 }
-/*.fp-nav__element:hover .fp-nav__img-circle,*/
-.fp-nav__element.active .fp-nav__img-circle {
+.fp-nav__element:hover .fp-nav__img-circle,
+.fp-nav__element.selected .fp-nav__img-circle {
   background-color: #3579F6;
   left: -0.6rem;
   height: 5rem;
@@ -216,8 +215,8 @@ body {
   line-height: 3.9rem;
   padding-left: 5.5rem;
 }
-/*.fp-nav__element:hover .fp-nav__img h2,*/
-.fp-nav__element.active .fp-nav__img h2 {
+.fp-nav__element:hover .fp-nav__img h2,
+.fp-nav__element.selected .fp-nav__img h2 {
   color: #3579f6;
   font-size: 1.6rem;
   font-weight: 700;
