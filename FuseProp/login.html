@@ -5,7 +5,7 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>FuseProp</title>
+  <title>Fuseprop Log In</title>
 
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -24,11 +24,13 @@
       </h3>
 
       <!--   need to add class "incorrect" for error styles   -->
-      <input type="password" placeholder="Password" minlength="6" required class="">
+      <label for="password"></label>
+      <input type="password" placeholder="Password" minlength="6" id="password" required class="">
 
       <h5>Incorrect Password. Please try again</h5>
 
-      <button>
+      <!--   correct password, add class - correct   -->
+      <button type="submit" onclick="signIn()" id="submit" class="submit">
         UNLOCK ACCESS
       </button>
     </div>
@@ -36,5 +38,28 @@
     <h6>©Fuseprop 2023. All rights reserved.</h6>
   </div>
 </div>
+
+<script>
+    const pswdInput = document.querySelector('#password');
+    const submitBtn = document.querySelector('#submit');
+
+    pswdInput.addEventListener('input', (e) => {
+        pswdInput.classList.remove('incorrect');
+
+        if (e.target.value.length >= 6) {
+            submitBtn.classList.add('correct');
+        } else {
+            submitBtn.classList.remove('correct');
+        }
+    })
+
+    const signIn = () => {
+        if (pswdInput.value === 'FP202$') {
+            window.location.href = 'pages/demo.html'
+        } else {
+            pswdInput.classList.add('incorrect');
+        }
+    }
+</script>
 </body>
 </html>
