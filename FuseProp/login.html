@@ -25,12 +25,12 @@
 
       <!--   need to add class "incorrect" for error styles   -->
       <label for="password"></label>
-      <input type="password" placeholder="Password" minlength="6" id="password" required class="">
+      <input type="password" placeholder="Password" minlength="1" id="password" required class="">
 
       <h5>Incorrect Password. Please try again</h5>
 
       <!--   correct password, add class - correct   -->
-      <button type="submit" onclick="signIn()" id="submit" class="submit">
+      <button type="submit" onclick="signIn()" id="submit" class="submit" disabled>
         UNLOCK ACCESS
       </button>
     </div>
@@ -46,10 +46,12 @@
     pswdInput.addEventListener('input', (e) => {
         pswdInput.classList.remove('incorrect');
 
-        if (e.target.value.length >= 6) {
+        if (e.target.value.length >= 1) {
             submitBtn.classList.add('correct');
+            submitBtn.disabled = false;
         } else {
             submitBtn.classList.remove('correct');
+            submitBtn.disabled = true;
         }
     })
 
