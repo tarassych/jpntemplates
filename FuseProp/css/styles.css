@@ -515,7 +515,6 @@ body {
   width: 136.6rem;
 }
 .fp-desktop__mf {
-  cursor: pointer;
   overflow: hidden;
   position: absolute;
   top: 5.7rem;
@@ -526,6 +525,7 @@ body {
 .fp-desktop__mf > div {
   background: url(../img/fp-mobile-friendly-img.png) top center / 100% auto no-repeat, #e4e6eb;
   border-radius: 5rem 0 0 5rem;
+  cursor: pointer;
   position: relative;
   left: 9.1rem;
   transition: left .3s linear;
