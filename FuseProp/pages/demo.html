@@ -296,7 +296,7 @@
           </div>
         </div>
 
-        <div class="fp-desktop__mf"></div>
+        <div class="fp-desktop__mf"><div></div></div>
       </div>
     </section>
 
@@ -374,7 +374,7 @@
           </div>
         </div>
 
-        <div class="fp-desktop__mf"></div>
+        <div class="fp-desktop__mf"><div></div></div>
       </div>
     </section>
 
@@ -433,6 +433,8 @@
 
                 <div class="fp-detourIcon">
                   <img src="../img/fp-icon-detour.png" alt="">
+
+                  <span>Detour Available!</span>
                 </div>
               </div>
 
@@ -536,7 +538,7 @@
           </div>
         </div>
 
-        <div class="fp-desktop__mf"></div>
+        <div class="fp-desktop__mf"><div></div></div>
       </div>
     </section>
 
@@ -612,7 +614,7 @@
           </div>
         </div>
 
-        <div class="fp-desktop__mf"></div>
+        <div class="fp-desktop__mf"><div></div></div>
       </div>
     </section>
   </div>
@@ -711,6 +713,17 @@
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+
+        on: {
+            slideChange: function (s) {
+                console.log(s)
+                if (s.activeIndex === 1) {
+                    document.querySelector('.fp-detourIcon').classList.add('active');
+                } else {
+                    document.querySelector('.fp-detourIcon').classList.remove('active');
+                }
+            }
+        }
     });
     const swiper5 = new Swiper('.swiper5', {
         // Optional parameters

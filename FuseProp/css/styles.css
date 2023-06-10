@@ -383,13 +383,39 @@ body {
   width: 35.6rem;
 }
 .fp-detourIcon {
+  cursor: pointer;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
   position: absolute;
   top: 50%;
-  right: -10rem;
+  left: calc(100% + 5rem);
+  transition: width .3s linear;
+  width: 5rem;
+}
+.fp-detourIcon:hover {
+  width: 20rem;
 }
 .fp-detourIcon img {
   height: 4.8rem;
   width: 4.8rem;
+}
+.fp-detourIcon.active {
+  display: flex;
+}
+.fp-detourIcon span {
+  display: none;
+}
+.fp-detourIcon:hover span {
+  animation: appear 0.3s linear 1;
+  color: #ff8810;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 3rem;
+  margin-left: 1.3rem;
+  white-space: nowrap;
 }
 .image-container {
   background-color: #ffffff;
@@ -398,6 +424,9 @@ body {
   overflow: hidden;
   height: 79.6em;
   width: 35.6rem;
+}
+.image-container img {
+  width: 100%;
 }
 .fp-mobile-img {
   border-radius: 5rem;
@@ -486,17 +515,26 @@ body {
   width: 136.6rem;
 }
 .fp-desktop__mf {
-  background: url(../img/fp-mobile-friendly.png) center / 100% 100% no-repeat;
   cursor: pointer;
+  overflow: hidden;
   position: absolute;
   top: 5.7rem;
-  left: 5.2rem;
-  height: 6.7rem;
-  width: 5.7rem;
-}
-.fp-desktop__mf:hover {
-  background: url(../img/fp-mobile-friendly-hover.png) center / 100% 100% no-repeat;
   left: -3.9rem;
+  height: 6.7rem;
+  width: 14.8rem;
+}
+.fp-desktop__mf > div {
+  background: url(../img/fp-mobile-friendly-img.png) top center / 100% auto no-repeat, #e4e6eb;
+  border-radius: 5rem 0 0 5rem;
+  position: relative;
+  left: 9.1rem;
+  transition: left .3s linear;
+  height: 100%;
+  width: 100%;
+}
+.fp-desktop__mf > div:hover {
+  background-color: #47e2be;
+  left: 0;
   width: 14.8rem;
 }
 .fp-desktop {
@@ -609,10 +647,6 @@ body {
   background-position: center;
   background-size: cover;
   position: relative;
-}
-.swiper-slide img {
-  /*display: block;*/
-  width: 100%;
 }
 .swiper-slide > img {
   display: block;
@@ -730,41 +764,6 @@ body {
   }
   100%  {
     transform: scale(1);
-  }
-}
-@keyframes disappear {
-  0%  {
-    transform: scale(1);
-  }
-  100%  {
-    transform: scale(0);
-  }
-}
-@keyframes expand-bounce {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1.2) translateY(-50%);
-  }
-  100% {
-    transform: scale(1) translateY(-50%);
-  }
-}
-@keyframes shrink {
-  0% {
-    transform: scale(1) translateY(-50%);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
-@keyframes botToTop {
-  0%  {
-    transform: translateY(100%);
-  }
-  100%  {
-    transform: translateY(0%);
   }
 }
 @keyframes pop {
