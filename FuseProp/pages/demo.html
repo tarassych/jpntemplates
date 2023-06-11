@@ -80,7 +80,7 @@
               <img src="../img/fp-nav-icon-6.png" alt="">
             </div>
 
-            <h2>Scheduling</h2>
+            <h2>Change Order</h2>
           </div>
         </div>
 
@@ -90,7 +90,7 @@
               <img src="../img/fp-nav-icon-7.png" alt="">
             </div>
 
-            <h2>Install</h2>
+            <h2>Punch List</h2>
           </div>
         </div>
       </div>
@@ -296,7 +296,9 @@
           </div>
         </div>
 
-        <div class="fp-desktop__mf"><div></div></div>
+        <div class="fp-desktop__mf">
+          <div></div>
+        </div>
       </div>
     </section>
 
@@ -374,7 +376,9 @@
           </div>
         </div>
 
-        <div class="fp-desktop__mf"><div></div></div>
+        <div class="fp-desktop__mf">
+          <div></div>
+        </div>
       </div>
     </section>
 
@@ -431,11 +435,11 @@
                   </h2>
                 </div>
 
-                <div class="fp-detourIcon">
+                <button type="button" onclick="docSlider.jumpPage(4)" class="fp-detourIcon">
                   <img src="../img/fp-icon-detour.png" alt="">
 
                   <span>Detour Available!</span>
-                </div>
+                </button>
               </div>
 
               <div class="swiper-slide">
@@ -538,7 +542,9 @@
           </div>
         </div>
 
-        <div class="fp-desktop__mf"><div></div></div>
+        <div class="fp-desktop__mf">
+          <div></div>
+        </div>
       </div>
     </section>
 
@@ -614,7 +620,9 @@
           </div>
         </div>
 
-        <div class="fp-desktop__mf"><div></div></div>
+        <div class="fp-desktop__mf">
+          <div></div>
+        </div>
       </div>
     </section>
   </div>
@@ -648,12 +656,18 @@
                 tooltip.style.animationDuration = '0.3s';
             }
         });
-    }, 2000);
+    }, 1000);
 
     const swiper1 = new Swiper('.swiper1', {
         // Optional parameters
         effect: 'fade', // flip
         allowTouchMove: false,
+        keyboard: true,
+        on: {
+            activeIndexChange: (swiper) => {
+                swp(swiper.el, 0, swiper.activeIndex)
+            }
+        },
 
         // Pagination
         pagination: {
@@ -670,6 +684,12 @@
         // Optional parameters
         effect: 'fade',
         allowTouchMove: false,
+        keyboard: true,
+        on: {
+            activeIndexChange: (swiper) => {
+                swp(swiper.el, 1, swiper.activeIndex)
+            }
+        },
 
         // Pagination
         pagination: {
@@ -686,6 +706,12 @@
         // Optional parameters
         effect: 'fade',
         allowTouchMove: false,
+        keyboard: true,
+        on: {
+            activeIndexChange: (swiper) => {
+                swp(swiper.el, 2, swiper.activeIndex)
+            }
+        },
 
         // Pagination
         pagination: {
@@ -702,6 +728,19 @@
         // Optional parameters
         effect: 'fade',
         allowTouchMove: false,
+        keyboard: true,
+        on: {
+            slideChange: function (s) {
+                if (s.activeIndex === 1) {
+                    document.querySelector('.fp-detourIcon').classList.add('active');
+                } else {
+                    document.querySelector('.fp-detourIcon').classList.remove('active');
+                }
+            },
+            activeIndexChange: (swiper) => {
+                swp(swiper.el, 3, swiper.activeIndex)
+            }
+        },
 
         // Pagination
         pagination: {
@@ -713,22 +752,17 @@
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
-
-        on: {
-            slideChange: function (s) {
-                console.log(s)
-                if (s.activeIndex === 1) {
-                    document.querySelector('.fp-detourIcon').classList.add('active');
-                } else {
-                    document.querySelector('.fp-detourIcon').classList.remove('active');
-                }
-            }
-        }
     });
     const swiper5 = new Swiper('.swiper5', {
         // Optional parameters
         effect: 'fade',
         allowTouchMove: false,
+        keyboard: true,
+        on: {
+            activeIndexChange: (swiper) => {
+                swp(swiper.el, 4, swiper.activeIndex)
+            }
+        },
 
         // Pagination
         pagination: {
@@ -745,6 +779,12 @@
         // Optional parameters
         effect: 'fade',
         allowTouchMove: false,
+        keyboard: true,
+        on: {
+            activeIndexChange: (swiper) => {
+                swp(swiper.el, 5, swiper.activeIndex)
+            }
+        },
 
         // Pagination
         pagination: {
@@ -761,13 +801,6 @@
     const swipers = [swiper1, swiper2, swiper3, swiper4, swiper5, swiper6];
 
     swp(swiper1.el, 0, swiper1.activeIndex);
-
-    swiper1.on('activeIndexChange', (swiper) => swp(swiper.el, 0, swiper.activeIndex));
-    swiper2.on('activeIndexChange', (swiper) => swp(swiper.el, 1, swiper.activeIndex));
-    swiper3.on('activeIndexChange', (swiper) => swp(swiper.el, 2, swiper.activeIndex));
-    swiper4.on('activeIndexChange', (swiper) => swp(swiper.el, 3, swiper.activeIndex));
-    swiper5.on('activeIndexChange', (swiper) => swp(swiper.el, 4, swiper.activeIndex));
-    swiper6.on('activeIndexChange', (swiper) => swp(swiper.el, 5, swiper.activeIndex));
 
     docSlider.init({
         pager: true,
@@ -813,6 +846,22 @@
                 el.classList.remove('tooltip');
             }, 100)
         });
+    });
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+            imgContainer.forEach(el => {
+                const tooltip = el.querySelector('.tooltip');
+
+                if (tooltip) {
+                    tooltip.nextElementSibling.style.animationName = 'shrink';
+                    tooltip.nextElementSibling.style.animationDuration = '0.2s';
+                }
+
+                setTimeout(() => {
+                    el.classList.remove('tooltip');
+                }, 100)
+            });
+        }
     });
 </script>
 </body>
