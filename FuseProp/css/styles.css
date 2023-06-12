@@ -227,6 +227,8 @@ body {
 .fp-nav.active-orange .fp-nav__element.selected .fp-nav__img-circle {
   background-color: #FF8810;
 }
+
+
 .fp-nav__element:nth-child(2):hover .fp-nav__img-circle,
 .fp-nav__element:nth-child(3):hover .fp-nav__img-circle,
 .fp-nav__element:nth-child(4):hover .fp-nav__img-circle {
@@ -234,6 +236,15 @@ body {
 }
 .fp-nav__element:nth-child(5):hover .fp-nav__img-circle {
   background-color: #47E2BE;
+}
+.two-img img:last-child {
+  display: none;
+}
+.fp-nav__element:nth-child(7):hover .fp-nav__img-circle.two-img img:first-child {
+  display: none;
+}
+.fp-nav__element:nth-child(7):hover .fp-nav__img-circle.two-img img:last-child {
+  display: block;
 }
 .fp-nav__element:nth-child(7):hover .fp-nav__img-circle,
 .fp-nav__element:nth-child(8):hover .fp-nav__img-circle {
