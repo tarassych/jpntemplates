@@ -106,15 +106,13 @@
       <div class="fp-apps">
         <a href="">
           <img src="../img/fp-btn-apple.svg" alt="">
-
-          <span>Coming Soon</span>
         </a>
 
         <a href="">
           <img src="../img/fp-btn-google.svg" alt="">
-
-          <span>Coming Soon</span>
         </a>
+
+        <span class="info-text">App coming Q3 2023</span>
       </div>
 
       <div class="fp-device">
@@ -222,6 +220,8 @@
                   <img src="../img/request/fp-desktop-img-1-h.png"
                        srcset="../img/request/fp-desktop-img-1-h.png 1x, ../img/request/fp-desktop-img-1-h@2x.png 2x"
                        alt="" class="hover-image">
+
+                  <span class="info-text">Expanded Browse coming Q3 2023</span>
                 </div>
 
                 <div class="slider-tooltip">
@@ -275,6 +275,8 @@
                   <img src="../img/request/fp-desktop-img-4-h.png"
                        srcset="../img/request/fp-desktop-img-4-h.png 1x, ../img/request/fp-desktop-img-4-h@2x.png 2x"
                        alt="" class="hover-image">
+
+                  <span class="info-text visible">Approvals coming Q4 2023</span>
                 </div>
 
                 <div class="slider-tooltip">
@@ -325,6 +327,12 @@
                     vendor.
                   </h2>
                 </div>
+
+                <button type="button" onclick="docSlider.jumpPage(4)" class="fp-detourIcon fp-detourIcon--1">
+                  <img src="../img/fp-icon-detour.png" alt="">
+
+                  <span>Detour Available!</span>
+                </button>
               </div>
 
               <div class="swiper-slide">
@@ -384,20 +392,6 @@
     </section>
 
     <section class="fp-demo__right--mobile fp-demo__right">
-      <div class="fp-apps">
-        <a href="">
-          <img src="../img/fp-btn-apple.svg" alt="">
-
-          <span>Coming Soon</span>
-        </a>
-
-        <a href="">
-          <img src="../img/fp-btn-google.svg" alt="">
-
-          <span>Coming Soon</span>
-        </a>
-      </div>
-
       <div class="fp-device">
         <div class="fp-device__bg">
           <div class="swiper swiper4">
@@ -436,7 +430,7 @@
                   </h2>
                 </div>
 
-                <button type="button" onclick="docSlider.jumpPage(4)" class="fp-detourIcon">
+                <button type="button" onclick="docSlider.jumpPage(4)" class="fp-detourIcon fp-detourIcon--2">
                   <img src="../img/fp-icon-detour.png" alt="">
 
                   <span>Detour Available!</span>
@@ -563,6 +557,8 @@
                   <img src="../img/punchlist/fp-desktop-img-1-h.png"
                        srcset="../img/punchlist/fp-desktop-img-1-h.png 1x, ../img/punchlist/fp-desktop-img-1-h@2x.png 2x"
                        alt="" class="hover-image">
+
+                  <span class="info-text visible">Punch coming Q4 2024</span>
                 </div>
 
                 <div class="slider-tooltip">
@@ -581,6 +577,8 @@
                   <img src="../img/punchlist/fp-desktop-img-2-h.png"
                        srcset="../img/punchlist/fp-desktop-img-2-h.png 1x, ../img/punchlist/fp-desktop-img-2-h@2x.png 2x"
                        alt="" class="hover-image">
+
+                  <span class="info-text visible">Punch coming Q4 2024</span>
                 </div>
 
                 <div class="slider-tooltip">
@@ -599,6 +597,8 @@
                   <img src="../img/punchlist/fp-desktop-img-3-h.png"
                        srcset="../img/punchlist/fp-desktop-img-3-h.png 1x, ../img/punchlist/fp-desktop-img-3-h@2x.png 2x"
                        alt="" class="hover-image">
+
+                  <span class="info-text visible">Punch coming Q4 2024</span>
                 </div>
 
                 <div class="slider-tooltip">
@@ -627,8 +627,27 @@
       </div>
     </section>
   </div>
+
+  <div class="fp-overlay">
+    <div class="fp-overlay__block">
+      <img src="../img/fp-overlay-img.svg" alt="">
+
+      <h2>
+        Welcome to the FuseProp Demo!
+      </h2>
+
+      <p>
+        Be certain to mouse-over images to see interactions. <br>
+        And you can use the arrow keys on your keyboard to navigate the site. Obviously your mouse works too.
+      </p>
+
+      <button class="overlay">
+        Continue to the Demo
+        <img src="../img/fp-icon-arrow-right.svg" alt="">
+      </button>
+    </div>
+  </div>
 </div>
-<div class="fp-img-preloader"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="../js/docSlider.min.js"></script>
@@ -709,6 +728,20 @@
         allowTouchMove: false,
         keyboard: true,
         on: {
+            init: function (s) {
+                if (s.activeIndex === 0) {
+                    document.querySelector('.fp-detourIcon--1').classList.add('active');
+                } else {
+                    document.querySelector('.fp-detourIcon--1').classList.remove('active');
+                }
+            },
+            slideChange: function (s) {
+                if (s.activeIndex === 0) {
+                    document.querySelector('.fp-detourIcon--1').classList.add('active');
+                } else {
+                    document.querySelector('.fp-detourIcon--1').classList.remove('active');
+                }
+            },
             activeIndexChange: (swiper) => {
                 swp(swiper.el, 2, swiper.activeIndex)
             }
@@ -733,9 +766,9 @@
         on: {
             slideChange: function (s) {
                 if (s.activeIndex === 1) {
-                    document.querySelector('.fp-detourIcon').classList.add('active');
+                    document.querySelector('.fp-detourIcon--2').classList.add('active');
                 } else {
-                    document.querySelector('.fp-detourIcon').classList.remove('active');
+                    document.querySelector('.fp-detourIcon--2').classList.remove('active');
                 }
             },
             activeIndexChange: (swiper) => {
@@ -864,6 +897,12 @@
             });
         }
     });
+
+    const overlay = document.querySelector('.overlay');
+    overlay.addEventListener('click', () => {
+        document.querySelector('.fp-overlay').classList.add('close');
+        swp(swiper1.el, 0, 0);
+    })
 </script>
 </body>
 </html>

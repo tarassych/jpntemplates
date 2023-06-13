@@ -30,6 +30,16 @@ body {
   margin: 0;
 }
 
+.fp .info-text {
+  background-color: #ffe51d;
+  border-radius: 1.4rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.7rem;
+  padding: .5rem 1.8rem;
+}
+
+
 /* Login page */
 .fp-login__bg {
   background: url(../img/fp-login-bg.png) center / cover no-repeat;
@@ -132,8 +142,8 @@ body {
 
 
 /* Demo page */
-.fp-demo {
-
+.fp {
+  position: relative;
 }
 .fp-demo__left {
   display: flex;
@@ -143,7 +153,7 @@ body {
   top: 3rem;
   left: 0;
   height: calc(100vh - 6rem);
-  width: 28rem;
+  width: 27rem;
 }
 .fp-demo__left > a {
   text-decoration: none;
@@ -325,11 +335,11 @@ body {
 
 .docSlider {
   flex-grow: 1;
-  left: 28rem;
-  width: calc(100vw - 28rem);
+  left: 27rem;
+  width: calc(100vw - 27rem);
 }
 .docSlider-inner {
-  left: 28rem;
+  left: 27rem;
 }
 .fp-demo__right {
   display: flex;
@@ -342,17 +352,19 @@ body {
 }
 .fp-demo__right--desktop {
   justify-content: center;
+  padding-right: 27rem;
 }
 
 .fp-apps {
   display: flex;
   flex-direction: column;
+  align-items: center;
   flex-shrink: 0;
   width: 18rem;
 }
 .fp-apps a {
   display: inline-block;
-  margin: .2rem 0;
+  margin-bottom: 2.2rem;
   position: relative;
   text-decoration: none;
   width: 100%;
@@ -360,33 +372,17 @@ body {
 .fp-apps a img {
   width: 100%;
 }
-.fp-apps a span {
-  display: none;
-}
-.fp-apps a:hover span {
-  background: url(../img/fp-tooltip-bg.png) center / 100% 100% no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  font-size: 1.8rem;
-  font-weight: 600;
-  line-height: 3rem;
-  padding-bottom: 1.5rem;
-  position: absolute;
-  top: -5rem;
-  right: -10rem;
-  height: 5rem;
-  width: 15rem;
-}
 
+.fp-apps + .fp-device {
+  padding-right: 45rem;
+}
 .fp-device {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   flex-grow: 1;
-  padding-right: 18rem;
+  padding-right: 27rem;
 }
 .fp-device__bg {
   background: url(../img/fp-mobile-bg.png) top center / 100% auto no-repeat;
@@ -442,7 +438,6 @@ body {
   background-color: #ffffff;
   display: inline-block;
   position: relative;
-  overflow: hidden;
   height: 79.6em;
   width: 35.6rem;
 }
@@ -465,9 +460,21 @@ body {
   transition: opacity .5s;
   z-index: 2;
 }
+.image-container .info-text {
+  opacity: 0;
+  position: absolute;
+  top: -8rem;
+  left: 50%;
+  transition: opacity .5s;
+  transform: translateX(-50%);
+}
+.image-container .info-text.visible {
+  opacity: 1;
+}
 .image-container:hover .default-image {
   opacity: 0;
 }
+.image-container:hover .info-text,
 .image-container:hover .hover-image {
   opacity: 1;
 }
@@ -630,16 +637,77 @@ body {
   line-height: 3rem;
 }
 
-.fp-img-preloader {
-
-}
-
 
 .fp-swiper-navigation {
   margin: 0 auto;
   position: relative;
   height: 3rem;
   width: 22rem;
+}
+
+
+.fp-overlay {
+  background-color: #171717;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+}
+.fp-overlay.close {
+  display: none;
+}
+.fp-overlay__block {
+  background-color: #ffffff;
+  border-radius: 1.3rem;
+  padding: 4.2rem 3rem 2.3rem;
+  position: relative;
+  max-width: 56rem;
+}
+.fp-overlay__block > img {
+  position: absolute;
+  top: -0.9rem;
+  left: -3.2rem;
+  height: 7.3rem;
+  width: 7.3rem;
+}
+.fp-overlay__block h2 {
+  color: #596383;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3rem;
+  margin-bottom: 1.5rem;
+  padding: 0 2.4rem 0 4rem;
+}
+.fp-overlay__block p {
+  color: #596383;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  margin-bottom: 2.5rem;
+  padding: 0 2.4rem 0 4rem;
+}
+.fp-overlay__block .overlay {
+  background-color: transparent;
+  border: 0;
+  color: #51b6f7;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 3rem;
+  margin-left: auto;
+}
+.fp-overlay__block .overlay img {
+  margin-left: .8rem;
+  width: .5rem;
 }
 
 
