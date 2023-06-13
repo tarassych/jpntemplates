@@ -353,6 +353,7 @@ body {
 .fp-demo__right--desktop {
   justify-content: center;
   padding-right: 27rem;
+  overflow: visible;
 }
 
 .fp-apps {

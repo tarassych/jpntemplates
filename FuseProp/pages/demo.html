@@ -327,12 +327,6 @@
                     vendor.
                   </h2>
                 </div>
-
-                <button type="button" onclick="docSlider.jumpPage(4)" class="fp-detourIcon fp-detourIcon--1">
-                  <img src="../img/fp-icon-detour.png" alt="">
-
-                  <span>Detour Available!</span>
-                </button>
               </div>
 
               <div class="swiper-slide">
@@ -430,7 +424,7 @@
                   </h2>
                 </div>
 
-                <button type="button" onclick="docSlider.jumpPage(4)" class="fp-detourIcon fp-detourIcon--2">
+                <button type="button" onclick="docSlider.jumpPage(4)" class="fp-detourIcon">
                   <img src="../img/fp-icon-detour.png" alt="">
 
                   <span>Detour Available!</span>
@@ -676,7 +670,7 @@
                 tooltip.style.animationDuration = '0.3s';
             }
         });
-    }, 1000);
+    }, 500);
 
     const swiper1 = new Swiper('.swiper1', {
         // Optional parameters
@@ -728,20 +722,6 @@
         allowTouchMove: false,
         keyboard: true,
         on: {
-            init: function (s) {
-                if (s.activeIndex === 0) {
-                    document.querySelector('.fp-detourIcon--1').classList.add('active');
-                } else {
-                    document.querySelector('.fp-detourIcon--1').classList.remove('active');
-                }
-            },
-            slideChange: function (s) {
-                if (s.activeIndex === 0) {
-                    document.querySelector('.fp-detourIcon--1').classList.add('active');
-                } else {
-                    document.querySelector('.fp-detourIcon--1').classList.remove('active');
-                }
-            },
             activeIndexChange: (swiper) => {
                 swp(swiper.el, 2, swiper.activeIndex)
             }
@@ -766,9 +746,9 @@
         on: {
             slideChange: function (s) {
                 if (s.activeIndex === 1) {
-                    document.querySelector('.fp-detourIcon--2').classList.add('active');
+                    document.querySelector('.fp-detourIcon').classList.add('active');
                 } else {
-                    document.querySelector('.fp-detourIcon--2').classList.remove('active');
+                    document.querySelector('.fp-detourIcon').classList.remove('active');
                 }
             },
             activeIndexChange: (swiper) => {
