@@ -648,176 +648,6 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="../js/docSlider.min.js"></script>
 <script>
-    const debounce = (func, delay) => {
-        let timer;
-        return (...args) => {
-            clearTimeout(timer);
-            timer = setTimeout(() => {
-                func.apply(this, args);
-            }, delay);
-        };
-    };
-
-    const swp = debounce((s, curr, i) => {
-        const imgContainers = s.querySelectorAll(".image-container");
-
-        imgContainers.forEach(el => {
-            el.classList.remove('tooltip');
-
-            if (el.id === `sl${curr}-${i}`) {
-                el.classList.add('tooltip');
-
-                const tooltip = el.nextElementSibling;
-                tooltip.style.animationName = 'expand-bounce';
-                tooltip.style.animationDuration = '0.3s';
-            }
-        });
-    }, 500);
-
-    const swiper1 = new Swiper('.swiper1', {
-        // Optional parameters
-        effect: 'fade', // flip
-        allowTouchMove: false,
-        keyboard: true,
-        on: {
-            activeIndexChange: (swiper) => {
-                swp(swiper.el, 0, swiper.activeIndex)
-            }
-        },
-
-        // Pagination
-        pagination: {
-            el: '.swiper-pagination',
-        },
-
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-    const swiper2 = new Swiper('.swiper2', {
-        // Optional parameters
-        effect: 'fade',
-        allowTouchMove: false,
-        keyboard: true,
-        on: {
-            activeIndexChange: (swiper) => {
-                swp(swiper.el, 1, swiper.activeIndex)
-            }
-        },
-
-        // Pagination
-        pagination: {
-            el: '.swiper-pagination',
-        },
-
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-    const swiper3 = new Swiper('.swiper3', {
-        // Optional parameters
-        effect: 'fade',
-        allowTouchMove: false,
-        keyboard: true,
-        on: {
-            activeIndexChange: (swiper) => {
-                swp(swiper.el, 2, swiper.activeIndex)
-            }
-        },
-
-        // Pagination
-        pagination: {
-            el: '.swiper-pagination',
-        },
-
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-    const swiper4 = new Swiper('.swiper4', {
-        // Optional parameters
-        effect: 'fade',
-        allowTouchMove: false,
-        keyboard: true,
-        on: {
-            slideChange: function (s) {
-                if (s.activeIndex === 1) {
-                    document.querySelector('.fp-detourIcon').classList.add('active');
-                } else {
-                    document.querySelector('.fp-detourIcon').classList.remove('active');
-                }
-            },
-            activeIndexChange: (swiper) => {
-                swp(swiper.el, 3, swiper.activeIndex)
-            }
-        },
-
-        // Pagination
-        pagination: {
-            el: '.swiper-pagination',
-        },
-
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-    const swiper5 = new Swiper('.swiper5', {
-        // Optional parameters
-        effect: 'fade',
-        allowTouchMove: false,
-        keyboard: true,
-        on: {
-            activeIndexChange: (swiper) => {
-                swp(swiper.el, 4, swiper.activeIndex)
-            }
-        },
-
-        // Pagination
-        pagination: {
-            el: '.swiper-pagination',
-        },
-
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-    const swiper6 = new Swiper('.swiper6', {
-        // Optional parameters
-        effect: 'fade',
-        allowTouchMove: false,
-        keyboard: true,
-        on: {
-            activeIndexChange: (swiper) => {
-                swp(swiper.el, 5, swiper.activeIndex)
-            }
-        },
-
-        // Pagination
-        pagination: {
-            el: '.swiper-pagination',
-        },
-
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-
-    const swipers = [swiper1, swiper2, swiper3, swiper4, swiper5, swiper6];
-
-    swp(swiper1.el, 0, swiper1.activeIndex);
-
     docSlider.init({
         pager: true,
         setChangeCss: function (index, currentIndex, speed, easing, horizontal) {
@@ -847,6 +677,241 @@
             return style;
         }
     });
+
+    const debounce = (func, delay) => {
+        let timer;
+        return (...args) => {
+            clearTimeout(timer);
+            timer = setTimeout(() => {
+                func.apply(this, args);
+            }, delay);
+        };
+    };
+    const swp = debounce((s, curr, i) => {
+        const imgContainers = s.querySelectorAll(".image-container");
+
+        imgContainers.forEach(el => {
+            if (el.id === `sl${curr}-${i}`) {
+                el.classList.add('tooltip');
+
+                const tooltip = el.nextElementSibling;
+                tooltip.style.animationName = 'expand-bounce';
+                tooltip.style.animationDuration = '0.3s';
+            }
+        });
+    }, 500);
+
+    const removeTooltip = (s) => {
+        const imgContainers = s.querySelectorAll(".image-container");
+
+        imgContainers.forEach(el => {
+            el.classList.remove('tooltip');
+        });
+    }
+
+    const swiper1 = new Swiper('.swiper1', {
+        // Optional parameters
+        effect: 'fade', // flip
+        allowTouchMove: false,
+        keyboard: true,
+        mousewheel: {
+            eventsTarget: '.swiper1',
+        },
+        on: {
+            activeIndexChange: (swiper) => {
+                removeTooltip(swiper.el);
+                swp(swiper.el, 0, swiper.activeIndex);
+            },
+            slideChangeTransitionStart: () => {
+                docSlider.enable(false);
+            },
+            slideChangeTransitionEnd: () => {
+                docSlider.enable(true);
+            },
+        },
+
+        // Pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+    const swiper2 = new Swiper('.swiper2', {
+        // Optional parameters
+        effect: 'fade',
+        allowTouchMove: false,
+        keyboard: true,
+        mousewheel: {
+            eventsTarget: '.swiper2',
+        },
+        on: {
+            activeIndexChange: (swiper) => {
+                removeTooltip(swiper.el);
+                swp(swiper.el, 1, swiper.activeIndex);
+            },
+            slideChangeTransitionStart: () => {
+                docSlider.enable(false);
+            },
+            slideChangeTransitionEnd: () => {
+                docSlider.enable(true);
+            },
+        },
+
+        // Pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+    const swiper3 = new Swiper('.swiper3', {
+        // Optional parameters
+        effect: 'fade',
+        allowTouchMove: false,
+        keyboard: true,
+        mousewheel: {
+            eventsTarget: '.swiper3',
+        },
+        on: {
+            activeIndexChange: (swiper) => {
+                removeTooltip(swiper.el);
+                swp(swiper.el, 2, swiper.activeIndex);
+            },
+            slideChangeTransitionStart: () => {
+                docSlider.enable(false);
+            },
+            slideChangeTransitionEnd: () => {
+                docSlider.enable(true);
+            },
+        },
+
+        // Pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+    const swiper4 = new Swiper('.swiper4', {
+        // Optional parameters
+        effect: 'fade',
+        allowTouchMove: false,
+        keyboard: true,
+        mousewheel: {
+            eventsTarget: '.swiper4',
+        },
+        on: {
+            slideChange: function (s) {
+                if (s.activeIndex === 1) {
+                    document.querySelector('.fp-detourIcon').classList.add('active');
+                } else {
+                    document.querySelector('.fp-detourIcon').classList.remove('active');
+                }
+            },
+            activeIndexChange: (swiper) => {
+                removeTooltip(swiper.el);
+                swp(swiper.el, 3, swiper.activeIndex);
+            },
+            slideChangeTransitionStart: () => {
+                docSlider.enable(false);
+            },
+            slideChangeTransitionEnd: () => {
+                docSlider.enable(true);
+            },
+        },
+
+        // Pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+    const swiper5 = new Swiper('.swiper5', {
+        // Optional parameters
+        effect: 'fade',
+        allowTouchMove: false,
+        keyboard: true,
+        mousewheel: {
+            eventsTarget: '.swiper5',
+        },
+        on: {
+            activeIndexChange: (swiper) => {
+                removeTooltip(swiper.el);
+                swp(swiper.el, 4, swiper.activeIndex);
+            },
+            slideChangeTransitionStart: () => {
+                docSlider.enable(false);
+            },
+            slideChangeTransitionEnd: () => {
+                docSlider.enable(true);
+            },
+        },
+
+        // Pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+    const swiper6 = new Swiper('.swiper6', {
+        // Optional parameters
+        effect: 'fade',
+        allowTouchMove: false,
+        keyboard: true,
+        mousewheel: {
+            eventsTarget: '.swiper6',
+        },
+        on: {
+            activeIndexChange: (swiper) => {
+                removeTooltip(swiper.el);
+                swp(swiper.el, 5, swiper.activeIndex);
+            },
+            slideChangeTransitionStart: () => {
+                docSlider.enable(false);
+            },
+            slideChangeTransitionEnd: () => {
+                docSlider.enable(true);
+            },
+        },
+
+        // Pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+    const swipers = [swiper1, swiper2, swiper3, swiper4, swiper5, swiper6];
+
+    swp(swiper1.el, 0, swiper1.activeIndex);
 
     const imgContainer = document.querySelectorAll(".image-container");
     document.addEventListener('mousedown', function () {
