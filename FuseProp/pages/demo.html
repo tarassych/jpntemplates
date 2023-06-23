@@ -31,7 +31,7 @@
           <img src="../img/fp-icon-arrow-1.png" alt="">
         </div>
 
-        <div class="fp-nav__element docSlider-button" id="block2">
+        <div class="fp-nav__element docSlider-button" id="block2" onclick="changePageHandler(0)">
           <div class="fp-nav__img">
             <div class="fp-nav__img-circle circle-grey">
               <img src="../img/fp-nav-icon-2.png" alt="">
@@ -41,7 +41,7 @@
           </div>
         </div>
 
-        <div class="fp-nav__element docSlider-button" id="block3">
+        <div class="fp-nav__element docSlider-button" id="block3" onclick="changePageHandler(1)">
           <div class="fp-nav__img">
             <div class="fp-nav__img-circle circle-grey">
               <img src="../img/fp-nav-icon-3.png" alt="">
@@ -51,7 +51,7 @@
           </div>
         </div>
 
-        <div class="fp-nav__element docSlider-button" id="block4">
+        <div class="fp-nav__element docSlider-button" id="block4" onclick="changePageHandler(2)">
           <div class="fp-nav__img">
             <div class="fp-nav__img-circle circle-grey">
               <img src="../img/fp-nav-icon-4.png" alt="">
@@ -61,7 +61,7 @@
           </div>
         </div>
 
-        <div class="fp-nav__element docSlider-button" id="block5">
+        <div class="fp-nav__element docSlider-button" id="block5" onclick="changePageHandler(3)">
           <div class="fp-nav__img">
             <div class="fp-nav__img-circle circle-grey">
               <img src="../img/fp-nav-icon-5.png" alt="">
@@ -76,7 +76,7 @@
           <img src="../img/fp-icon-arrow-2.png" alt="">
         </div>
 
-        <div class="fp-nav__element docSlider-button" id="block6">
+        <div class="fp-nav__element docSlider-button" id="block6" onclick="changePageHandler(4)">
           <div class="fp-nav__img">
             <div class="fp-nav__img-circle circle-grey two-img">
               <img src="../img/fp-nav-icon-6.png" alt="">
@@ -87,7 +87,7 @@
           </div>
         </div>
 
-        <div class="fp-nav__element docSlider-button" id="block7">
+        <div class="fp-nav__element docSlider-button" id="block7" onclick="changePageHandler(5)">
           <div class="fp-nav__img">
             <div class="fp-nav__img-circle circle-grey">
               <img src="../img/fp-nav-icon-7.png" alt="">
@@ -118,48 +118,47 @@
       </div>
 
       <div class="fp-device">
+        <h2>Inspection</h2>
+
         <div class="fp-device__bg">
           <div class="swiper swiper1">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="image-container fp-mobile-img" id="sl0-0">
-                  <img src="../img/inspection/fp-mobile-img-1.png"
-                       srcset="../img/inspection/fp-mobile-img-1.png 1x, ../img/inspection/fp-mobile-img-1@2x.png 2x"
+                  <img src="../img/inspection/i-1.png"
+                       srcset="../img/inspection/i-1@2x.png 1x, ../img/inspection/i-1@2x.png 2x"
                        alt=""
-                       class="active">
-                  <img src="../img/inspection/fp-mobile-img-1-h.png"
-                       srcset="../img/inspection/fp-mobile-img-1-h.png 1x, ../img/inspection/fp-mobile-img-1-h@2x.png 2x"
-                       alt=""
-                       class=""
                   >
                 </div>
 
                 <div class="slider-tooltip">
                   <h2>
-                    Manager logs into the app and selects the applicable property and unit #.
+                    Manager logs into the app.
                   </h2>
-
-                  <div class="tooltip-btns">
-                    <button class="previous-btn">
-                      <img src="../img/fp-btn-arrow-left.svg" alt="">
-                    </button>
-
-                    <button class="next-btn active">
-                      <img src="../img/fp-btn-arrow-right.svg" alt="">
-                    </button>
-                  </div>
                 </div>
               </div>
 
               <div class="swiper-slide">
                 <div class="image-container fp-mobile-img" id="sl0-1">
-                  <img src="../img/inspection/fp-mobile-img-2.png"
-                       srcset="../img/inspection/fp-mobile-img-2.png 1x, ../img/inspection/fp-mobile-img-2@2x.png 2x"
+                  <img src="../img/inspection/i-2.png"
+                       srcset="../img/inspection/i-2@2x.png 1x, ../img/inspection/i-2@2x.png 2x"
                        alt=""
-                       class="active">
-                  <img src="../img/inspection/fp-mobile-img-2-h.png"
-                       srcset="../img/inspection/fp-mobile-img-2-h.png 1x, ../img/inspection/fp-mobile-img-2-h@2x.png 2x"
-                       alt="" class="">
+                  >
+                </div>
+
+                <div class="slider-tooltip">
+                  <h2>
+                    Manager selects property and unit #.
+                  </h2>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="image-container fp-mobile-img" id="sl0-2">
+                  <img src="../img/inspection/i-3.png"
+                       srcset="../img/inspection/i-3@2x.png 1x, ../img/inspection/i-3@2x.png 2x"
+                       alt=""
+                  >
                 </div>
 
                 <div class="slider-tooltip">
@@ -167,73 +166,58 @@
                     Using the default inspection template, the manager clicks into the relevant sections to upload
                     photos of damage…
                   </h2>
-
-                  <div class="tooltip-btns">
-                    <button class="previous-btn">
-                      <img src="../img/fp-btn-arrow-left.svg" alt="">
-                    </button>
-
-                    <button class="next-btn active">
-                      <img src="../img/fp-btn-arrow-right.svg" alt="">
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="image-container fp-mobile-img" id="sl0-2">
-                  <img src="../img/inspection/fp-mobile-img-3.png"
-                       srcset="../img/inspection/fp-mobile-img-3.png 1x, ../img/inspection/fp-mobile-img-3@2x.png 2x"
-                       alt=""
-                       class="active">
-                  <img src="../img/inspection/fp-mobile-img-3-h.png"
-                       srcset="../img/inspection/fp-mobile-img-3-h.png 1x, ../img/inspection/fp-mobile-img-3-h@2x.png 2x"
-                       alt="" class="">
-                </div>
-
-                <div class="slider-tooltip">
-                  <h2>
-                    … and can assign rooms as appropriate with any helpful notes.
-                  </h2>
-
-                  <div class="tooltip-btns">
-                    <button class="previous-btn">
-                      <img src="../img/fp-btn-arrow-left.svg" alt="">
-                    </button>
-
-                    <button class="next-btn active">
-                      <img src="../img/fp-btn-arrow-right.svg" alt="">
-                    </button>
-                  </div>
                 </div>
               </div>
 
               <div class="swiper-slide">
                 <div class="image-container fp-mobile-img" id="sl0-3">
-                  <img src="../img/inspection/fp-mobile-img-4.png"
-                       srcset="../img/inspection/fp-mobile-img-4.png 1x, ../img/inspection/fp-mobile-img-4@2x.png 2x"
+                  <img src="../img/inspection/i-4.png"
+                       srcset="../img/inspection/i-4@2x.png 1x, ../img/inspection/i-4@2x.png 2x"
                        alt=""
-                       class="active">
-                  <img src="../img/inspection/fp-mobile-img-4-h.png"
-                       srcset="../img/inspection/fp-mobile-img-4-h.png 1x, ../img/inspection/fp-mobile-img-4-h@2x.png 2x"
-                       alt="" class="">
+                  >
                 </div>
 
                 <div class="slider-tooltip">
                   <h2>
-                    All inspections are saved to the cloud and can be used to generate summaries for statements of
-                    deposit (SODAs).
+                    … and can create / assign tasks as appropriate indicating the action to be taken, whether it’s
+                    billable to the tenant and other helpful information.
                   </h2>
+                </div>
+              </div>
 
-                  <div class="tooltip-btns">
-                    <button class="previous-btn">
-                      <img src="../img/fp-btn-arrow-left.svg" alt="">
-                    </button>
+              <div class="swiper-slide">
+                <div class="image-container fp-mobile-img" id="sl0-4">
+                  <img src="../img/inspection/i-5.png"
+                       srcset="../img/inspection/i-5@2x.png 1x, ../img/inspection/i-5@2x.png 2x"
+                       alt=""
+                  >
+                </div>
 
-                    <button class="next-btn active">
-                      <img src="../img/fp-btn-arrow-right.svg" alt="">
-                    </button>
-                  </div>
+                <div class="slider-tooltip">
+                  <h2>
+                    All inspections are saved to the cloud and can be accessed from any computer or mobile device with
+                    an internet connection.
+                  </h2>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="image-container fp-mobile-img" id="sl0-5">
+                  <img src="../img/inspection/i-6.png"
+                       srcset="../img/inspection/i-6@2x.png 1x, ../img/inspection/i-6@2x.png 2x"
+                       alt=""
+                  >
+                  <img src="../img/inspection/i-6a.png"
+                       srcset="../img/inspection/i-6a@2x.png 1x, ../img/inspection/i-6a@2x.png 2x"
+                       alt=""
+                  >
+                </div>
+
+                <div class="slider-tooltip">
+                  <h2>
+                    Supporting documentation for statements of deposit (SODAs) are always a click away, and tasks are
+                    ready to feed into our PO platform or your own PO platform.
+                  </h2>
                 </div>
               </div>
             </div>
@@ -252,122 +236,119 @@
     </section>
 
     <section class="fp-demo__right--desktop fp-demo__right">
+      <h2>PO Request</h2>
+
       <div class="fp-desktop__bg">
         <div class="fp-desktop">
           <div class="swiper swiper2">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="image-container fp-desktop-img" id="sl1-0">
-                  <img src="../img/request/fp-desktop-img-1.png"
-                       srcset="../img/request/fp-desktop-img-1.png 1x, ../img/request/fp-desktop-img-1@2x.png 2x" alt=""
-                       class="active">
-                  <img src="../img/request/fp-desktop-img-1-h.png"
-                       srcset="../img/request/fp-desktop-img-1-h.png 1x, ../img/request/fp-desktop-img-1-h@2x.png 2x"
-                       alt="" class="">
+                  <img src="../img/request/r-1.png"
+                       srcset="../img/request/r-1@2x.png 1x, ../img/request/r-1@2x.png 2x"
+                       alt=""
+                  >
+                </div>
+
+                <div class="slider-tooltip">
+                  <h2>
+                    Manager begins creating PO with # and property.
+                  </h2>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="image-container fp-desktop-img" id="sl1-1">
+                  <img src="../img/request/r-2.png"
+                       srcset="../img/request/r-2@2x.png 1x, ../img/request/r-2@2x.png 2x"
+                       alt=""
+                  >
 
                   <span class="info-text">Expanded Browse coming Q3 2023</span>
                 </div>
 
                 <div class="slider-tooltip">
                   <h2>
-                    Manager begins creating PO with # and property and can search/add products from a pre-curated
-                    library.
+                    A pre-curated library of products are readily available to drop into POs.
                   </h2>
-
-                  <div class="tooltip-btns">
-                    <button class="previous-btn">
-                      <img src="../img/fp-btn-arrow-left.svg" alt="">
-                    </button>
-
-                    <button class="next-btn active">
-                      <img src="../img/fp-btn-arrow-right.svg" alt="">
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="image-container fp-desktop-img" id="sl1-1">
-                  <img src="../img/request/fp-desktop-img-2.png"
-                       srcset="../img/request/fp-desktop-img-2.png 1x, ../img/request/fp-desktop-img-2@2x.png 2x" alt=""
-                       class="active">
-                  <img src="../img/request/fp-desktop-img-2-h.png"
-                       srcset="../img/request/fp-desktop-img-2-h.png 1x, ../img/request/fp-desktop-img-2-h@2x.png 2x"
-                       alt="" class="">
-                </div>
-
-                <div class="slider-tooltip">
-                  <h2>
-                    Manager adds unit(s) to the PO from the auto-complete dropdown and assigns materials to the
-                    corresponding rooms.
-                  </h2>
-
-                  <div class="tooltip-btns">
-                    <button class="previous-btn">
-                      <img src="../img/fp-btn-arrow-left.svg" alt="">
-                    </button>
-
-                    <button class="next-btn active">
-                      <img src="../img/fp-btn-arrow-right.svg" alt="">
-                    </button>
-                  </div>
                 </div>
               </div>
 
               <div class="swiper-slide">
                 <div class="image-container fp-desktop-img" id="sl1-2">
-                  <img src="../img/request/fp-desktop-img-3.png"
-                       srcset="../img/request/fp-desktop-img-3.png 1x, ../img/request/fp-desktop-img-3@2x.png 2x" alt=""
-                       class="active">
-                  <img src="../img/request/fp-desktop-img-3-h.png"
-                       srcset="../img/request/fp-desktop-img-3-h.png 1x, ../img/request/fp-desktop-img-3-h@2x.png 2x"
-                       alt="" class="">
+                  <img src="../img/request/r-3.png"
+                       srcset="../img/request/r-3@2x.png 1x, ../img/request/r-3@2x.png 2x"
+                       alt=""
+                  >
+                </div>
+
+                <div class="slider-tooltip">
+                  <h2>
+                    Manager adds unit(s) to the PO from the auto-complete dropdown.
+                  </h2>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="image-container fp-desktop-img" id="sl1-3">
+                  <img src="../img/request/r-4.png"
+                       srcset="../img/request/r-4@2x.png 1x, ../img/request/r-4@2x.png 2x"
+                       alt=""
+                  >
+                </div>
+
+                <div class="slider-tooltip">
+                  <h2>
+                    Manager assigns materials to the corresponding rooms.
+                  </h2>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="image-container fp-desktop-img" id="sl1-4">
+                  <img src="../img/request/r-5.png"
+                       srcset="../img/request/r-5@2x.png 1x, ../img/request/r-5@2x.png 2x"
+                       alt=""
+                  >
                 </div>
 
                 <div class="slider-tooltip">
                   <h2>
                     Manager reviews order summary before submitting for approvals as necessary.
                   </h2>
-
-                  <div class="tooltip-btns">
-                    <button class="previous-btn">
-                      <img src="../img/fp-btn-arrow-left.svg" alt="">
-                    </button>
-
-                    <button class="next-btn active">
-                      <img src="../img/fp-btn-arrow-right.svg" alt="">
-                    </button>
-                  </div>
                 </div>
               </div>
 
               <div class="swiper-slide">
-                <div class="image-container fp-desktop-img" id="sl1-3">
-                  <img src="../img/request/fp-desktop-img-4.png"
-                       srcset="../img/request/fp-desktop-img-4.png 1x, ../img/request/fp-desktop-img-4@2x.png 2x" alt=""
-                       class="active">
-                  <img src="../img/request/fp-desktop-img-4-h.png"
-                       srcset="../img/request/fp-desktop-img-4-h.png 1x, ../img/request/fp-desktop-img-4-h@2x.png 2x"
-                       alt="" class="">
+                <div class="image-container fp-desktop-img" id="sl1-5">
+                  <img src="../img/request/r-6.png"
+                       srcset="../img/request/r-6@2x.png 1x, ../img/request/r-6@2x.png 2x"
+                       alt=""
+                  >
+                </div>
+
+                <div class="slider-tooltip">
+                  <h2>
+                    An email is immediately sent to those stakeholders that need to approve the PO.
+                  </h2>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="image-container fp-desktop-img" id="sl1-6">
+                  <img src="../img/request/r-7.png"
+                       srcset="../img/request/r-7@2x.png 1x, ../img/request/r-7@2x.png 2x"
+                       alt=""
+                  >
 
                   <span class="info-text visible">Approvals coming Q4 2023</span>
                 </div>
 
                 <div class="slider-tooltip">
                   <h2>
-                    The PO with approval status is visible on the shared dashboard, including access to photos from the
-                    inspection.
+                    The PO, with approval status, is visible on the shared dashboard, including access to photos from
+                    the inspection.
                   </h2>
-
-                  <div class="tooltip-btns">
-                    <button class="previous-btn">
-                      <img src="../img/fp-btn-arrow-left.svg" alt="">
-                    </button>
-
-                    <button class="next-btn active">
-                      <img src="../img/fp-btn-arrow-right.svg" alt="">
-                    </button>
-                  </div>
                 </div>
               </div>
             </div>
@@ -390,94 +371,100 @@
     </section>
 
     <section class="fp-demo__right--desktop fp-demo__right">
+      <h2>Scheduling</h2>
+
       <div class="fp-desktop__bg">
         <div class="fp-desktop">
           <div class="swiper swiper3">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="image-container fp-desktop-img" id="sl2-0">
-                  <img src="../img/scheduling/fp-desktop-img-1.png"
-                       srcset="../img/scheduling/fp-desktop-img-1.png 1x, ../img/scheduling/fp-desktop-img-1@2x.png 2x"
+                  <img src="../img/scheduling/s-1.png"
+                       srcset="../img/scheduling/s-1@2x.png 1x, ../img/scheduling/s-1@2x.png 2x"
                        alt=""
-                       class="active">
-                  <img src="../img/scheduling/fp-desktop-img-1-h.png"
-                       srcset="../img/scheduling/fp-desktop-img-1-h.png 1x, ../img/scheduling/fp-desktop-img-1-h@2x.png 2x"
-                       alt="" class="">
+                  >
                 </div>
 
                 <div class="slider-tooltip">
                   <h2>
-                    Once the PO is approved, the manager requests an installation date, triggering an email to the
-                    vendor.
+                    Once the PO is approved, the manager requests an installation date.
                   </h2>
-
-                  <div class="tooltip-btns">
-                    <button class="previous-btn">
-                      <img src="../img/fp-btn-arrow-left.svg" alt="">
-                    </button>
-
-                    <button class="next-btn active">
-                      <img src="../img/fp-btn-arrow-right.svg" alt="">
-                    </button>
-                  </div>
                 </div>
               </div>
 
               <div class="swiper-slide">
                 <div class="image-container fp-desktop-img" id="sl2-1">
-                  <img src="../img/scheduling/fp-desktop-img-2.png"
-                       srcset="../img/scheduling/fp-desktop-img-2.png 1x, ../img/scheduling/fp-desktop-img-2@2x.png 2x"
+                  <img src="../img/scheduling/s-2.png"
+                       srcset="../img/scheduling/s-2@2x.png 1x, ../img/scheduling/s-2@2x.png 2x"
                        alt=""
-                       class="active">
-                  <img src="../img/scheduling/fp-desktop-img-2-h.png"
-                       srcset="../img/scheduling/fp-desktop-img-2-h.png 1x, ../img/scheduling/fp-desktop-img-2-h@2x.png 2x"
-                       alt="" class="">
+                  >
                 </div>
 
                 <div class="slider-tooltip">
                   <h2>
-                    Vendor clicks into the platform to approve the installation date (or to propose an alt date),
-                    triggering a confirmation email to the manager.
+                    An email is immediately sent to the vendor.
                   </h2>
-
-                  <div class="tooltip-btns">
-                    <button class="previous-btn">
-                      <img src="../img/fp-btn-arrow-left.svg" alt="">
-                    </button>
-
-                    <button class="next-btn active">
-                      <img src="../img/fp-btn-arrow-right.svg" alt="">
-                    </button>
-                  </div>
                 </div>
               </div>
 
               <div class="swiper-slide">
                 <div class="image-container fp-desktop-img" id="sl2-2">
-                  <img src="../img/scheduling/fp-desktop-img-3.png"
-                       srcset="../img/scheduling/fp-desktop-img-3.png 1x, ../img/scheduling/fp-desktop-img-3@2x.png 2x"
+                  <img src="../img/scheduling/s-3.png"
+                       srcset="../img/scheduling/s-3@2x.png 1x, ../img/scheduling/s-3@2x.png 2x"
                        alt=""
-                       class="active">
-                  <img src="../img/scheduling/fp-desktop-img-3-h.png"
-                       srcset="../img/scheduling/fp-desktop-img-3-h.png 1x, ../img/scheduling/fp-desktop-img-3-h@2x.png 2x"
-                       alt="" class="">
+                  >
                 </div>
 
                 <div class="slider-tooltip">
                   <h2>
-                    All install details including material selections, quantities and the floor plan are visible in the
-                    vendor’s dashboard.
+                    Vendor clicks into the platform to approve the installation date or to propose an alt date.
                   </h2>
+                </div>
+              </div>
 
-                  <div class="tooltip-btns">
-                    <button class="previous-btn">
-                      <img src="../img/fp-btn-arrow-left.svg" alt="">
-                    </button>
+              <div class="swiper-slide">
+                <div class="image-container fp-desktop-img" id="sl2-3">
+                  <img src="../img/scheduling/s-4.png"
+                       srcset="../img/scheduling/s-4@2x.png 1x, ../img/scheduling/s-4@2x.png 2x"
+                       alt=""
+                  >
+                </div>
 
-                    <button class="next-btn active">
-                      <img src="../img/fp-btn-arrow-right.svg" alt="">
-                    </button>
-                  </div>
+                <div class="slider-tooltip">
+                  <h2>
+                    A confirmation email is immediately sent to the manager.
+                  </h2>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="image-container fp-desktop-img" id="sl2-4">
+                  <img src="../img/scheduling/s-5.png"
+                       srcset="../img/scheduling/s-5@2x.png 1x, ../img/scheduling/s-5@2x.png 2x"
+                       alt=""
+                  >
+                </div>
+
+                <div class="slider-tooltip">
+                  <h2>
+                    All install details, including material selections and quantities, are visible in the vendor’s
+                    dashboard.
+                  </h2>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="image-container fp-desktop-img" id="sl2-5">
+                  <img src="../img/scheduling/s-6.png"
+                       srcset="../img/scheduling/s-6@2x.png 1x, ../img/scheduling/s-6@2x.png 2x"
+                       alt=""
+                  >
+                </div>
+
+                <div class="slider-tooltip">
+                  <h2>
+                    The floor plan is available too.
+                  </h2>
                 </div>
               </div>
             </div>
@@ -501,44 +488,32 @@
 
     <section class="fp-demo__right--mobile fp-demo__right">
       <div class="fp-device">
+        <h2>Install</h2>
+
         <div class="fp-device__bg">
           <div class="swiper swiper4">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="image-container fp-mobile-img" id="sl3-0">
-                  <img src="../img/install/fp-mobile-img-1.png"
-                       srcset="../img/install/fp-mobile-img-1.png 1x, ../img/install/fp-mobile-img-1@2x.png 2x" alt=""
-                       class="active">
-                  <img src="../img/install/fp-mobile-img-1-h.png"
-                       srcset="../img/install/fp-mobile-img-1-h.png 1x, ../img/install/fp-mobile-img-1-h@2x.png 2x"
-                       alt="" class="">
+                  <img src="../img/install/in-1.png"
+                       srcset="../img/install/in-1@2x.png 1x, ../img/install/in-1@2x.png 2x"
+                       alt=""
+                  >
                 </div>
 
                 <div class="slider-tooltip">
                   <h2>
-                    Vendor’s installer inputs the PO# from their ticket and confirms the work order.
+                    Vendor’s installer inputs the PO# from their ticket.
                   </h2>
-
-                  <div class="tooltip-btns">
-                    <button class="previous-btn">
-                      <img src="../img/fp-btn-arrow-left.svg" alt="">
-                    </button>
-
-                    <button class="next-btn active">
-                      <img src="../img/fp-btn-arrow-right.svg" alt="">
-                    </button>
-                  </div>
                 </div>
               </div>
 
               <div class="swiper-slide">
                 <div class="image-container fp-mobile-img" id="sl3-1">
-                  <img src="../img/install/fp-mobile-img-2.png"
-                       srcset="../img/install/fp-mobile-img-2.png 1x, ../img/install/fp-mobile-img-2@2x.png 2x" alt=""
-                       class="active">
-                  <img src="../img/install/fp-mobile-img-2-h.png"
-                       srcset="../img/install/fp-mobile-img-2-h.png 1x, ../img/install/fp-mobile-img-2-h@2x.png 2x"
-                       alt="" class="">
+                  <img src="../img/install/in-2.png"
+                       srcset="../img/install/in-2@2x.png 1x, ../img/install/in-2@2x.png 2x"
+                       alt=""
+                  >
                 </div>
 
                 <div class="slider-tooltip">
@@ -546,16 +521,6 @@
                     Prior to commencing any work, the vendor’s installer walks the unit and reports any damage with
                     photos.
                   </h2>
-
-                  <div class="tooltip-btns">
-                    <button class="previous-btn">
-                      <img src="../img/fp-btn-arrow-left.svg" alt="">
-                    </button>
-
-                    <button class="next-btn active">
-                      <img src="../img/fp-btn-arrow-right.svg" alt="">
-                    </button>
-                  </div>
                 </div>
 
                 <button type="button" onclick="docSlider.jumpPage(4)" class="fp-detourIcon">
@@ -567,28 +532,20 @@
 
               <div class="swiper-slide">
                 <div class="image-container fp-mobile-img" id="sl3-2">
-                  <img src="../img/install/fp-mobile-img-3.png"
-                       srcset="../img/install/fp-mobile-img-3.png 1x, ../img/install/fp-mobile-img-3@2x.png 2x" alt=""
-                       class="active">
-                  <img src="../img/install/fp-mobile-img-3-h.png"
-                       srcset="../img/install/fp-mobile-img-3-h.png 1x, ../img/install/fp-mobile-img-3-h@2x.png 2x"
-                       alt="" class="">
+                  <img src="../img/install/in-3.png"
+                       srcset="../img/install/in-3@2x.png 1x, ../img/install/in-3@2x.png 2x"
+                       alt=""
+                  >
+                  <img src="../img/install/in-3a.png"
+                       srcset="../img/install/in-3a@2x.png 1x, ../img/install/in-3a@2x.png 2x"
+                       alt=""
+                  >
                 </div>
 
                 <div class="slider-tooltip">
                   <h2>
                     Upon completing the work, the vendor’s installer submits photos documenting the installation.
                   </h2>
-
-                  <div class="tooltip-btns">
-                    <button class="previous-btn">
-                      <img src="../img/fp-btn-arrow-left.svg" alt="">
-                    </button>
-
-                    <button class="next-btn active">
-                      <img src="../img/fp-btn-arrow-right.svg" alt="">
-                    </button>
-                  </div>
                 </div>
               </div>
             </div>
@@ -607,89 +564,84 @@
     </section>
 
     <section class="fp-demo__right--desktop fp-demo__right">
+      <h2>Change Order</h2>
+
       <div class="fp-desktop__bg">
         <div class="fp-desktop">
           <div class="swiper swiper5">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="image-container fp-desktop-img" id="sl4-0">
-                  <img src="../img/order/fp-desktop-img-1.png"
-                       srcset="../img/order/fp-desktop-img-1.png 1x, ../img/order/fp-desktop-img-1@2x.png 2x" alt=""
-                       class="active">
-                  <img src="../img/order/fp-desktop-img-1-h.png"
-                       srcset="../img/order/fp-desktop-img-1-h.png 1x, ../img/order/fp-desktop-img-1-h@2x.png 2x"
-                       alt="" class="">
+                  <img src="../img/order/co-1.png"
+                       srcset="../img/order/co-1@2x.png 1x, ../img/order/co-1@2x.png 2x"
+                       alt=""
+                  >
                 </div>
 
                 <div class="slider-tooltip">
                   <h2>
                     Vendor submits details for change order.
                   </h2>
-
-                  <div class="tooltip-btns">
-                    <button class="previous-btn">
-                      <img src="../img/fp-btn-arrow-left.svg" alt="">
-                    </button>
-
-                    <button class="next-btn active">
-                      <img src="../img/fp-btn-arrow-right.svg" alt="">
-                    </button>
-                  </div>
                 </div>
               </div>
 
               <div class="swiper-slide">
                 <div class="image-container fp-desktop-img" id="sl4-1">
-                  <img src="../img/order/fp-desktop-img-2.png"
-                       srcset="../img/order/fp-desktop-img-2.png 1x, ../img/order/fp-desktop-img-2@2x.png 2x" alt=""
-                       class="active">
-                  <img src="../img/order/fp-desktop-img-2-h.png"
-                       srcset="../img/order/fp-desktop-img-2-h.png 1x, ../img/order/fp-desktop-img-2-h@2x.png 2x"
-                       alt="" class="">
+                  <img src="../img/order/co-2.png"
+                       srcset="../img/order/co-2@2x.png 1x, ../img/order/co-2@2x.png 2x"
+                       alt=""
+                  >
                 </div>
 
                 <div class="slider-tooltip">
                   <h2>
-                    Asset Manager is immediately notified and can approve the change order directly from the email or
-                    from within their dashboard.
+                    Asset Manager is immediately notified and can approve the change order directly from the email…
                   </h2>
-
-                  <div class="tooltip-btns">
-                    <button class="previous-btn">
-                      <img src="../img/fp-btn-arrow-left.svg" alt="">
-                    </button>
-
-                    <button class="next-btn active">
-                      <img src="../img/fp-btn-arrow-right.svg" alt="">
-                    </button>
-                  </div>
                 </div>
               </div>
 
               <div class="swiper-slide">
                 <div class="image-container fp-desktop-img" id="sl4-2">
-                  <img src="../img/order/fp-desktop-img-3.png"
-                       srcset="../img/order/fp-desktop-img-3.png 1x, ../img/order/fp-desktop-img-3@2x.png 2x" alt=""
-                       class="active">
-                  <img src="../img/order/fp-desktop-img-3-h.png"
-                       srcset="../img/order/fp-desktop-img-3-h.png 1x, ../img/order/fp-desktop-img-3-h@2x.png 2x"
-                       alt="" class="">
+                  <img src="../img/order/co-3.png"
+                       srcset="../img/order/co-3@2x.png 1x, ../img/order/co-3@2x.png 2x"
+                       alt=""
+                  >
                 </div>
 
                 <div class="slider-tooltip">
                   <h2>
-                    Upon approval, the PO is updated and the vendor is notified to proceed.
+                    … or from within their dashboard.
                   </h2>
+                </div>
+              </div>
 
-                  <div class="tooltip-btns">
-                    <button class="previous-btn">
-                      <img src="../img/fp-btn-arrow-left.svg" alt="">
-                    </button>
+              <div class="swiper-slide">
+                <div class="image-container fp-desktop-img" id="sl4-3">
+                  <img src="../img/order/co-4.png"
+                       srcset="../img/order/co-4@2x.png 1x, ../img/order/co-4@2x.png 2x"
+                       alt=""
+                  >
+                </div>
 
-                    <button class="next-btn active">
-                      <img src="../img/fp-btn-arrow-right.svg" alt="">
-                    </button>
-                  </div>
+                <div class="slider-tooltip">
+                  <h2>
+                    Upon approval, the PO is updated.
+                  </h2>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="image-container fp-desktop-img" id="sl4-4">
+                  <img src="../img/order/co-5.png"
+                       srcset="../img/order/co-5@2x.png 1x, ../img/order/co-5@2x.png 2x"
+                       alt=""
+                  >
+                </div>
+
+                <div class="slider-tooltip">
+                  <h2>
+                    The vendor is immediately notified to proceed too.
+                  </h2>
                 </div>
               </div>
             </div>
@@ -712,19 +664,18 @@
     </section>
 
     <section class="fp-demo__right--desktop fp-demo__right">
+      <h2>Punchlist</h2>
+
       <div class="fp-desktop__bg">
         <div class="fp-desktop">
           <div class="swiper swiper6">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="image-container fp-desktop-img" id="sl5-0">
-                  <img src="../img/punchlist/fp-desktop-img-1.png"
-                       srcset="../img/punchlist/fp-desktop-img-1.png 1x, ../img/punchlist/fp-desktop-img-1@2x.png 2x"
+                  <img src="../img/punchlist/pl-1.png"
+                       srcset="../img/punchlist/pl-1@2x.png 1x, ../img/punchlist/pl-1@2x.png 2x"
                        alt=""
-                       class="active">
-                  <img src="../img/punchlist/fp-desktop-img-1-h.png"
-                       srcset="../img/punchlist/fp-desktop-img-1-h.png 1x, ../img/punchlist/fp-desktop-img-1-h@2x.png 2x"
-                       alt="" class="">
+                  >
 
                   <span class="info-text visible">Punch coming Q4 2024</span>
                 </div>
@@ -733,58 +684,49 @@
                   <h2>
                     Manager inputs details to create the punch order.
                   </h2>
-
-                  <div class="tooltip-btns">
-                    <button class="previous-btn">
-                      <img src="../img/fp-btn-arrow-left.svg" alt="">
-                    </button>
-
-                    <button class="next-btn active">
-                      <img src="../img/fp-btn-arrow-right.svg" alt="">
-                    </button>
-                  </div>
                 </div>
               </div>
 
               <div class="swiper-slide">
                 <div class="image-container fp-desktop-img" id="sl5-1">
-                  <img src="../img/punchlist/fp-desktop-img-2.png"
-                       srcset="../img/punchlist/fp-desktop-img-2.png 1x, ../img/punchlist/fp-desktop-img-2@2x.png 2x"
+                  <img src="../img/punchlist/pl-2.png"
+                       srcset="../img/punchlist/pl-2@2x.png 1x, ../img/punchlist/pl-2@2x.png 2x"
                        alt=""
-                       class="active">
-                  <img src="../img/punchlist/fp-desktop-img-2-h.png"
-                       srcset="../img/punchlist/fp-desktop-img-2-h.png 1x, ../img/punchlist/fp-desktop-img-2-h@2x.png 2x"
-                       alt="" class="">
+                  >
 
                   <span class="info-text visible">Punch coming Q4 2024</span>
                 </div>
 
                 <div class="slider-tooltip">
                   <h2>
-                    Vendor is notified of punch order and confirms the date (or proposes an alt date).
+                    Vendor is notified of punch order.
                   </h2>
-
-                  <div class="tooltip-btns">
-                    <button class="previous-btn">
-                      <img src="../img/fp-btn-arrow-left.svg" alt="">
-                    </button>
-
-                    <button class="next-btn active">
-                      <img src="../img/fp-btn-arrow-right.svg" alt="">
-                    </button>
-                  </div>
                 </div>
               </div>
 
               <div class="swiper-slide">
                 <div class="image-container fp-desktop-img" id="sl5-2">
-                  <img src="../img/punchlist/fp-desktop-img-3.png"
-                       srcset="../img/punchlist/fp-desktop-img-3.png 1x, ../img/punchlist/fp-desktop-img-3@2x.png 2x"
+                  <img src="../img/punchlist/pl-3.png"
+                       srcset="../img/punchlist/pl-3@2x.png 1x, ../img/punchlist/pl-3@2x.png 2x"
                        alt=""
-                       class="active">
-                  <img src="../img/punchlist/fp-desktop-img-3-h.png"
-                       srcset="../img/punchlist/fp-desktop-img-3-h.png 1x, ../img/punchlist/fp-desktop-img-3-h@2x.png 2x"
-                       alt="" class="">
+                  >
+
+                  <span class="info-text visible">Punch coming Q4 2024</span>
+                </div>
+
+                <div class="slider-tooltip">
+                  <h2>
+                    Vendor confirms the date or proposes an alt date.
+                  </h2>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="image-container fp-desktop-img" id="sl5-3">
+                  <img src="../img/punchlist/pl-4.png"
+                       srcset="../img/punchlist/pl-4@2x.png 1x, ../img/punchlist/pl-4@2x.png 2x"
+                       alt=""
+                  >
 
                   <span class="info-text visible">Punch coming Q4 2024</span>
                 </div>
@@ -794,16 +736,6 @@
                     All the details for the punch order are visible in the vendor’s dashboard including the original
                     order details.
                   </h2>
-
-                  <div class="tooltip-btns">
-                    <button class="previous-btn">
-                      <img src="../img/fp-btn-arrow-left.svg" alt="">
-                    </button>
-
-                    <button class="next-btn active">
-                      <img src="../img/fp-btn-arrow-right.svg" alt="">
-                    </button>
-                  </div>
                 </div>
               </div>
             </div>
@@ -826,25 +758,37 @@
     </section>
   </div>
 
-  <div class="fp-overlay">
-    <div class="fp-overlay__block">
-      <img src="../img/fp-overlay-img.svg" alt="">
+    <div class="fp-overlay">
+      <div class="fp-overlay__block ovBlock-1 active">
+        <h2>
+          Welcome to the FuseProp Demo!
+        </h2>
 
-      <h2>
-        Welcome to the FuseProp Demo!
-      </h2>
+        <p>
+          Use these tabs to navigate across different sections of the demo.
+        </p>
 
-      <p>
-        Use the left/right arrows within the text bubbles to see interactions on each screen. <br>
-        And you can navigate the demo with both your keyboard and mouse.
-      </p>
+        <button class="next" onclick="overlayHandler(1)">
+          Continue
+          <img src="../img/fp-icon-arrow-right.svg" alt="">
+        </button>
+      </div>
 
-      <button class="overlay">
-        Continue to the Demo
-        <img src="../img/fp-icon-arrow-right.svg" alt="">
-      </button>
+      <div class="fp-overlay__block ovBlock-2">
+        <h2>
+          Secondary Nav
+        </h2>
+
+        <p>
+          Use these arrows to navigate screens within the applicable section of the demo.
+        </p>
+
+        <button class="next" onclick="overlayHandler(2)">
+          Start Demo
+          <img src="../img/fp-icon-arrow-right.svg" alt="">
+        </button>
+      </div>
     </div>
-  </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -879,7 +823,14 @@
             return style;
         }
     });
+    docSlider.enable(false);
 
+    const changePageHandler = (page) => {
+        docSlider.jumpPage(page);
+        docSlider.enable(false);
+    }
+
+    // appear tooltip script
     const debounce = (func, delay) => {
         let timer;
         return (...args) => {
@@ -903,6 +854,7 @@
         });
     }, 500);
 
+    // remove tooltip script
     const removeTooltip = (s) => {
         const imgContainers = s.querySelectorAll(".image-container");
 
@@ -911,6 +863,7 @@
         });
     }
 
+    // Swiper's scripts
     const swiper1 = new Swiper('.swiper1', {
         // Optional parameters
         effect: 'fade', // flip
@@ -924,11 +877,16 @@
                 removeTooltip(swiper.el);
                 swp(swiper.el, 0, swiper.activeIndex);
             },
-            slideChangeTransitionStart: () => {
-                docSlider.enable(false);
-            },
-            slideChangeTransitionEnd: () => {
-                docSlider.enable(true);
+            slideChange: (swiper) => {
+                const nextButton = swiper.el.querySelector('.swiper-button-next');
+
+                if (swiper.isEnd) {
+                    nextButton.onclick = function () {
+                        changePageHandler(1);
+                    };
+                } else {
+                    nextButton.onclick = null;
+                }
             },
         },
 
@@ -956,11 +914,30 @@
                 removeTooltip(swiper.el);
                 swp(swiper.el, 1, swiper.activeIndex);
             },
-            slideChangeTransitionStart: () => {
-                docSlider.enable(false);
+            init: (swiper) => {
+                const prevButton = swiper.el.querySelector('.swiper-button-prev');
+                if (swiper.isBeginning) {
+                    prevButton.onclick = function () {
+                        changePageHandler(0);
+                    };
+                }
             },
-            slideChangeTransitionEnd: () => {
-                docSlider.enable(true);
+            slideChange: (swiper) => {
+                const prevButton = swiper.el.querySelector('.swiper-button-prev');
+                const nextButton = swiper.el.querySelector('.swiper-button-next');
+
+                if (swiper.isBeginning) {
+                    prevButton.onclick = function () {
+                        changePageHandler(0);
+                    };
+                } else if (swiper.isEnd) {
+                    nextButton.onclick = function () {
+                        changePageHandler(2);
+                    };
+                } else {
+                    prevButton.onclick = null;
+                    nextButton.onclick = null;
+                }
             },
         },
 
@@ -988,11 +965,30 @@
                 removeTooltip(swiper.el);
                 swp(swiper.el, 2, swiper.activeIndex);
             },
-            slideChangeTransitionStart: () => {
-                docSlider.enable(false);
+            init: (swiper) => {
+                const prevButton = swiper.el.querySelector('.swiper-button-prev');
+                if (swiper.isBeginning) {
+                    prevButton.onclick = function () {
+                        changePageHandler(1);
+                    };
+                }
             },
-            slideChangeTransitionEnd: () => {
-                docSlider.enable(true);
+            slideChange: (swiper) => {
+                const prevButton = swiper.el.querySelector('.swiper-button-prev');
+                const nextButton = swiper.el.querySelector('.swiper-button-next');
+
+                if (swiper.isBeginning) {
+                    prevButton.onclick = function () {
+                        changePageHandler(1);
+                    };
+                } else if (swiper.isEnd) {
+                    nextButton.onclick = function () {
+                        changePageHandler(3);
+                    };
+                } else {
+                    prevButton.onclick = null;
+                    nextButton.onclick = null;
+                }
             },
         },
 
@@ -1016,22 +1012,40 @@
             eventsTarget: '.swiper4',
         },
         on: {
-            slideChange: function (s) {
-                if (s.activeIndex === 1) {
-                    document.querySelector('.fp-detourIcon').classList.add('active');
-                } else {
-                    document.querySelector('.fp-detourIcon').classList.remove('active');
-                }
-            },
             activeIndexChange: (swiper) => {
                 removeTooltip(swiper.el);
                 swp(swiper.el, 3, swiper.activeIndex);
             },
-            slideChangeTransitionStart: () => {
-                docSlider.enable(false);
+            init: (swiper) => {
+                const prevButton = swiper.el.querySelector('.swiper-button-prev');
+                if (swiper.isBeginning) {
+                    prevButton.onclick = function () {
+                        changePageHandler(2);
+                    };
+                }
             },
-            slideChangeTransitionEnd: () => {
-                docSlider.enable(true);
+            slideChange: (swiper) => {
+                const prevButton = swiper.el.querySelector('.swiper-button-prev');
+                const nextButton = swiper.el.querySelector('.swiper-button-next');
+
+                if (swiper.isBeginning) {
+                    prevButton.onclick = function () {
+                        changePageHandler(2);
+                    };
+                } else if (swiper.isEnd) {
+                    nextButton.onclick = function () {
+                        changePageHandler(4);
+                    };
+                } else {
+                    prevButton.onclick = null;
+                    nextButton.onclick = null;
+                }
+
+                if (swiper.activeIndex === 1) {
+                    document.querySelector('.fp-detourIcon').classList.add('active');
+                } else {
+                    document.querySelector('.fp-detourIcon').classList.remove('active');
+                }
             },
         },
 
@@ -1059,11 +1073,30 @@
                 removeTooltip(swiper.el);
                 swp(swiper.el, 4, swiper.activeIndex);
             },
-            slideChangeTransitionStart: () => {
-                docSlider.enable(false);
+            init: (swiper) => {
+                const prevButton = swiper.el.querySelector('.swiper-button-prev');
+                if (swiper.isBeginning) {
+                    prevButton.onclick = function () {
+                        changePageHandler(3);
+                    };
+                }
             },
-            slideChangeTransitionEnd: () => {
-                docSlider.enable(true);
+            slideChange: (swiper) => {
+                const prevButton = swiper.el.querySelector('.swiper-button-prev');
+                const nextButton = swiper.el.querySelector('.swiper-button-next');
+
+                if (swiper.isBeginning) {
+                    prevButton.onclick = function () {
+                        changePageHandler(3);
+                    };
+                } else if (swiper.isEnd) {
+                    nextButton.onclick = function () {
+                        changePageHandler(5);
+                    };
+                } else {
+                    prevButton.onclick = null;
+                    nextButton.onclick = null;
+                }
             },
         },
 
@@ -1091,11 +1124,24 @@
                 removeTooltip(swiper.el);
                 swp(swiper.el, 5, swiper.activeIndex);
             },
-            slideChangeTransitionStart: () => {
-                docSlider.enable(false);
+            init: (swiper) => {
+                const prevButton = swiper.el.querySelector('.swiper-button-prev');
+                if (swiper.isBeginning) {
+                    prevButton.onclick = function () {
+                        changePageHandler(4);
+                    };
+                }
             },
-            slideChangeTransitionEnd: () => {
-                docSlider.enable(true);
+            slideChange: (swiper) => {
+                const prevButton = swiper.el.querySelector('.swiper-button-prev');
+
+                if (swiper.isBeginning) {
+                    prevButton.onclick = function () {
+                        changePageHandler(4);
+                    };
+                } else {
+                    prevButton.onclick = null;
+                }
             },
         },
 
@@ -1135,68 +1181,16 @@
     });
 
     // overlay
-    const overlay = document.querySelector('.overlay');
-    overlay.addEventListener('click', () => {
-        document.querySelector('.fp-overlay').classList.add('close');
-        swp(swiper1.el, 0, 0);
-    })
-
-    // switch between images
-    const switchToPreviousImage = (e) => {
-        const container = e.target.closest('.swiper-slide');
-        const activeImage = container.querySelector('.image-container img.active');
-        let previousImage = activeImage.previousElementSibling;
-
-        while (previousImage && previousImage.classList.contains('info-text')) {
-            previousImage = previousImage.previousElementSibling;
+    const overlayHandler = (step) => {
+        if (step === 1) {
+            document.querySelector('.ovBlock-1').classList.remove('active');
+            document.querySelector('.ovBlock-2').classList.add('active');
+        } else if (step === 2) {
+            document.querySelector('.ovBlock-2').classList.remove('active');
+            document.querySelector('.fp-overlay').classList.add('close');
+            swp(swiper1.el, 0, 0);
         }
-
-        if (previousImage) {
-            activeImage.classList.remove('active');
-            previousImage.classList.add('active');
-            updateButtonStates(container);
-        }
-    }
-
-    const switchToNextImage = (e) => {
-        const container = e.target.closest('.swiper-slide');
-        const activeImage = container.querySelector('.image-container img.active');
-        let nextImage = activeImage.nextElementSibling;
-
-        while (nextImage && nextImage.classList.contains('info-text')) {
-            nextImage = nextImage.nextElementSibling;
-        }
-
-        if (nextImage) {
-            activeImage.classList.remove('active');
-            nextImage.classList.add('active');
-            updateButtonStates(container);
-        }
-    }
-
-    const updateButtonStates = (container) => {
-        const activeImage = container.querySelector('.image-container img.active');
-        const previousBtns = container.querySelectorAll('.previous-btn');
-        const nextBtns = container.querySelectorAll('.next-btn');
-
-        previousBtns.forEach(btn => {
-            btn.classList.toggle('active', activeImage.previousElementSibling !== null);
-        });
-
-        nextBtns.forEach(btn => {
-            btn.classList.toggle('active', activeImage.nextElementSibling !== null && !activeImage.nextElementSibling.classList.contains('info-text'));
-        });
-    }
-
-    const previousBtns = document.querySelectorAll('.previous-btn');
-    const nextBtns = document.querySelectorAll('.next-btn');
-
-    previousBtns.forEach(btn => {
-        btn.addEventListener('click', switchToPreviousImage);
-    });
-    nextBtns.forEach(btn => {
-        btn.addEventListener('click', switchToNextImage);
-    });
+    };
 </script>
 </body>
 </html>
