@@ -1207,7 +1207,9 @@
 
     // show tooltip with keyword
     const imgContainer = document.querySelectorAll(".image-container");
-    document.addEventListener('keydown', function (event) {
+    let arrowRightPressed = false;
+    let arrowLeftPressed = false;
+    document.addEventListener('keydown', (event) => {
         if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
             imgContainer.forEach(el => {
                 const tooltip = el.querySelector('.tooltip');
@@ -1221,6 +1223,130 @@
                     el.classList.remove('tooltip');
                 }, 100)
             });
+
+            const currIndex = docSlider.getCurrentIndex();
+            const goNextPage = () => {
+                docSlider.nextPage();
+                docSlider.enable(false);
+            }
+            const goPrevPage = () => {
+                docSlider.prevPage();
+                docSlider.enable(false);
+            }
+
+            swipers.forEach((e) => {
+                if (e.el.classList.contains('swiper1') && currIndex === 0) {
+                    if (e.isEnd) {
+                        if (arrowRightPressed) {
+                            arrowRightPressed = false;
+                            arrowLeftPressed = true;
+                            goNextPage();
+                        } else {
+                            arrowRightPressed = true;
+                        }
+                    } else {
+                        arrowLeftPressed = false;
+                        arrowRightPressed = false;
+                    }
+                } else if (e.el.classList.contains('swiper2') && currIndex === 1) {
+                    if (e.isBeginning) {
+                        if (arrowLeftPressed) {
+                            arrowLeftPressed = false;
+                            arrowRightPressed = true;
+                            goPrevPage();
+                        } else {
+                            arrowLeftPressed = true;
+                        }
+                    } else if (e.isEnd) {
+                        if (arrowRightPressed) {
+                            arrowRightPressed = false;
+                            arrowLeftPressed = true;
+                            goNextPage();
+                        } else {
+                            arrowRightPressed = true;
+                        }
+                    } else {
+                        arrowLeftPressed = false;
+                        arrowRightPressed = false;
+                    }
+                } else if (e.el.classList.contains('swiper3') && currIndex === 2) {
+                    if (e.isBeginning) {
+                        if (arrowLeftPressed) {
+                            arrowLeftPressed = false;
+                            arrowRightPressed = true;
+                            goPrevPage();
+                        } else {
+                            arrowLeftPressed = true;
+                        }
+                    } else if (e.isEnd) {
+                        if (arrowRightPressed) {
+                            arrowRightPressed = false;
+                            arrowLeftPressed = true;
+                            goNextPage();
+                        } else {
+                            arrowRightPressed = true;
+                        }
+                    } else {
+                        arrowLeftPressed = false;
+                        arrowRightPressed = false;
+                    }
+                } else if (e.el.classList.contains('swiper4') && currIndex === 3) {
+                    if (e.isBeginning) {
+                        if (arrowLeftPressed) {
+                            arrowLeftPressed = false;
+                            arrowRightPressed = true;
+                            goPrevPage();
+                        } else {
+                            arrowLeftPressed = true;
+                        }
+                    } else if (e.isEnd) {
+                        if (arrowRightPressed) {
+                            arrowRightPressed = false;
+                            arrowLeftPressed = true;
+                            goNextPage();
+                        } else {
+                            arrowRightPressed = true;
+                        }
+                    } else {
+                        arrowLeftPressed = false;
+                        arrowRightPressed = false;
+                    }
+                } else if (e.el.classList.contains('swiper5') && currIndex === 4) {
+                    if (e.isBeginning) {
+                        if (arrowLeftPressed) {
+                            arrowLeftPressed = false;
+                            arrowRightPressed = true;
+                            goPrevPage();
+                        } else {
+                            arrowLeftPressed = true;
+                        }
+                    } else if (e.isEnd) {
+                        if (arrowRightPressed) {
+                            arrowRightPressed = false;
+                            arrowLeftPressed = true;
+                            goNextPage();
+                        } else {
+                            arrowRightPressed = true;
+                        }
+                    } else {
+                        arrowLeftPressed = false;
+                        arrowRightPressed = false;
+                    }
+                } else if (e.el.classList.contains('swiper6') && currIndex === 5) {
+                    if (e.isBeginning) {
+                        if (arrowLeftPressed) {
+                            arrowLeftPressed = false;
+                            arrowRightPressed = true;
+                            goPrevPage();
+                        } else {
+                            arrowLeftPressed = true;
+                        }
+                    } else {
+                        arrowLeftPressed = false;
+                        arrowRightPressed = false;
+                    }
+                }
+            })
         }
     });
 

@@ -370,7 +370,6 @@ body {
 .fp-demo__right--desktop {
   flex-direction: column;
   justify-content: center;
-  padding-right: 27rem;
   overflow: visible;
 }
 
