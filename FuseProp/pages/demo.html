@@ -853,6 +853,8 @@
       </button>
     </div>
   </div>
+
+  <img src="../img/fp-overlay-btns.png" alt="" class="overlay-btns">
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -888,11 +890,6 @@
         }
     });
     docSlider.enable(false);
-
-    const changePageHandler = (page) => {
-        docSlider.jumpPage(page);
-        docSlider.enable(false);
-    }
 
     // appear tooltip script
     const debounce = (func, delay) => {
@@ -1205,26 +1202,39 @@
 
     const swipers = [swiper1, swiper2, swiper3, swiper4, swiper5, swiper6];
 
+    const changePageHandler = (page) => {
+        swipers[page].slideTo(0);
+        docSlider.jumpPage(page);
+        docSlider.enable(false);
+    }
+
     // show tooltip with keyword
     const imgContainer = document.querySelectorAll(".image-container");
     let arrowRightPressed = false;
     let arrowLeftPressed = false;
     document.addEventListener('keydown', (event) => {
         if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+            const currIndex = docSlider.getCurrentIndex();
+
             imgContainer.forEach(el => {
-                const tooltip = el.querySelector('.tooltip');
+                if (!(
+                    swiper6.el.classList.contains('swiper6')
+                    && swiper6.activeIndex === 3
+                    && currIndex === 5
+                )) {
+                    const tooltip = el.querySelector('.tooltip');
 
-                if (tooltip) {
-                    tooltip.nextElementSibling.style.animationName = 'shrink';
-                    tooltip.nextElementSibling.style.animationDuration = '0.2s';
+                    if (tooltip) {
+                        tooltip.nextElementSibling.style.animationName = 'shrink';
+                        tooltip.nextElementSibling.style.animationDuration = '0.2s';
+                    }
+
+                    setTimeout(() => {
+                        el.classList.remove('tooltip');
+                    }, 100)
                 }
-
-                setTimeout(() => {
-                    el.classList.remove('tooltip');
-                }, 100)
             });
 
-            const currIndex = docSlider.getCurrentIndex();
             const goNextPage = () => {
                 docSlider.nextPage();
                 docSlider.enable(false);
@@ -1355,9 +1365,11 @@
         if (step === 1) {
             document.querySelector('.ovBlock-1').classList.remove('active');
             document.querySelector('.ovBlock-2').classList.add('active');
-        } else if (step === 2) {
-            document.querySelector('.ovBlock-2').classList.remove('active');
             document.querySelector('.fp-demo').classList.remove('blur');
+            document.querySelector('.fp-demo').classList.add('blur-2');
+        } else if (step === 2) {
+            document.querySelector('.fp-demo').classList.remove('blur-2');
+            document.querySelector('.ovBlock-2').classList.remove('active');
             document.querySelector('.fp-overlay').classList.add('close');
             swp(swiper1.el, 0, 0);
         }

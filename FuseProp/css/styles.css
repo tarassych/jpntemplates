@@ -145,12 +145,16 @@ body {
 /* Demo page */
 .fp {
   position: relative;
+  height: 100%;
 }
-.fp-demo.blur::before {
+.fp-demo.blur::before,
+.fp-demo.blur-2 .fp-demo__right::before,
+.fp-demo.blur-2 .fp-demo__left::before {
   content: "";
   background-color: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(6px);
   --webkit-backdrop-filter: blur(6px);
+  filter: blur(6px);
   position: absolute;
   top: 0;
   left: 0;
@@ -378,6 +382,7 @@ body {
   flex-direction: column;
   align-items: center;
   flex-shrink: 0;
+  position: relative;
   width: 18rem;
   max-width: 100%;
 }
@@ -409,6 +414,7 @@ body {
   font-weight: 300;
   line-height: 3.9rem;
   margin-bottom: 4rem;
+  position: relative;
 }
 .fp-demo__right--desktop > h2 {
   margin-bottom: 9.7rem;
@@ -499,25 +505,31 @@ body {
 }
 
 /* tooltip styles */
-.fp-mobile-img + .slider-tooltip {
+.image-container + .slider-tooltip {
   display: none;
 }
-.fp-mobile-img.tooltip + .slider-tooltip {
-  display: block;
+.image-container.tooltip + .slider-tooltip {
+  display: flex;
   position: absolute;
   transform-origin: 0 100%;
   transform: translateY(-50%);
   width: 44rem;
   z-index: 9;
 }
-.fp-mobile-img.tooltip + .slider-tooltip > div {
+.image-container.tooltip + .slider-tooltip > div {
   background-color: #51b6f7;
   border-radius: 2.4rem;
   padding: 2.5rem 3.2rem;
   position: relative;
   z-index: 9;
 }
-.fp-mobile-img.tooltip + .slider-tooltip:before {
+.image-container.tooltip + .slider-tooltip h2 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 3rem;
+}
+.image-container.tooltip + .slider-tooltip:before {
   content: "";
   background: url(../img/fp-tooltip-bg-arrow.png) center / 100% 100% no-repeat;
   position: absolute;
@@ -566,12 +578,6 @@ body {
 .swiper4 .swiper-slide:nth-child(3) .fp-mobile-img.tooltip + .slider-tooltip {
   top: 27%;
   left: calc(100% - 6rem);
-}
-.fp-mobile-img.tooltip + .slider-tooltip h2 {
-  color: #ffffff;
-  font-size: 1.8rem;
-  font-weight: 600;
-  line-height: 3rem;
 }
 .tooltip-btns {
   text-align: right;
@@ -636,18 +642,6 @@ body {
   border-radius: .8rem;
   height: 68em;
   width: 111.2rem;
-}
-.fp-desktop-img + .slider-tooltip {
-  display: none;
-}
-.fp-desktop-img.tooltip + .slider-tooltip {
-  background: url(../img/fp-tooltip-bg.png) center / 100% 100% no-repeat;
-  display: block;
-  padding: 4rem 3rem 8.3rem;
-  position: absolute;
-  transform: translateY(-50%);
-  width: 44rem;
-  z-index: 9;
 }
 /* swiper 2 tooltip */
 .swiper2 .swiper-slide:nth-child(1) .fp-desktop-img.tooltip + .slider-tooltip {
@@ -806,7 +800,7 @@ body {
   font-weight: 400;
   line-height: 2.5rem;
   margin-bottom: .8rem;
-  padding-right: 1.5rem;
+  /*padding-right: 1.5rem;*/
 }
 .fp-overlay__block .next {
   background-color: transparent;
@@ -824,6 +818,18 @@ body {
 .fp-overlay__block .next img {
   margin-left: .8rem;
   width: .5rem;
+}
+.overlay-btns {
+  display: none;
+  position: absolute;
+  bottom: calc(50% - 48rem);
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 20rem;
+  z-index: 1;
+}
+.fp-demo.blur-2 + .fp-overlay + .overlay-btns {
+  display: block;
 }
 
 
