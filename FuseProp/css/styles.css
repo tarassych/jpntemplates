@@ -42,7 +42,7 @@ body {
 
 
 /* Login page */
-.fp-login__bg {
+.fp.fp-login__bg {
   background: url(../img/fp-login-bg.png) center / cover no-repeat;
   display: flex;
   flex-direction: row;
@@ -147,20 +147,22 @@ body {
   position: relative;
   height: 100%;
 }
-.fp-demo.blur::before,
-.fp-demo.blur-2 .fp-demo__right::before,
-.fp-demo.blur-2 .fp-demo__left::before {
+.fp.blur .fp-demo::before,
+.fp.blur-2 .fp-demo__right::before,
+.fp.blur-2 .fp-demo__left::before {
   content: "";
   background-color: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(6px);
-  --webkit-backdrop-filter: blur(6px);
-  filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 999;
+}
+.fp.blur-2 .fp-swiper-navigation {
+  opacity: 0;
 }
 .fp-demo__left {
   display: flex;
@@ -381,10 +383,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-shrink: 0;
+  flex-shrink: 1;
   position: relative;
-  width: 18rem;
-  max-width: 100%;
+  width: 100%;
+  max-width: 18rem;
 }
 .fp-apps.invisible {
   opacity: 0;
@@ -800,7 +802,6 @@ body {
   font-weight: 400;
   line-height: 2.5rem;
   margin-bottom: .8rem;
-  /*padding-right: 1.5rem;*/
 }
 .fp-overlay__block .next {
   background-color: transparent;
@@ -828,7 +829,7 @@ body {
   width: 20rem;
   z-index: 1;
 }
-.fp-demo.blur-2 + .fp-overlay + .overlay-btns {
+.fp.blur-2 > .overlay-btns {
   display: block;
 }
 

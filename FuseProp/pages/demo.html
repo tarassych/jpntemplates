@@ -18,8 +18,8 @@
   <script src="../js/authentication.js"></script>
 </head>
 <body>
-<div class="fp">
-  <div class="fp-demo docSlider blur">
+<div class="fp blur">
+  <div class="fp-demo docSlider">
     <div class="fp-demo__left docSlider-pager">
       <a href="./home.html">
         <img src="../img/fp-login-logo-v2.png" alt="">
@@ -1365,10 +1365,10 @@
         if (step === 1) {
             document.querySelector('.ovBlock-1').classList.remove('active');
             document.querySelector('.ovBlock-2').classList.add('active');
-            document.querySelector('.fp-demo').classList.remove('blur');
-            document.querySelector('.fp-demo').classList.add('blur-2');
+            document.querySelector('.fp').classList.remove('blur');
+            document.querySelector('.fp').classList.add('blur-2');
         } else if (step === 2) {
-            document.querySelector('.fp-demo').classList.remove('blur-2');
+            document.querySelector('.fp').classList.remove('blur-2');
             document.querySelector('.ovBlock-2').classList.remove('active');
             document.querySelector('.fp-overlay').classList.add('close');
             swp(swiper1.el, 0, 0);
